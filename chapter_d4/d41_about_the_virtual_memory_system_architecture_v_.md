@@ -36,5 +36,5 @@ Exception levels 和所处的 Security states 的不同而不同，具体的差�
 > The remainder of this chapter gives a full description of VMSAv8-64
  >for an implementation that includes all of the Exception levels.
 >The implemented Exception levels and the resulting translation stages and regimes on
- >page D4-1679 describes the differences in the VMSA
- >if some Exception levels are not implemented.
+ page D4-1679 describes the differences in the VMSA
+ if some Exception levels are not implemented.
