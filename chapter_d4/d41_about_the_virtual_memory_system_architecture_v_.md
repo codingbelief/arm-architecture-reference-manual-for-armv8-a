@@ -31,7 +31,8 @@ Exception levels 和所处的 Security states 的不同而不同，具体的差�
 
 > VMSAv8-64 supports tagging of VAs,
  >as described in [Address tagging in AArch64 state](todo.md).
-> As that section describes, this address tagging has no effect on the address translation process.
+> As that section describes,
+ > this address tagging has no effect on the address translation process.
 
 
 > The remainder of this chapter gives a full description of VMSAv8-64
