@@ -5,10 +5,10 @@
 > This is VMSAv8-64, as defined in [ARMv8 VMSA naming on page D4-1643](todo.md).
 
 
->A VMSA provides a Memory Management Unit (MMU), 
->that controls address translation, access permissions,
->and memory attribute determination and checking, 
->for memory accesses made by the PE.
+> A VMSA provides a Memory Management Unit (MMU), 
+ > that controls address translation, access permissions,
+ > and memory attribute determination and checking, 
+ > for memory accesses made by the PE.
 
 
 >The process of address translation maps the virtual addresses (VAs) used by 
