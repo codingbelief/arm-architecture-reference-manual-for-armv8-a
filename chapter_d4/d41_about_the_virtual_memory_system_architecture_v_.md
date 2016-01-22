@@ -11,8 +11,8 @@
  > for memory accesses made by the PE.
 
 
->The process of address translation maps the virtual addresses (VAs) used by 
->PE onto the physical addresses (PAs) of the physical memory system. 
->These translations are defined independently for different Exception levels
->and Security states, and Figure D4-1 shows.
+> The process of address translation maps the virtual addresses (VAs) used by 
+ > PE onto the physical addresses (PAs) of the physical memory system. 
+> These translations are defined independently for different Exception levels
+ > and Security states, and Figure D4-1 shows.
 
