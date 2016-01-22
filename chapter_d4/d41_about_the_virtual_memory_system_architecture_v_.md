@@ -7,7 +7,7 @@
 > This is VMSAv8-64, as defined in [ARMv8 VMSA naming on page D4-1643](todo.md).
 
 此小节描述了 AArch64 运行态下的 PE 中的虚拟内存系统架构，
-即VMSAv8-64 (Virtual Memory System Architecture on AArch64)
+即VMSAv8-64 (Virtual Memory System Architecture on AArch64)。
 
 > A VMSA provides a Memory Management Unit (MMU), 
  > that controls address translation, access permissions,
