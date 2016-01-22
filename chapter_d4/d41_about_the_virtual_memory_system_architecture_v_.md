@@ -11,9 +11,9 @@
 (TODO: 添加 PE 的解释)
 
 > A VMSA provides a Memory Management Unit (MMU), 
- > that controls address translation, access permissions,
- > and memory attribute determination and checking, 
- > for memory accesses made by the PE.
+ that controls address translation, access permissions,
+ and memory attribute determination and checking, 
+ for memory accesses made by the PE.
 
 VMSA 实现了内存管理单元，即MMU。MMU在系统中为PE的内存操作提供地址转换，
 访问权限控制以及内存属性的设定和校验功能。
