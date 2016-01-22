@@ -7,7 +7,7 @@
 * [D4.3 VMSAv8-64 translation table format descriptors](d43_vmsav8-64_translation_table_format_descriptors.md)
 * [D4.4 Access controls and memory region attributes](d44_access_controls_and_memory_region_attributes.md)
 * [D4.5 MMU faults](d45_mmu_faults.md)
-* D4.6 Translation Lookaside Buffers (TLBs)
+* [D4.6 Translation Lookaside Buffers (TLBs)](d46_translation_lookaside_buffers_tlbs.md)
 * D4.7 TLB maintenance requirements and the TLB maintenance instructions
 * D4.8 Caches in a VMSA implementation
 
