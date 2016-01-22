@@ -8,7 +8,7 @@
 
 此小节描述了 AArch64 运行态下的 PE 中的虚拟内存系统架构，
 即VMSAv8-64 (Virtual Memory System Architecture on AArch64)。
-
+(TODO: 添加 PE 的解释)
 
 > A VMSA provides a Memory Management Unit (MMU), 
  > that controls address translation, access permissions,
