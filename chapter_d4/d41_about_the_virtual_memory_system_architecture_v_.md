@@ -14,6 +14,7 @@
  > that controls address translation, access permissions,
  > and memory attribute determination and checking, 
  > for memory accesses made by the PE.
+
 <!-- -->
 VMSA 定义了内存管理单元，即 MMU。MMU 在系统中为 PE 的内存操作提供地址转换，
 访问权限控制以及内存属性的设定和校验功能。
