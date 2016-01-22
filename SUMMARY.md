@@ -9,5 +9,5 @@
 * [D4.5 MMU faults](d45_mmu_faults.md)
 * [D4.6 Translation Lookaside Buffers (TLBs)](d46_translation_lookaside_buffers_tlbs.md)
 * [D4.7 TLB maintenance requirements and the TLB maintenance instructions](d47_tlb_maintenance_requirements_and_the_tlb_maint.md)
-* D4.8 Caches in a VMSA implementation
+* [D4.8 Caches in a VMSA implementation](d48_caches_in_a_vmsa_implementation.md)
 
