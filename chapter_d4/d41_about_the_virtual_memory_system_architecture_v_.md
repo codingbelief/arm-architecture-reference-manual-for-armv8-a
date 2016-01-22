@@ -14,7 +14,8 @@
  > and memory attribute determination and checking, 
  > for memory accesses made by the PE.
 
-VMSA 为 PE 的内存访问提供内存管理单元实现，即MMU。MMU在系统中主要负责
+VMSA 为 PE 的内存访问提供内存管理单元实现，即MMU。MMU在系统中主要负责地址转换，访问权限控制
+以及内存属性的设定和校验。
 
 > The process of address translation maps the virtual addresses (VAs) used by 
  > PE onto the physical addresses (PAs) of the physical memory system. 
