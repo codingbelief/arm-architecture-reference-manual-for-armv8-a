@@ -24,5 +24,12 @@ VMSA 实现了内存管理单元，即MMU。MMU在系统中为PE的内存操作�
  > and Security states, and Figure D4-1 shows.
 
 MMU 中的地址转换过程，是将 PE 发起的内存访问的虚拟地址 (VAs)
-映射到物理内存设备的真实物理地址上。这一转换过程，会因 PE 所在的
+ 映射到物理内存设备的真实物理地址上。这一转换过程，会因 PE 所在的
 Exception levels 和所处的 Security states 的不同而不同，具体的差异可以参考 Figure D4-1。
+
+![](figure_d4_1.png)
+
+> VMSAv8-64 supports tagging of VAs, as described in Address tagging in AArch64 state.
+> As that section describes, this address tagging has no effect on the address translation process.
+> The remainder of this chapter gives a full description of VMSAv8-64 for an implementation that includes all of the Exception levels. The implemented Exception levels and the resulting translation stages and regimes on
+page D4-1679 describes the differences in the VMSA if some Exception levels are not implemented.
