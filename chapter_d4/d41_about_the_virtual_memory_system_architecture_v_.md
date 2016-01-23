@@ -149,6 +149,9 @@ When address tagging is enabled for an address that causes a Data Abort or a Wat
 in the virtual address returned in the FAR.
 
 
+**Relaxation of the tagged address handling requirements on an Illegal exception return**
+
+
 
 
 
