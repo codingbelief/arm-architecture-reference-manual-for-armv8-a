@@ -76,6 +76,9 @@ TCR_EL2.TBI determines whether address tags are used. If stage 1 translation is 
 TTBR0_EL2 holds the base address of the translation tables used to translate the address.
 
 
+For addresses using the VMSAv8-64 EL3 translation regime
+TCR_EL3.TBI determines whether address tags are used. If stage 1 translation is enabled,
+TTBR0_EL3 holds the base address of the translation tables used to translate the address.
 
 
 
