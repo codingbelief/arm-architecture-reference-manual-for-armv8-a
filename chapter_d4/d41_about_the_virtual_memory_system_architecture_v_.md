@@ -118,7 +118,7 @@ Any branch or procedure return within the controlled Exception level.
 
  | VA[55]==0 | TCR_EL1.TBI0 决定是否使能 address tags 功能. 如果使能了 stage 1 的转换, 那么寄存器 TTBR0_EL1 保存地址转换表的基地址.|
  | -- | -- |
- | VA[55]==1 | TCR_EL1.TBI1 determines whether address tags are used. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
+ | VA[55]==1 | TCR_EL1.TBI1 决定是否使能 address tags 功能. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
 
 | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
 | -- | -- |
