@@ -82,7 +82,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 
 虚拟地址的 tag 功能的配置会根据 bit[55] 的值的不同而不同：
 
- | VA[55]==0 | TCR_EL1.TBI0 决定是否使能 address tags 功能. 如果使能了 stage 1 的转换, 那么寄存器 TTBR0_EL1 保存地址转换表的基地址.|
+ | VA[55]==0 |如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI0 决定是否使能 address tags 功能. 寄存器 TTBR0_EL1 保存地址转换表的基地址.|
  | -- | -- |
  | VA[55]==1 | TCR_EL1.TBI1 决定是否使能 address tags 功能. 如果使能了 stage 1 的转换, 那么寄存器 TTBR1_EL1 保存地址转换表的基地址.|
  
