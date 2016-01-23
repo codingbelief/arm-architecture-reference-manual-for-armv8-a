@@ -110,7 +110,7 @@ Any branch or procedure return within the controlled Exception level.
 >* Taking an exception to EL2.
 >* Performing an exception return or a debug state exit to EL2.
 
-虚拟地址的 tag 主要通过一下的方式来配置：
+虚拟地址的 tag 主要通过以下的方式来配置：
 
 **对于使用 VMSAv8-64 EL1&0 translation regime 的地址**
 
