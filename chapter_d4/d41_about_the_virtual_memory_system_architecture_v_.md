@@ -82,7 +82,7 @@ TCR_EL3.TBI determines whether address tags are used. If stage 1 translation is 
 TTBR0_EL3 holds the base address of the translation tables used to translate the address.
 
 
---- NOTE:
+NOTE:
 
 The TCR_ELx.TBIn bits determine whether address tags are used regardless of whether the corresponding
 translation regime is enabled.
