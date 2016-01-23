@@ -58,9 +58,10 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 > * Whether the address causes an Address size fault from being out of range if the translation system is not enabled.
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
-在 AArch64 运行态下，ARMv8 架构支持虚拟地址的 tagging 操作。在启用了VA的 tagging 时，VA 的高8个bits将不参与下列的处理过程：
+在 AArch64 运行态下，ARMv8 架构支持虚拟地址的 tagging 操作。在启用了 VA 的 tagging 时，VA 的高8个bits将不参与下列的处理过程：
 * 当地址转换使能时，判定 VA 超出范围后产生 Translation fault。
-* 当地址转换未使能时，判定 VA 超出范围后产生 Address size fault
+* 当地址转换未使能时，判定 VA 超出范围后产生 Address size fault。
+* 
 
 The use of address tags is controlled as follows:
 
