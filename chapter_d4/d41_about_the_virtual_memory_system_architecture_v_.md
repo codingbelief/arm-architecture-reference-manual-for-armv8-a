@@ -104,6 +104,8 @@ Any branch or procedure return within the controlled Exception level.
 >* Performing an exception return or a debug state exit to EL2.
 
 
+|For EL0 or EL1 |If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address.
+For EL2 or EL3 If the controlling TBI bit for the addr
 
 
 
