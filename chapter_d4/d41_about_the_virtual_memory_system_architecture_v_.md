@@ -190,7 +190,7 @@ instruction was executed from.
 >NOTE:
 >* The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding
 translation regime is enabled.
-> *In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the
+>* In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the
    following apply:
 
 
