@@ -55,11 +55,11 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
  > values. In these cases the top eight
 > bits of the virtual address are ignored when determining:
 > * Whether the address causes a Translation fault from being out of range if the translation system is enabled.
-> * Whether the address causes an Address size fault from being out of range if the translation system is not
-enabled.
+> * Whether the address causes an Address size fault from being out of range if the translation system is not enabled.
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
-
+在 AArch64 运行态下，ARMv8 架构支持虚拟地址的 tagging 操作。在启用了VA的 tagging 时，VA 的高8个bits将不参与下列的处理过程：
+* 
 
 The use of address tags is controlled as follows:
 
