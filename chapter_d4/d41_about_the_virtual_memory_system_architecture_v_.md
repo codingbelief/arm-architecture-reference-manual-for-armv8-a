@@ -109,10 +109,10 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 >> The TCR_ELx.TBIn bits determine whether address tags are used regardless of whether the corresponding
 >> translation regime is enabled.
 
->> **NOTE**:
+> **NOTE**:
 
->> The TCR_ELx.TBIn bits determine whether address tags are used regardless of whether the corresponding
->> translation regime is enabled.
+> The TCR_ELx.TBIn bits determine whether address tags are used regardless of whether the corresponding
+> translation regime is enabled.
 
 An address tag enable bit also has an effect on the PC value in the following cases:
 Any branch or procedure return within the controlled Exception level.
