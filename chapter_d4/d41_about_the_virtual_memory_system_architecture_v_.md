@@ -114,7 +114,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 > 不管对应的 translation regime 是否使能，寄存器位 TCR_ELx.TBIn 都决定着 address tags 功能是否启用.
 
 An address tag enable bit also has an effect on the PC value in the following cases:
-Any branch or procedure return within the controlled Exception level.
+* Any branch or procedure return within the controlled Exception level.
 * On taking an exception to the controlled Exception level, regardless of whether this is also the Exception
    level from which the exception was taken.
 * On performing an exception return to the controlled Exception level, regardless of whether this is also the
