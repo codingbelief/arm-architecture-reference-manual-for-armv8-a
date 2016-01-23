@@ -182,7 +182,7 @@ In this pseudocode:
   DEFINED whether target_exception_level is the Exception level that was described in the
  SPSR at the time of the exception return or the Exception level that the exception return
 instruction was executed from.
-• Is the Exception level the exception is taken to for an exception entry
+* Is the Exception level the exception is taken to for an exception entry
  |
 
 
