@@ -125,7 +125,8 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 > * Exiting from debug state to the controlled Exception level.
 
 在下面的场景中，address tags 功能的开启与否，也会影响 PC 寄存器的值：
-* 在当前 Exception level 下的
+* 在当前 Exception level 下的所有 branch 和 procedure return 处理中
+* 
 
 >**NOTE:**
 
