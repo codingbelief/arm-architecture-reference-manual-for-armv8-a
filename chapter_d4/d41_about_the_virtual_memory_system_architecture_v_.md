@@ -137,6 +137,9 @@ integer AddrTop(bits(64) address)
 
 ```
 
+>**NOTE**
+
+>The required behavior prevents a tagged address being propagated to the program counter.
 
 
 
