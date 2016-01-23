@@ -62,6 +62,8 @@ The use of address tags is controlled as follows:
 
 **For addresses using the VMSAv8-64 EL1&0 translation regime**
 
+The value of bit[55] of the VA determines the register bit that controls the use of address tags, as
+follows:
 
 
 
