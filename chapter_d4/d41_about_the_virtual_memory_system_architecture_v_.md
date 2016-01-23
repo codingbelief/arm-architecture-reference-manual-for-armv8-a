@@ -196,7 +196,7 @@ instruction was executed from.
 >     - For the Exception level that was described in the SPSR at the time of the exception return, the value
    of TCR_ELx.TBI is 0.
 >     - In the Exception level that the exception was taken from, the value of TCR_ELx.TBI is 1.
-In all other cases, the tag bits cannot be propagated to the PC.
+>In all other cases, the tag bits cannot be propagated to the PC.
 
 
 
