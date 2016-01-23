@@ -70,7 +70,8 @@ follows:
 | VA[55]==1 | TCR_EL1.TBI1 determines whether address tags are used. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
 
 
-For addresses using the VMSAv8-64 EL2 translation regime
+**For addresses using the VMSAv8-64 EL2 translation regime**
+
 TCR_EL2.TBI determines whether address tags are used. If stage 1 translation is enabled,
 TTBR0_EL2 holds the base address of the translation tables used to translate the address.
 
