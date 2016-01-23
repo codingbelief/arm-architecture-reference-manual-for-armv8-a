@@ -121,6 +121,9 @@ An address tag enable bit also has an effect on the PC value in the following ca
    Exception level from which the exception return was performed.
 * Exiting from debug state to the controlled Exception level.
 
+在下面的场景中，address tags 功能的开启与否，也会影响 PC 寄存器的值：
+* 
+
 >**NOTE:**
 
 >As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
