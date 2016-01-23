@@ -56,3 +56,4 @@ bits of the virtual address are ignored when determining:
 * Whether the address causes an Address size fault from being out of range if the translation system is not
 enabled.
 * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
+The use of address tags is controlled as follows:
