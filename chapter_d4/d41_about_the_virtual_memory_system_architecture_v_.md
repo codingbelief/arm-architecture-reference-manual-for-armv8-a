@@ -97,13 +97,6 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 > TCR_EL3.TBI determines whether address tags are used. If stage 1 translation is enabled,
 > TTBR0_EL3 holds the base address of the translation tables used to translate the address.
 
-**对于使用 VMSAv8-64 EL2 translation regime 的地址**  
-如果使能了 stage 1 的转换，那么 TCR_EL2.TBI 决定了是否启用 address tags 功能，
-寄存器 TTBR0_EL2 保存地址转换表的基地址。
-
-**对于使用 VMSAv8-64 EL3 translation regime 的地址**  
-如果使能了 stage 1 的转换，那么 TCR_EL3.TBI 决定了是否启用 address tags 功能，
-寄存器 TTBR0_EL3 保存地址转换表的基地址。
 
 >> **NOTE**:
 
