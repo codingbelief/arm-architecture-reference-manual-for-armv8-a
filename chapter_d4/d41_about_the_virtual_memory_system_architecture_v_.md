@@ -110,15 +110,6 @@ Any branch or procedure return within the controlled Exception level.
 >* Taking an exception to EL2.
 >* Performing an exception return or a debug state exit to EL2.
 
-虚拟地址的 tag 主要通过以下的方式来配置：
-
-**对于使用 VMSAv8-64 EL1&0 translation regime 的地址**
-
-虚拟地址的 tag 功能配置会根据 bit[55] 的值的不同而不同：
-
- | VA[55]==0 | TCR_EL1.TBI0 决定是否使能 address tags 功能. 如果使能了 stage 1 的转换, 那么寄存器 TTBR0_EL1 保存地址转换表的基地址.|
- | -- | -- |
- | VA[55]==1 | TCR_EL1.TBI1 决定是否使能 address tags 功能. 如果使能了 stage 1 的转换, 那么寄存器 TTBR1_EL1 保存地址转换表的基地址.|
 
 | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
 | -- | -- |
