@@ -95,14 +95,11 @@ Any branch or procedure return within the controlled Exception level.
    Exception level from which the exception return was performed.
 * Exiting from debug state to the controlled Exception level.
 
-
+**NOTE:**
 As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
-•
-A branch or procedure return within EL2.
-•
-Taking an exception to EL2.
-•
-Performing an exception return or a debug state exit to EL2.
+* A branch or procedure return within EL2.
+* Taking an exception to EL2.
+* Performing an exception return or a debug state exit to EL2.
 
 
 
