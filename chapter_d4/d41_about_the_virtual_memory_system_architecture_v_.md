@@ -110,7 +110,7 @@ Any branch or procedure return within the controlled Exception level.
 >* Taking an exception to EL2.
 >* Performing an exception return or a debug state exit to EL2.
 
-
+虚拟地址的 tag 主要通过一下的方式来配置：
 
 | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
 | -- | -- |
