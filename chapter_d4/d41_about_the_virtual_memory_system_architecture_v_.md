@@ -173,9 +173,11 @@ PC = NewAddress;
 ```
 
 In this pseudocode:
-| NewAddress | Is the address being branched to, or returned to. |
-| -- | -- |
-| target_exception_level | * Is the current Exception level for a branch or procedure return.
+*NewAddress*:
+Is the address being branched to, or returned to.
+
+*target_exception_level*:
+* Is the current Exception level for a branch or procedure return.
 * Is the Exception level being returned to for an exception return.
    If the exception return triggers the Illegal exception return mechanism, it is IMPLEMENTATION
   DEFINED whether target_exception_level is the Exception level that was described in the
