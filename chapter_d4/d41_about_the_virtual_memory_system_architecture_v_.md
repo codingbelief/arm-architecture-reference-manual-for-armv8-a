@@ -173,6 +173,7 @@ PC = NewAddress;
 ```
 
 In this pseudocode:
+
 *NewAddress*:
 Is the address being branched to, or returned to.
 
