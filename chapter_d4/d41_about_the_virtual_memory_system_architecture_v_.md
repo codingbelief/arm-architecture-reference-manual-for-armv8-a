@@ -127,7 +127,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 * On taking an exception to the controlled Exception level, regardless of whether this is also the Exception level from which the exception was taken.
 * On performing an exception return to the controlled Exception level, regardless of whether this is also the Exception level from which the exception return was performed.
 * Exiting from debug state to the controlled Exception level.  
-（）
+（TODO: 此处的 controlled Exception level 不理解，待后续进行翻译）
 
 >**NOTE:**
 
