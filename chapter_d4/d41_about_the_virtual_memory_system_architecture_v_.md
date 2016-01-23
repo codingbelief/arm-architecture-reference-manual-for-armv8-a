@@ -59,7 +59,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
 在 AArch64 运行态下，ARMv8 架构支持虚拟地址的 tagging 操作。在启用了VA的 tagging 时，VA 的高8个bits将不参与下列的处理过程：
-* 
+* 当地址转换使能
 
 The use of address tags is controlled as follows:
 
