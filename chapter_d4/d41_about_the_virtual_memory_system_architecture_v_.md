@@ -187,6 +187,11 @@ Is the address being branched to, or returned to.
 instruction was executed from.
 * Is the Exception level the exception is taken to for an exception entry
 
+>NOTE:
+The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding
+translation regime is enabled.
+• In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the
+   following apply:
 
 
 
