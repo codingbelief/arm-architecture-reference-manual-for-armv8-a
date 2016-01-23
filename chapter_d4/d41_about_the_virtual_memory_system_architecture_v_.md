@@ -60,6 +60,7 @@ enabled.
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
 
+
 The use of address tags is controlled as follows:
 
 **For addresses using the VMSAv8-64 EL1&0 translation regime**
