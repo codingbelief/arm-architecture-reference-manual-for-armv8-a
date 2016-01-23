@@ -52,7 +52,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 
 In AArch64 state, the ARMv8 architecture supports tagged addresses for data values. In these cases the top eight
 bits of the virtual address are ignored when determining:
-*Whether the address causes a Translation fault from being out of range if the translation system is enabled.
-*Whether the address causes an Address size fault from being out of range if the translation system is not
+* Whether the address causes a Translation fault from being out of range if the translation system is enabled.
+* Whether the address causes an Address size fault from being out of range if the translation system is not
 enabled.
-*Whether the address requires invalidation when performing a TLB invalidation instruction by address.
+* Whether the address requires invalidation when performing a TLB invalidation instruction by address.
