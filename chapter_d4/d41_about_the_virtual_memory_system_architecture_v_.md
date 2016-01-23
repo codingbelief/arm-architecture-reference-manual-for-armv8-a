@@ -87,6 +87,13 @@ TTBR0_EL3 holds the base address of the translation tables used to translate the
 translation regime is enabled.*
 
 
+An address tag enable bit also has an effect on the PC value in the following cases:
+Any branch or procedure return within the controlled Exception level.
+* On taking an exception to the controlled Exception level, regardless of whether this is also the Exception
+   level from which the exception was taken.
+* On performing an exception return to the controlled Exception level, regardless of whether this is also the
+   Exception level from which the exception return was performed.
+* Exiting from debug state to the controlled Exception level.
 
 
 
