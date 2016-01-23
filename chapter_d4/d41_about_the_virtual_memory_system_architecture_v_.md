@@ -151,6 +151,10 @@ in the virtual address returned in the FAR.
 
 **Relaxation of the tagged address handling requirements on an Illegal exception return**
 
+The AddrTop() pseudocode function, and the pseudocode description of exception return, does not cover a relaxation
+to the requirements for tagged address handling that applies to an Illegal exception return. The following
+pseudocode describes the algorithm for the address branched to, ensuring that any address tag is not propagated to
+the PC:
 
 
 
