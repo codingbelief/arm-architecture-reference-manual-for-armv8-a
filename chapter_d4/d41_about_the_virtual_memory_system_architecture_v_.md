@@ -116,6 +116,9 @@ Any branch or procedure return within the controlled Exception level.
 
 虚拟地址的 tag 功能配置会根据 bit[55] 的值的不同而不同：
 
+ | VA[55]==0 | TCR_EL1.TBI0 determines whether address tags are used. If stage 1 translation is enabled, TTBR0_EL1 holds the base address of the translationtables used to translate the address.|
+ | -- | -- |
+ | VA[55]==1 | TCR_EL1.TBI1 determines whether address tags are used. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
 
 | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
 | -- | -- |
