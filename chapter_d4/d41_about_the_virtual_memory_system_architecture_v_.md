@@ -64,6 +64,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 * 当进行 TLB 设置指定地址的条目失效操作时。
 
 (译者注：VA 的 tag 通常是在软件层面使用，例如用来作为对象的引用计数、判断指针的有效与否等)
+
 The use of address tags is controlled as follows:
 
 **For addresses using the VMSAv8-64 EL1&0 translation regime**
