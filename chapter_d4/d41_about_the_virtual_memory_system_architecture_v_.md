@@ -65,7 +65,8 @@ The use of address tags is controlled as follows:
 The value of bit[55] of the VA determines the register bit that controls the use of address tags, as
 follows:
 
-| 0:0 | 1:0 |
+| VA[55]==0 
+ | 1:0 |
 | -- | -- |
 | 0:2 | 1:2 |
 
