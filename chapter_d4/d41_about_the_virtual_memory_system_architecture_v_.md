@@ -142,6 +142,10 @@ integer AddrTop(bits(64) address)
 >The required behavior prevents a tagged address being propagated to the program counter.
 
 
+When tagging is enabled, software can use the tag bits to hold additional information about an address, provided it
+ensures that any manipulation of the address correctly preserves these top bits of the address.
+
+
 
 
 
