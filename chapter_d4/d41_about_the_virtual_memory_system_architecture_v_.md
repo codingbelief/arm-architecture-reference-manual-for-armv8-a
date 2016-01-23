@@ -158,16 +158,16 @@ the PC:
 
 ```
 if (target_exception_level == EL0) || (target_exception_level == EL1) then
-if NewAddress<55> == '1' && TCR_EL1.TBI1== '1' then
-NewAddress<63:56> = '11111111';
-if NewAddress<55> == '0' && TCR_EL1.TBI0== '1' then
-NewAddress<63:56> = '00000000';
+    if NewAddress<55> == '1' && TCR_EL1.TBI1== '1' then
+        NewAddress<63:56> = '11111111';
+    if NewAddress<55> == '0' && TCR_EL1.TBI0== '1' then
+        NewAddress<63:56> = '00000000';
 if (target_exception_level == EL2) then
-if TCR_EL2.TBI== '1' then
-NewAddress<63:56> = '00000000';
+    if TCR_EL2.TBI== '1' then
+        NewAddress<63:56> = '00000000';
 if (target_exception_level == EL3) then
-if TCR_EL3.TBI== '1' then
-NewAddress<63:56> = '00000000';
+    if TCR_EL3.TBI== '1' then
+        NewAddress<63:56> = '00000000';
 PC = NewAddress;
 
 ```
