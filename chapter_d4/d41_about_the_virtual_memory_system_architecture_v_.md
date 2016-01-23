@@ -114,6 +114,28 @@ therefore whether the virtual address is using tagging. For the EL1&0 translatio
 the selection between TTBR0_EL1 and TTBR1_EL1 described in Selection between TTBR0 and TTBR1 on
 page D4-1670.
 
+```
+// AddrTop()
+// =========
+integer AddrTop(bits(64) address)
+// Return the MSB number of a virtual address in the current stage 1 translation
+// regime. If EL1 is using AArch64 then addresses from EL0 using AArch32
+// are zero-extended to 64 bits.
+if UsingAArch32() && !(PSTATE.EL == EL0 && !ELUsingAArch32(EL1)) then
+// AArch32 translation regime.
+return 31;
+else
+// AArch64 translation regime.
+case PSTATE.EL of
+when EL0, EL1
+tbi = if address<55> == '1' then TCR_EL1.TBI1 else TCR_EL1.TBI0;
+when EL2
+tbi = TCR_EL2.TBI;
+when EL3
+tbi = TCR_EL3.TBI;
+return (if tbi == '1' then 55 else 63);
+
+```
 
 
 
