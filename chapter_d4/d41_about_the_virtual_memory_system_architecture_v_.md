@@ -94,7 +94,7 @@ VMSAv8 支持 VAs 的 tagging，详细的介绍可以参考后续小节。
 
 **对于使用 VMSAv8-64 EL2 translation regime 的地址**
 如果使能了 stage 1 的转换，那么 TCR_EL2.TBI 决定了是否使能 address tags 功能，
-寄存器 TTBR0_EL2
+寄存器 TTBR0_EL2 保存地址转换表的基地址
 
 > **For addresses using the VMSAv8-64 EL3 translation regime**
 
