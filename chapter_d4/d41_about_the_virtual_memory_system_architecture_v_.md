@@ -123,10 +123,10 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 > * On performing an exception return to the controlled Exception level, regardless of whether this is also the Exception level from which the exception return was performed.
 > * Exiting from debug state to the controlled Exception level.
 
-开启 address tags 功能后，由于 VA 的高8位被用作为 tag，因此在下列需要更新 PC 寄存器的场景中，需要对写入 PC 的值做特殊的处理：
-* Any branch or procedure return within the controlled Exception level.
-* On taking an exception to the controlled Exception level, regardless of whether this is also the Exception level from which the exception was taken.
-* On performing an exception return to the controlled Exception level, regardless of whether this is also the Exception level from which the exception return was performed.
+开启 address tagging 功能后，由于 VA 的高8位被用作为 tag，因此在下列需要更新 PC 寄存器的场景中，需要对写入 PC 的值做特殊的处理：
+* 开启了 address tagging 功能的 Exception level 下的所有的 branch 和 procedure return 操作。
+* 通过 exception 陷入到开启了 address tagging 功能的 Exception level 时。
+* exception 返回到开启了 address tagging 功能的 Exception level 时.
 * Exiting from debug state to the controlled Exception level.  
 （TODO: 此处的 controlled Exception level 不理解，待后续进行翻译）
 
