@@ -242,10 +242,10 @@ instruction was executed from.
 * branch 或者 procedure return 所在的 Exception level
 * exception return 所要返回的 Exception level。  
   如果在 exception return 时触发了 Illegal exception return 机制，那么 target_exception_level 可能是 exception return 时 SPSR 寄存器所指示的 Exception level，也可能是 exception return 执行时所在的 Exception level，选择哪一个由具体实现决定。
-* exception entry 所要进入的 Exception level
+* exception entry 所要进入的 Exception level。
 
 
->NOTE:
+>> *NOTE:*
 >* The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding translation regime is enabled.
 >* In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the following apply:
 
