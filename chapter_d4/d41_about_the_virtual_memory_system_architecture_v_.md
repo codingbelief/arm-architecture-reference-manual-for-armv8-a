@@ -86,7 +86,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
  | -- | -- |
  | VA[55]==1 |如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI1 决定是否启用 address tags 功能. 寄存器 TTBR1_EL1 保存地址转换表的基地址.|
  
-
+（TCR for Translation Control Register，TBI for Top Byte Ignore，TTBR for Translation Table Base Register）
 > **For addresses using the VMSAv8-64 EL2 translation regime**
 
 > TCR_EL2.TBI determines whether address tags are used. If stage 1 translation is enabled,
