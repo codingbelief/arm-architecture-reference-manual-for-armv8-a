@@ -239,6 +239,7 @@ instruction was executed from.
 指的是跳转到的目的 VA，或者调用返回时的目的 VA。
 
 *target_exception_level* 则可能有以下几种情况：
+* branch 或者 procedure return 所在的 Exception level
 * 
 
 
