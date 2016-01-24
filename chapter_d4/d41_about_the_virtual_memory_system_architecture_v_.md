@@ -261,7 +261,7 @@ instruction was executed from.
 > * 不管 translation regime 是否使能，寄存器 TCR_ELx 的 TBIx 位都会参与上面伪代码的算法处理过程。
 > * 在 Illegal exception return 中, 如果下面的几个条件都符合，那么 VA 的 tag bits 会被加载到 PC 寄存器中:
 
->     - 在具体的实现中， target_exception_level 被实现为 exception return 时SPSR 寄存器所指示的 Exception level
+>     - 在具体的实现中，exception return 时 target_exception_level 被实现为 exception return 时SPSR 寄存器所指示的 Exception level
 >     - exception return 时SPSR 寄存器所指示的 Exception level 中的 TCR_ELx.TBI 被设定为 0。
 >     - 产生该 exception 的 Exception level 中的 TCR_ELx.TBI 被设定为 1.
 
