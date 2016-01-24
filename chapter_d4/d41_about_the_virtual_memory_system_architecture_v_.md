@@ -196,7 +196,12 @@ address tagging 使能后，软件可以使用 VA 的高8位来保存额外的�
 > The AddrTop() pseudocode function, and the pseudocode description of exception return, does not cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
 >The following pseudocode describes the algorithm for the address branched to, ensuring that any address tag is not propagated to the PC:
 
+**Relaxation of the tagged address handling requirements on an Illegal exception return**
 
+The AddrTop() pseudocode function, and the pseudocode description of exception return, does not cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
+(TODO：此处不是很明白所表达的意思，是想说明 Illegal exception return 中对 tagged address 的处理有不同的方式么？)
+
+下面的伪代码算法描述了当跳转到带有 tag 信息的 VA 执行时，是如何保证 VA 的 tag 信息不会被加载到 PC 寄存器中的：
 
 ```
 if (target_exception_level == EL0) || (target_exception_level == EL1) then
@@ -214,20 +219,20 @@ PC = NewAddress;
 
 ```
 
-In this pseudocode:
+> In this pseudocode:
 
-*NewAddress*:
+> *NewAddress*:
 
-Is the address being branched to, or returned to.
+> Is the address being branched to, or returned to.
 
-*target_exception_level*:
-* Is the current Exception level for a branch or procedure return.
-* Is the Exception level being returned to for an exception return.
-   If the exception return triggers the Illegal exception return mechanism, it is IMPLEMENTATION
-  DEFINED whether target_exception_level is the Exception level that was described in the
- SPSR at the time of the exception return or the Exception level that the exception return
+> *target_exception_level*:
+> * Is the current Exception level for a branch or procedure return.
+> * Is the Exception level being returned to for an exception return.
+    If the exception return triggers the Illegal exception return mechanism, it is IMPLEMENTATION
+    DEFINED whether target_exception_level is the Exception level that was described in the
+    SPSR at the time of the exception return or the Exception level that the exception return
 instruction was executed from.
-* Is the Exception level the exception is taken to for an exception entry
+> * Is the Exception level the exception is taken to for an exception entry
 
 >NOTE:
 >* The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding translation regime is enabled.
