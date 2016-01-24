@@ -153,7 +153,8 @@ The effect of the controlling TBI{n} bit is:
 | -- | -- |
 | For EL2 or EL3 |如果 address tagging 使能，即 TBI 被设置为1，那么写入 PC 的地址值得高8位将设置为0|
 
-The AddrTop() pseudocode function shows the algorithm determining the most significant bit of the VA, and therefore whether the virtual address is using tagging. For the EL1&0 translation regime, this pseudocode includes the selection between TTBR0_EL1 and TTBR1_EL1 described in Selection between TTBR0 and TTBR1 on page D4-1670.
+The AddrTop() pseudocode function shows the algorithm determining the most significant bit of the VA, and therefore whether the virtual address is using tagging.
+For the EL1&0 translation regime, this pseudocode includes the selection between TTBR0_EL1 and TTBR1_EL1 described in Selection between TTBR0 and TTBR1 on page D4-1670.
 
 ```
 // AddrTop()
