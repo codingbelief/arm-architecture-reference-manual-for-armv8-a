@@ -227,7 +227,7 @@ PC = NewAddress;
 
 > *target_exception_level*:
 > * Is the current Exception level for a branch or procedure return.
-> * Is the Exception level being returned to for an exception return.
+> * Is the Exception level being returned to for an exception return.  
     If the exception return triggers the Illegal exception return mechanism, it is IMPLEMENTATION
     DEFINED whether target_exception_level is the Exception level that was described in the
     SPSR at the time of the exception return or the Exception level that the exception return
