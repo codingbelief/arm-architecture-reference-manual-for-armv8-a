@@ -127,8 +127,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 * 开启了 address tagging 功能的 Exception level 下的所有的 branch 和 procedure return 操作。
 * 通过 exception 陷入到开启了 address tagging 功能的 Exception level 时。
 * exception 返回到开启了 address tagging 功能的 Exception level 时.
-* Exiting from debug state to the controlled Exception level.  
-（TODO: 此处的 controlled Exception level 不理解，待后续进行翻译）
+* 从 debug 状态退出，并返回到开启了 address tagging 功能的 Exception level时。
 
 >> **NOTE:**
 
