@@ -143,7 +143,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 
 > **NOTE:**
 
-> As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
+> 下面以 Exception level 2 为例, 在设置 TCR_EL2.TBI 使能了 address tagging 功能后，在下面的场景中，需要对写入 PC 寄存器的值做特殊的处理:
 > * A branch or procedure return within EL2.
 > * Taking an exception to EL2.
 > * Performing an exception return or a debug state exit to EL2.
