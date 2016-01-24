@@ -234,6 +234,14 @@ PC = NewAddress;
 instruction was executed from.
 > * Is the Exception level the exception is taken to for an exception entry
 
+在上面的伪代码中：
+*NewAddress*：
+指的是跳转到的目的 VA，或者调用返回时的目的 VA。
+
+*target_exception_level* 则可能有以下几种情况：
+* 
+
+
 >NOTE:
 >* The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding translation regime is enabled.
 >* In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the following apply:
