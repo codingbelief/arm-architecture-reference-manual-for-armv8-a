@@ -262,7 +262,7 @@ instruction was executed from.
 
 >     - 在具体的实现中， target_exception_level 被实现为 exception return 时SPSR 寄存器所指示的 Exception level
 >     - exception return 时SPSR 寄存器所指示的 Exception level 中的 TCR_ELx.TBI 被设定为 0。
->     - In the Exception level that the exception was taken from, the value of TCR_ELx.TBI is 1.
+>     - 产生该 exception 的 Exception level 中的 TCR_ELx.TBI 被设定为 1.
 
 >  In all other cases, the tag bits cannot be propagated to the PC.
 
