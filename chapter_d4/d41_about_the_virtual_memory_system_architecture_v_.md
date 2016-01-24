@@ -44,7 +44,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
  > if some Exception levels are not implemented.
  
 本章节后续的内容将对实现了所有 Exception levels 的系统上的 VMSAv8-64 进行详细的介绍。
-对于只实现了部分 Exception levels 的系统上的  VMSAv8-64，可以参考
+对于只实现了部分 Exception levels 的系统上的 VMSAv8-64，可以参考
 [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](todo.md) 
 章节的描述
 
