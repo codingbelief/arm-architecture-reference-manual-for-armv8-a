@@ -156,7 +156,7 @@ The effect of the controlling TBI{n} bit is:
 The AddrTop() pseudocode function shows the algorithm determining the most significant bit of the VA, and therefore whether the virtual address is using tagging.
 For the EL1&0 translation regime, this pseudocode includes the selection between TTBR0_EL1 and TTBR1_EL1 described in Selection between TTBR0 and TTBR1 on page D4-1670.
 
-下面的伪代码描述了 address tagging 的开启与否是如何影响 VA 的 MSB 的计算的。在 EL1&0 translation regime 下，下面的算法适用于从 TTBR0_EL1 寄存器所设定的地址开始，到 TTBR1_EL1 寄存器所设定的地址结束的所有 VA。
+下面的伪代码描述了 address tagging 的开启与否是如何影响 VA 的 MSB 的计算的。在 EL1&0 translation regime 中，下面的算法适用于从 TTBR0_EL1 寄存器所设定的地址开始，到 TTBR1_EL1 寄存器所设定的地址结束的所有 VA。
 ```
 // AddrTop()
 // =========
