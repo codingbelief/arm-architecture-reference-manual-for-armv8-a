@@ -189,12 +189,12 @@ When tagging is enabled, software can use the tag bits to hold additional inform
 
 When address tagging is enabled for an address that causes a Data Abort or a Watchpoint, the address tag is included in the virtual address returned in the FAR.
 
+address tagging 使能后，软件可以使用 VA 的高8位来保存额外的信息，但是软件需要保证在直接操作保存有 tag 信息的 VA 时，VA 的高8位没有被错误的更改。另外，当发生 Data Abort 和 Watchpoint 时，tag 信息会和 VA 一起被保存到 FAR ( Fault Address Register )。
 
-**Relaxation of the tagged address handling requirements on an Illegal exception return**
+>**Relaxation of the tagged address handling requirements on an Illegal exception return**
 
-The AddrTop() pseudocode function, and the pseudocode description of exception return, does not cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
-The following pseudocode describes the algorithm for the address branched to, ensuring that any address tag is not propagated to
-the PC:
+> The AddrTop() pseudocode function, and the pseudocode description of exception return, does not   cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
+>The following pseudocode describes the algorithm for the address branched to, ensuring that any address tag is not propagated to the PC:
 
 ```
 if (target_exception_level == EL0) || (target_exception_level == EL1) then
