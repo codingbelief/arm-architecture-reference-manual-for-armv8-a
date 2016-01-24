@@ -261,7 +261,7 @@ instruction was executed from.
 > * 在 Illegal exception return 中, 如果下面的几个条件都符合，那么 VA 的 tag bits 会被加载到 PC 寄存器中:
 
 >     - 在具体的实现中， target_exception_level 被实现为 exception return 时SPSR 寄存器所指示的 Exception level
->     - For the Exception level that was described in the SPSR at the time of the exception return, the value of TCR_ELx.TBI is 0.
+>     - exception return 时SPSR 寄存器所指示的 Exception level 中的 TCR_ELx.TBI 被设定为 0.
 >     - In the Exception level that the exception was taken from, the value of TCR_ELx.TBI is 1.
 
 >  In all other cases, the tag bits cannot be propagated to the PC.
