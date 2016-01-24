@@ -148,7 +148,7 @@ The effect of the controlling TBI{n} bit is:
 > * 发生 exception 陷入到 EL2.
 > * 从 exception 或者 debug 状态退出，并返回到 EL2.
 
-
+在不同的EL中使能 address tagging 功能后，在上述场景中更新 PC 寄存器的值时，需要的对写入 PC 寄存器的值所做的特殊处理如下表所示：
 | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
 | -- | -- |
 | For EL2 or EL3 | If the controlling TBI bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be 0x00. |
