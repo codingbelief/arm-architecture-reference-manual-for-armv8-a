@@ -60,8 +60,8 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
 在 AArch64 运行态下，ARMv8 架构支持 Address Tagging 功能。在启用了 VA 的 tagging 时，VA 的高8个bits将作为 tag 使用，同时在下列的几个处理过程，高8 bits 将被忽略：
-* 当地址转换使能时，判定 VA 超出范围后产生 Translation fault。
-* 当地址转换未使能时，判定 VA 超出范围后产生 Address size fault。
+* 当地址转换使能时，判定 VA 是否超出范围，并产生 Translation fault。
+* 当地址转换未使能时，判定 VA 是否超出范围，并产生 Address size fault。
 * 当进行 TLB 设置指定地址的条目失效操作时。
 
 (译者注：VA 的 tag 通常是在软件层面使用，例如用来作为对象的引用计数、标示指针的有效与否等)
