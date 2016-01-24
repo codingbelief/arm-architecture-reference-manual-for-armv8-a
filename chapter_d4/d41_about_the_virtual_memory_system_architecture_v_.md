@@ -264,7 +264,7 @@ instruction was executed from.
 >     - exception return 时SPSR 寄存器所指示的 Exception level 中的 TCR_ELx.TBI 被设定为 0。
 >     - 产生该 exception 的 Exception level 中的 TCR_ELx.TBI 被设定为 1.
 
->  In all other cases, the tag bits cannot be propagated to the PC.
+>  在其他的场景下，VA 的 tag bits 都不会被加载到 PC 寄存器中。
 
 
 
