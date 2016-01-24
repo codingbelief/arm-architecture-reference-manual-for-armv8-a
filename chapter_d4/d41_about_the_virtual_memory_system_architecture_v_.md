@@ -143,7 +143,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 
 > **NOTE:**
 
->> As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
+> As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
 > * A branch or procedure return within EL2.
 > * Taking an exception to EL2.
 > * Performing an exception return or a debug state exit to EL2.
