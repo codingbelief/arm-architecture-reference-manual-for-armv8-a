@@ -240,7 +240,8 @@ instruction was executed from.
 
 *target_exception_level* 则可能有以下几种情况：
 * branch 或者 procedure return 所在的 Exception level
-* 
+* exception return 所要返回的 Exception level。  
+  
 
 
 >NOTE:
