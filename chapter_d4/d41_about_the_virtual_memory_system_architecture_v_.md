@@ -249,8 +249,7 @@ instruction was executed from.
 >> * The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding translation regime is enabled.
 >> * In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the following apply:
 
->>     - The implementation treats the target_exception_level as being the Exception level that was described
-   in the SPSR at the time of the exception return.
+>>     - The implementation treats the target_exception_level as being the Exception level that was described in the SPSR at the time of the exception return.
 >>     - For the Exception level that was described in the SPSR at the time of the exception return, the value
    of TCR_ELx.TBI is 0.
 >>     - In the Exception level that the exception was taken from, the value of TCR_ELx.TBI is 1.
@@ -258,7 +257,7 @@ instruction was executed from.
 >>  In all other cases, the tag bits cannot be propagated to the PC.
 
 > *NOTE:*
-> * The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding translation regime is enabled.
+> * 不管 translation regime 是否使能，寄存器 TCR_ELx 的 TBIx 位.
 > * In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the following apply:
 
 >     - The implementation treats the target_exception_level as being the Exception level that was described
