@@ -145,8 +145,8 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 
 > 下面以 Exception level 2 为例, 在设置 TCR_EL2.TBI 使能了 address tagging 功能后，在下面的场景中，需要对写入 PC 寄存器的值做特殊的处理:
 > * EL2 中发生的 branch 和 procedure return.
-> * Taking an exception to EL2.
-> * Performing an exception return or a debug state exit to EL2.
+> * 发生 exception 陷入到 EL2.
+> * 从 exception 或者 debug 状态退出，并返回到 EL2.
 
 
 >  | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
