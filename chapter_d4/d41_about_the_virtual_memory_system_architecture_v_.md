@@ -196,6 +196,8 @@ address tagging 使能后，软件可以使用 VA 的高8位来保存额外的�
 > The AddrTop() pseudocode function, and the pseudocode description of exception return, does not   cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
 >The following pseudocode describes the algorithm for the address branched to, ensuring that any address tag is not propagated to the PC:
 
+
+
 ```
 if (target_exception_level == EL0) || (target_exception_level == EL1) then
     if NewAddress<55> == '1' && TCR_EL1.TBI1== '1' then
