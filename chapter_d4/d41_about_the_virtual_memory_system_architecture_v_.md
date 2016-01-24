@@ -80,11 +80,11 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 虚拟地址的 tag 主要通过以下的方式来配置：
 
 **对于使用 VMSAv8-64 EL1&0 translation regime 的地址**  
-在 EL1&0 下，VMSAv8-64 支持两个区块的虚拟地址空间，分别为：VA 高16位全为0的区块和 VA 高16位全为1的区块， 不同区块的的 address tagging 功能的配置由不同的寄存器负责：
+在 EL1&0 下，VMSAv8-64 支持两个区块的虚拟地址空间，分别为：VA 高 16 位全为 0 的区块和 VA 高 16 位全为 1 的区块， 不同区块的的 address tagging 功能的配置由不同的寄存器负责：
 
- | VA[55]==0，即高16位全为0的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI0 决定是否启用 address tags 功能. 寄存器 TTBR0_EL1 保存地址转换表的基地址.|
+ | VA[55]==0，即高 16 位全为 0 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI0 决定是否启用 address tags 功能. 寄存器 TTBR0_EL1 保存地址转换表的基地址.|
  | -- | -- |
- | VA[55]==1，即高16位全为1的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI1 决定是否启用 address tags 功能. 寄存器 TTBR1_EL1 保存地址转换表的基地址.|
+ | VA[55]==1，即高 16 位全为 1 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI1 决定是否启用 address tags 功能. 寄存器 TTBR1_EL1 保存地址转换表的基地址.|
  
 （TCR for Translation Control Register，TBI for Top Byte Ignore，TTBR for Translation Table Base Register）
 > **For addresses using the VMSAv8-64 EL2 translation regime**
@@ -123,7 +123,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 > * On performing an exception return to the controlled Exception level, regardless of whether this is also the Exception level from which the exception return was performed.
 > * Exiting from debug state to the controlled Exception level.
 
-开启 address tagging 功能后，由于 VA 的高8位被用作为 tag，因此在下列需要更新 PC 寄存器的场景中，需要对写入 PC 的值做特殊的处理：
+开启 address tagging 功能后，由于 VA 的高 8 位被用作为 tag，因此在下列需要更新 PC 寄存器的场景中，需要对写入 PC 的值做特殊的处理：
 * 开启了 address tagging 功能的 Exception level 下的所有的 branch 和 procedure return 操作。
 * 通过 exception 陷入到开启了 address tagging 功能的 Exception level 时。
 * exception 返回到开启了 address tagging 功能的 Exception level 时.
@@ -148,10 +148,10 @@ The effect of the controlling TBI{n} bit is:
 > * 发生 exception 陷入到 EL2.
 > * 从 exception 或者 debug 状态退出，并返回到 EL2.
 
-在不同的EL中使能 address tagging 功能后，在上述场景中更新 PC 寄存器的值时，需要的对写入 PC 寄存器的值所做的特殊处理如下表所示：
-| For EL0 or EL1 |如果 address tagging 使能，即 TBI 被设置为1，那么写入 PC 的地址值得高8位将设置为与 bit[55] 一样|
+在不同的 EL 中使能 address tagging 功能后，在上述场景中更新 PC 寄存器的值时，需要的对写入 PC 寄存器的值所做的特殊处理如下表所示：
+| For EL0 or EL1 |如果 address tagging 使能，即 TBI 被设置为 1，那么写入 PC 的地址值得高 8 位将设置为与 bit[55] 一样|
 | -- | -- |
-| For EL2 or EL3 |如果 address tagging 使能，即 TBI 被设置为1，那么写入 PC 的地址值得高8位将设置为0|
+| For EL2 or EL3 |如果 address tagging 使能，即 TBI 被设置为 1，那么写入 PC 的地址值得高 8 位将设置为 0 |
 
 The AddrTop() pseudocode function shows the algorithm determining the most significant bit of the VA, and therefore whether the virtual address is using tagging.
 For the EL1&0 translation regime, this pseudocode includes the selection between TTBR0_EL1 and TTBR1_EL1 described in Selection between TTBR0 and TTBR1 on page D4-1670.
