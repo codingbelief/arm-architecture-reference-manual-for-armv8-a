@@ -13,4 +13,6 @@ including an input address (IA), and either:
 
 The process of mapping an IA to an OA is an address translation, or more precisely a single stage of address
 translation.
+
 The architecture defines a number of translation regimes, where a translation regime comprises either:
+
