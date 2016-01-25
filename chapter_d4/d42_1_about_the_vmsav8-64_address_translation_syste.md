@@ -39,16 +39,15 @@ Address translation 中，IA 到 OA 的映射是按内存块进行的。Translat
 * 单个阶段的 address translation 中的页面大小，即一次 IA 到 OA 映射所支持的最小内存块的大小。 
 * 单个阶段的 address translation 的 translation table 所占内存的最大值。
 
-The MMU is controlled by System registers, that provide independent control of each address translation stage,
-including a control to disable the stage of address translation. The effects of disabling a stage of address translation
+> The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. The effects of disabling a stage of address translation
 on page D4-1677 defines how the MMU handles an access for which a required address translation stage is disabled.
 
-> **NOTE:**
+>> **NOTE:**
 
-> * In the ARM architecture, a software agent, such as an operating system, that uses or defines stage 1 memory translations, might be unaware of the second stage of translation, and of the distinction between IPA and PA.
-> * A more generalized description of the translation regimes is that a regime > always comprises two sequential stages of translation, but in some regimes the stage 2 translation both:
->   - Returns an OA that equals the IA. This is called a flat mapping of the IA to the OA.
->   - Does not change the memory attributes returned by the stage 1 address translation.
+>> * In the ARM architecture, a software agent, such as an operating system, that uses or defines stage 1 memory translations, might be unaware of the second stage of translation, and of the distinction between IPA and PA.
+>> * A more generalized description of the translation regimes is that a regime >> always comprises two sequential stages of translation, but in some regimes the stage 2 translation both:
+>>   - Returns an OA that equals the IA. This is called a flat mapping of the IA to the OA.
+>>   - Does not change the memory attributes returned by the stage 1 address translation.
 
 
 
