@@ -114,7 +114,8 @@ The following subsections give more information:
 后续的小节主要描述下面的内容：
 * ARMv8 VMSA 命名规则
 * VMSA 中的 address type 和 address spaces
-* 
+* address translation 简介
+* VMSAv8-64 translation table 格式描述
 
 ### ARMv8 VMSA naming
 
