@@ -64,7 +64,7 @@ For an access to a stage of address translation that does not generate an MMU fa
 This section describes the address translation system for an implementation that includes all of the Exception levels, and gives a complete description of translations that are controlled by an Exception level that is using AArch64.  
 Figure D4-2 shows these translation stages and translation regimes when EL3 is using AArch64.
 
-在一个 stage 的 address translation 中，如果没有产生 MMU fault，那么 MMU 就会把 IA 转换为对应的 OA，如果产生了 MMU fault，
+在一个 stage 的 address translation 中，如果没有产生 MMU fault，那么 MMU 就会把 IA 转换为对应的 OA，如果产生了 MMU fault，那么在 System registers 中记录该 MMU faults
 
 (TODO: add figure d4-2)
 
