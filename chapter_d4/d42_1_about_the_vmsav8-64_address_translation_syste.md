@@ -149,3 +149,5 @@ spaces, where:
 Each PA address space has a maximum address width of 48 bits, but an implementation can
 implement fewer than 48 bits of physical address. See Address size configuration on page D4-1646.
 
+About address translation
+
