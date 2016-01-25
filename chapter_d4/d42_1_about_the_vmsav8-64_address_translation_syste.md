@@ -123,7 +123,7 @@ Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的�
 
 > The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
-| | |
+> | | |
 | -- | -- |
 | VMSAv8  | The overall translation scheme, within which an address translation has one or two stages. |
 | VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
