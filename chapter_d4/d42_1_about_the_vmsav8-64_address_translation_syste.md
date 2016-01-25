@@ -29,7 +29,7 @@
 
 从 IA 映射到 OA 处理过程定义为地址转换 (address translation)，或者单阶段地址转换 (single stage of address translation)。
 
-VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包含一下内容：
+VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包含下面两个中的其中一个：
 * 将 IA 映射到 OA 的 single stage of address translation
 * 
 
