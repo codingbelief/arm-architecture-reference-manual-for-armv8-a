@@ -103,6 +103,7 @@ Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的�
 * 内存区块属性信息
 
 
+
 The following subsections give more information:
 * ARMv8 VMSA naming.
 * VMSA address types and address spaces.
