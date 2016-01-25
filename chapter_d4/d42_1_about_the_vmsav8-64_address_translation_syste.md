@@ -58,7 +58,7 @@ on page D4-1677](#) 小节描述了在 address translation stage 被关闭时，
 > * 对于 translation regimes，一种更通用的定义如下：  
 translation regime 包含两个连续的 translation stages，其中部分 regimes 的 stage 2 translation 如下:
 >   - 返回的 OA 与 IA 相同，此时称为 flat mapping of the IA to the OA.
->   - Stage 2 不改变 stage 1 中得到的内存熟悉。
+>   - Stage 2 不改变 stage 1 中得到的内存属性。
 
 For an access to a stage of address translation that does not generate an MMU fault, the MMU translates the IA to the corresponding OA. System registers are used to report any faults that occur on a memory access.  
 This section describes the address translation system for an implementation that includes all of the Exception levels, and gives a complete description of translations that are controlled by an Exception level that is using AArch64.  
