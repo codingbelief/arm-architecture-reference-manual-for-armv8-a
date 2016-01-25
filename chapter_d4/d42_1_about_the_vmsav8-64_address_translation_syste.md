@@ -35,7 +35,7 @@ VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包�
     - 第一阶段，将输出的 VA 转换为中间物理地址 (IPA，intermediate physical address)
     - 第二阶段，将 IPA 转换为 PA。
 
-Address translation 中，IA 到 OA 的映射是按页进行的。Translation granule 定义了 IA 映射到 OA 的粒度，包括：
+Address translation 中，IA 到 OA 的映射是按页进行的。Translation granule 定义了 IA 映射到 OA 的粒度，这个粒度会影响下面的两个方面：
 * 单个阶段的 address translation 中的页面大小，一个页面是一次 IA 到 OA 映射所支持的最小内存块。
 * 
 
