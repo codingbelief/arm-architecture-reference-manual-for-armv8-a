@@ -114,8 +114,7 @@ The IPA address space has a maximum address width of 48 bits, see Address size c
 
 The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
 The EL3 and Secure EL1 Exception levels provide independent definitions of physical address spaces for Secure and Non-secure operation. This means they provide two independent address spaces, where:
-* A VA accessed in Secure state can be translated to either the Secure or the Non-secure
-   physical address space.
+* A VA accessed in Secure state can be translated to either the Secure or the Non-secure physical address space.
 * When in Non-secure state, a VA is always mapped to the Non-secure physical address space.
 
 Each PA address space has a maximum address width of 48 bits, but an implementation can
