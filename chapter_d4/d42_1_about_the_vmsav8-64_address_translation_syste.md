@@ -85,6 +85,8 @@ Figure D4-2 描述了 EL3 在 AArch64 运行态下的 translation stages 和 tra
 
 > Each enabled stage of address translation uses a set of address translations and associated memory properties held in memory mapped tables called translation tables. A single translation table lookup can resolve only a limited number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described as different levels of lookup.
 
+
+
 > Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
 
 As well as defining the OA that corresponds to the IA, the translation table entries define the following properties:
