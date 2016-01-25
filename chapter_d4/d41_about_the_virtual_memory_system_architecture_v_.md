@@ -77,7 +77,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 > | -- | -- |
 > | VA[55]==1 | TCR_EL1.TBI1 determines whether address tags are used. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
 
-虚拟地址的 tag 主要通过以下的方式来配置：
+Address tagging 主要通过以下的方式来配置：
 
 **对于使用 VMSAv8-64 EL1&0 translation regime 的地址**  
 在 EL1&0 下，VMSAv8-64 支持两个区块的虚拟地址空间，分别为：VA 高 16 位全为 0 的区块和 VA 高 16 位全为 1 的区块， 不同区块的的 address tagging 功能的配置由不同的寄存器负责：
