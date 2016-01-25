@@ -129,4 +129,9 @@ In a translation regime that provides two stages of address translation, the IPA
 * The OA from the stage 1 translation.
 * The IA for the stage 2 translation.
 
+In a translation regime that provides only one stage of address translation, the IPA is identical to the
+PA. Alternatively, the translation regime can be considered as having no concept of IPAs.
+The IPA address space has a maximum address width of 48 bits, see Address size configuration on
+page D4-1646.
+
 
