@@ -85,6 +85,4 @@ The ARMv8 VMSA naming model reflects the possible stages of address translation,
 | -- | -- |
 | VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
-| 0:3 | 1:3 |
-
 
