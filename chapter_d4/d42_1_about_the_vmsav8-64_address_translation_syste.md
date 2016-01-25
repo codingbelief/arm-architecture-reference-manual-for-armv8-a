@@ -145,4 +145,3 @@ The VMSAv8-64 translation table format provides:
 * Input addresses of up to 48 bits.
 * Output addresses of up to 48 bits.
 * A translation granule size of 4KB, 16KB, or 64KB.
-
