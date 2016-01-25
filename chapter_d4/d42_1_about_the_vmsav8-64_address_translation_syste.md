@@ -22,3 +22,5 @@ This maps an input virtual address (VA) to an output physical address (PA).
 Two, sequential, stages of address translation, where:
   - Stage 1 maps an input VA to an output intermediate physical address (IPA).
   - Stage 2 maps an input IPA to an output PA.
+
+The translation granule specifies the granularity of the mapping from IA to OA. That is, it defines both:
