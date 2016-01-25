@@ -149,7 +149,8 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 
 本小节主要描述 VMSA 中涉及到的 address types
 
-> **NOTE:**
+> **NOTE:**  
+
 
 
 #### Virtual address (VA)
