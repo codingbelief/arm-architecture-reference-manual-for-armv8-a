@@ -90,5 +90,4 @@ The ARMv8 VMSA naming model reflects the possible stages of address translation,
 A description of the VMSA refers to the following address types.
 
 > **NOTE:**  
-> These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions
-given in the glossary.
+> These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
