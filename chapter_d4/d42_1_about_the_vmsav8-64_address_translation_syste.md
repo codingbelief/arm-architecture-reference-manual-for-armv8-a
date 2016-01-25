@@ -95,7 +95,7 @@ Translation table 中的条目可以被缓存在 Translation Lookaside Buffer (T
 * Memory access permission control.
 * Memory region attributes.
 
-
+Translation table 条目
 
 For more information, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699.
 
