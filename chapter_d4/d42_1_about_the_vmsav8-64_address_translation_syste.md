@@ -158,7 +158,7 @@ shown in VMSAv8 AArch64 translation regimes, translation stages, and associated 
 requires its own set of translation tables.  
 For the EL1&0 stage 1 translation, the split of the VA mapping into two subranges requires two tables, one for the
 lower part of the VA space, and the other for the upper part of the VA space. Example use of the split VA range, and
-the TTBR0_EL1 and TTBR1_EL1 controls on page D4-1671 shows how these ranges might be used.
+the TTBR0_EL1 and TTBR1_EL1 controls on page D4-1671 shows how these ranges might be used.  
 Controlling address translation stages on page D4-1645 summarizes the system control registers that control
 address translation by the MMU.
 A full translation table lookup is called a translation table walk. It is performed automatically by hardware, and can
