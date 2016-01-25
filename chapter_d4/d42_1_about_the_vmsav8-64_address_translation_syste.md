@@ -56,7 +56,7 @@ on page D4-1677](#) 小节描述了在 address translation stage 被关闭时，
 
 > * 在 ARM 架构中，使用 stage 1 memory translations 的 software agent，例如操作系统，可能感知不到 second stage of translation，以及 IPA 和 PA 的区别. 
 > * 对于 translation regimes，一种更通用的定义如下：  
-translation regime 包含两个连续的 translation stages， :
+translation regime 包含两个连续的 translation stages，:
 >   - Returns an OA that equals the IA. This is called a flat mapping of the IA to the OA.
 >   - Does not change the memory attributes returned by the stage 1 address translation.
 
