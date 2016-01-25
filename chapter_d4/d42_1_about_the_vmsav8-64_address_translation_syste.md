@@ -77,7 +77,7 @@ Figure D4-2 描述了 EL3 在 AArch64 运行态下的 translation stages 和 tra
    - Any stages of address translation that are using VMSAv8-32 when EL3 is using AArch64.
 > * The implemented Exception levels and the resulting translation stages and regimes on page D4-1679 describes the effect on the address translation model when some Exception levels are not implemented.
 
-
+[ARMv8 VMSA naming on page D4-1643](#)
 
 Each enabled stage of address translation uses a set of address translations and associated memory properties held in memory mapped tables called translation tables. A single translation table lookup can resolve only a limited number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described as different levels of lookup.
 
