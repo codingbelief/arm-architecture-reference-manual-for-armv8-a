@@ -142,9 +142,9 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 
 ### VMSA 中的 address types 和 address spaces
 
-A description of the VMSA refers to the following address types.
+> A description of the VMSA refers to the following address types.
 
-> **NOTE:**  
+>> **NOTE:**  
 > These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
 
