@@ -184,4 +184,8 @@ Short-descriptor translation table format. Chapter G4 The AArch32 Virtual Memory
 both of these formats.
 
 The VMSAv8-64 translation table format provides:
+* Up to four levels of address lookup.
+* Input addresses of up to 48 bits.
+* Output addresses of up to 48 bits.
+* A translation granule size of 4KB, 16KB, or 64KB.
 
