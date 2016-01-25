@@ -49,7 +49,7 @@ on page D4-1677](#) defines how the MMU handles an access for which a required a
 >>   - Returns an OA that equals the IA. This is called a flat mapping of the IA to the OA.
 >>   - Does not change the memory attributes returned by the stage 1 address translation.
 
-
+通过 System registers，可以单独控制 MMU 的各个 address translation stage 的使能和关闭。
 
 For an access to a stage of address translation that does not generate an MMU fault, the MMU translates the IA to the corresponding OA. System registers are used to report any faults that occur on a memory access.  
 This section describes the address translation system for an implementation that includes all of the Exception levels, and gives a complete description of translations that are controlled by an Exception level that is using AArch64.  
