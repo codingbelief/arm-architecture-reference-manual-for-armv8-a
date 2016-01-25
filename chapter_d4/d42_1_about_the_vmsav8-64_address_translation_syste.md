@@ -164,7 +164,7 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 
 Virtual Address (VA) 是用在 instruction 中，作为 data 或者 instruction 的地址。
 
-> **NOTE:**
+> **NOTE:**  
 也就是说，在寄存器 PC、LR、SP 或者 ELR 中保存的地址，都是 VA。
 
 In AArch64 state, the VA address space has a maximum address width of 48 bits. With a single VA range this gives a maximum VA space of 256TB, with VA range of 0x0000_0000_0000_0000 to 0x0000_FFFF_FFFF_FFFF.  
