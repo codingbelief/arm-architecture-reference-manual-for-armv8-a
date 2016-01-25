@@ -117,7 +117,7 @@ Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的�
 * address translation 简介
 * VMSAv8-64 translation table 格式描述
 
-### ARMv8 VMSA naming
+> ### ARMv8 VMSA naming
 
 The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
