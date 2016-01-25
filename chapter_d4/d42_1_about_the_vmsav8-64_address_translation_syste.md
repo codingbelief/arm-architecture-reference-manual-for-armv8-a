@@ -35,8 +35,8 @@ VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包�
     - 第一阶段，将输出的 VA 转换为中间物理地址 (IPA，intermediate physical address)
     - 第二阶段，将 IPA 转换为 PA。
 
-Translation granule 定义了 IA 映射到 OA 的粒度，包括：
-* 单个阶段的 address translation 中的页面大小，
+Address translation 中，IA 到 OA 的映射是整块整块进行的。Translation granule 定义了 IA 映射到 OA 的粒度，包括：
+* 单个阶段的 address translation 中的页面大小，即一次 IA 到 OA 的映射
 
 The MMU is controlled by System registers, that provide independent control of each address translation stage,
 including a control to disable the stage of address translation. The effects of disabling a stage of address translation
