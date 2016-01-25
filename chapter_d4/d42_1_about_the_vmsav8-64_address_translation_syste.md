@@ -112,7 +112,7 @@ The following subsections give more information:
 * The VMSAv8-64 translation table format on page D4-1644.
 
 后续的小节主要描述下面的内容：
-* ARMv8 VMSA 命名
+* ARMv8 VMSA 命名规则
 
 ### ARMv8 VMSA naming
 
