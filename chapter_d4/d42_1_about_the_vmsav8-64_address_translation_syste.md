@@ -16,3 +16,11 @@ translation.
 
 The architecture defines a number of translation regimes, where a translation regime comprises either:
 
+* A single stage of address translation.
+This maps an input virtual address (VA) to an output physical address (PA).
+* 
+Two, sequential, stages of address translation, where:
+—
+Stage 1 maps an input VA to an output intermediate physical address (IPA).
+—
+Stage 2 maps an input IPA to an output PA.
