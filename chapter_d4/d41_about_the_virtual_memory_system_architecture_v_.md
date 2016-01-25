@@ -145,7 +145,7 @@ Address tagging 功能通过以下的方式来配置：
 > | -- | -- |
 > | For EL2 or EL3 | If the controlling TBI bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be 0x00. |
 
-> **NOTE:**
+> **NOTE:**  
 
 > 下面以 Exception level 2 为例, 在设置 TCR_EL2.TBI 使能了 address tagging 功能后，在下面的场景中，需要对写入 PC 寄存器的值做特殊的处理:
 > * EL2 中发生的 branch 和 procedure return.
