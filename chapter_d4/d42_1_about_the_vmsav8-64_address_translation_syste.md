@@ -134,8 +134,7 @@ Translation table entries can be cached in a Translation Lookaside Buffer, see T
 
 ## The VMSAv8-64 translation table format
 
-Stages of address translation that are controlled by an Exception level that is using AArch64 use the VMSAv8-64
-translation table format. This format uses 64-bit descriptor entries in the translation tables.
+Stages of address translation that are controlled by an Exception level that is using AArch64 use the VMSAv8-64 translation table format. This format uses 64-bit descriptor entries in the translation tables.
 
 > **NOTE:**  
 This format is an extension of the VMSAv8-32 Long-descriptor translation table format originally defined by the
