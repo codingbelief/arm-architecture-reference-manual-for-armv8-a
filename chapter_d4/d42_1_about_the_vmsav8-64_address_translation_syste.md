@@ -65,7 +65,7 @@ The following subsections give more information:
 * The VMSAv8-64 translation table format on page D4-1644.
 
 
-## ARMv8 VMSA naming
+### ARMv8 VMSA naming
 
 The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
@@ -76,7 +76,7 @@ The ARMv8 VMSA naming model reflects the possible stages of address translation,
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
 
 
-## VMSA address types and address spaces  
+### VMSA address types and address spaces  
 
 A description of the VMSA refers to the following address types.
 
