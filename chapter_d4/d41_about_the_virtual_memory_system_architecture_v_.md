@@ -83,9 +83,9 @@ Address tagging 功能通过以下的方式来配置：
 
 在 EL1&0 下，VMSAv8-64 支持两个区块的虚拟地址空间，分别为：VA 高 16 位全为 0 的区块和 VA 高 16 位全为 1 的区块， 不同区块的的 address tagging 功能的配置由不同的寄存器负责：
 
-| VA[55]==0，即高 16 位全为 0 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI0 决定是否启用 address tags 功能. 寄存器 TTBR0_EL1 保存地址转换表的基地址.|
+| VA[55]==0，即高 16 位全为 0 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI0 控制是否启用 address tags 功能. 寄存器 TTBR0_EL1 保存地址转换表的基地址.|
 | -- | -- |
-| VA[55]==1，即高 16 位全为 1 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI1 决定是否启用 address tags 功能. 寄存器 TTBR1_EL1 保存地址转换表的基地址.|
+| VA[55]==1，即高 16 位全为 1 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI1 控制是否启用 address tags 功能. 寄存器 TTBR1_EL1 保存地址转换表的基地址.|
  
 （译者注：TCR for Translation Control Register，TBI for Top Byte Ignore，TTBR for Translation Table Base Register）
 > **For addresses using the VMSAv8-64 EL2 translation regime**
