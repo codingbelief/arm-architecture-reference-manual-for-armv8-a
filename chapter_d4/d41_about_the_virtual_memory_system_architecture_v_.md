@@ -132,7 +132,7 @@ Address tagging 功能通过以下的方式来配置：
 * exception 返回到开启了 address tagging 功能的 Exception level 时.
 * 从 debug 状态退出，并返回到开启了 address tagging 功能的 Exception level 时。
 
->> **NOTE:**
+>> **NOTE:**  
 
 >> As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
 >> * A branch or procedure return within EL2.
