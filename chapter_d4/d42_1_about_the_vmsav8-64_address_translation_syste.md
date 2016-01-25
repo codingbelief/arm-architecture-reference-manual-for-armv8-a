@@ -81,7 +81,7 @@ The following subsections give more information:
 **ARMv8 VMSA naming**  
 The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
-|||
+| 0:0 | 1:0 |
 | -- | -- |
 | 0:0 | 1:0 |
 | 0:2 | 1:2 |
