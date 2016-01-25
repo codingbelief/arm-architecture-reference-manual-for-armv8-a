@@ -168,4 +168,7 @@ access is described as a level of address lookup. The final level of the lookup 
 * The high bits of the required output address.
 * The attributes and access permissions of the addressed memory.
 
+Translation table entries can be cached in a Translation Lookaside Buffer, see Translation Lookaside Buffers (TLBs)
+on page D4-1729.
+
 
