@@ -79,7 +79,8 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 
 Address tagging 功能通过以下的方式来配置：
 
-**对于使用 VMSAv8-64 EL1&0 translation regime 的地址**  
+**对于使用 VMSAv8-64 EL1&0 translation regime 的地址**
+
 在 EL1&0 下，VMSAv8-64 支持两个区块的虚拟地址空间，分别为：VA 高 16 位全为 0 的区块和 VA 高 16 位全为 1 的区块， 不同区块的的 address tagging 功能的配置由不同的寄存器负责：
 
 
