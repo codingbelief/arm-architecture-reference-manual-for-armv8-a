@@ -96,6 +96,7 @@ Translation table 中的条目可以被缓存在 Translation Lookaside Buffer (T
 * Memory region attributes.
 
 Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的相关信息：
+* 对于处于 Secure state 的访问，指示 OA 是属于 Secure 还是 Non-secure state。
 * 
 
 For more information, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699.
