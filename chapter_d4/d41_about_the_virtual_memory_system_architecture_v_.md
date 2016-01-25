@@ -151,6 +151,7 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 > * 从 exception 或者 debug 状态退出，并返回到 EL2.
 
 在不同的 EL 中使能 address tagging 功能后，在上述场景中更新 PC 寄存器的值时，需要的对写入 PC 寄存器的值所做的特殊处理如下表所示：
+
 | For EL0 or EL1 |如果 address tagging 使能，即 TBI 被设置为 1，那么写入 PC 的地址值得高 8 位将设置为与 bit[55] 一样|
 | -- | -- |
 | For EL2 or EL3 |如果 address tagging 使能，即 TBI 被设置为 1，那么写入 PC 的地址值得高 8 位将设置为 0 |
