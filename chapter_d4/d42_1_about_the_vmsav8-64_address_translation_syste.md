@@ -152,8 +152,9 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 > **NOTE:**  
 此处的描述是基于 VMSAv8的，因此会比一般的术语表中的描述包含更多的细节信息。
 
-
+--
 > #### Virtual address (VA)
+
 
 An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
