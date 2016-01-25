@@ -11,7 +11,7 @@
 内存管理单元 (MMU) 的主要功能是对 PE 发起的内存访问，进行地址转换、访问权限控制、内存属性配置和检查。  
 通常，PE 发起内存访问时，MMU 会截获该访问，然后根据访问的输入地址，即 IA (Input Address)，做下面的操作：
 * 返回输入地址 IA 所对应的输出地址 OA，已经 OA 所指向的内存属性信息。
-* 如果 MMU 无法进行地址转换操作，那么就会产生 MMU fault exception。MMU fault 根据产生时所在的转换 stage，可以分为 stage 1 MMU fault 和 stage 2 MMU fault。
+* 如果 MMU 无法进行地址转换操作，那么就会产生 MMU fault exception。MMU fault 根据产生时所在的转换 stage 的不同，可以分为 stage 1 MMU fault 和 stage 2 MMU fault 两大类。
 
 The process of mapping an IA to an OA is an address translation, or more precisely a single stage of address translation.
 
