@@ -78,5 +78,5 @@ The following subsections give more information:
 * About address translation on page D4-1644.
 * The VMSAv8-64 translation table format on page D4-1644.
 
-**ARMv8 VMSA naming
-**
+**ARMv8 VMSA naming**
+The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
