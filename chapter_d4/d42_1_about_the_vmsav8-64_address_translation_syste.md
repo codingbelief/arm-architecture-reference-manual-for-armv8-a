@@ -126,5 +126,7 @@ Each translation regime, that takes a VA as an input address, can be configured 
 ### Intermediate physical address (IPA)
 
 In a translation regime that provides two stages of address translation, the IPA is:
+* The OA from the stage 1 translation.
+* The IA for the stage 2 translation.
 
 
