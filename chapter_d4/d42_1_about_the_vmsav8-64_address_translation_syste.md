@@ -172,3 +172,7 @@ Translation table entries can be cached in a Translation Lookaside Buffer, see T
 on page D4-1729.
 
 
+## The VMSAv8-64 translation table format
+
+
+
