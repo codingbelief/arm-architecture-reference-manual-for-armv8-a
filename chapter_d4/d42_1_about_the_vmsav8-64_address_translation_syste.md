@@ -85,7 +85,6 @@ A description of the VMSA refers to the following address types.
 
 ### Virtual address (VA)
 
-
 An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
 > **NOTE:**  
