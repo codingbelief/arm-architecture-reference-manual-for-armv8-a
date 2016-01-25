@@ -165,9 +165,7 @@ A full translation table lookup is called a translation table walk. It is perfor
 have a significant cost in execution time. To support fine granularity of the VA to PA mapping, a single IA to OA
 translation can require multiple accesses to the translation tables, with each access giving finer granularity. Each
 access is described as a level of address lookup. The final level of the lookup defines:
-•
-The high bits of the required output address.
-•
-The attributes and access permissions of the addressed memory.
+* The high bits of the required output address.
+* The attributes and access permissions of the addressed memory.
 
 
