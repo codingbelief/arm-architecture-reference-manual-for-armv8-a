@@ -134,4 +134,5 @@ PA. Alternatively, the translation regime can be considered as having no concept
 The IPA address space has a maximum address width of 48 bits, see Address size configuration on
 page D4-1646.
 
+Physical address (PA)
 
