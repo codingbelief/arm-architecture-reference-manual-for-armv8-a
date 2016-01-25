@@ -115,7 +115,7 @@ Address tagging 功能通过以下的方式来配置：
 
 如果使能了 stage 1 的转换，那么 TCR_EL3.TBI 控制是否启用 address tags 功能，
 寄存器 TTBR0_EL3 保存地址转换表的基地址。
-> **NOTE**:
+> **NOTE**:  
 
 > 不管对应的 translation regime 是否使能，寄存器位 TCR_ELx.TBIn 都决定着 address tags 功能是否启用.
   
