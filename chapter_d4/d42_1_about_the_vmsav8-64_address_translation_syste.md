@@ -31,7 +31,8 @@
 
 VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包含下面两个中的其中一个：
 * 将 IA 映射到 OA 的单阶段的 address translation。
-* 
+* 连续的两个阶段的 address translation。
+    - 第一阶段，将输出的 VA 转换为中间物理地址 (IPA，intermediate physical address)
 * 
 
 The MMU is controlled by System registers, that provide independent control of each address translation stage,
