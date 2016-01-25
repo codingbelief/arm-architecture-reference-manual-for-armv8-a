@@ -183,4 +183,5 @@ ARMv7 Large Physical Address Extension, and extended slightly by ARMv8. VMSAv8-3
 Short-descriptor translation table format. Chapter G4 The AArch32 Virtual Memory System Architecture describes
 both of these formats.
 
+The VMSAv8-64 translation table format provides:
 
