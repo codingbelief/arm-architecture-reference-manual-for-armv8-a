@@ -53,7 +53,6 @@ translation shown in Figure D4-2, and:
 
 * Chapter G4 The AArch32 Virtual Memory System Architecture describes:  
    - The translation stages and translation regimes when EL3 is using AArch32.
-   -
-    Any stages of address translation that are using VMSAv8-32 when EL3 is using AArch64.
+   - Any stages of address translation that are using VMSAv8-32 when EL3 is using AArch64.
 * The implemented Exception levels and the resulting translation stages and regimes on page D4-1679
    describes the effect on the address translation model when some Exception levels are not implemented.
