@@ -84,7 +84,7 @@ A description of the VMSA refers to the following address types.
 > These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
 
-### Virtual address (VA)
+#### Virtual address (VA)
 
 An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
@@ -101,7 +101,7 @@ This means that there are two VA subranges, each of up to 256TB.
 Each translation regime, that takes a VA as an input address, can be configured to support fewer than 48 bits of virtual address space, see Address size configuration on page D4-1646.
 
 
-### Intermediate physical address (IPA)
+#### Intermediate physical address (IPA)
 
 In a translation regime that provides two stages of address translation, the IPA is:
 * The OA from the stage 1 translation.
@@ -111,7 +111,7 @@ In a translation regime that provides only one stage of address translation, the
 The IPA address space has a maximum address width of 48 bits, see Address size configuration on page D4-1646.
 
 
-### Physical address (PA)
+#### Physical address (PA)
 
 The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
 The EL3 and Secure EL1 Exception levels provide independent definitions of physical address spaces for Secure and Non-secure operation. This means they provide two independent address spaces, where:
@@ -121,7 +121,7 @@ The EL3 and Secure EL1 Exception levels provide independent definitions of physi
 Each PA address space has a maximum address width of 48 bits, but an implementation can implement fewer than 48 bits of physical address. See Address size configuration on page D4-1646.
 
 
-## About address translation
+### About address translation
 
 For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first translation table required for the mapping from input address to output address. Each implemented translation stage shown in VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642 requires its own set of translation tables.  
 For the EL1&0 stage 1 translation, the split of the VA mapping into two subranges requires two tables, one for the lower part of the VA space, and the other for the upper part of the VA space. Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls on page D4-1671 shows how these ranges might be used.  
@@ -133,7 +133,7 @@ A full translation table lookup is called a translation table walk. It is perfor
 Translation table entries can be cached in a Translation Lookaside Buffer, see Translation Lookaside Buffers (TLBs) on page D4-1729.
 
 
-## The VMSAv8-64 translation table format
+### The VMSAv8-64 translation table format
 
 Stages of address translation that are controlled by an Exception level that is using AArch64 use the VMSAv8-64 translation table format. This format uses 64-bit descriptor entries in the translation tables.
 
