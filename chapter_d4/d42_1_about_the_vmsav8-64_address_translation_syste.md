@@ -80,8 +80,9 @@ The following subsections give more information:
 
 **ARMv8 VMSA naming**  
 The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
-| VMSAv8 | The overall translation scheme, within which an address translation has one or two stages.
- |
+
+| 0:0 | 1:0 |
+| -- | -- |
 | 0:2 | 1:2 |
 | 0:3 | 1:3 |
 
