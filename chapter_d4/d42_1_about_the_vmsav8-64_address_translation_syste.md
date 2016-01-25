@@ -37,7 +37,7 @@ VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包�
 
 Address translation 中，IA 到 OA 的映射是按页进行的。Translation granule 定义了 IA 映射到 OA 的粒度，这个粒度会影响以下的两个方面：
 * 单个阶段的 address translation 中的页面大小，一个页面是一次 IA 到 OA 映射所支持的最小内存块。
-* 
+* 单个阶段的 address translation 的 translation table 所占内存的最大值。
 
 The MMU is controlled by System registers, that provide independent control of each address translation stage,
 including a control to disable the stage of address translation. The effects of disabling a stage of address translation
