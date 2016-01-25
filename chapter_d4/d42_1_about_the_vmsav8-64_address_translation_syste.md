@@ -39,8 +39,7 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 
 (TODO: add figure d4-2)
 
-ARMv8 VMSA naming on page D4-1643 gives more information about the options for the different stages of address
-translation shown in Figure D4-2, and:
+ARMv8 VMSA naming on page D4-1643 gives more information about the options for the different stages of address translation shown in Figure D4-2, and:
 
 * Chapter G4 The AArch32 Virtual Memory System Architecture describes:  
    - The translation stages and translation regimes when EL3 is using AArch32.
