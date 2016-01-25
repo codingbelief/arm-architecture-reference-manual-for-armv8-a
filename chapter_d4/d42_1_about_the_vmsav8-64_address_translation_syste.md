@@ -78,7 +78,9 @@ The following subsections give more information:
 * About address translation on page D4-1644.
 * The VMSAv8-64 translation table format on page D4-1644.
 
-**ARMv8 VMSA naming**  
+
+## ARMv8 VMSA naming
+
 The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
 | VMSAv8  | The overall translation scheme, within which an address translation has one or two stages. |
@@ -86,13 +88,17 @@ The ARMv8 VMSA naming model reflects the possible stages of address translation,
 | VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
 
-**VMSA address types and address spaces**  
+
+## VMSA address types and address spaces  
+
 A description of the VMSA refers to the following address types.
 
 > **NOTE:**  
 > These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
-**Virtual address (VA)**
+
+### Virtual address (VA)
+
 
 An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
