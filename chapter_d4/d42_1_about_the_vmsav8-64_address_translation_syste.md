@@ -133,7 +133,7 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 
 | | |
 | -- | -- |
-| VMSAv8  | translation scheme 中对于所有存在 1 个或者 2 个 stages 的 address translation , within which an address translation has one or two stages. |
+| VMSAv8  | translation scheme 中对于所有存在 1 个或者 2 个 stages 的 address translation|
 | VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
 
