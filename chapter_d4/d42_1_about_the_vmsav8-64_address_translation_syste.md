@@ -83,7 +83,7 @@ Figure D4-2 描述了 EL3 在 AArch64 运行态下的 translation stages 和 tra
     - EL3 在 AArch64 运行态下，但是部分 stage 的 address translation 处于 AArch32 运行态时的场景。
 * [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) 章节描述了在部分 Exception levels 没有实现的情况下的 address translation 机制。
 
-Each enabled stage of address translation uses a set of address translations and associated memory properties held in memory mapped tables called translation tables. A single translation table lookup can resolve only a limited number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described as different levels of lookup.
+> Each enabled stage of address translation uses a set of address translations and associated memory properties held in memory mapped tables called translation tables. A single translation table lookup can resolve only a limited number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described as different levels of lookup.
 
 Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
 
