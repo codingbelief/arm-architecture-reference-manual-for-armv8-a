@@ -65,12 +65,9 @@ as different levels of lookup.
 Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
 
 As well as defining the OA that corresponds to the IA, the translation table entries define the following properties:
-•
-Access to the Secure or Non-secure address map, for accesses made from Secure state.
-•
-Memory access permission control.
-•
-Memory region attributes.
+* Access to the Secure or Non-secure address map, for accesses made from Secure state.
+* Memory access permission control.
+* Memory region attributes.
 For more information, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on
 page D4-1699.
 
