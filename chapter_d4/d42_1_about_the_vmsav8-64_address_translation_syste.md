@@ -103,5 +103,7 @@ A description of the VMSA refers to the following address types.
 An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
 > **NOTE:**  
-> This means that an address held in the PC, LR, SP, or an ELR, is a VA. 
+> This means that an address held in the PC, LR, SP, or an ELR, is a VA.  
+
+
 
