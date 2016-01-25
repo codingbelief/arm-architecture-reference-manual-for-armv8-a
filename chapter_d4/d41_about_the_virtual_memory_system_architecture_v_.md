@@ -73,8 +73,9 @@ VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处�
 > The value of bit[55] of the VA determines the register bit that controls the use of address tags, as
 > follows:
 
-> | VA[55]==0 | TCR_EL1.TBI0 determines whether address tags are used. If stage 1 translation is enabled, TTBR0_EL1 holds the base address of the translationtables used to translate the address.|
+> | | |
 > | -- | -- |
+> | VA[55]==0 | TCR_EL1.TBI0 determines whether address tags are used. If stage 1 translation is enabled, TTBR0_EL1 holds the base address of the translationtables used to translate the address.|
 > | VA[55]==1 | TCR_EL1.TBI1 determines whether address tags are used. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
 
 Address tagging 功能通过以下的方式来配置：
