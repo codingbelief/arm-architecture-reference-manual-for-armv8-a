@@ -30,7 +30,7 @@
 从 IA 映射到 OA 处理过程定义为地址转换 (address translation)，或者单阶段地址转换 (single stage of address translation)。
 
 VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包含一下内容：
-
+* 
 
 The MMU is controlled by System registers, that provide independent control of each address translation stage,
 including a control to disable the stage of address translation. The effects of disabling a stage of address translation
