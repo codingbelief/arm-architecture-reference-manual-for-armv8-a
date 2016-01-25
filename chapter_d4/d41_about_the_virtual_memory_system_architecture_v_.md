@@ -239,7 +239,7 @@ PC = NewAddress;
 instruction was executed from.
 > * Is the Exception level the exception is taken to for an exception entry
 
-在上面的伪代码中：
+在上面的伪代码中：  
 *NewAddress*：
 指的是跳转到的目的 VA，或者调用返回时的目的 VA。
 
