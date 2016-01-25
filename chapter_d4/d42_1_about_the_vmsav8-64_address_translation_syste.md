@@ -2,8 +2,7 @@
 
 The Memory Management Unit (MMU) controls address translation, memory access permissions, and memory attribute determination and checking, for memory accesses made by the PE.
 
-The general model of MMU operation is that the MMU takes information about a required memory access,
-including an input address (IA), and either:
+The general model of MMU operation is that the MMU takes information about a required memory access, including an input address (IA), and either:
 
 * Returns an associated output address (OA), and the memory attributes for that address.
 * Is unable to perform the translation for one of a number of reasons, and therefore causes an exception to be
