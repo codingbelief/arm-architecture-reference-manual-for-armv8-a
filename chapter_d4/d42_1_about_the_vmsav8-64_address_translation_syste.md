@@ -62,3 +62,6 @@ in memory mapped tables called translation tables. A single translation table lo
 number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described
 as different levels of lookup.
 
+Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
+
+
