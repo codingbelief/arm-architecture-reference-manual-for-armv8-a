@@ -122,9 +122,7 @@ Each PA address space has a maximum address width of 48 bits, but an implementat
 
 ## About address translation
 
-For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first
-translation table required for the mapping from input address to output address. Each implemented translation stage
-shown in VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642
+For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first translation table required for the mapping from input address to output address. Each implemented translation stage shown in VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642
 requires its own set of translation tables.  
 For the EL1&0 stage 1 translation, the split of the VA mapping into two subranges requires two tables, one for the
 lower part of the VA space, and the other for the upper part of the VA space. Example use of the split VA range, and
