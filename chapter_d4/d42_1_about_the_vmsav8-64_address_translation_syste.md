@@ -177,7 +177,7 @@ on page D4-1729.
 Stages of address translation that are controlled by an Exception level that is using AArch64 use the VMSAv8-64
 translation table format. This format uses 64-bit descriptor entries in the translation tables.
 
-> **NOTE:**
+> **NOTE:**  
 This format is an extension of the VMSAv8-32 Long-descriptor translation table format originally defined by the
 ARMv7 Large Physical Address Extension, and extended slightly by ARMv8. VMSAv8-32 also supports a
 Short-descriptor translation table format. Chapter G4 The AArch32 Virtual Memory System Architecture describes
