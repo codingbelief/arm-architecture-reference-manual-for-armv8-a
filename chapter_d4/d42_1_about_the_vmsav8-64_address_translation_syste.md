@@ -24,3 +24,7 @@ Two, sequential, stages of address translation, where:
   - Stage 2 maps an input IPA to an output PA.
 
 The translation granule specifies the granularity of the mapping from IA to OA. That is, it defines both:
+
+* The page size for a stage of address translation, where a page is the smallest block of memory for which an
+IA to OA mapping can be specified.
+The size of a complete translation table for that stage of address translation.
