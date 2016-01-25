@@ -27,7 +27,7 @@
 > * The page size for a stage of address translation, where a page is the smallest block of memory for which an IA to OA mapping can be specified.
 > * The size of a complete translation table for that stage of address translation.
 
-
+从 IA 映射到 OA 处理过程定义为地址转换 (address translation)，
 
 The MMU is controlled by System registers, that provide independent control of each address translation stage,
 including a control to disable the stage of address translation. The effects of disabling a stage of address translation
