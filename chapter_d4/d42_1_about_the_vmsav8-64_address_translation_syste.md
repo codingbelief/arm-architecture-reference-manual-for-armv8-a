@@ -37,6 +37,8 @@ For an access to a stage of address translation that does not generate an MMU fa
 This section describes the address translation system for an implementation that includes all of the Exception levels, and gives a complete description of translations that are controlled by an Exception level that is using AArch64.  
 Figure D4-2 shows these translation stages and translation regimes when EL3 is using AArch64.
 
+(TODO: add figure d4-2)
+
 ARMv8 VMSA naming on page D4-1643 gives more information about the options for the different stages of address
 translation shown in Figure D4-2, and:
 
