@@ -148,6 +148,7 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 > These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
 
+
 #### Virtual address (VA)
 
 An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
