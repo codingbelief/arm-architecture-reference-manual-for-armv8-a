@@ -237,8 +237,6 @@ A full translation table lookup is called a translation table walk. It is perfor
 Translation table entries can be cached in a Translation Lookaside Buffer, see [Translation Lookaside Buffers (TLBs) on page D4-1729](#).
 
 
-
-
 ### About address translation
 
 
