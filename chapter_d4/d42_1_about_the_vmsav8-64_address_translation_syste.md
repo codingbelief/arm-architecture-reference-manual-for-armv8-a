@@ -268,4 +268,10 @@ The VMSAv8-64 translation table format provides:
 > **NOTE:**
 ARMv7 中定义了 VMSAv8-32 Long-descriptor translation table format，用于 Large Physical Address Extension。在 ARMv8 中基于该 format 扩展并定义了 VMSAv8-64 translation table format。VMSAv8-32 还支持一种 Short-descriptor translation table format，更多信息可以参考 [Chapter G4 The AArch32 Virtual Memory System Architecture](#) 章节中的描述。
 
+VMSAv8-64 translation table format 包含以下内容：
+* 最多支持 4 级的 address lookup
+* 最多支持 48 位的 IA
+* 最多支持 48 位的 OA
+* translation granule 可以支持 4KB、16KB 和 64KB 三种。
+
 
