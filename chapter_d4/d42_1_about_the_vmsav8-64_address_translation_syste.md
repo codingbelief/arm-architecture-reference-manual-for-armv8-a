@@ -263,6 +263,6 @@ The VMSAv8-64 translation table format provides:
 
 ### The VMSAv8-64 translation table format
 
-
+在 AArch64 state 下的 Exception level 的 address translation 使用 VMSAv8-64 translation table format。
 
 
