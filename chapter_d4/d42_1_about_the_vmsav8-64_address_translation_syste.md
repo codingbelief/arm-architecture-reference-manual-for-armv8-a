@@ -173,7 +173,7 @@ However, for the EL1&0 translation stage the VA range is split into two subrange
 > * The bottom VA range runs up from address 0x0000_0000_0000_0000. With the maximum address width of 48 bits this gives a VA range of 0x0000_0000_0000_0000 to 0x0000_FFFF_FFFF_FFFF.
 * The top VA subrange runs up to address 0xFFFF_FFFF_FFFF_FFFF. With the maximum address width of 48 bits this gives a VA range of 0xFFFF_0000_0000_0000 to 0xFFFF_FFFF_FFFF_FFFF. Reducing the address width for this subrange increases the bottom address of the range.
 
-This means that there are two VA subranges, each of up to 256TB.  
+> This means that there are two VA subranges, each of up to 256TB.  
 Each translation regime, that takes a VA as an input address, can be configured to support fewer than 48 bits of virtual address space, see [Address size configuration on page D4-1646](#).
 
 在 AArch64 state 下，VA 的位数最多可以为 48 位，VA 的范围为 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF，支持 256TB 内存空间。
