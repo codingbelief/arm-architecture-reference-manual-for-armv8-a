@@ -218,7 +218,7 @@ Each PA address space has a maximum address width of 48 bits, but an implementat
 
 PA 是指向物理内存存储单元的地址。同时，也是 PE 输出给 memory system 的地址。
 在 EL3 和 Secure EL1 上，对物理地址空间的访问，可以分为相互独立的 Secure 和 Non-secure 两种类别。也可以说，在这两个 EL 上，提供了两个独立的地址空间：
-* 
+* 在 Secure state 下对一个 VA 的访问，可能最终访问到 Secure 物理内存区域，也可能最终访问到 Non-secure 物理内存区域。
 
 
 ### About address translation
