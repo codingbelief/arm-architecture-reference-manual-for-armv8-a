@@ -53,4 +53,4 @@ The ID_AA64MMFR0_EL1.PARange field indicates the implemented physical address si
 
 All other PARange values are reserved.
 
-
+#### Output address size
