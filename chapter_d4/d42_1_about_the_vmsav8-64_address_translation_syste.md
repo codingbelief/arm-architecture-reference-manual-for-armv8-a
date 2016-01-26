@@ -242,7 +242,7 @@ Translation table entries can be cached in a Translation Lookaside Buffer, see [
 TTBR (Translation table base register) 保存着将输入地址映射到输出地址的 translation table 的基地址。在 [VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642](#) 章节中描述的每一个 translation stage 都由各自的 translation tables。  
 在 EL1&0 stage 1 translation 中，VA 被划分了两个区块，各个区块都需要一个 translation table。 [Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls on page D4-1671](#) 章节中，描述了两个区块的具体细节。  
 [Controlling address translation stages on page D4-1645](#) 章节描述了 MMU 是如何通过 system control registers 来控制 address translation。  
-完成 VA 到 PA 转换的一系列 translation table lookup 称为 translation table walk 
+完成 VA 到 PA 转换的一系列 translation table lookup 称为 translation table walk。 
 
 
 
