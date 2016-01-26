@@ -78,4 +78,5 @@ For each enabled stage of address translation, the TCR.TxSZ fields specify the i
     - TCR_EL1.T1SZ specifies the size for the upper VA range, translated using TTBR1_EL1.
 * Each of the other TCRs has a single T0SZ field, and input addresses are translated using a single TTBR.
 Attempting to translate an address that is larger than the configured input address size generates a Translation fault. This means:
-* For a TCR with a single T0SZ field, Figure D4-3 shows the input address map:
+* For a TCR with a single T0SZ field, Figure D4-3 shows the input address map:  
+    (TODO: add figure)
