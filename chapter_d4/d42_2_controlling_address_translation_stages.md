@@ -17,3 +17,9 @@ For address translation stages controlled from AArch64:
     
 
 * Table D4-2 shows the TCR and TTBR, or TTBRs, for each stage of address translation. In the table, each Controlling registers entry gives the TCR followed by the TTBR or TTBRs.
+
+The following subsections give more information about controlling address translation:
+* System control registers relevant to MMU operation.
+* Address size configuration.
+* Atomicity of register changes on changing virtual machine on page D4-1650.
+* Use of out-of-context translation regimes on page D4-1650.
