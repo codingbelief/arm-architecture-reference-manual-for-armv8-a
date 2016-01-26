@@ -244,7 +244,7 @@ TTBR (Translation table base register) 保存着将输入地址映射到输出�
 [Controlling address translation stages on page D4-1645](#) 章节描述了 MMU 是如何通过 system control registers 来控制 address translation。  
 完成 VA 到 PA 转换的一系列 translation table lookup 称为 translation table walk。它是由硬件自动执行的，and can have a significant cost in execution time. 为了完成一次从 VA 到 PA 的映射，需要访问多次 translation table，一次访问则称为 a level of address lookup。地址转换过程中，每多一次访问都会返回一个更精确的结果。最后一次 lookup 会返回以下的内容：
 * OA 的高位数值
-* 
+* 被访问的内存的属性和访问权限
 
 
 
