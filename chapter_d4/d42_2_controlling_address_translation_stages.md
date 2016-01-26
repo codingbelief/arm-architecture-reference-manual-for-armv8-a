@@ -11,3 +11,4 @@ The implemented Exception levels and the resulting translation stages and regime
 Otherwise, a single TTBR holds the address of the translation table that must be used for the first lookup for the stage of address translation.
 
 For address translation stages controlled from AArch64:
+* Table D4-1 shows the endianness bit and the enable bit for each stage of address translation. Each register entry in the table gives the endianness bit followed by the enable bit. Except for the Non-secure EL1&0 stage 2 translation, these two bits are in the same register.
