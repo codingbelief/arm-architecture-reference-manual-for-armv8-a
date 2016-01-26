@@ -216,7 +216,7 @@ Each PA address space has a maximum address width of 48 bits, but an implementat
 
 #### Physical address (PA)
 
-
+PA 是指向物理内存存储单元的地址。同时，也是 PE 输出给 memory system 的地址。
 
 
 ### About address translation
