@@ -196,6 +196,8 @@ The IPA address space has a maximum address width of 48 bits, see Address size c
 
 #### Intermediate physical address (IPA)
 
+
+
 #### Physical address (PA)
 
 The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
