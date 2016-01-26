@@ -239,7 +239,7 @@ Translation table entries can be cached in a Translation Lookaside Buffer, see [
 
 ### About address translation
 
-
+TTBR (Translation table base register) 保存着将输入地址映射到输出地址的 translation table 的基地址。 
 
 
 ### The VMSAv8-64 translation table format
