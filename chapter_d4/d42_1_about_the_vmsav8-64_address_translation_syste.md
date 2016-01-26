@@ -182,6 +182,8 @@ Each translation regime, that takes a VA as an input address, can be configured 
 * 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF 的内存空间块
 * 0xFFFF_0000_0000_0000 到 0xFFFF_FFFF_FFFF_FFFF 的内存空间块
 
+
+
 #### Intermediate physical address (IPA)
 
 In a translation regime that provides two stages of address translation, the IPA is:
