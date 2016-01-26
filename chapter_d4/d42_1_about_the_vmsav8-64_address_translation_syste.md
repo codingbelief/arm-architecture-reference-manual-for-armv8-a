@@ -178,7 +178,8 @@ Each translation regime, that takes a VA as an input address, can be configured 
 
 在 AArch64 state 下，VA 的位数最多可以为 48 位，VA 的范围为 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF，支持 256TB 内存空间。
 
-
+在 EL1&0 的 translation stage 中，VA 的范围被分割为两个区块，分别为：
+* 
 
 #### Intermediate physical address (IPA)
 
