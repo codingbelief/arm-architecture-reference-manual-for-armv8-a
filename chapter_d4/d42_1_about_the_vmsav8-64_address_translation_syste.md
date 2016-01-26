@@ -262,3 +262,7 @@ The VMSAv8-64 translation table format provides:
 * A translation granule size of 4KB, 16KB, or 64KB.
 
 ### The VMSAv8-64 translation table format
+
+
+
+
