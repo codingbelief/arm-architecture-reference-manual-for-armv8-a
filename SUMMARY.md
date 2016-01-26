@@ -6,6 +6,7 @@
        * [D4.1.1 Address tagging in AArch64 state](chapter_d4/d41_1_address_tagging_in_aarch64_state.md)
    * [D4.2 The VMSAv8-64 address translation system](chapter_d4/d42_the_vmsav8-64_address_translation_system.md)
        * [D4.2.1 About the VMSAv8-64 address translation system](chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.md)
+       * D4.2.2 Controlling address translation stages
    * [D4.3 VMSAv8-64 translation table format descriptors](chapter_d4/d43_vmsav8-64_translation_table_format_descriptors.md)
    * [D4.4 Access controls and memory region attributes](chapter_d4/d44_access_controls_and_memory_region_attributes.md)
    * [D4.5 MMU faults](chapter_d4/d45_mmu_faults.md)
