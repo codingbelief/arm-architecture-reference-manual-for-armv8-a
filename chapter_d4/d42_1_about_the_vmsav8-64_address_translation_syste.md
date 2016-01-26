@@ -155,7 +155,7 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 /
 > #### Virtual address (VA)
 
-#### Virtual address (VA)
+
 
 > An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
@@ -175,6 +175,8 @@ However, for the EL1&0 translation stage the VA range is split into two subrange
 
 > This means that there are two VA subranges, each of up to 256TB.  
 Each translation regime, that takes a VA as an input address, can be configured to support fewer than 48 bits of virtual address space, see [Address size configuration on page D4-1646](#).
+
+#### Virtual address (VA)
 
 在 AArch64 state 下，VA 的位数最多可以为 48 位，VA 的范围为 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF，支持 256TB 内存空间。
 
