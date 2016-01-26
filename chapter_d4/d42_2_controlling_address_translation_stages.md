@@ -49,3 +49,4 @@ The following subsubsections specify the configuration of the physical address s
 #### Physical address size
 The ID_AA64MMFR0_EL1.PARange field indicates the implemented physical address size, as Table D4-4 shows.
 
+(TODO: add table)
