@@ -205,9 +205,9 @@ IPA 与 PA 相同，或者理解为没有 IPA。
 IPA 最多支持 48 位，更多信息参考 [Address size configuration on page D4-1646](#) 章节。
 
 
-#### Physical address (PA)
+> #### Physical address (PA)
 
-The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
+> The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
 The EL3 and Secure EL1 Exception levels provide independent definitions of physical address spaces for Secure and Non-secure operation. This means they provide two independent address spaces, where:
 * A VA accessed in Secure state can be translated to either the Secure or the Non-secure physical address space.
 * When in Non-secure state, a VA is always mapped to the Non-secure physical address space.
