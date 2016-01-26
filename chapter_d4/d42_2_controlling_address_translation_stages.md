@@ -37,3 +37,6 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 
 (TODO: add table)
 
+
+### Address size configuration
+
