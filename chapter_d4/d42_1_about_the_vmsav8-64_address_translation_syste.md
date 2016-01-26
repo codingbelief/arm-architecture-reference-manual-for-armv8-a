@@ -234,7 +234,7 @@ A full translation table lookup is called a *translation table walk*. It is perf
 * The high bits of the required output address.
 * The attributes and access permissions of the addressed memory.
 
-Translation table entries can be cached in a Translation Lookaside Buffer, see [Translation Lookaside Buffers (TLBs) on page D4-1729](#).
+> Translation table entries can be cached in a Translation Lookaside Buffer, see [Translation Lookaside Buffers (TLBs) on page D4-1729](#).
 
 
 ### About address translation
