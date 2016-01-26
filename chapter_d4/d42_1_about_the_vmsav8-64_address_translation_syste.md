@@ -182,8 +182,7 @@ Each translation regime, that takes a VA as an input address, can be configured 
 * 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF 的内存空间块
 * 0xFFFF_0000_0000_0000 到 0xFFFF_FFFF_FFFF_FFFF 的内存空间块
 
-也就是说，在 EL1&0 中，支持两个大小为 256TB 的 VA 空间。
-
+也就是说，在 EL1&0 中，支持两个大小为 256TB 的 VA 空间。  
 另外，每个 translation regime 都可以将 VA 的位数配置为 48 位一下。
 
 #### Intermediate physical address (IPA)
