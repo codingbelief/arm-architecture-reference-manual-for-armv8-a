@@ -81,3 +81,8 @@ Attempting to translate an address that is larger than the configured input addr
 * For a TCR with a single T0SZ field, Figure D4-3 shows the input address map:  
     (TODO: add figure)
 * For a TCR with two TxSZ fields, the input address is always a VA, and Selection between TTBR0 and TTBR1 on page D4-1670 describes the VA address map.
+
+
+For the Non-secure EL1&0 translation regime, when both stages of translation are enabled, if the output address from the stage 1 translation does not generate a stage 1 address size fault, and is larger than the input address specified by VTCR_EL2.T0SZ, then the input address size check for the stage 2 translation generates a Translation fault.
+Although software can configure the input address size to be smaller than 48 bits, all implemented AArch64 TTBRs must support address sizes of up to 48 bits.
+Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more information about the relationship between the required input address size, the value of TxSZ, and the required initial lookup level, and how these are affected by the translation granule size. However:
