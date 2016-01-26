@@ -197,7 +197,10 @@ The IPA address space has a maximum address width of 48 bits, see Address size c
 #### Intermediate physical address (IPA)
 
 在包含 2 个 stage address translation 的 translation regime 中， IPA 的含义如下：
-* 
+* stage 1 translation 的 OA
+* stage 2 translation 的 IA
+
+
 
 #### Physical address (PA)
 
