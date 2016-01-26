@@ -56,3 +56,5 @@ All other PARange values are reserved.
 #### Output address size
 For each enabled stage of address translation, TCR.{I}PS must be programmed to maximum output address size for that stage of translation, using the encodings as shown in Table D4-5.
 
+(TODO: add table)
+
