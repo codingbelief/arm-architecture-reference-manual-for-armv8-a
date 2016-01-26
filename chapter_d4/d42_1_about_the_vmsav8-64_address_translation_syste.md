@@ -246,7 +246,7 @@ TTBR (Translation table base register) 保存着将输入地址映射到输出�
 * OA 的高位数值
 * 被访问的内存的属性和访问权限。
 
-Translation table 的条目可以被缓存在 Translation Lookaside Buffer 中，更多信息参考 
+Translation table 的条目可以被缓存在 Translation Lookaside Buffer 中，更多信息参考 [Translation Lookaside Buffers (TLBs) on page D4-1729](#) 章节。
 
 ### The VMSAv8-64 translation table format
 
