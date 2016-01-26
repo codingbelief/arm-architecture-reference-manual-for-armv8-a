@@ -225,7 +225,7 @@ PA 是指向物理内存存储单元的地址。同时，也是 PE 输出给 mem
 PA 最多支持 48 位，在具体实现时，PA 的位数可以少于 48。更多的信息参考 [Address size configuration on page D4-1646](#) 章节
 
 
-### About address translation
+> ### About address translation
 
 For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first translation table required for the mapping from input address to output address. Each implemented translation stage shown in [VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642](#) requires its own set of translation tables.  
 For the EL1&0 stage 1 translation, the split of the VA mapping into two subranges requires two tables, one for the lower part of the VA space, and the other for the upper part of the VA space. [Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls on page D4-1671](#) shows how these ranges might be used.  
