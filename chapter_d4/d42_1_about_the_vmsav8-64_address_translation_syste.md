@@ -194,6 +194,7 @@ In a translation regime that provides only one stage of address translation, the
 The IPA address space has a maximum address width of 48 bits, see Address size configuration on page D4-1646.
 
 
+#### Intermediate physical address (IPA)
 
 #### Physical address (PA)
 
