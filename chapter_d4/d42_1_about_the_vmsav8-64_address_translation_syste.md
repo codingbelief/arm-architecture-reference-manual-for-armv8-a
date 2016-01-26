@@ -266,6 +266,6 @@ The VMSAv8-64 translation table format provides:
 在 AArch64 state 下的 Exception level 的 address translation 的 translation table 的条目是一个 64 位的描述符。
 
 > **NOTE:**
-ARMv7 中定义了 VMSAv8-32 Long-descriptor translation table format，用于 Large Physical Address Extension。在 ARMv8 中基于该 format 扩展并定义了 VMSAv8-64 translation table format。VMSAv8-32 还支持一种 Short-descriptor translation table format，更多信息可以参考 [Chapter G4 The AArch32 Virtual Memory System Architecture](#) 章节中的描述
+ARMv7 中定义了 VMSAv8-32 Long-descriptor translation table format，用于 Large Physical Address Extension。在 ARMv8 中基于该 format 扩展并定义了 VMSAv8-64 translation table format。VMSAv8-32 还支持一种 Short-descriptor translation table format，更多信息可以参考 [Chapter G4 The AArch32 Virtual Memory System Architecture](#) 章节中的描述。
 
 
