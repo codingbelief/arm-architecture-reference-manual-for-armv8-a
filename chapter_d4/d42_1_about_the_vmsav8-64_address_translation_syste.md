@@ -222,7 +222,7 @@ PA 是指向物理内存存储单元的地址。同时，也是 PE 输出给 mem
 * 在 Non-secure state 下对一个 VA 的访问，最终必然是访问到 Non-secure 的物理内存区域。
 * 
 
-
+PA 最多支持 48 位，在具体实现时，PA 的位数可以少于 48。
 
 
 ### About address translation
