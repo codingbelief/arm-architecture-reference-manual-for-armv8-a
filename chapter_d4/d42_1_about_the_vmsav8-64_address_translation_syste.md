@@ -186,8 +186,6 @@ Virtual Address (VA) 是用在 instruction 中，作为 data 或者 instruction 
 
 > #### Intermediate physical address (IPA)
 
-#### Intermediate physical address (IPA)
-
 In a translation regime that provides two stages of address translation, the IPA is:
 * The OA from the stage 1 translation.
 * The IA for the stage 2 translation.
