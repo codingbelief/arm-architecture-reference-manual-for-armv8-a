@@ -263,6 +263,9 @@ The VMSAv8-64 translation table format provides:
 
 ### The VMSAv8-64 translation table format
 
-在 AArch64 state 下的 Exception level 的 address translation 的 translation table 的条目是一个 64 位的描述符
+在 AArch64 state 下的 Exception level 的 address translation 的 translation table 的条目是一个 64 位的描述符。
+
+> **NOTE:**
+
 
 
