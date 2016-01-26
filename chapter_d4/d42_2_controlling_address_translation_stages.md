@@ -23,3 +23,5 @@ The following subsections give more information about controlling address transl
 * Address size configuration.
 * Atomicity of register changes on changing virtual machine on page D4-1650.
 * Use of out-of-context translation regimes on page D4-1650.
+* 
+
