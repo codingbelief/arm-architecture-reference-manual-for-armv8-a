@@ -197,6 +197,7 @@ In a translation regime that provides only one stage of address translation, the
 The IPA address space has a maximum address width of 48 bits, see Address size configuration on page D4-1646.
 
 
+
 #### Physical address (PA)
 
 The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
