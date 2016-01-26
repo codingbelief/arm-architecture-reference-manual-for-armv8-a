@@ -202,7 +202,7 @@ The IPA address space has a maximum address width of 48 bits, see [Address size 
 
 在只包含 1 个 stage address translation 的 translation regime 中， 
 IPA 与 PA 相同，或者理解为没有 IPA。  
-IPA 最多支持 48 位，更多信息参考[Address size configuration on page D4-1646](#)中介
+IPA 最多支持 48 位，更多信息参考[Address size configuration on page D4-1646](#)章节
 
 
 #### Physical address (PA)
