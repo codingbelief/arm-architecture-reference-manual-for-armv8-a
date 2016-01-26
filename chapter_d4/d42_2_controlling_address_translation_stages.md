@@ -9,4 +9,5 @@ The implemented Exception levels and the resulting translation stages and regime
    - A single TCR.
    - A TTBR for each VA subrange.
 Otherwise, a single TTBR holds the address of the translation table that must be used for the first lookup for the stage of address translation.
+
 For address translation stages controlled from AArch64:
