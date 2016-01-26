@@ -224,6 +224,7 @@ PA 是指向物理内存存储单元的地址。同时，也是 PE 输出给 mem
 
 
 
+
 ### About address translation
 
 For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first translation table required for the mapping from input address to output address. Each implemented translation stage shown in VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642 requires its own set of translation tables.  
