@@ -18,7 +18,8 @@ For address translation stages controlled from AArch64:
     > **NOTE:**  
     If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.
     
-| Granule size | 1:0 | 2:0 | 3:0 |
+| Granule size | Support indicated by:
+ | 2:0 | 3:0 |
 | -- | -- | -- | -- |
 | 0:2 | 1:2 | 2:2 | 3:2 |
 | 0:3 | 1:3 | 2:3 | 3:3 |
