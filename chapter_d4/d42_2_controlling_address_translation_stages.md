@@ -2,7 +2,7 @@
 
 ## D4.2.2 Address translation stages 配置
 
-[The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) defines the translation regimes and stages. For each supported address translation stage:
+> [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) defines the translation regimes and stages. For each supported address translation stage:
 
 * A system control register bit enables the stage of address translation.
 * A system control register bit determines the endianness of the translation table lookups.
