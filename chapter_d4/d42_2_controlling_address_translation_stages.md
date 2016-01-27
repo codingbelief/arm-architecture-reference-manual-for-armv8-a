@@ -106,3 +106,5 @@ reading back the value of the field.
 Supported IPA size defines the effective minimum value of T0SZ, that depends on the supported PA
 size, and also describes the possible effects of programming T0SZ to a value that is smaller than this
 effective minimum value.
+
+#### Supported IPA size
