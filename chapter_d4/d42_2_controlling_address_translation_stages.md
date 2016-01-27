@@ -15,6 +15,7 @@ Otherwise, a single TTBR holds the address of the translation table that must be
 [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) 章节中定义了 translation regimes 和 stages。
 对于每一个 address translation stage：
 * 在 system control register 中，都有一个 bit 来使能该 address translation stage。
+* 在 system control register 中，都有一个 bit 来配置 translation table lookups 的大小端
 * 
 
 For address translation stages controlled from AArch64:
