@@ -17,7 +17,7 @@
 * 在 system control register 中，都有一个 bit 来配置 translation table lookups 的大小端
 * 如果一个 address translation stage 支持两个 VA 区块，那么该 stage 会有以下的寄存器：
     - 一个 TCR
-    - 两个 TTBR，分别用于配置两个 VA 区块的 translation table base。
+    - 两个 TTBR，分别用于配置两个 VA 区块的 translation table base。  
     TTBR 保存着 address translation stage 中的第一个 lookup 的 translation table 的基地址。
 
 For address translation stages controlled from AArch64:
