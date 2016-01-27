@@ -9,6 +9,7 @@
 * If a stage of address translation supports splitting the VA range into two subranges then that stage of translation provides a Translation Table Base Register (TTBR) for each VA subrange, and the stage of address translation has:
    - A single TCR.
    - A TTBR for each VA subrange.  
+
 Otherwise, a single TTBR holds the address of the translation table that must be used for the first lookup for the stage of address translation.
 
 [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) 章节中定义了 translation regimes 和 stages。
