@@ -115,3 +115,5 @@ Physical address size on page D4-1646. This implemented PA size also constrains 
 VTCR_EL2.SL0, that specifies the level of the initial lookup. SL0 also depends on the translation granule, as
 described in Overview of the VMSAv8-64 address translation stages on page D4-1658.
 
+(TODO: add table)
+
