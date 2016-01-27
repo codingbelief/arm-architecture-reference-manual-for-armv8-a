@@ -168,6 +168,7 @@ The architecture requires that:
    regime for speculative memory accesses.
 * When executing at EL3, EL2, or Non-secure EL1, the PE must not use the registers associated with the
    Secure EL1 translation regime for speculative memory accesses.
+
 When entering an Exception level, on completion of a DSB instruction, no new memory accesses using any
 translation table entries from a translation regime of an Exception level lower than the Exception level that has been
 entered will be observed by any observers, to the extent that those accesses are required to be observed as
