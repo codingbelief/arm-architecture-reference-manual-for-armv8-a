@@ -18,7 +18,7 @@ Otherwise, a single TTBR holds the address of the translation table that must be
 * 在 system control register 中，都有一个 bit 来配置 translation table lookups 的大小端
 * 如果一个 address translation stage 支持两个 VA 区块，那么该 stage 会有以下的寄存器：
     - 一个 TCR
-    - 两个 TTBR，分别用于配置两个 VA 区块的 translation table base
+    - 两个 TTBR，分别用于配置两个 VA 区块的 translation table base。
 
 For address translation stages controlled from AArch64:
 * Table D4-1 shows the endianness bit and the enable bit for each stage of address translation. Each register entry in the table gives the endianness bit followed by the enable bit. Except for the Non-secure EL1&0 stage 2 translation, these two bits are in the same register.  
