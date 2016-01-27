@@ -128,3 +128,9 @@ the implementation consistently does one of the following:
     - Reading back the value of the field.
     - Checking whether the value of VTCR_EL2.T0SZ is consistent with the value of VTCR_EL2.SL0.
 * Generate a stage 2 level 0 Translation fault on any memory access that uses the second stage of translation.
+
+Programming VTCR_EL2.T0SZ to a value smaller than the effective minimum value shown in Table D4-6 can
+never provide support for a larger address range than the range given by the effective minimum value, because the
+stage 1 output address will give an Address size fault if it is larger than either:
+* The PA size, for a VMSAv8-64 stage 1 translation.
+* 40 bits, for a VMSAv8-32 stage 1 translation.
