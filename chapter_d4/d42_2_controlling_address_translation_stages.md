@@ -94,3 +94,7 @@ IMPLEMENTATION DEFINED whether:
    reading back the value of the field.
 * Any use of the TxSZ value generates a Level 0 Translation fault for the stage of translation
    at which TxSZ is used.
+
+For a stage 1 translation
+The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 then it is
+IMPLEMENTATION DEFINED whether:
