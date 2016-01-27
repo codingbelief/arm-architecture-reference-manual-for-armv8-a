@@ -20,8 +20,7 @@ For address translation stages controlled from AArch64:
     
 | Granule size | Support indicated by: Field | Values  |  |
 | -- | -- | -- | -- |
-| 4KB | ID_AA64MMFR0_EL1.4Kgranule 
- | 2:2 | 3:2 |
+| 4KB | ID_AA64MMFR0_EL1.4Kgranule  | 0b0000  | 3:2 |
 | 0:3 | 1:3 | 2:3 | 3:3 |
 | 0:4 | 1:4 | 2:4 | 3:4 |
 
