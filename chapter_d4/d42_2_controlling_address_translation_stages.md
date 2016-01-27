@@ -141,14 +141,14 @@ From the viewpoint of software executing at Non-secure EL1 or EL0, when there is
 machine to another, the registers that control or affect address translation must be changed atomically. This applies
 to the registers for the Non-secure EL1&0 translation regime. This means that all of the following registers must
 change atomically:
-• The registers associated with the stage 1 translations:
+* The registers associated with the stage 1 translations:
    —
     MAIR_EL1 and AMAIR_EL1.
    —
     TTBR0_EL1, TTBR1_EL1, TCR_EL1, and CONTEXTIDR_EL1.
    —
     SCTLR_EL1.
-• The registers associated with the stage 2 translations:
+* The registers associated with the stage 2 translations:
    —
     VTTBR_EL2 and VTCR_EL2.
    —
