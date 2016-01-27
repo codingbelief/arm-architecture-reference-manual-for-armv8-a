@@ -17,12 +17,6 @@ For address translation stages controlled from AArch64:
     (TODO: add table)
     > **NOTE:**  
     If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.
-    
-| Granule size | Support indicated by: Field | Values  |  |
-| -- | -- | -- | -- |
-| 4KB | ID_AA64MMFR0_EL1.4Kgranule  | 0b0000  | 3:2 |
-| 0:3 | 1:3 | 2:3 | 3:3 |
-| 0:4 | 1:4 | 2:4 | 3:4 |
 
 * Table D4-2 shows the TCR and TTBR, or TTBRs, for each stage of address translation. In the table, each Controlling registers entry gives the TCR followed by the TTBR or TTBRs.  
     (TODO: add table)
