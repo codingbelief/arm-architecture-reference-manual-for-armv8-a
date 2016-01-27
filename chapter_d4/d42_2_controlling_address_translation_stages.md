@@ -136,4 +136,4 @@ stage 1 output address will give an Address size fault if it is larger than eith
 * The PA size, for a VMSAv8-64 stage 1 translation.
 * 40 bits, for a VMSAv8-32 stage 1 translation.
 
-### Atomicity of register changes on changing virtual machine
+#### Atomicity of register changes on changing virtual machine
