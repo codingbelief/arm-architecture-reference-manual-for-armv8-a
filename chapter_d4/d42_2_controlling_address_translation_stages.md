@@ -117,3 +117,7 @@ described in Overview of the VMSAv8-64 address translation stages on page D4-165
 
 (TODO: add table)
 
+If VTCR_EL2.SL0 is programmed to a value larger than the maximum value shown in Table D4-6 then any memory
+access that uses the second stage of translation generates a stage 2 level 0 Translation fault.
+If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum value shown in Table D4-6 then
+the implementation consistently does one of the following:
