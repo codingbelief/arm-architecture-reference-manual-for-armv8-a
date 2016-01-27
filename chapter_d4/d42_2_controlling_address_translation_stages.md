@@ -102,7 +102,7 @@ IMPLEMENTATION DEFINED whether:
 reading back the value of the field.
 * Any use of the TxSZ value generates a stage 1 Level 0 Translation fault.
 
-For a stage 2 translation
+**For a stage 2 translation**
 Supported IPA size defines the effective minimum value of T0SZ, that depends on the supported PA
 size, and also describes the possible effects of programming T0SZ to a value that is smaller than this
 effective minimum value.
