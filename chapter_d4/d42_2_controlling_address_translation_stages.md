@@ -81,7 +81,7 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 
 ### Address size 配置
 
-
+下面的小节主要描述各个 address translation stage 中的 physical address size 和 IA、OA size。
 
 #### Physical address size
 The ID_AA64MMFR0_EL1.PARange field indicates the implemented physical address size, as Table D4-4 shows.
