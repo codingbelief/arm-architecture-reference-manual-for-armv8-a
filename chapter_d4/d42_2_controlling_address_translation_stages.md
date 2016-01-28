@@ -59,7 +59,7 @@ In AArch64 state, system control registers have a suffix, that indicates the low
 > **NOTE:**  
 The only translation regime that supports a stage 2 translation is the Non-secure EL1&0 translation regime.
 
-(TODO: add table)
+![](table_d4_3.png)
 
 
 ### System control registers 中 MMU 相关配置
