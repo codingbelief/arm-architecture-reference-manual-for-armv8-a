@@ -37,7 +37,7 @@
     If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.  
     (TODO: 这段含义暂时没有理解，是说在 enable 或者 disable 的前，最好让 PA 和 VA 都保持一致么？)
 
-* Table D4-2 中汇总了各个 address translation stage 所对应的 TCR 和 TTBR。
+> * Table D4-2 中汇总了各个 address translation stage 所对应的 TCR 和 TTBR。
 
 
 The following subsections give more information about controlling address translation:
