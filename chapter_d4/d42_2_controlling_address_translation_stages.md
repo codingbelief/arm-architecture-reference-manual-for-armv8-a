@@ -71,9 +71,9 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 只有 Non-secure EL1&0 translation regime 才有 stage 2 translation。
 
 
-### Address size configuration
+> ### Address size configuration
 
-The following subsubsections specify the configuration of the physical address size and of the input and output address sizes for each of the stages of address translation:
+> The following subsubsections specify the configuration of the physical address size and of the input and output address sizes for each of the stages of address translation:
 * Physical address size.
 * Output address size on page D4-1647.
 * Input address size on page D4-1648.
