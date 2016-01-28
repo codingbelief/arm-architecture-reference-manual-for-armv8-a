@@ -38,6 +38,7 @@ For address translation stages controlled from AArch64:
     (TODO: 这段含义暂时没有理解，是说在 enable 或者 disable 的前，最好让 PA 和 VA 都保持一致么？)
 
 * Table D4-2 中汇总了各个 address translation stage 所对应的 TCR 和 TTBR。
+* 
 
 The following subsections give more information about controlling address translation:
 * System control registers relevant to MMU operation.
