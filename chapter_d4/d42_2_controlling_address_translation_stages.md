@@ -101,7 +101,7 @@ PARange 其他任何值都作为保留使用。
 
 For each enabled stage of address translation, TCR.{I}PS must be programmed to maximum output address size for that stage of translation, using the encodings as shown in Table D4-5.
 
-(TODO: add table)
+![](table_d4_5.png)
 
 > **NOTE:**
 * This field is called IPS in the TCR_EL1, and PS in the other TCRs.
