@@ -86,7 +86,7 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 #### Physical address size
 The [ID_AA64MMFR0_EL1.PARange](#) field indicates the implemented physical address size, as Table D4-4 shows.
 
-ID_AA64MMFR0_EL1.PARange 用于设定 physical address size
+ID_AA64MMFR0_EL1.PARange 用于设定 physical address size:
 
 ![](table_d4_4.png)
 
