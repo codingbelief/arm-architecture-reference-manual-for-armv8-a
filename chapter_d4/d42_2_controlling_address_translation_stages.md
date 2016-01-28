@@ -92,7 +92,7 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 ID_AA64MMFR0_EL1.PARange 用于设定 physical address size:
 
 ![](table_d4_4.png)
-
+![](table_d4_4_2.png)
 > All other PARange values are reserved.  
 
 PARange 其他任何值都作为保留使用。
