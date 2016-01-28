@@ -54,7 +54,7 @@
 
 > ### System control registers relevant to MMU operation
 
-
+### System control registers 中 MMU 相关配置
 
 In AArch64 state, system control registers have a suffix, that indicates the lowest Exception level from which they can be accessed. In some general descriptions of MMU control and address translation, this chapter uses a Common abbreviation for each of the system control registers that affects MMU operation, as Table D4-3 shows. The common abbreviation is used when describing features that apply to all the translation regimes.  
 
