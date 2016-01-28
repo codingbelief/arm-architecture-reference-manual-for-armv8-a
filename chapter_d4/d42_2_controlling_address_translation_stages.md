@@ -91,6 +91,7 @@ ID_AA64MMFR0_EL1.PARange 用于设定 physical address size:
 ![](table_d4_4.png)
 
 All other PARange values are reserved.
+PARange 其他任何值都作为保留使用。
 
 #### Output address size
 For each enabled stage of address translation, TCR.{I}PS must be programmed to maximum output address size for that stage of translation, using the encodings as shown in Table D4-5.
