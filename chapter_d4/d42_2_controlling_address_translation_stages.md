@@ -34,7 +34,7 @@ For address translation stages controlled from AArch64:
 * Table D4-1 中描述了各个 address translation stage 的 endianness 和 MMU enable 的控制：
     ![](table_d4_1.png)
     > **NOTE:**  
-    
+    If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.
 
 The following subsections give more information about controlling address translation:
 * System control registers relevant to MMU operation.
