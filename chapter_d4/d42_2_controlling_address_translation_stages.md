@@ -59,6 +59,8 @@ In AArch64 state, system control registers have a suffix, that indicates the low
 > **NOTE:**  
 The only translation regime that supports a stage 2 translation is the Non-secure EL1&0 translation regime.
 
+在 AArch64 state 下，本文使用不同的后缀来标示某一个 system control register 可以在哪些 EL 上访问到。(例如，TCR_EL2 可以在 EL2&3 中访问， 不能在 EL0&1 中访问，TCR_EL3只能在 EL3 中访问)
+
 ![](table_d4_3.png)
 
 
