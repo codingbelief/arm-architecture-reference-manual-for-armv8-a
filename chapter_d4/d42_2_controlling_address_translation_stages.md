@@ -79,7 +79,7 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 * [Input address size on page D4-1648](#).
 * [Supported IPA size on page D4-1649](#).
 
-#### Address size 配置
+### Address size 配置
 
 
 
