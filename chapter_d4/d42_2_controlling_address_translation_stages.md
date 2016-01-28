@@ -31,7 +31,7 @@ For address translation stages controlled from AArch64:
     (TODO: add table)
 
 在 AArch64 运行态时，address translation stages 有以下的一些配置项：
-
+* 
 
 The following subsections give more information about controlling address translation:
 * System control registers relevant to MMU operation.
