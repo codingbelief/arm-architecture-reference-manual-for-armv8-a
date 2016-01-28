@@ -32,7 +32,8 @@ For address translation stages controlled from AArch64:
 
 在 AArch64 运行态时，address translation stages 有以下的一些配置项：
 * Table D4-1 中描述了各个 address translation stage 的 endianness 和 MMU enable 的控制
-
+    ![](table_d4_1.png)
+    > **NOTE:**  
 The following subsections give more information about controlling address translation:
 * System control registers relevant to MMU operation.
 * Address size configuration.
