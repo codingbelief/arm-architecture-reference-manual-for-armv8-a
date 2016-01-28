@@ -48,7 +48,7 @@
 
 后续的几个章节更详细的描述了 address translation 相关的配置：
 * System control registers 中 MMU 相关的配置.
-* Address size configuration.
+* Address size 配置.
 * Atomicity of register changes on changing virtual machine on page D4-1650.
 * Use of out-of-context translation regimes on page D4-1650.
 
