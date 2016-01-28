@@ -40,7 +40,7 @@
 * Table D4-2 中汇总了各个 address translation stage 所对应的 TCR 和 TTBR。
 
 
-The following subsections give more information about controlling address translation:
+>The following subsections give more information about controlling address translation:
 * System control registers relevant to MMU operation.
 * Address size configuration.
 * Atomicity of register changes on changing virtual machine on page D4-1650.
