@@ -118,7 +118,7 @@ When using two stages of translation:
 
 #### Output address size
 
-
+在 address translation stage 使能后，对应的 TCR.IPS 或者 TCR.PS 必须正确的设定，该寄存器位用于设定 address translation stage 支持的最大 output address size，详细的配置参考 Table D4-4
 
 #### Input address size
 
