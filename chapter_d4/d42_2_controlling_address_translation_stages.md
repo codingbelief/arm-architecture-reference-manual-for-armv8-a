@@ -124,7 +124,7 @@ When using two stages of translation:
 * TCR_EL1 寄存器中的 output address size 配置位的名称为 IPS (Intermediate Physical Address Size)，其他 EL 的 TCR 寄存器中的名称为 PS (Physical Address Size)
 * {I}PS 包含 3 个 bits，与 Table D4-4 中 PARange 低 3 个 bits 相对应。
 
-如果 {I}PS 中设定的 output address size 比实际支持的 physical address size 大，那么 PE 会忽略 {I}PS 中的设定，并以实际的 physical address size 作为 output address size，也就是说 output address size 永远不可能比实际的 physical address size 大。另外，在具体的软件实现中，不应该依赖于这一特性，需要正确的去配置 {I}PS
+如果 {I}PS 中设定的 output address size 比实际支持的 physical address size 大，那么 PE 会忽略 {I}PS 中的设定，并以实际的 physical address size 作为 output address size，也就是说 output address size 永远不可能比实际的 physical address size 大。另外，在具体的软件实现中，不应该依赖于这一特性，需要正确的去配置 {I}PS.
 
 #### Input address size
 
