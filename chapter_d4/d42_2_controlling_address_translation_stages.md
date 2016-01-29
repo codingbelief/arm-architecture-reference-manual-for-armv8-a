@@ -123,6 +123,7 @@ When using two stages of translation:
 > **NOTE:**  
 
 
+
 #### Input address size
 
 For each enabled stage of address translation, the TCR.TxSZ fields specify the input address size:
