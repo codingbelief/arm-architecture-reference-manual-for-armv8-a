@@ -122,7 +122,7 @@ When using two stages of translation:
 
 > **NOTE:**  
 * TCR_EL1 寄存器中的 output address size 配置位的名称为 IPS (Intermediate Physical Address Size)，其他 EL 的 TCR 寄存器中的名称为 PS (Physical Address Size)
-* 
+* {I}PS 包含 3 个 bits，
 
 #### Input address size
 
