@@ -116,6 +116,8 @@ When using two stages of translation:
 
 (译者注：IPS for Intermediate Physical Address Size，PS for Physical Address Size)
 
+#### Output address size
+
 #### Input address size
 
 For each enabled stage of address translation, the TCR.TxSZ fields specify the input address size:
