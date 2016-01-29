@@ -128,7 +128,7 @@ When using two stages of translation:
 
 TTBR、translation table entries 和 output address 中的 address 超过 output address size 比特位设置必须设定为 0，否则会在 translation 的相关阶段触发 address size fault。TTBR 中设置错误触发的 address size fault 称为 level 0 fault。如果 stage 1 translation 关闭时，input address 大于实际支持的 physical address size，那么就会触发 stage 1 level 0 Address size fault。
 对于有 2 个 stages 的translation：
-* 如果 stage 2 translation 关闭时，stage 1 translation 的 output address 大于实际支持的 physical address size，那么就会触发 
+* 如果 stage 2 translation 关闭时，stage 1 translation 的 output address 大于实际支持的 physical address size，那么就会触发 stage 1 address size fault
 
 #### Input address size
 
