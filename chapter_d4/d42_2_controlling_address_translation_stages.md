@@ -118,6 +118,8 @@ When using two stages of translation:
 
 #### Output address size
 
+
+
 #### Input address size
 
 For each enabled stage of address translation, the TCR.TxSZ fields specify the input address size:
