@@ -126,7 +126,7 @@ When using two stages of translation:
 
 如果 {I}PS 中设定的 output address size 比实际支持的 physical address size (参考 Table D4-4) 大，那么 PE 会忽略 {I}PS 中的设定，并以实际的 physical address size 作为 output address size，也就是说 output address size 永远不可能比实际的 physical address size 大。另外，在具体的软件实现中，不应该依赖于这一特性，需要正确的去配置 {I}PS。
 
-TTBR、translation table entries 和 output address 中的 address 超过 output address size 比特位设置必须设定为 0，否则
+TTBR、translation table entries 和 output address 中的 address 超过 output address size 比特位设置必须设定为 0，否则会在相应的阶段触发 address size fault
 
 #### Input address size
 
