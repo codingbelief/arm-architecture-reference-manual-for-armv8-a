@@ -61,8 +61,7 @@ Later sections of this chapter give more information about the translation proce
 
 ### Effect of granule size on translation table addressing and indexing
 
-Table D4-9 shows the effect of the translation granule size on the addressing and indexing of the TTBR, and on the
-input address range that must be resolved.
+Table D4-9 shows the effect of the translation granule size on the addressing and indexing of the TTBR, and on the input address range that must be resolved.
 
 ![](table_d4_9.png)
 
