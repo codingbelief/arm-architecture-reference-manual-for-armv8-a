@@ -186,6 +186,8 @@ effective minimum value.
 
 **For all translation stages**  
 
+
+
 #### Supported IPA size
 For the Non-secure EL1&0 translation regime, the maximum IPA size is the maximum input address size for the
 second stage of translation, that must be specified by VTCR_EL2.T0SZ, see Input address size on page D4-1648.
