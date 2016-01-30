@@ -15,8 +15,7 @@ sizes.
 > **NOTE:**  
 * Using a larger granule size can reduce the maximum required number of levels of address lookup because:
     - The increased translation table size means the translation table holds more entries. This means a single lookup can resolve more bits of the input address.
-    - The increased page size means more of the least-significant address bits are required to address a page. These address bits are flat mapped from the input address to the output address, and therefore do not
-require translation.
+    - The increased page size means more of the least-significant address bits are required to address a page. These address bits are flat mapped from the input address to the output address, and therefore do not require translation.
 * ARM recommends that memory-mapped peripherals are separated by an integer multiple of the largest
 granule size supported by the operating system or hypervisor, to allow each peripheral to be managed
 independently.
