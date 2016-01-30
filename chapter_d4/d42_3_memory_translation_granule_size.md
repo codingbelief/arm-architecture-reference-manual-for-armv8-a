@@ -108,5 +108,10 @@ initial lookup must resolve IA[34:30], meaning it resolves 5 bits of address: Th
 resolution means:
 * The translation table size is divided by 24, giving a size of 256B.
 * The TTBR requires 4 more bits for the translation table base address, which becomes TTBR[47:8].
-
 ---
+
+When using the 64KB translation granule to translate the maximum IA size of 48 bits, Table D4-10
+on page D4-1654 shows that a level 1 lookup must resolve only IA[47:42]. This is 6 bits of address,
+compared to the 13 bits that can be resolved at a single level of lookup. This 7-bit reduction in the
+required resolution means:
+
