@@ -56,6 +56,8 @@ translation table. Therefore, in general, the address bits resolved in a level o
 | Min(a, b) | Is a function that returns the minimum of a and b. |
 | x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
  
+The following diagrams show this model, for each of the permitted granule sizes.
+Figure D4-4 shows how a 48-bit IA is resolved when using the 4KB translation granule.
 
 
 
