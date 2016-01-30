@@ -199,6 +199,7 @@ This value is constrained by the implemented PA size that is specified by ID_AA6
 
 #### Supported IPA size
 
+对于 Non-secure EL1&0 translation regime
 
 ![](table_d4_6.png)
 
