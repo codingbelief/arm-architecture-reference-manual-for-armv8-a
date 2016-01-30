@@ -6,5 +6,6 @@ The memory translation granule size defines both:
 
 VMSAv8-64 supports translation granule sizes of 4KB, 16KB, and 64KB. Support for each granule size is optional,
 and is indicated as shown in Table D4-7:
+
 ![](table_d4_7.png)
 
