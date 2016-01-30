@@ -148,6 +148,9 @@ For the Non-secure EL1&0 translation regime, when both stages of translation are
 Although software can configure the input address size to be smaller than 48 bits, all implemented AArch64 TTBRs must support address sizes of up to 48 bits.  
 Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more information about the relationship between the required input address size, the value of TxSZ, and the required initial lookup level, and how these are affected by the translation granule size. However:
 
+
+#### Input address size
+
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
 IMPLEMENTATION DEFINED whether:
