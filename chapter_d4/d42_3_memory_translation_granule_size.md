@@ -8,8 +8,7 @@ VMSAv8-64 supports translation granule sizes of 4KB, 16KB, and 64KB. Support for
 
 ![](table_d4_7.png)
 
-In VMSAv8-64, each address translation stage is configured, independently, to use one of the supported granule
-sizes.
+In VMSAv8-64, each address translation stage is configured, independently, to use one of the supported granule sizes.
 
 > **NOTE:**  
 * Using a larger granule size can reduce the maximum required number of levels of address lookup because:
