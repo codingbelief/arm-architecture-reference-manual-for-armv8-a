@@ -91,4 +91,8 @@ the initial level of lookup might be smaller than the number of address bits tha
 that level. This means that, for this initial level of lookup:
 * The translation table size is reduced. For each 1 bit reduction in the input address size the size
 of the translation table is halved.
-> **NOTE:**
+> **NOTE:**  
+This has no effect on the translation table size for subsequent levels of lookup, for
+which the lookups always use full-sized translation tables.
+For a stage 2 translation, it might be possible to start the translation at a lower level,
+see Concatenated translation tables on page D4-1655.
