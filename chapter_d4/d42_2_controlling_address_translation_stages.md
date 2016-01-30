@@ -151,7 +151,7 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
 
 #### Input address size
 
-
+在各个 address translation stage 中，都有用于配置 input address size 的 TCR.T0SZ 或者 TCR.T1SZ 比特位
 
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
