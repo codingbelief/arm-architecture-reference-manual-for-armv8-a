@@ -95,4 +95,4 @@ of the translation table is halved.
     - This has no effect on the translation table size for subsequent levels of lookup, for which the lookups always use full-sized translation tables.
     - For a stage 2 translation, it might be possible to start the translation at a lower level, see Concatenated translation tables on page D4-1655.
 
-*More low-order TTBR bits are needed to hold the translation table base address.
+* More low-order TTBR bits are needed to hold the translation table base address.
