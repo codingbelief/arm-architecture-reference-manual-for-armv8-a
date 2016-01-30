@@ -177,8 +177,7 @@ IMPLEMENTATION DEFINED whether:
 * Any use of the TxSZ value generates a stage 1 Level 0 Translation fault.
 
 **For a stage 2 translation**
-Supported IPA size defines the effective minimum value of T0SZ, that depends on the supported PA size, and also describes the possible effects of programming T0SZ to a value that is smaller than this
-effective minimum value.
+Supported IPA size defines the effective minimum value of T0SZ, that depends on the supported PA size, and also describes the possible effects of programming T0SZ to a value that is smaller than this effective minimum value.
 
 **For all translation stages**  
 TxSZ 的最大值为 39，如果软件向 TxSZ 中写入超过 39 的值，那么根据不同的实现，可能会有以下两种结果：
