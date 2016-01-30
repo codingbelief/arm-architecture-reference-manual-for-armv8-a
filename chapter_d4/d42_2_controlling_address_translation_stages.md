@@ -216,6 +216,7 @@ If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum val
 如果 VTCR_EL2.T0SZ 写入了一个小于 Table D4-6 中描述的最小值的数据，根据具体的实现的不同，会有以下几种结果：
 * 除了直接读取 VTCR_EL2.T0SZ 时会返回写入的值，其他处理过程中，都会以最小值来处理。
 * 除了下列两种情况，其他处理过程中，都会以最小值来处理。
+    - 了直接读取 VTCR_EL2.T0SZ 时
     - 
 
 
