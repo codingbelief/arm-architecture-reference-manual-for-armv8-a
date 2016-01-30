@@ -218,7 +218,7 @@ If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum val
 * 除了下列两种情况，其他处理过程中，都会以最小值来处理。
     - 直接读取 VTCR_EL2.T0SZ 时
     - 检查 VTCR_EL2.T0SZ 的值与 VTCR_EL2.SL0 的值是否相匹配时
-
+* 
 
 
 > **NOTE:**  
