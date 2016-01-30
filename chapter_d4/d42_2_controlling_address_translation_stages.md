@@ -175,7 +175,7 @@ The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 t
 * The implementation behaves as if the field were programmed to 16 for all purposes other than reading back the value of the field.
 * Any use of the TxSZ value generates a stage 1 Level 0 Translation fault.
 
-> **For a stage 2 translation**
+> **For a stage 2 translation**  
 Supported IPA size defines the effective minimum value of T0SZ, that depends on the supported PA size, and also describes the possible effects of programming T0SZ to a value that is smaller than this effective minimum value.
 
 **For all translation stages**  
