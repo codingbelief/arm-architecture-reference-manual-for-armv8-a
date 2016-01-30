@@ -199,6 +199,7 @@ This value is constrained by the implemented PA size that is specified by ID_AA6
 
 #### Supported IPA size
 
+
 ![](table_d4_6.png)
 
 If VTCR_EL2.SL0 is programmed to a value larger than the maximum value shown in Table D4-6 then any memory
