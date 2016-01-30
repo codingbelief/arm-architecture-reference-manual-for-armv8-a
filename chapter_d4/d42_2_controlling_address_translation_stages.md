@@ -191,6 +191,8 @@ TxSZ 的最大值为 16，如果软件向 TxSZ 中写入超过 16 的值，那�
 * 除了直接读取时会返回写入的值，其他处理过程中，都会最大值 16 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 stage 1 level 0 translation fault。
 
+**For a stage 2 translation**
+
 #### Supported IPA size
 For the Non-secure EL1&0 translation regime, the maximum IPA size is the maximum input address size for the
 second stage of translation, that must be specified by VTCR_EL2.T0SZ, see Input address size on page D4-1648.
