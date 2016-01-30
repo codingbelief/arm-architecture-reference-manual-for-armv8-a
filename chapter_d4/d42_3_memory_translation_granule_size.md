@@ -64,5 +64,7 @@ Figure D4-5 shows how a 48-bit IA is resolved when using the 16KB translation gr
 ![](figure_d4_5.png)
 
 Figure D4-6 shows how a 48-bit IA is resolved when using the 64KB translation granule.
+![](figure_d4_6.png)
+
 
 
