@@ -162,7 +162,7 @@ Although software can configure the input address size to be smaller than 48 bit
 
 在 Non-secure  EL1&0 translation regime 中，在 2 个 stage 都使能时，如果在 stage 1 translation 没有触发 stage 1 address size fault，并且其 output address 大于 VTCR_EL2.T0SZ 所设定的 stage 2 input address size 时，就会触发 stage 2 translation fault。  
 软件可以将 input address size 设定为小于 48 bits，但是在具体实现中，AArch64 TTBRs 必须支持到 48 bits。
-章节 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) 
+章节 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) 更详细的描述了 input address size、TxSZ、initial lookup level 和 translation granule 直接的相互关系。
 
 
 **For all translation stages**  
