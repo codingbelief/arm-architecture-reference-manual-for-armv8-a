@@ -151,6 +151,8 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
 
 #### Input address size
 
+
+
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
 IMPLEMENTATION DEFINED whether:
