@@ -294,3 +294,5 @@ performed speculatively. However, the execution of a DSB on entry to the higher 
 these accesses are complete.
 
 #### Use of out-of-context translation regimes
+
+
