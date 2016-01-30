@@ -200,7 +200,7 @@ This value is constrained by the implemented PA size that is specified by ID_AA6
 #### Supported IPA size
 
 对于 Non-secure EL1&0 translation regime，stage 2 translation 的 input address size 的最大值就是 IPA size 的最大值，这个值由 VTCR_EL2.T0SZ 设定。
-IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA size 
+IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA size 同时也约束 VTCR_EL2.SL0 的最大值
 
 ![](table_d4_6.png)
 
