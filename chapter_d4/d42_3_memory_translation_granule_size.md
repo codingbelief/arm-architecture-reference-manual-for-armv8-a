@@ -40,6 +40,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * A translation table descriptor is 8 bytes. Therefore:
     - A complete translation table holds 2(n-3) descriptors.
     - A single level of translation can resolve a maximum of (n-3) bits of address.  
+
 Consider the translation process, working back from the final level of lookup, that resolves the least
 significant of the address bits that require translation. Because a level of lookup can resolve (n-3) bits of
 address:
