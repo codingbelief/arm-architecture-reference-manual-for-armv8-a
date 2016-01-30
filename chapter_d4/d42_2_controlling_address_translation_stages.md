@@ -267,7 +267,7 @@ with the other register updates.
 > **NOTE:**  
 在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
 
-上述的寄存器都是用于 Non-secure EL1&0 translation regime 的配置，
+上述的寄存器都是用于 Non-secure EL1&0 translation regime 的配置，然而这些寄存器在进行 virtual machine 切换时，是被运行在 EL2 上的软件进行更新的。这些寄存器被更新时，不再 EL1&0 上，也就不需要在 EL1&0 上做同步操作。
 
 #### Use of out-of-context translation regimes
 
