@@ -153,7 +153,9 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
 
 在各个 address translation stage 中，都有用于配置 input address size 的 TCR.T0SZ 或者 TCR.T1SZ 比特位：
 
-* 
+* TCR_EL1 有 T0SZ 和 T1SZ，分别用于配置两个 VA 区块：
+    - TCR_EL1.T0SZ 用于底部的 VA 区块，对应的 TTBR 为 TTBR0_EL1。
+    - TCR_EL1.T0SZ 用于底部的 VA 区块，对应的 TTBR 为 TTBR0_EL1。 
 
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
