@@ -292,3 +292,5 @@ walks started before the exception was taken will be completed by the time the h
 entered, and therefore memory accesses required for such a translation table walk might, in effect, be
 performed speculatively. However, the execution of a DSB on entry to the higher Exception level ensures that
 these accesses are complete.
+
+#### Use of out-of-context translation regimes
