@@ -252,6 +252,9 @@ with the other register updates.
 These registers apply to execution using the Non-secure EL1&0 translation regime. However, when updated as part of a switch of virtual machines they are updated by software executing at EL2. This means the registers are out of
 context when they are updated, and no synchronization precautions are required.
 
+#### Atomicity of register changes on changing virtual machine
+
+
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
