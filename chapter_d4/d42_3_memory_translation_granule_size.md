@@ -1,4 +1,4 @@
-# D4.2.3 Memory translation granule size
+## D4.2.3 Memory translation granule size
 
 The memory translation granule size defines both:
 * The maximum size of a single translation table.
