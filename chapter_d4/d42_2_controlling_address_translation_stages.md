@@ -155,7 +155,7 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
 
 * TCR_EL1 有 T0SZ 和 T1SZ，分别用于配置两个 VA 区块：
     - TCR_EL1.T0SZ 用于底部的 VA 区块，对应的 TTBR 为 TTBR0_EL1。
-    - TCR_EL1.T1SZ 用于顶部的 VA 区块，对应的 TTBR 为 TTBR1_EL1。 
+    - TCR_EL1.T1SZ 用于顶部的 VA 区块，对应的 TTBR 为 TTBR1_EL1。
 * 其他 EL 的 TCR 中只有一个 T0SZ，并且该 EL 只有一个 TTBR 用于 address translation
 * 对于只有一个 T0SZ 的 TCR，input address map 如 Figure D4-3 所示：
 * 对于有 T0SZ 和 T1SZ 的 TCR，该 stage 中
