@@ -288,4 +288,4 @@ entered, and therefore memory accesses required for such a translation table wal
 The architecture requires that:
 * 当运行在 EL3，EL2 或者 Secure EL1 时，
 
-(译者注：这里的描述应该是写给 PE 的实现者的看的)
+(译者注：这里的描述的需求，应该针对 PE 的实现者)
