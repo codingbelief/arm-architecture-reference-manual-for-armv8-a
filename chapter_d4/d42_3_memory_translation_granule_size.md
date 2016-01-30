@@ -47,7 +47,7 @@ address:
     - The final level of lookup resolves IA[(2n-4):n].
     - The previous level of lookup resolves IA[(3n-7):(2n-3)].
 
-However, the level of lookup that resolves the most significant bits of the IA might not require a full-sized
+  However, the level of lookup that resolves the most significant bits of the IA might not require a full-sized
 translation table. Therefore, in general, the address bits resolved in a level of lookup are:
 
 
