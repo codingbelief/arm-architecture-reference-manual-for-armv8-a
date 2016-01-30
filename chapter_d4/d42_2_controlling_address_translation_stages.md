@@ -167,8 +167,7 @@ Although software can configure the input address size to be smaller than 48 bit
 
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is IMPLEMENTATION DEFINED whether:
-* The implementation behaves as if the field is programmed to 39 for all purposes other than
-   reading back the value of the field.
+* The implementation behaves as if the field is programmed to 39 for all purposes other than reading back the value of the field.
 * Any use of the TxSZ value generates a Level 0 Translation fault for the stage of translation
    at which TxSZ is used.
 
