@@ -117,8 +117,7 @@ For more information, see Concatenated translation tables for the initial stage 
 
 In all cases, the translation table, or block of concatenated translation tables, must be aligned to the actual size of the table or block of concatenated tables.
 The translation table base address held in the TTBR is defined in the OA map for that stage of address translation.
-The information given in this section assumes this stage of translation has an OA size of 48 bits, meaning the
-translation table base address is:
+The information given in this section assumes this stage of translation has an OA size of 48 bits, meaning the translation table base address is:
 * TTBR[47:12] if using the 4KB translation granule.
 * TTBR[47:14] if using the 16KB translation granule.
 * TTBR[47:16] if using the 64KB translation granule.
