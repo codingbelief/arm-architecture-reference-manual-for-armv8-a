@@ -263,6 +263,8 @@ context when they are updated, and no synchronization precautions are required.
     - MAIR_EL2 and AMAIR_EL2.
     - SCTLR_EL2.
 
+(TODO: 这里的原子操作指的是单个寄存器的原子性还是所有相关寄存器的更改的原子性)
+
 > **NOTE:**  
 在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
 
