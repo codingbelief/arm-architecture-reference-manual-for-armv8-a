@@ -132,4 +132,12 @@ concatenation can be used to resolve a 40-bit IA when using the 4KB translation 
 
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 ---
+Table D4-10 on page D4-1654 shows that, when using the 4KB translation granule, a level 1 lookup can resolve a
+39-bit IA, with the first lookup resolving IA[38:30]. For a stage 2 translation, to extend the IA width to 40 bits and
+resolve IA[39:30] with the first lookup:
+•
+Two translation tables are concatenated, giving a total size of 8KB.
+•
+The TTBR requires 1 fewer bit for the translation table base address, which becomes TTBR[47:13].
+
 ---
