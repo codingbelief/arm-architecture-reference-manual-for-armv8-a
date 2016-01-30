@@ -228,6 +228,14 @@ stage 1 output address will give an Address size fault if it is larger than eith
 * The PA size, for a VMSAv8-64 stage 1 translation.
 * 40 bits, for a VMSAv8-32 stage 1 translation.
 
+> **NOTE:**  
+Programming VTCR_EL2.T0SZ to a value smaller than the effective minimum value shown in Table D4-6 can
+never provide support for a larger address range than the range given by the effective minimum value, because the
+stage 1 output address will give an Address size fault if it is larger than either:
+* The PA size, for a VMSAv8-64 stage 1 translation.
+* 40 bits, for a VMSAv8-32 stage 1 translation.
+
+
 #### Atomicity of register changes on changing virtual machine
 From the viewpoint of software executing at Non-secure EL1 or EL0, when there is a switch from one virtual
 machine to another, the registers that control or affect address translation must be changed atomically. This applies
