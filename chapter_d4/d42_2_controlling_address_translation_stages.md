@@ -180,12 +180,12 @@ The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 t
 
 **For all translation stages**  
 TxSZ 的最大值为 39，如果软件向 TxSZ 中写入超过 39 的值，那么根据不同的实现，可能会有以下两种结果：
-* 除了直接读取时会返回写入的值，其他处理过程中，都会最大值 39 来处理。
+* 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 39 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 level 0 translation fault。
 
 **For a stage 1 translation**  
 TxSZ 的最大值为 16，如果软件向 TxSZ 中写入超过 16 的值，那么根据不同的实现，可能会有以下两种结果：
-* 除了直接读取时会返回写入的值，其他处理过程中，都会最大值 16 来处理。
+* 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 16 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 stage 1 level 0 translation fault。
 
 **For a stage 2 translation**  
