@@ -24,4 +24,4 @@ Table D4-8 summarizes the effects of the different granule sizes.
 
 ![](table_d4_8.png)
 
-How the granule size affects the address translation process
+### How the granule size affects the address translation process
