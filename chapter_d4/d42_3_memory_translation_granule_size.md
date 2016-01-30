@@ -158,11 +158,11 @@ If the OA address is smaller than 48 bits then the upper bits of this field must
     - TTBR[39:12] holds the translation table base address.
 
 * If using the 16KB translation granule:  
-    -TTBR[47:40] must be set to zero.
-    -TTBR[39:14] holds the translation table base address.
+    - TTBR[47:40] must be set to zero.
+    - TTBR[39:14] holds the translation table base address.
 * If using the 64KB translation granule:
-    -TTBR[47:40] must be set to zero.
-    -TTBR[39:16] holds the translation table base address.
+    - TTBR[47:40] must be set to zero.
+    - TTBR[39:16] holds the translation table base address.
 In all cases, if TTBR[47:40] is not zero, any attempt to access the translation table generates an Address size fault.
 
 
