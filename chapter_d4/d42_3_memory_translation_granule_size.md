@@ -118,3 +118,6 @@ required resolution means:
 * The TTBR requires 7 more bits for the translation table base address, which becomes
 TTBR[47:9].
 
+Concatenated translation tables
+
+
