@@ -153,14 +153,13 @@ translation table base address is:
 
 If the OA address is smaller than 48 bits then the upper bits of this field must be written as zero. For example, for a
 40-bit OA range:
-•
-If using the 4KB translation granule:
+* If using the 4KB translation granule:
 —
 TTBR[47:40] must be set to zero.
 —
 TTBR[39:12] holds the translation table base address.
-•
-•
+
+
 If using the 16KB translation granule:
 —
 TTBR[47:40] must be set to zero.
