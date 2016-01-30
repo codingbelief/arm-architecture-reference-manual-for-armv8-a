@@ -290,6 +290,6 @@ The architecture requires that:
 * 当运行在 EL3 或者 Secure EL1 时，PE 不能利用 translation regime 相关的寄存器进行随机内存访问。
 * 当运行在 EL3，EL2 或者 Non-secure EL1 时，PE 不能利用 Secure EL1 translation regime 相关的寄存器进行随机内存访问。
 
-当通过 DSB 指令进入到一个 Exception level 后，
+当通过 DSB 指令进入到一个 Exception level 后，不应该存在使用低于当前 Exception level 的 translation regime 中的 translation table entries 进行内存访问
 
 (译者注：这里的描述的需求，应该针对 PE 的实现者)
