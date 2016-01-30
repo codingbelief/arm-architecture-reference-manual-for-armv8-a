@@ -83,3 +83,5 @@ x in Table D4-9.
 
 Table D4-9 refers to accessing a complete translation table, of 4KB, 16KB, or 64KB. However, the ARMv8
 translation system supports the following possible variations from the information in Table D4-9:
+
+#### Reduced IA width
