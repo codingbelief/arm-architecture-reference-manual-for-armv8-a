@@ -125,6 +125,7 @@ bit resolved:
 * Doubles the number of translation tables required. Resolving an additional n bits requires 2n
    concatenated translation tables at the initial lookup level.
 * Reduces by 1 bit the width of the translation table base address held in the TTBR.  
+
 This means that, for the initial lookup of a stage 2 translation table, the IA ranges shown in
 Table D4-10 on page D4-1654 can be extended by up to 4 bits. Example D4-2 shows how
 concatenation can be used to resolve a 40-bit IA when using the 4KB translation granule.
