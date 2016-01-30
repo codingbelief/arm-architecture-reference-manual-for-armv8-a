@@ -20,3 +20,4 @@ sizes.
 granule size supported by the operating system or hypervisor, to allow each peripheral to be managed
 independently.
 
+Table D4-8 summarizes the effects of the different granule sizes.
