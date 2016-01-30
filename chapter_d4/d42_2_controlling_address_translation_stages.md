@@ -190,7 +190,7 @@ TxSZ 的最大值为 16，如果软件向 TxSZ 中写入超过 16 的值，那�
 * 任何使用 TxSZ 的处理过程都会触发 stage 1 level 0 translation fault。
 
 **For a stage 2 translation**
-Supported IPA size 决定了 T0SZ 的最小值，同时也决定了往 T0SZ 写入一个小于最小值数据时的行为。(细节在后面章节描述)
+Supported IPA size 决定了 T0SZ 的最小值，同时也决定了往 T0SZ 写入一个小于最小值数据时的行为。(译者注：细节在后面章节描述)
 
 
 #### Supported IPA size
