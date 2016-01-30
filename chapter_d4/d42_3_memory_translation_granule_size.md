@@ -139,3 +139,7 @@ resolve IA[39:30] with the first lookup:
 * The TTBR requires 1 fewer bit for the translation table base address, which becomes TTBR[47:13].
 
 ---
+For more information, see Concatenated translation tables for the initial stage 2 lookup on
+page D4-1671.
+
+
