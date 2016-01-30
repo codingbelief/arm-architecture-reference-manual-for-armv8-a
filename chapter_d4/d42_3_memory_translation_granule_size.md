@@ -14,8 +14,7 @@ sizes.
 
 > **NOTE:**  
 * Using a larger granule size can reduce the maximum required number of levels of address lookup because:
-— — 
-* The increased translation table size means the translation table holds more entries. This means a single
+    - The increased translation table size means the translation table holds more entries. This means a single
 lookup can resolve more bits of the input address.
 The increased page size means more of the least-significant address bits are required to address a page.
 These address bits are flat mapped from the input address to the output address, and therefore do not
