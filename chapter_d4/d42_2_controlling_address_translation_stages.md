@@ -221,7 +221,7 @@ If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum val
 * 所有需要进行 stage 2 translation 的内存访问都会触发 stage 2 level 0 translation
 
 
-> **NOTE:**  
+>> **NOTE:**  
 Programming VTCR_EL2.T0SZ to a value smaller than the effective minimum value shown in Table D4-6 can
 never provide support for a larger address range than the range given by the effective minimum value, because the
 stage 1 output address will give an Address size fault if it is larger than either:
