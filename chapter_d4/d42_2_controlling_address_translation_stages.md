@@ -264,7 +264,7 @@ context when they are updated, and no synchronization precautions are required.
     - SCTLR_EL2.
 
 > **NOTE:**  
-在
+在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
 Only some bits of SCTLR_EL1 affect the stage 1 translation, and only some bits of SCTLR_EL2 affect the stage 2 translation. However, in each case, changing these bits requires a write to the register, and that write must be atomic
 with the other register updates.
 
