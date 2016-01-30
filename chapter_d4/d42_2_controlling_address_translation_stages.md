@@ -267,6 +267,8 @@ context when they are updated, and no synchronization precautions are required.
 Only some bits of SCTLR_EL1 affect the stage 1 translation, and only some bits of SCTLR_EL2 affect the stage 2 translation. However, in each case, changing these bits requires a write to the register, and that write must be atomic
 with the other register updates.
 
+
+
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
