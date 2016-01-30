@@ -55,7 +55,7 @@ translation table. Therefore, in general, the address bits resolved in a level o
 | Min(a, b) | Is a function that returns the minimum of a and b. |
 | x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
  
-x 
+
 
 
 
