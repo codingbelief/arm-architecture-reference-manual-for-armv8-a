@@ -214,7 +214,7 @@ If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum val
 
 如果 VTCR_EL2.SL0 写入了一个大于 Table D4-6 中描述的最大值的数据，那么所有需要进行 stage 2 translation 的内存访问都会触发 stage 2 level 0 translation fault。
 如果 VTCR_EL2.T0SZ 写入了一个小于 Table D4-6 中描述的最小值的数据，那么在具体的实现中，会有以下几种结果：
-
+* 
 
 
 
