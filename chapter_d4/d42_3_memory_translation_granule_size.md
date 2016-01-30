@@ -85,3 +85,7 @@ Table D4-9 refers to accessing a complete translation table, of 4KB, 16KB, or 64
 translation system supports the following possible variations from the information in Table D4-9:
 
 #### Reduced IA width
+
+Depending on the configuration and implementation choices, the required input address width for
+the initial level of lookup might be smaller than the number of address bits that can be resolved at
+that level. This means that, for this initial level of lookup:
