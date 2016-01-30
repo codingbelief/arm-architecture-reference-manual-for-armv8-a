@@ -60,5 +60,6 @@ The following diagrams show this model, for each of the permitted granule sizes.
 Figure D4-4 shows how a 48-bit IA is resolved when using the 4KB translation granule.
 ![](figure_d4_4.png)
 
+Figure D4-5 shows how a 48-bit IA is resolved when using the 16KB translation granule.
 
 
