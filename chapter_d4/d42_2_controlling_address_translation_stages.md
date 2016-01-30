@@ -183,7 +183,8 @@ effective minimum value.
 
 **For all translation stages**  
 TxSZ 的最大值为 39，如果软件向 TxSZ 中写入超过 39 的值，那么根据不同的实现，可能会有以下两种结果：
-* 除了直接读取时会返回
+* 除了直接读取时会返回写入的值，其他处理过程中，都会最大值 39 来处理。
+* 
 
 
 #### Supported IPA size
