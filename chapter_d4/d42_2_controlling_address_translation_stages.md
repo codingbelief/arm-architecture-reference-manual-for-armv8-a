@@ -162,6 +162,7 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
 
 在 Non-secure  EL1&0 translation regime 中，在 2 个 stage 都使能时，如果在 stage 1 translation 没有触发 stage 1 address size fault，并且其 output address 大于 VTCR_EL2.T0SZ 所设定的 stage 2 input address size 时，就会触发 stage 2 translation fault。
 
+
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
 IMPLEMENTATION DEFINED whether:
