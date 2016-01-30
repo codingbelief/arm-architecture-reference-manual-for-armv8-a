@@ -286,5 +286,5 @@ entered, and therefore memory accesses required for such a translation table wal
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
-
+* 
 
