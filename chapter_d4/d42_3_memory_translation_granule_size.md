@@ -96,3 +96,6 @@ of the translation table is halved.
     - For a stage 2 translation, it might be possible to start the translation at a lower level, see Concatenated translation tables on page D4-1655.
 
 * More low-order TTBR bits are needed to hold the translation table base address.
+
+Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit input address range
+using the 4KB granule.
