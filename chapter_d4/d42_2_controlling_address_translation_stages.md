@@ -258,13 +258,10 @@ context when they are updated, and no synchronization precautions are required.
     - MAIR_EL1 and AMAIR_EL1.
     - TTBR0_EL1, TTBR1_EL1, TCR_EL1, and CONTEXTIDR_EL1.
     - SCTLR_EL1.
-* stage 1 translation 相关的寄存器：
-    - MAIR_EL1 and AMAIR_EL1.
-    - TTBR0_EL1, TTBR1_EL1, TCR_EL1, and CONTEXTIDR_EL1.
-    - SCTLR_EL1.
-
-
-
+* The registers associated with the stage 2 translations:
+    - VTTBR_EL2 and VTCR_EL2.
+    - MAIR_EL2 and AMAIR_EL2.
+    - SCTLR_EL2.
 
 #### Use of out-of-context translation regimes
 
