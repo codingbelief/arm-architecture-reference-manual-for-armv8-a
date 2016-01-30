@@ -230,8 +230,6 @@ stage 1 output address will give an Address size fault if it is larger than eith
 
 > **NOTE:**  
 向 VTCR_EL2.T0SZ 写入一个小于 Table D4-6 中描述的最小值，并不会扩大可访问的地址空间。因为当 stage 1 的 output address 大于下列值时，就会触发 address size fault：
-* 
-Programming VTCR_EL2.T0SZ to a value smaller than the effective minimum value shown in Table D4-6 can never provide support for a larger address range than the range given by the effective minimum value, because the stage 1 output address will give an Address size fault if it is larger than either:
 * The PA size, for a VMSAv8-64 stage 1 translation.
 * 40 bits, for a VMSAv8-32 stage 1 translation.
 
