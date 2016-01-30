@@ -170,7 +170,7 @@ The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 th
 * The implementation behaves as if the field is programmed to 39 for all purposes other than reading back the value of the field.
 * Any use of the TxSZ value generates a Level 0 Translation fault for the stage of translation at which TxSZ is used.
 
-**For a stage 1 translation**  
+> **For a stage 1 translation**  
 The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 then it is
 IMPLEMENTATION DEFINED whether:
 * The implementation behaves as if the field were programmed to 16 for all purposes other than reading back the value of the field.
