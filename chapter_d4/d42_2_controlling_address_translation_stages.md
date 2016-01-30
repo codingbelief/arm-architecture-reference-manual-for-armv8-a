@@ -212,7 +212,7 @@ If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum val
     - Checking whether the value of VTCR_EL2.T0SZ is consistent with the value of VTCR_EL2.SL0.
 * Generate a stage 2 level 0 Translation fault on any memory access that uses the second stage of translation.
 
-
+如果 VTCR_EL2.SL0 写入了一个
 
 > **NOTE:**  
 Programming VTCR_EL2.T0SZ to a value smaller than the effective minimum value shown in Table D4-6 can
