@@ -272,8 +272,7 @@ with the other register updates.
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
-* When executing at EL3, EL2, or Secure EL1, the PE must not use the registers associated with the
-   Non-secure EL1&0 translation regime for speculative memory accesses.
+* When executing at EL3, EL2, or Secure EL1, the PE must not use the registers associated with the Non-secure EL1&0 translation regime for speculative memory accesses.
 * When executing at EL3 or Secure EL1, the PE must not use the registers associated with the EL2 translation
    regime for speculative memory accesses.
 * When executing at EL3, EL2, or Non-secure EL1, the PE must not use the registers associated with the
