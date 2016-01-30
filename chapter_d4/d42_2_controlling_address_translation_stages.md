@@ -155,7 +155,7 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
 
 * TCR_EL1 有 T0SZ 和 T1SZ，分别用于配置两个 VA 区块：
     - TCR_EL1.T0SZ 用于底部的 VA 区块，对应的 TTBR 为 TTBR0_EL1。
-    - TCR_EL1.T0SZ 用于底部的 VA 区块，对应的 TTBR 为 TTBR0_EL1。 
+    - TCR_EL1.T1SZ 用于顶部的 VA 区块，对应的 TTBR 为 TTBR1_EL1。 
 
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
