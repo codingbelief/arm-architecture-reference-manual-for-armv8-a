@@ -65,8 +65,7 @@ Table D4-9 shows the effect of the translation granule size on the addressing an
 
 ![](table_d4_9.png)
 
-Table D4-10 shows the IA bits resolved at each level of lookup, and how these correspond to the possible values of
-x in Table D4-9.
+Table D4-10 shows the IA bits resolved at each level of lookup, and how these correspond to the possible values of x in Table D4-9.
 
 ![](table_d4_10.png)
 
