@@ -66,5 +66,8 @@ Figure D4-5 shows how a 48-bit IA is resolved when using the 16KB translation gr
 Figure D4-6 shows how a 48-bit IA is resolved when using the 64KB translation granule.
 ![](figure_d4_6.png)
 
+Later sections of this chapter give more information about the translation process, and explain the terminology used
+in these figures.
 
+Effect of granule size on translation table addressing and indexing
 
