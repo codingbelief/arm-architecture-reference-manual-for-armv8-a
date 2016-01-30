@@ -25,3 +25,9 @@ Table D4-8 summarizes the effects of the different granule sizes.
 ![](table_d4_8.png)
 
 ### How the granule size affects the address translation process
+
+As Table D4-8 on page D4-1651 shows, the translation granule determines the number of address bits:
+•
+Required to address a memory page.
+•
+That can be resolved in a single translation table lookup.
