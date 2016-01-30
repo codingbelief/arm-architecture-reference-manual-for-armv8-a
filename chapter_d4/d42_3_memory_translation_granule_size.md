@@ -21,3 +21,6 @@ granule size supported by the operating system or hypervisor, to allow each peri
 independently.
 
 Table D4-8 summarizes the effects of the different granule sizes.
+
+![](table_d4_8.png)
+
