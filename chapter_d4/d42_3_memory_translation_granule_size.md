@@ -76,3 +76,5 @@ input address range that must be resolved.
 
 ![](table_d4_9.png)
 
+Table D4-10 shows the IA bits resolved at each level of lookup, and how these correspond to the possible values of
+x in Table D4-9.
