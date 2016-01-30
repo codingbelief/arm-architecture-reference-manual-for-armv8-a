@@ -263,6 +263,8 @@ context when they are updated, and no synchronization precautions are required.
     - MAIR_EL2 and AMAIR_EL2.
     - SCTLR_EL2.
 
+
+
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
