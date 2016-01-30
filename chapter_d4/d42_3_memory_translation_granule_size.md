@@ -78,3 +78,8 @@ input address range that must be resolved.
 
 Table D4-10 shows the IA bits resolved at each level of lookup, and how these correspond to the possible values of
 x in Table D4-9.
+
+![](table_d4_10.png)
+
+Table D4-9 refers to accessing a complete translation table, of 4KB, 16KB, or 64KB. However, the ARMv8
+translation system supports the following possible variations from the information in Table D4-9:
