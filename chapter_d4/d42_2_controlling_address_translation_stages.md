@@ -141,7 +141,7 @@ For each enabled stage of address translation, the TCR.TxSZ fields specify the i
 Attempting to translate an address that is larger than the configured input address size generates a Translation fault. This means:
 * For a TCR with a single T0SZ field, Figure D4-3 shows the input address map:  
     ![](figure_d4_3.png)
-* For a TCR with two TxSZ fields, the input address is always a VA, and Selection between TTBR0 and TTBR1 on page D4-1670 describes the VA address map.
+* For a TCR with two TxSZ fields, the input address is always a VA, and [Selection between TTBR0 and TTBR1 on page D4-1670](#) describes the VA address map.
 
 
 For the Non-secure EL1&0 translation regime, when both stages of translation are enabled, if the output address from the stage 1 translation does not generate a stage 1 address size fault, and is larger than the input address specified by VTCR_EL2.T0SZ, then the input address size check for the stage 2 translation generates a Translation fault.  
@@ -158,7 +158,7 @@ Overview of the VMSAv8-64 address translation stages on page D4-1658 gives more 
     - TCR_EL1.T1SZ 用于顶部的 VA 区块，对应的 TTBR 为 TTBR1_EL1。
 * 其他 EL 的 TCR 中只有一个 T0SZ，并且该 EL 只有一个 TTBR 用于 address translation
 * 对于只有一个 T0SZ 的 TCR，input address map 如 Figure D4-3 所示：
-* 对于有 T0SZ 和 T1SZ 的 TCR，该 stage 中
+* 对于有 T0SZ 和 T1SZ 的 TCR，该 stage 中的 input address 必然是 VA，章节 [Selection between TTBR0 and TTBR1 on page D4-1670](#) 描述了其 VA address map
 **For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is
 IMPLEMENTATION DEFINED whether:
