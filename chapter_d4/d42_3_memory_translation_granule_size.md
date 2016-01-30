@@ -130,4 +130,5 @@ This means that, for the initial lookup of a stage 2 translation table, the IA r
 Table D4-10 on page D4-1654 can be extended by up to 4 bits. Example D4-2 shows how
 concatenation can be used to resolve a 40-bit IA when using the 4KB translation granule.
 
+Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule
 
