@@ -50,6 +50,9 @@ address:
   However, the level of lookup that resolves the most significant bits of the IA might not require a full-sized
 translation table. Therefore, in general, the address bits resolved in a level of lookup are:  
     IA[Min(47, ((x-3)(n-3)+2n-4)):(n+(x-3)(n-3))], where:
+| | |
+| -- | -- |
+| 0:2 | 1:2 |
 
 Min(a, b) Is a function that returns the minimum of a and b.
 x Indicates the level of lookup. This is defined so that the level that resolves the least significant
