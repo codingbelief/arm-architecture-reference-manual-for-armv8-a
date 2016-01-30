@@ -269,6 +269,7 @@ context when they are updated, and no synchronization precautions are required.
 在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
 
 
+
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
