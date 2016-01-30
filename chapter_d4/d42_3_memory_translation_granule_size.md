@@ -73,3 +73,6 @@ in these figures.
 
 Table D4-9 shows the effect of the translation granule size on the addressing and indexing of the TTBR, and on the
 input address range that must be resolved.
+
+![](table_d4_9.png)
+
