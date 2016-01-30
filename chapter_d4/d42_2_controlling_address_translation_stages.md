@@ -286,5 +286,5 @@ entered, and therefore memory accesses required for such a translation table wal
 #### Use of out-of-context translation regimes
 
 The architecture requires that:
-* 
+* 当运行在 EL3，EL2 或者 Secure EL1 时，
 
