@@ -91,3 +91,4 @@ the initial level of lookup might be smaller than the number of address bits tha
 that level. This means that, for this initial level of lookup:
 * The translation table size is reduced. For each 1 bit reduction in the input address size the size
 of the translation table is halved.
+> **NOTE:**
