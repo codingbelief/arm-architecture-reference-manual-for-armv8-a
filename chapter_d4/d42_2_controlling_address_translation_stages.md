@@ -234,7 +234,6 @@ stage 1 output address will give an Address size fault if it is larger than eith
 * 40 bits, for a VMSAv8-32 stage 1 translation.
 
 
-
 #### Atomicity of register changes on changing virtual machine
 From the viewpoint of software executing at Non-secure EL1 or EL0, when there is a switch from one virtual
 machine to another, the registers that control or affect address translation must be changed atomically. This applies
