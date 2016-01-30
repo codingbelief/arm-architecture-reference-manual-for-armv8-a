@@ -246,8 +246,7 @@ From the viewpoint of software executing at Non-secure EL1 or EL0, when there is
     - SCTLR_EL2.
 
 > **NOTE:**  
-Only some bits of SCTLR_EL1 affect the stage 1 translation, and only some bits of SCTLR_EL2 affect the stage 2
-translation. However, in each case, changing these bits requires a write to the register, and that write must be atomic
+Only some bits of SCTLR_EL1 affect the stage 1 translation, and only some bits of SCTLR_EL2 affect the stage 2 translation. However, in each case, changing these bits requires a write to the register, and that write must be atomic
 with the other register updates.
 
 These registers apply to execution using the Non-secure EL1&0 translation regime. However, when updated as part
