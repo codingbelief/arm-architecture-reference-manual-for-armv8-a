@@ -19,3 +19,4 @@ sizes.
 * ARM recommends that memory-mapped peripherals are separated by an integer multiple of the largest
 granule size supported by the operating system or hypervisor, to allow each peripheral to be managed
 independently.
+
