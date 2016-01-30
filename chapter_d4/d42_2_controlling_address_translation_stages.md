@@ -253,7 +253,8 @@ These registers apply to execution using the Non-secure EL1&0 translation regime
 context when they are updated, and no synchronization precautions are required.
 
 #### Atomicity of register changes on changing virtual machine
-从运行在 Non-secure EL1 or EL0 的软件的视角来看，当从一个 virtual machine 切换到另外一个时， address translation 相关的配置寄存器的切换必须是原子的。
+从运行在 Non-secure EL1 or EL0 的软件的视角来看，当从一个 virtual machine 切换到另外一个时， address translation 相关的配置寄存器的切换必须是原子的。也就是说，Non-secure EL1&0 translation regime 中，下列的寄存器的切换必须是原子的：
+
 
 #### Use of out-of-context translation regimes
 
