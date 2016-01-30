@@ -184,7 +184,7 @@ Supported IPA size defines the effective minimum value of T0SZ, that depends on 
 size, and also describes the possible effects of programming T0SZ to a value that is smaller than this
 effective minimum value.
 
-
+**For all translation stages**  
 
 #### Supported IPA size
 For the Non-secure EL1&0 translation regime, the maximum IPA size is the maximum input address size for the
