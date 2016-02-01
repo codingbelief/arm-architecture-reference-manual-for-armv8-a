@@ -31,7 +31,8 @@ VMSAv8-64 支持 4KB、16KB 和 64KB 的 translation granule size。在具体实
 VMSAv8-64 中的各个 address translation stage 可以单独配置 granule size。
 
 > **NOTE:**
-* 使用较大的 granule size 可以减少 address lookup 的次数，
+* 使用较大的 granule size 可以减少 address lookup 的次数，原因如下：
+    - 
 
 ### How the granule size affects the address translation process
 
