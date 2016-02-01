@@ -52,7 +52,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * The least-significant n bits of the IA address the memory page. This means OA[(n-1):0]=IA[(n-1):0].
 * The remaining (48-n) bits of the IA, IA[47:n], must be resolved by the address translation.
 * A translation table descriptor is 8 bytes. Therefore:
-    - A complete translation table holds 2(n-3) descriptors.
+    - A complete translation table holds 2^(n-3) descriptors.
     - A single level of translation can resolve a maximum of (n-3) bits of address.  
 
   Consider the translation process, working back from the final level of lookup, that resolves the least significant of the address bits that require translation. Because a level of lookup can resolve (n-3) bits of address:
