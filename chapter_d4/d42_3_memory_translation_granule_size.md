@@ -75,7 +75,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 这意味着 translation granule 决定了 translation 过程中， IA 是如何转换为 OA 的。  
 由于单次的 translation table lookup 只能处理有限的位数，所以将 IA 转换为 OA 的过程中，需要进行多次 lookup。  
 假定 IA 为 48 bits，translation granule size 为 2^n bytes：
-* IA 的 least-significant n bits 为 memory page 内的便宜。也就是说，OA[(n-1):0]=IA[(n-1):0]
+* IA 的 least-significant n bits 为 memory page 内的偏移。也就是说，OA[(n-1):0]=IA[(n-1):0]
 
 
 
