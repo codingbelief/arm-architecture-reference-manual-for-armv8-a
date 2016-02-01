@@ -78,7 +78,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * IA 的 least-significant n bits 为 memory page 内的偏移。也就是说，OA[(n-1):0]=IA[(n-1):0]。
 * 剩下的 48 - n bits 需要进行 address translation 处理。
 * translation table descriptor 大小为 8 bytes，因此：
-    - 一个完整的 translation table 里保存了 2^(n-3) 个 descriptors
+    - 一个完整的 translation table 中保存了 2^(n-3) 个 descriptors
     - 
 
 
