@@ -73,7 +73,8 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * 一次 translation table lookup 处理的比特位
 
 这意味着 translation granule 决定了 translation 过程中， IA 是如何转换为 OA 的。  
-由于单次的 translation table lookup 只能处理有限的位数，所以将 IA 转换为 OA 的过程中，需要进行多次 lookup。
+由于单次的 translation table lookup 只能处理有限的位数，所以将 IA 转换为 OA 的过程中，需要进行多次 lookup。  
+
 
 
 
