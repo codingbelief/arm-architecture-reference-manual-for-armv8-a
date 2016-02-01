@@ -73,6 +73,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * 一次 translation table lookup 处理的比特位
 
 
+
 The following diagrams show this model, for each of the permitted granule sizes.  
 Figure D4-4 shows how a 48-bit IA is resolved when using the 4KB translation granule.
 ![](figure_d4_4.png)
