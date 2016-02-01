@@ -24,7 +24,9 @@ Table D4-8 summarizes the effects of the different granule sizes.
 
 Memory translation granule size 决定了以下两个参数：
 * 单个 translation table 的最大 size
-* Memory page size，即一次 translation table lookup 的粒度
+* Memory page size，即一次 translation table lookup 的粒度。
+
+
 
 
 ### How the granule size affects the address translation process
