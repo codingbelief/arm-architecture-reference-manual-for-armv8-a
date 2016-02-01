@@ -69,10 +69,10 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 
 
 根据 Table D4-8 中的信息，可以看到，translation granule 决定了：
-* 定位一个 memory page 需要的比特位
+* 定位一个 memory page 需要的比特位(TODO: 此处的翻译不是很准确)
 * 一次 translation table lookup 处理的比特位
 
-
+这意味着
 
 
 The following diagrams show this model, for each of the permitted granule sizes.  
