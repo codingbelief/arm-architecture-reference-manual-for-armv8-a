@@ -26,7 +26,7 @@ Memory translation granule size 决定了以下两个参数：
 * 单个 translation table 的最大 size
 * Memory page size，即一次 translation table lookup 的粒度。
 
-
+VMSAv8-64 支持 4KB、16KB 和 64KB 的 translation granule size。
 
 
 ### How the granule size affects the address translation process
