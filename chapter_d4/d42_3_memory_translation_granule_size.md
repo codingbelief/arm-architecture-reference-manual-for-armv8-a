@@ -36,7 +36,7 @@ VMSAv8-64 中的各个 address translation stage 可以单独配置 granule size
     - 增加了 page size 意味着 input address 中更多的 least-significant 比特位可以直接映射到 output address 中，减少了需要进行 translation 的比特位。
 * ARM 建议把 memory-mapped 的外设对齐到所支持的最大的 granule size，这样可以保证各个外设的独立管理。
 
-Table D4-8 中汇总了不同 granule size 的影响。
+Table D4-8 中汇总了不同 granule size 下的影响。
 
 ### How the granule size affects the address translation process
 
