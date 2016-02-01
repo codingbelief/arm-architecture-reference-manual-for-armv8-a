@@ -68,6 +68,10 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 | x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
 
 
+根据 Table D4-8 中的信息，可以看到，translation granule 决定了：
+* 定位一个 memory page 需要的比特位
+* 一次 translation table lookup 处理的比特位
+
 
 The following diagrams show this model, for each of the permitted granule sizes.  
 Figure D4-4 shows how a 48-bit IA is resolved when using the 4KB translation granule.
