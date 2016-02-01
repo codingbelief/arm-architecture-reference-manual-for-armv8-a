@@ -80,6 +80,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * translation table descriptor 大小为 8 bytes，因此：
     - 一个完整的 translation table 中保存了 2^(n-3) 个 descriptors
     - 一个 level 的 translation 最多可以处理 (n-3) 个地址位。
+    
 
 
 
