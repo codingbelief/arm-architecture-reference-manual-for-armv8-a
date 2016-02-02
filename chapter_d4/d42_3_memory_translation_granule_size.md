@@ -90,7 +90,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 
 | | |
 | -- | -- |
-| Min(a, b) | Is a function that returns the minimum of a and b. |
+| Min(a, b) | 是一个返回 a 和 b 之间最小值的函数 |
 | x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
     
 
