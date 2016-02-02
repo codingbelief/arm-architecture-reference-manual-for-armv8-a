@@ -157,7 +157,7 @@ When using the 64KB translation granule to translate the maximum IA size of 48 b
 * The TTBR requires 7 more bits for the translation table base address, which becomes TTBR[47:9].
 
 
-Example D4-1 中描述
+Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translation 过程
 
 #### Concatenated translation tables
 
