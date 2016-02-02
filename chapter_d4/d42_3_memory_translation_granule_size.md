@@ -49,6 +49,7 @@ Table D4-8 中汇总了不同 granule size 下的影响。
 > This means the translation granule determines how the input address (IA) is resolved to an output address (OA) by the translation process.  
 Because a single translation table lookup can resolve only a limited number of address bits, the IA to OA resolution requires multiple levels of lookup.  
 Considering the resolution of the maximum IA range of 48 bits, with a translation granule size of 2^n bytes:
+
 * The least-significant n bits of the IA address the memory page. This means OA[(n-1):0]=IA[(n-1):0].
 * The remaining (48-n) bits of the IA, IA[47:n], must be resolved by the address translation.
 * A translation table descriptor is 8 bytes. Therefore:
