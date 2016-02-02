@@ -91,7 +91,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 | | |
 | -- | -- |
 | Min(a, b) | 是一个返回 a 和 b 之间最小值的函数 |
-| x | 为 lookup 的 level.  level 3. |
+| x | 为 lookup 的 level。translation 过程中的最后一个 lookup 定义为 level 3. |
     
 
 
