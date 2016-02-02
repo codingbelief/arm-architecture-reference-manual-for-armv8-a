@@ -153,7 +153,7 @@ With a 4KB granule size, a single level of lookup can resolve up to 9 bits of IA
 ---
 
 When using the 64KB translation granule to translate the maximum IA size of 48 bits, Table D4-10 on page D4-1654 shows that a level 1 lookup must resolve only IA[47:42]. This is 6 bits of address, compared to the 13 bits that can be resolved at a single level of lookup. This 7-bit reduction in the required resolution means:
-* The translation table size is divided by 27, giving a size of 512B.
+* The translation table size is divided by 2^7, giving a size of 512B.
 * The TTBR requires 7 more bits for the translation table base address, which becomes TTBR[47:9].
 
 
