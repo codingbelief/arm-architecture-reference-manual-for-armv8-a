@@ -57,7 +57,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
     - A single level of translation can resolve a maximum of (n-3) bits of address.  
 
   > Consider the translation process, working back from the final level of lookup, that resolves the least significant of the address bits that require translation. Because a level of lookup can resolve (n-3) bits of address:
-    > - The final level of lookup resolves IA[(2n-4):n].
+    - The final level of lookup resolves IA[(2n-4):n].
     - The previous level of lookup resolves IA[(3n-7):(2n-3)].
 
   > However, the level of lookup that resolves the most significant bits of the IA might not require a full-sized translation table. Therefore, in general, the address bits resolved in a level of lookup are:  
