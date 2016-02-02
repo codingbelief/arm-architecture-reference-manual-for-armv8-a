@@ -133,7 +133,7 @@ Depending on the configuration and implementation choices, the required input ad
 
 * More low-order TTBR bits are needed to hold the translation table base address.
 
-
+根据具体实现和配置的不同，translation 过程中的第一次 lookup 所处理的 IA 的比特位可能会比后面几次 lookup 的少，
 
 Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit input address range using the 4KB granule.
 
