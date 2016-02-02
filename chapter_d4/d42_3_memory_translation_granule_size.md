@@ -84,7 +84,8 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
     在整个 translation 过程中，最后一次的 lookup 处理 IA 最后的 least significant 比特位，由于一次 lookup 处理的比特位数为 (n-3)，所以可以得出以下结论：
         - 最后一次 lookup 处理的比特为 IA[(3n-7):(2n-3)]
         - 倒数第二次的 lookup 处理的比特为 IA[(3n-7):(2n-3)]
-    在具体实现中，IA 需要 translation 的位数并不一定是 (n-3) 的整数倍
+    在具体实现中，IA 需要 translation 的比特位数并不一定是 (n-3) 的整数倍，第一次 lookup 处理的 most significant 比特位数可能小于 (n-3)，也就是所需要的 table 的也会比较小。因此，一次 lookup 能处理的比特位的通用公式如下：
+        
     
 
 
