@@ -88,7 +88,10 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
         IA[Min(47, ((x-3)(n-3)+2n-4)):(n+(x-3)(n-3))]
     其中，
 
-
+| | |
+| -- | -- |
+| Min(a, b) | Is a function that returns the minimum of a and b. |
+| x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
     
 
 
