@@ -166,6 +166,8 @@ With a 4KB granule size, a single level of lookup can resolve up to 9 bits of IA
 * The translation table size is divided by 24, giving a size of 256B.
 * The TTBR requires 4 more bits for the translation table base address, which becomes TTBR[47:8].  
 ---
+
+
 #### Concatenated translation tables
 
 For stage 2 address translations, for the initial lookup, up to 16 translation tables can be concatenated. This means additional IA bits can be resolved at that lookup level. Each additional IA bit resolved:
