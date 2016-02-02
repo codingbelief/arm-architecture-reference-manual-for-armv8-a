@@ -129,7 +129,7 @@ Depending on the configuration and implementation choices, the required input ad
 * The translation table size is reduced. For each 1 bit reduction in the input address size the size of the translation table is halved.
 > **NOTE:**  
     - This has no effect on the translation table size for subsequent levels of lookup, for which the lookups always use full-sized translation tables.
-    - For a stage 2 translation, it might be possible to start the translation at a lower level, see Concatenated translation tables on page D4-1655.
+    - For a stage 2 translation, it might be possible to start the translation at a lower level, see [Concatenated translation tables on page D4-1655](#).
 
 * More low-order TTBR bits are needed to hold the translation table base address.
 
