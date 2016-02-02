@@ -137,7 +137,7 @@ Depending on the configuration and implementation choices, the required input ad
 * 其 translation table size 会比较小。第一次 lookup 处理的比特位每少一位，table size 就缩小一半。
 > **NOTE:**
     - 第一次以后的 lookup 所对应的 translation table size 不会有影响。
-    - 对于 stage 2 translation，可能会从较低 level 的 lookup 开始 translation。
+    - 对于 stage 2 translation，可能会从较低 level 的 lookup 开始 translation。更多信息参考章节 
 
 Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit input address range using the 4KB granule.
 
