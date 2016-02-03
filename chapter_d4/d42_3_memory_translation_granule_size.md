@@ -184,7 +184,7 @@ This means that, for the initial lookup of a stage 2 translation table, the IA r
 (译者注：将多个小的 translation tables 串联合并成为一个更大的 translation table)
 
 在 stage 2 address translation 的 initial lookup 中，最多可以将 16 个 translation tables 串联起来。串联起来后，由于 translation table 变大了，也就意味着 initial lookup 可以处理额外的 IA 的比特位。每增加 1 个比特的处理：
-* 所需要的 translation table 的数量就翻倍。处理 n 个额外的 IA 比特，initial lookup 中就需要 2^n 个 translation table 串联起来
+* 所需要的 translation table 的数量就翻倍。处理 n 个额外的 IA 比特，initial lookup 中就需要 2^n 个 translation table 串联起来。
 
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 
