@@ -184,6 +184,7 @@ This means that, for the initial lookup of a stage 2 translation table, the IA r
 (译者注：将多个小的 translation tables 串联合并成为一个更大的 translation table)
 
 
+
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 
 ---
