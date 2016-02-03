@@ -230,7 +230,8 @@ In all cases, if TTBR[47:40] is not zero, any attempt to access the translation 
 
 translation table 以及串联合并后的 table 的地址必须对齐到实际的 table size。对于一个 address translation stage，TTBR 中保存着用于将 IA 映射到 OA 的 translation table 的 base address。
 
-
+本小节后续内容将假定 translation stage 的 OA 为 48 bits，意味着 translation table base address 为：
+* 
 
 
 
