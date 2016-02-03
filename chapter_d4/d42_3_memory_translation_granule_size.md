@@ -238,7 +238,8 @@ translation table 以及串联合并后的 table 的地址必须对齐到实际�
 如果 OA 小于 48 bits，那么 OA 的高的 bits 需要设置为 0。例如，OA 为 40 bits 时：
 * 如果 translation granule 为 4KB：
     - TTBR[47:40] 必须设为 0
-    - 
+    - TTBR[39:12] 保存 translation table base address
+
 
 
 
