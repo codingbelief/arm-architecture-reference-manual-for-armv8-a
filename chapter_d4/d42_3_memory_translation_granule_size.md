@@ -141,7 +141,7 @@ Depending on the configuration and implementation choices, the required input ad
 * More low-order TTBR bits are needed to hold the translation table base address.(译者注：TTBR 中保存了 translation table base address，该 address 会对齐到 translation table size，因此在 table size 变化时，TTBR 中的 base address 的位数也会相应的变化)  
 
 
-Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit input address range using the 4KB granule.
+> Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit input address range using the 4KB granule.
 
 
 **Example D4-1 Effect of an IA width of 35 bits when using the 4KB granule size**
