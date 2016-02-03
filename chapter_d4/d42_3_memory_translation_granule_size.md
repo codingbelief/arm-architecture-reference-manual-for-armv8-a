@@ -146,13 +146,13 @@ Depending on the configuration and implementation choices, the required input ad
 
 > **Example D4-1 Effect of an IA width of 35 bits when using the 4KB granule size**
 
->---
->With a 4KB granule size, a single level of lookup can resolve up to 9 bits of IA. If an implementation has a 35-bit input address range, IA[34:0], Table D4-10 on page D4-1654 shows that lookup must start at level 1, and that the initial lookup must resolve IA[34:30], meaning it resolves 5 bits of address: This 4-bit reduction in the required resolution means:
+---
+> With a 4KB granule size, a single level of lookup can resolve up to 9 bits of IA. If an implementation has a 35-bit input address range, IA[34:0], Table D4-10 on page D4-1654 shows that lookup must start at level 1, and that the initial lookup must resolve IA[34:30], meaning it resolves 5 bits of address: This 4-bit reduction in the required resolution means:
 * The translation table size is divided by 2^4, giving a size of 256B.
 * The TTBR requires 4 more bits for the translation table base address, which becomes TTBR[47:8].  
 ---
 
-When using the 64KB translation granule to translate the maximum IA size of 48 bits, Table D4-10 on page D4-1654 shows that a level 1 lookup must resolve only IA[47:42]. This is 6 bits of address, compared to the 13 bits that can be resolved at a single level of lookup. This 7-bit reduction in the required resolution means:
+> When using the 64KB translation granule to translate the maximum IA size of 48 bits, Table D4-10 on page D4-1654 shows that a level 1 lookup must resolve only IA[47:42]. This is 6 bits of address, compared to the 13 bits that can be resolved at a single level of lookup. This 7-bit reduction in the required resolution means:
 * The translation table size is divided by 2^7, giving a size of 512B.
 * The TTBR requires 7 more bits for the translation table base address, which becomes TTBR[47:9].
 
