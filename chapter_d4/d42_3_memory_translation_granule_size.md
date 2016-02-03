@@ -183,7 +183,7 @@ This means that, for the initial lookup of a stage 2 translation table, the IA r
 #### Concatenated translation tables
 (译者注：将多个小的 translation tables 串联合并成为一个更大的 translation table)
 
-
+在 stage 2 address translation 的 initial lookup 中，最多可以将 16 个 translation tables 串联起来。
 
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 
