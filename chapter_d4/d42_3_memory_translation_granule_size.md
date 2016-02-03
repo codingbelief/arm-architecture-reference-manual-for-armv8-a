@@ -203,7 +203,7 @@ For more information, see [Concatenated translation tables for the initial stage
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 
 ---
-根据 Table D4-10 中的描述，当使用 4KB translation granule 时，从 level 1 lookup 开始，可以处理 39-bit 的 IA
+根据 Table D4-10 中的描述，当使用 4KB translation granule 时，从 level 1 lookup 开始，可以处理 39-bit 的 IA，其中第一次 lookup 处理 IA[39:30]
 ---
 
 In all cases, the translation table, or block of concatenated translation tables, must be aligned to the actual size of the table or block of concatenated tables.
