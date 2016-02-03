@@ -232,7 +232,7 @@ translation table 以及串联合并后的 table 的地址必须对齐到实际�
 
 本小节后续内容将假定 translation stage 的 OA 为 48 bits，此时的 translation table base address 如下：
 * 如果 translation granule 为 4KB，那么 base address 为 TTBR[47:12]
-* 如果 translation granule 为 16KB，那么 base address 为 TTBR[47:12]
+* 如果 translation granule 为 16KB，那么 base address 为 TTBR[47:14]
 * 如果 translation granule 为 4KB，那么 base address 为 TTBR[47:12]
 
 
