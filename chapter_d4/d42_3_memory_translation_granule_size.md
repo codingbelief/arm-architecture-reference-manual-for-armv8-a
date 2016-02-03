@@ -187,6 +187,8 @@ This means that, for the initial lookup of a stage 2 translation table, the IA r
 * 所需要的 translation table 的数量就翻倍。处理 n 个额外的 IA 比特，initial lookup 中就需要 2^n 个 translation table 串联起来。
 * TTBR 中保存的 translation table base address 可以减少 1 位。
 
+
+
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 
 ---
