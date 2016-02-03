@@ -80,7 +80,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 * 剩下的 48 - n bits 需要进行 address translation 解析。
 * translation table descriptor 大小为 8 bytes，因此：
     - 一个完整的 translation table 中保存了 2^(n-3) 个 descriptors
-    - 一个 level 的 translation 最多可以处理 (n-3) 个地址位。
+    - 一个 level 的 translation 最多可以解析 (n-3) 个地址位。
     (译者注：granule size 决定了一个 table 的 size，而 table 的 size 又决定了其能处理的地址比特数)  
     在整个 translation 过程中，最后一次的 lookup 处理 IA 最后的 least significant 比特位，由于一次 lookup 处理的比特位数为 (n-3)，所以可以得出以下结论：
         - 最后一次 lookup 处理的比特为 IA[(3n-7):(2n-3)]
