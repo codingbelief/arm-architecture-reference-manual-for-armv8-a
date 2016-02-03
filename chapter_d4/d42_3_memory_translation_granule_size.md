@@ -170,7 +170,7 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 
 当 granule size 配置为 64KB，IA 为 48 位时，根据 Table D4-10 中的描述，translation 从 level 1 lookup 开始，并且该 lookup 只处理 IA[47:42] 6 个比特。level 1 lookup 对比在此配置下的其他 lookup 需要处理 13 个 IA 比特位，少处理了 7 个比特，也就意味着：
 * 其对应的 translation table size 为 512B，是其他的 table size 的 1/(2^7)
-* TTBR 指向第一次 lookup 的 translation table base address 的所用的比特位数需要增加 7, 即 TTBR[47:8]
+* TTBR 指向第一次 lookup 的 translation table base address 的所用的比特位数需要增加 7, 即 TTBR[47:9]
 
 #### Concatenated translation tables
 
