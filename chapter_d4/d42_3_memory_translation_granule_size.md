@@ -244,7 +244,7 @@ translation table 以及串联合并后的 table 的地址必须对齐到实际�
     - TTBR[39:14] 保存 translation table base address
 * 如果 translation granule 为 64KB：
     - TTBR[47:40] 必须设为 0
-    - TTBR[39:12] 保存 translation table base address
+    - TTBR[39:16] 保存 translation table base address
 
 
 
