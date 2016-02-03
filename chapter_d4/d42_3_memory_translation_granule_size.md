@@ -182,6 +182,8 @@ This means that, for the initial lookup of a stage 2 translation table, the IA r
 
 #### Concatenated translation tables
 
+
+
 **Example D4-2 Concatenating translation tables to resolve a 40-bit IA range, with the 4K granule**
 
 ---
