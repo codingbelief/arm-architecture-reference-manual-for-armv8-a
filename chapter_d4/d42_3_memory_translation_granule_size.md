@@ -193,8 +193,7 @@ resolve IA[39:30] with the first lookup:
 * The TTBR requires 1 fewer bit for the translation table base address, which becomes TTBR[47:13].
 ---
 
-For more information, see [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#)
-.
+For more information, see [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
 
 In all cases, the translation table, or block of concatenated translation tables, must be aligned to the actual size of the table or block of concatenated tables.
 The translation table base address held in the TTBR is defined in the OA map for that stage of address translation.
