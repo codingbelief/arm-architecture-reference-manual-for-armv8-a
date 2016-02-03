@@ -205,7 +205,7 @@ For more information, see [Concatenated translation tables for the initial stage
 ---
 根据 Table D4-10 中的描述，当使用 4KB translation granule 时，从 level 1 lookup 开始，可以处理 39-bit 的 IA，其中 first lookup 处理 IA[39:30]。在 stage 2 translation 中，将 IA 拓展为 40 bits 时，first lookup 处理 IA[39:30]，此时需要：
 * 将两个 translation tables 串联合并为一个 8KB 的 translation table
-* TTBR 中保存的 translation table base address 由 TTBR[47:12] 变为 TTBR[47:13].
+* TTBR 中保存的 translation table base address 由 TTBR[47:12] 变为 TTBR[47:13]。
 ---
 
 In all cases, the translation table, or block of concatenated translation tables, must be aligned to the actual size of the table or block of concatenated tables.
