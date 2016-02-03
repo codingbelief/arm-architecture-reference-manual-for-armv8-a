@@ -168,7 +168,7 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 * TTBR 指向第一次 lookup 的 translation table base address 的所用的比特位数需要增加 4, 即 TTBR[47:8]。(译者注：TTBR 中保存了 translation table base address，该 address 会对齐到 translation table size，因此在 table size 变化时，TTBR 中的 base address 的位数也会相应的变化)  
 ---
 
-当 granule size 配置为 64KB 时，
+当 granule size 配置为 64KB，IA 为 48 位时，
 
 #### Concatenated translation tables
 
