@@ -57,3 +57,12 @@ For the EL1&0 translation regime, the VA range is split into two subranges as sh
 0x0000_0000_0000_0000,
 * TTBR1_EL1 points to the initial translation table for the upper VA subrange, that runs up to address
 0xFFFF_FFFF_FFFF_FFFF.
+
+![](figure_d4_15.png)
+
+Which TTBR is used depends only on the VA presented for translation:
+* If the top bits of the VA are zero, then TTBR0_EL1 is used.
+* If the top bits of the VA are one, then TTBR1_EL1 is used.
+
+It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see Address tagging in AArch64 state on page D4-1638.
+
