@@ -112,3 +112,10 @@ Where a stage 2 translation would require 16 entries or fewer in its top-level t
 
 In addition, when using the 16KB translation granule and requiring a 48-bit input address size for the stage 2 translations, lookup must start with two concatenated translation tables at level 1.
 
+> **NOTE:**
+This translation scheme:
+* Avoids the overhead of an additional level of translation.
+* Requires the software that is defining the translation to:
+    - Define the concatenated translation tables with the required overall alignment.
+    - Program VTTBR_EL2 to hold the address of the first of the concatenated translation tables.
+    - Program VTCR_EL2 to indicate the required input address range and initial lookup level.
