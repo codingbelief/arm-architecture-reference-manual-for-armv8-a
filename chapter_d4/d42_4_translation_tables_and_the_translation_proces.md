@@ -25,4 +25,15 @@ The translation table walk starts with a read of the translation table for the i
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
+![](figure_d4_7.png)
+
+ARM DDI 0487A.g ID070815
+A translation table lookup from VMSAv8-64 performs a single-copy atomic 64-bit access to the translation table entry. This means the translation table entry is treated as a 64-bit object for the purpose of endianness. SCTLR.EE determines the endianness of the translation table lookups.
+
+> **NOTE:**
+**Dynamically changing translation table endianness**
+Because any change to an SCTLR.EE, bit requires synchronization before it is visible to subsequent operations, ARM strongly recommends that any EE bit is changed only when either:
+* Executing at an Exception level that does not use the translation tables affected by the EE bit being changed.
+* Executing with address translation disabled for any stage of translation affected by the EE bit being changed.
+Address translation stages are disabled by setting an SCTLR.M bit to 0. See the appropriate register description for more information.
 
