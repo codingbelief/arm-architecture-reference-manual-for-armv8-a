@@ -37,3 +37,4 @@ Because any change to an SCTLR.EE, bit requires synchronization before it is vis
 * Executing with address translation disabled for any stage of translation affected by the EE bit being changed.
 Address translation stages are disabled by setting an SCTLR.M bit to 0. See the appropriate register description for more information.
 
+
