@@ -9,6 +9,6 @@ shows, for each granule size:
 
 The following subsections summarize the multiple levels of lookup that can be required for a single stage of address translation that might require the maximum number of lookups:
 
-* Overview of VMSAv8-64 address translation using the 4KB translation granule on page D4-1659. 
-* Overview of VMSAv8-64 address translation using the 16KB translation granule on page D4-1662. 
-* Overview of VMSAv8-64 address translation using the 64KB translation granule on page D4-1665.
+* [Overview of VMSAv8-64 address translation using the 4KB translation granule on page D4-1659](#). 
+* [Overview of VMSAv8-64 address translation using the 16KB translation granule on page D4-1662](#). 
+* [Overview of VMSAv8-64 address translation using the 64KB translation granule on page D4-1665](#).
