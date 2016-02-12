@@ -4,6 +4,7 @@ As shown in Memory translation granule size on page D4-1651, the granule size de
 * How the required input address range determines the required initial lookup levels.
 * For stage 2 translations, the possible effect described in Concatenated translation tables on page D4-1655.
 * The TTBR addressing and indexing for the initial lookup.
+
 The following subsections summarize the multiple levels of lookup that can be required for a single stage of address translation that might require the maximum number of lookups:
 
 * Overview of VMSAv8-64 address translation using the 4KB translation granule on page D4-1659. 
