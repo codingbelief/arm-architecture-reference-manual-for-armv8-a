@@ -65,4 +65,10 @@ If the translation table descriptor returned as a result of that initial lookup 
 This applies for all subsequent translation table lookups as part of that translation table walk, with the additional rule that any translation table descriptor that is returned from Non-secure memory is treated as if the NSTable bit in that descriptor indicates that the subsequent translation table lookup is to Non-secure memory.
 
 #### Control of translation table walks
+
 For the first stage of the EL1&0 translation regime, the TCR_EL1.{EPD0, EPD1} bits determine whether the translation tables for that regime are valid. EPD0 indicates whether the table that TTBR0_EL1 points to is valid, and EPD1 indicates whether the table that TTBR1_EL1 points to is valid. The effect of these bits is:
+
+| | |
+| -- | -- |
+| EPDn == 0 | The translation table is valid, and can be used for a translation table lookup. |
+| EPDn == 1 | If a TLB miss occurs based on TTBRn, a Translation fault is returned, and no translation table walk is performed. The fault is reported as a level 0 fault. |
