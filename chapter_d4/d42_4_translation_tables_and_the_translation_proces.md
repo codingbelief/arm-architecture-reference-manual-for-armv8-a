@@ -16,3 +16,10 @@ A translation table walk comprises one or more translation table lookups. The tr
 * The access permissions for the target memory regions. For more information about how the translation table descriptors specify these permissions see Memory access control on page D4-1704.
 
 The translation table walk starts with a read of the translation table for the initial lookup. The TTBR for the stage of translation holds the base address of this table. Each translation table lookup returns a descriptor, that indicates one of the following:
+
+• The entry is the final entry of the walk. In this case, the entry contains the OA, and the permissions and attributes for the access.
+• An additional level of lookup is required. In this case, the entry contains the translation table base address for that lookup. In addition:
+— The descriptor provides hierarchical attributes that are applied to the final translation, see Hierarchical control of Secure or Non-secure memory accesses on page D4-1703 and Hierarchical control of data access permissions on page D4-1706.
+— If the translation is in a Secure translation regime, the descriptor indicates whether that base address is in the Secure or Non-secure address space, unless a hierarchical control at a previous level of lookup has indicated that it must be in the Non-secure address space.
+• The descriptor is invalid. In this case, the memory access generates a Translation fault.
+Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
