@@ -66,3 +66,23 @@ Which TTBR is used depends only on the VA presented for translation:
 
 It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see Address tagging in AArch64 state on page D4-1638.
 
+> **NOTE:**
+The handling of the Contiguous bit can mean that the boundary between the translation regions defined by the
+TCR_EL1.TnSZ values and the region for which an access generates a Translation fault is wider than shown in Figure D4-15. That is, if the descriptor for an access to the region shown as generating a fault has the Contiguous bit set to 1, the access might not generate a fault. Possible translation table registers programming errors on page D4-1673 describes this possibility.
+
+Example D4-3 on page D4-1671 shows a typical application of this VA split.
+
+Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls
+
+---
+**TTBR0_EL1**
+Used for process-specific addresses.
+Each process maintains a separate level 1 translation table. On a context switch:
+• TTBR0_EL1 is updated to point to the level 1 translation table for the new context
+• TCR_EL1 is updated if this change changes the size of the translation table
+• CONTEXTIDR_EL1 is updated.
+
+**TTBR1_EL1**
+Used for operating system and I/O addresses, that do not change on a context switch.
+
+---
