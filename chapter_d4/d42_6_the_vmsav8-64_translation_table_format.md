@@ -14,3 +14,4 @@ The following subsections describe the use of this translation table format:
 * Selection between TTBR0 and TTBR1 on page D4-1670.
 * Concatenated translation tables for the initial stage 2 lookup on page D4-1671.
 * Possible translation table registers programming errors on page D4-1673.
+
