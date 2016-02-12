@@ -9,7 +9,7 @@
        * [D4.2.2 Controlling address translation stages](chapter_d4/d42_2_controlling_address_translation_stages.md)
        * [D4.2.3 Memory translation granule size](chapter_d4/d42_3_memory_translation_granule_size.md)
        * [D4.2.4 Translation tables and the translation process](chapter_d4/d42_4_translation_tables_and_the_translation_proces.md)
-       * D4.2.5 Overview of the VMSAv8-64 address translation stages
+       * [D4.2.5 Overview of the VMSAv8-64 address translation stages](chapter_d4/d42_5_overview_of_the_vmsav8-64_address_translation.md)
    * [D4.3 VMSAv8-64 translation table format descriptors](chapter_d4/d43_vmsav8-64_translation_table_format_descriptors.md)
    * [D4.4 Access controls and memory region attributes](chapter_d4/d44_access_controls_and_memory_region_attributes.md)
    * [D4.5 MMU faults](chapter_d4/d45_mmu_faults.md)
