@@ -44,3 +44,16 @@ For the initial lookup level:
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
+> **NOTE:**
+Larger translation granule sizes typically requires fewer levels of translation tables to translate a particular size of virtual address.
+
+For the TCR programming requirements for the initial lookup, see Overview of the VMSAv8-64 address translation stages on page D4-1658.
+
+### Selection between TTBR0 and TTBR1
+
+Every translation table walk starts by accessing the translation table addressed by the TTBR for the stage 1 translation for the required translation regime.
+For the EL1&0 translation regime, the VA range is split into two subranges as shown in Figure D4-15, and:
+* TTBR0_EL1 points to the initial translation table for the lower VA subrange, that starts at address
+0x0000_0000_0000_0000,
+* TTBR1_EL1 points to the initial translation table for the upper VA subrange, that runs up to address
+0xFFFF_FFFF_FFFF_FFFF.
