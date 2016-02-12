@@ -39,4 +39,7 @@ Figure D4-8 shows the stage 1 address translation, for an address translation us
 For a stage 2 translation, up to 16 translation tables can be concatenated at the initial lookup level. For certain input address sizes, concatenating tables in this way means that the lookup starts at a lower level than would otherwise be the case. For more information see [Concatenated translation tables for the initial stage 2 lookup on page D4-1671.](#)
 When using the 4KB translation granule, Table D4-12 shows all possibilities for the initial lookup for a stage 2 translation.
 
+![](table_d4_12.png)
+
+> **NOTE:**
 
