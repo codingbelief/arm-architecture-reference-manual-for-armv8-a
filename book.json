@@ -1,8 +1,11 @@
 {
-    "plugins": ["disqus","splitter"],
+    "plugins": ["disqus","splitter","ga"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
+        },
+        "ga": {
+            "token": "UA-73737903-1"
         }
     }
 }
