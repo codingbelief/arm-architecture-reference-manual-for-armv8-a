@@ -55,3 +55,30 @@ Because the maximum number of concatenated translation tables is 16, there is a 
 
 Figure D4-9 shows the stage 2 address translation, for an input address size of between 40 and 43 bits. For an input address size in this range, the lookup can start at either level 0 or level 1.
 
+![](figure_d4_9.png)
+
+### Overview of VMSAv8-64 address translation using the 16KB translation granule
+
+The requirements for the level of the initial lookup are different for stage 1 and stage 2 translations.
+
+#### Overview of stage 1 translations, 16KB granule
+
+For a stage 1 translation, the required initial lookup level is determined only by the required input address range specified by the corresponding TCR.TxSZ field. When using the 16KB translation granule, Table D4-14 shows this requirement.
+
+![](table_d4_14.png)
+
+The configuration options for an initial lookup at level 1, level 2, or level 3 are also permitted for stage 2 translations, but stage 2 translation does not permit an initial lookup at level 0.
+
+> **NOTE:**
+* When using the 16KB translation granule, a maximum of 1 bit of IA is resolved by a level 0 lookup.
+* Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA, When using the 16KB translation granule, IA[13:0] = OA[13:0] for all translations.
+
+Figure D4-10 shows the stage 1 address translation, for an address translation using the 16KB granule with an input address size of 48 bits.
+
+![](figure_d4_10.png)
+
+#### Overview of stage 2 translations, 16KB granule
+
+For a stage 2 translation, up to 16 translation tables can be concatenated at the initial lookup level. For certain input address sizes, concatenating tables in this way means that the lookup starts at a lower level than would otherwise be the case. For more information see Concatenated translation tables for the initial stage 2 lookup on page D4-1671.
+When using the 16KB granule, for a stage 2 translation with an input address sized of 48 bits, the initial lookup must be at level 1, with two concatenated translation tables at this level.
+When using the 16KB translation granule, Table D4-15 shows all possibilities for the initial lookup for a stage 2 translation.
