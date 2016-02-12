@@ -28,3 +28,8 @@ These configuration options are also permitted for stage 2 translations.
 > **NOTE:**
 * When using the 4KB translation granule, the initial lookup cannot be at level 3.
 * Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA, When using the 4KB translation granule, IA[11:0] = OA[11:0] for all translations.
+
+Figure D4-8 shows the stage 1 address translation, for an address translation using the 4KB granule with an input address size greater than 39 bits.
+
+
+
