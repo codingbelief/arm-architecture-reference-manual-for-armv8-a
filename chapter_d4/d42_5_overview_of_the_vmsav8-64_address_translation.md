@@ -42,4 +42,6 @@ When using the 4KB translation granule, Table D4-12 shows all possibilities for 
 ![](table_d4_12.png)
 
 > **NOTE:**
-
+* When using the 4KB translation granule, the initial lookup cannot be at level 3.
+* Because concatenating translation tables reduces the number of levels of lookup required, when using the 4KB translation granule, tables cannot be concatenated at level 0.
+* Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA. When using the 4KB translation granule, IA[11:0] = OA[11:0] for all translations.
