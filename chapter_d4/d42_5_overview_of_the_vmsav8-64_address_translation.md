@@ -12,3 +12,14 @@ The following subsections summarize the multiple levels of lookup that can be re
 * [Overview of VMSAv8-64 address translation using the 4KB translation granule on page D4-1659](#). 
 * [Overview of VMSAv8-64 address translation using the 16KB translation granule on page D4-1662](#). 
 * [Overview of VMSAv8-64 address translation using the 64KB translation granule on page D4-1665](#).
+
+### Overview of VMSAv8-64 address translation using the 4KB translation granule
+
+The requirements for the level of the initial lookup are different for stage 1 and stage 2 translations.
+
+#### Overview of stage 1 translations, 4KB granule
+
+For a stage 1 translation, the required initial lookup level is determined only by the required input address range specified by the corresponding TCR.TxSZ field. When using the 4KB translation granule, Table D4-11 shows this requirement.
+
+![](table_d4_11.png)
+
