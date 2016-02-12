@@ -133,3 +133,34 @@ When using the 4KB translation granule, a level1 lookup with a single translatio
     - Bits A[41:39] select the 4KB translation table.
     - Bits A[38:30] index a descriptor within that translation table.
 ---
+
+As an example of the concatenation of translation tables at the initial lookup level, when using the 4KB translation granule, Table D4-24 shows the possible uses of concatenated translation tables to permit lookup to start at level 1 rather than at level 0. For completeness, the table starts with the case where the required IPA range means lookup starts at level 1with a single translation table at that level.
+
+![](table_d4_24.png)
+
+> **NOTE:**
+Because concatenation is permitted only for a stage 2 translation, the input addresses in the table are IPAs.
+
+Overview of the VMSAv8-64 address translation stages on page D4-1658 identifies all of the possible uses of concatenation. In all cases, the block of concatenated translation tables must be aligned to the block size.
+
+### Possible translation table registers programming errors
+
+This subsection describes possible errors in programming the translation table registers.
+
+#### Misprogramming the VTCR_EL2.{T0SZ, SL0} fields
+
+For a stage 2 translation, the programming of the VTCR_EL2.{T0SZ, SL0} fields must be consistent, see Overview of the VMSAv8-64 address translation stages on page D4-1658.
+
+#### Misprogramming of the Contiguous bit
+For more information about the Contiguous bit, and the range of translation table entries that must have the bit set to 1 to mark the entries as contiguous, see The Contiguous bit on page D4-1715.
+If one or more of the following errors is made in programming the translation tables, the TLB might contain overlapping entries:
+* One or more of the contiguous translation table entries does not have the Contiguous bit set to 1.
+* One or more of the contiguous translation table entries holds an output address that is not consistent with all of the entries pointing to the same aligned contiguous address range.
+* The attributes and permissions of the contiguous entries are not all the same.
+Such misprogramming of the translation tables means the output address, memory permissions, or attributes for a lookup might be corrupted, and might be equal to values that are not consistent with any of the programmed translation table values.
+In some implementations, such misprogramming might also give rise to a TLB Conflict abort.
+The architecture guarantees that misprogramming of the Contiguous bit cannot provide a mechanism for any of the following to occur:
+* Software executing at EL1 or EL0 accessing regions of physical memory that are not accessible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
+* Software executing at EL1 or EL0 accessing regions of physical memory with attributes or permissions that are not possible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
+* Software executing in Non-secure state accessing Secure physical memory.
+
