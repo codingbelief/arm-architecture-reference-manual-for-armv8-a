@@ -1,8 +1,8 @@
 {
-    "plugins": ["disqus"],
+    "plugins": ["disqus","splitter"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
         }
-    }  
+    }
 }
