@@ -24,3 +24,5 @@ The translation table walk starts with a read of the translation table for the i
 * The descriptor is invalid. In this case, the memory access generates a Translation fault.
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
+
+
