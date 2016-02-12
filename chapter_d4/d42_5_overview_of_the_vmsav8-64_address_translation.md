@@ -23,3 +23,5 @@ For a stage 1 translation, the required initial lookup level is determined only 
 
 ![](table_d4_11.png)
 
+These configuration options are also permitted for stage 2 translations.
+
