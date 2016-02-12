@@ -134,3 +134,16 @@ When using the 64KB translation granule, Table D4-18 shows all possibilities for
 * When using the 64KB translation granule, there are no level 0 lookups.
 * Because concatenating translation tables reduces the number of levels of lookup required, when using the 64KB translation granule, tables cannot be concatenated at level 1.
 * Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA. When using the 64KB translation granule, IA[15:0] = OA[15:0] for all translations.
+
+VTCR_EL2.SL0 indicates the required initial lookup level, as Table D4-19 shows.
+
+![](table_d4_19.png)
+
+
+Because the maximum number of concatenated translation tables is 16, there is a relationship between the permitted VTCR_EL2.{T0SZ, SL0} values. If, when a translation table walk is started, the T0SZ value is not consistent with the SL0 value, a stage 2 level 0 translation fault is generated.
+
+Figure D4-14 shows the stage 2 address translation, for an input address size of between 43 and 46 bits. This means the lookup can start at either level 1 or level 2.
+
+![](figure_d4_14.png)
+
+
