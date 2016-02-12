@@ -72,3 +72,4 @@ For the first stage of the EL1&0 translation regime, the TCR_EL1.{EPD0, EPD1} bi
 | -- | -- |
 | EPDn == 0 | The translation table is valid, and can be used for a translation table lookup. |
 | EPDn == 1 | If a TLB miss occurs based on TTBRn, a Translation fault is returned, and no translation table walk is performed. The fault is reported as a level 0 fault. |
+
