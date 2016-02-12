@@ -119,3 +119,17 @@ This translation scheme:
     - Define the concatenated translation tables with the required overall alignment.
     - Program VTTBR_EL2 to hold the address of the first of the concatenated translation tables.
     - Program VTCR_EL2 to indicate the required input address range and initial lookup level.
+    
+
+Concatenating additional translation tables at the initial level of look up resolves additional address bits at that level. To resolve n additional address bits requires 2n concatenated translation tables. Example D4-5 shows how, for level 1 lookups using the 4KB translation granule, translation tables can be concatenated to resolve three additional address bits.
+
+Example D4-5 Adding three bits of address resolution at level 1 lookup, using the 4KB granule
+
+---
+When using the 4KB translation granule, a level1 lookup with a single translation table resolves address bits[38:30]. To add three more address bits requires 23 translation tables, that is, eight translation tables. This means:
+* The total size of the concatenated translation tables is 8 × 4KB = 32KB.
+* This block of concatenated translation tables must be aligned to 32KB.
+* The address range resolved at this lookup level is A[41:30].of which:
+    - Bits A[41:39] select the 4KB translation table.
+    - Bits A[38:30] index a descriptor within that translation table.
+---
