@@ -104,3 +104,9 @@ As described in Overview of the VMSAv8-64 address translation stages on page D4-
 determine the initial lookup level for the translation.
 
 ### Concatenated translation tables for the initial stage 2 lookup
+
+Overview of the VMSAv8-64 address translation stages on page D4-1658 introduced the ability to concatenate translation tables for the initial stage 2 translation lookup. This section gives more information about that concatenation.
+Where a stage 2 translation would require 16 entries or fewer in its top-level translation table, the system designer can instead:
+* Require the corresponding number of concatenated translation tables at the next translation level, aligned to the size of the block of concatenated translation tables.
+* Start the translation at that next translation level.
+In addition, when using the 16KB translation granule and requiring a 48-bit input address size for the stage 2 translations, lookup must start with two concatenated translation tables at level 1.
