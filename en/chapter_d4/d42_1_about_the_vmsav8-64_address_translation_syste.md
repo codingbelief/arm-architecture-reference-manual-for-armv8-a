@@ -73,18 +73,18 @@ The ARMv8 VMSA naming model reflects the possible stages of address translation,
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
 
 
-> ### VMSA address types and address spaces  
+ ### VMSA address types and address spaces  
 
-> A description of the VMSA refers to the following address types.
+ A description of the VMSA refers to the following address types.
 
->> **NOTE:**  
-> These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
+> **NOTE:**  
+ These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
-> #### Virtual address (VA)
+ #### Virtual address (VA)
 
-> An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
+ An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
 
->> **NOTE:**  
+> **NOTE:**  
 > This means that an address held in the PC, LR, SP, or an ELR, is a VA.  
 
 > In AArch64 state, the VA address space has a maximum address width of 48 bits. With a single VA range this gives a maximum VA space of 256TB, with VA range of 0x0000_0000_0000_0000 to 0x0000_FFFF_FFFF_FFFF.  
