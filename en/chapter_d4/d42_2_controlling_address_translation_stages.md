@@ -1,6 +1,6 @@
 > ## D4.2.2 Controlling address translation stages
 
-[`Chinese`](../../en/chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.html)
+[`Chinese`](../../zh/chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.html)
 
 ## D4.2.2 Address translation stages 配置
 
