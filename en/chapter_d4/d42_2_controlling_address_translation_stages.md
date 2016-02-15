@@ -95,17 +95,17 @@ Although software can configure the input address size to be smaller than 48 bit
 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) gives more information about the relationship between the required input address size, the value of TxSZ, and the required initial lookup level, and how these are affected by the translation granule size. However:
 
 
-> **For all translation stages**  
+**For all translation stages**  
 The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is IMPLEMENTATION DEFINED whether:
 * The implementation behaves as if the field is programmed to 39 for all purposes other than reading back the value of the field.
 * Any use of the TxSZ value generates a Level 0 Translation fault for the stage of translation at which TxSZ is used.
 
-> **For a stage 1 translation**  
+**For a stage 1 translation**  
 The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 then it is IMPLEMENTATION DEFINED whether:
 * The implementation behaves as if the field were programmed to 16 for all purposes other than reading back the value of the field.
 * Any use of the TxSZ value generates a stage 1 Level 0 Translation fault.
 
-> **For a stage 2 translation**  
+**For a stage 2 translation**  
 [Supported IPA size](#) defines the effective minimum value of T0SZ, that depends on the supported PA size, and also describes the possible effects of programming T0SZ to a value that is smaller than this effective minimum value.
 
 **For all translation stages**  
