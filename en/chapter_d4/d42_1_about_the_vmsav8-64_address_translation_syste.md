@@ -73,14 +73,6 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 | VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
 
-ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命名：
-
-| | |
-| -- | -- |
-| VMSAv8  | translation scheme 中所有存在 1 个或者 2 个 stages 的 address translation|
-| VMSAv8-32 | translation scheme 中在运行态为 AArch32 的 EL 中进行的，只有一个 stage 的 address translation |
-| VMSAv8-64 | translation scheme 中在运行态为 AArch64 的 EL 中进行的，只有一个 stage 的 address translation |
-
 
 > ### VMSA address types and address spaces  
 
