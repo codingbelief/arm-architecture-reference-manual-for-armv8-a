@@ -8,7 +8,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
 
  * The two Execution states, AArch64 and AArch32.
  * AArch64 和 AArch32 两个运行态。
- * The instruction sets:
+ * 支持多种指令集:
     - In AArch32 state, the A32 and T32 instruction sets, that are compatible with earlier versions of the ARM architecture.
     - In AArch64 state, the A64 instruction set.
  * The states that determine how a PE operates, including the current Exception level and Security state, and in AArch32 state the PE mode.
