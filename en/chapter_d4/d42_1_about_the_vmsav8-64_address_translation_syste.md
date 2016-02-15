@@ -13,20 +13,20 @@
 
  The architecture defines a number of translation regimes, where a translation regime comprises either:
 
-> * A single stage of address translation. This maps an input virtual address (VA) to an output physical address (PA).
-> * Two, sequential, stages of address translation, where:
+ * A single stage of address translation. This maps an input virtual address (VA) to an output physical address (PA).
+ * Two, sequential, stages of address translation, where:
   - Stage 1 maps an input VA to an output intermediate physical address (IPA).
   - Stage 2 maps an input IPA to an output PA.
 
-> The translation granule specifies the granularity of the mapping from IA to OA. That is, it defines both:
+ The translation granule specifies the granularity of the mapping from IA to OA. That is, it defines both:
 
-> * The page size for a stage of address translation, where a page is the smallest block of memory for which an IA to OA mapping can be specified.
-> * The size of a complete translation table for that stage of address translation.
+ * The page size for a stage of address translation, where a page is the smallest block of memory for which an IA to OA mapping can be specified.
+ * The size of a complete translation table for that stage of address translation.
 
-> The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. [The effects of disabling a stage of address translation
+ The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. [The effects of disabling a stage of address translation
 on page D4-1677](#) defines how the MMU handles an access for which a required address translation stage is disabled.
 
->> **NOTE:**
+> **NOTE:**
 
 >> * In the ARM architecture, a software agent, such as an operating system, that uses or defines stage 1 memory translations, might be unaware of the second stage of translation, and of the distinction between IPA and PA.
 >> * A more generalized description of the translation regimes is that a regime  always comprises two sequential stages of translation, but in some regimes the stage 2 translation both:
