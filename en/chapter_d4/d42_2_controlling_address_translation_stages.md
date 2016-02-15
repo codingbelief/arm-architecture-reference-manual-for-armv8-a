@@ -1,4 +1,4 @@
-> ## D4.2.2 Controlling address translation stages
+## D4.2.2 Controlling address translation stages
 
 [`Chinese`](../../zh/chapter_d4/d42_2_controlling_address_translation_stages.html)
 
