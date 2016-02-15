@@ -37,7 +37,7 @@
 
 
 **Part C**  
-此部分内容详细介绍了 AArch64 运行态下的 A64 指令集。对于每一个所描述的指令都详细的描述了其在 EL0 下执行 (即非特权模式执行) 时的效果，以及使用该指令的限制条件，同时也描述了指令在其他更高级别的 Exception level 下执行时，与 EL0 下执行的差异。这部分内容，对于编译器、汇编器和其他用于生成 ARM 机器码的软件的设计者和使用者都非常关键。
+此部分内容详细介绍了 AArch64 运行态下的 A64 指令集。对于每一个所描述的指令，都详细的描述了其在 EL0 下执行 (即非特权模式执行) 时的效果，以及使用该指令的限制条件，同时也描述了指令在其他更高级别的 Exception level 下执行时，与 EL0 下执行的差异。这部分内容，对于编译器、汇编器和其他用于生成 ARM 机器码的软件的设计者和使用者都非常关键。
 
 
 **Part D**  
@@ -53,7 +53,7 @@
 
 **Part F**  
 Describes the T32 and A32 instruction sets, that are available in the AArch32 Execution state. These instruction sets are backwards-compatible with earlier versions of the ARM architecture. This part describes the precise effects of each instruction when executed in User mode, described as unprivileged execution or execution at EL0, including any restrictions on its use, and how the effects of the instruction differ at higher Exception levels. This information is of primary importance to authors and users of compilers, assemblers, and other programs that generate ARM machine code.
-此部分内容详细介绍了 AArch32 运行态下向后兼容旧 ARM 架构的 T32 和 A32 指令集。
+此部分内容详细介绍了 AArch32 运行态下向后兼容旧 ARM 架构的 T32 和 A32 指令集。对于每一个所描述的指令，都详细的描述了其在 User mode 下执行 (即非特权模式执行，或者说在 EL0 下执行) 时的效果，以及使用该指令的限制条件，同时也描述了指令在其他更高级别的 Exception level 下执行时，与 EL0 下执行的差异。
 
 >**NOTE:**  
 User mode is the only mode where software execution is unprivileged.
