@@ -128,17 +128,6 @@ A full translation table lookup is called a *translation table walk*. It is perf
 > Translation table entries can be cached in a Translation Lookaside Buffer, see [Translation Lookaside Buffers (TLBs) on page D4-1729](#).
 
 
-### About address translation
-
-TTBR (Translation table base register) 保存着将输入地址映射到输出地址的 translation table 的基地址。在 [VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642](#) 章节中描述的每一个 translation stage 都由各自的 translation tables。  
-在 EL1&0 stage 1 translation 中，VA 被划分了两个区块，各个区块都需要一个 translation table。 [Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls on page D4-1671](#) 章节中，描述了两个区块的具体细节。  
-[Controlling address translation stages on page D4-1645](#) 章节描述了 MMU 是如何通过 system control registers 来控制 address translation。  
-完成 VA 到 PA 转换的一系列 translation table lookup 称为 translation table walk。它是由硬件自动执行的，and can have a significant cost in execution time. 为了完成一次从 VA 到 PA 的映射，需要访问多次 translation table，一次访问则称为 a level of address lookup。地址转换过程中，每多一次访问都会返回一个更精确的结果。最后一次 lookup 会返回以下的内容：
-* OA 的高位数值
-* 被访问的内存的属性和访问权限。
-
-Translation table 的条目可以被缓存在 Translation Lookaside Buffer 中，更多信息参考 [Translation Lookaside Buffers (TLBs) on page D4-1729](#) 章节。
-
 ### The VMSAv8-64 translation table format
 
 Stages of address translation that are controlled by an Exception level that is using AArch64 use the VMSAv8-64 translation table format. This format uses 64-bit descriptor entries in the translation tables.
