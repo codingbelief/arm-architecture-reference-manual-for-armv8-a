@@ -11,7 +11,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
     - 在 AArch32 运行态下, 支持兼容旧架构的 A32 和 T32 指令集.
     - 在 AArch64 运行态下, 执行 A64 指令集.
  * 当前 Exception 等级， 安全状态和运行态的不同对 PE 行为的影响。
- * The Exception model.
+ * Exception 模型.
  * The interprocessing model, that supports transitioning between AArch64 state and AArch32 state.
  * The memory model, that defines memory ordering and memory management. This manual covers a single architecture profile, ARMv8-A, that defines a Virtual Memory System Architecture (VMSA).
  * The programmers’ model, and its interfaces to System registers that control most PE and memory system features, and provide status information.
