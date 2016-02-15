@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [前言](preface.md)
-   * [About this manual](about_this_manual.md)
+   * [关于本参考手册](about_this_manual.md)
 * [D4 AArch64 虚拟内存系统架构 (VMSA)](chapter_d4/d4_the_aarch64_virtual_memory_system_archi.md)
    * [D4.1 虚拟内存系统架构(VMSA)简介](chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.md)
        * [D4.1.1 Address tagging in AArch64 state](chapter_d4/d41_1_address_tagging_in_aarch64_state.md)
