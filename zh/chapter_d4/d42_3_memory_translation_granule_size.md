@@ -1,5 +1,7 @@
 > ## D4.2.3 Memory translation granule size
 
+[`Chinese`](../../zh/chapter_d4/d42_2_controlling_address_translation_stages.html)
+
 ## D4.2.3 Memory translation granule size
 
 > The memory translation granule size defines both:
