@@ -26,3 +26,4 @@ textual form. However, this manual is not a tutorial for ARM assembler language,
 assembler language, except at a very basic level. To make effective use of ARM assembler language, read the
 documentation supplied with the assembler being used.
 
+This manual is organized into parts:
