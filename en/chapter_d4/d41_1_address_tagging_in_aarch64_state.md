@@ -1,6 +1,8 @@
 
 ## D4.1.1 Address tagging in AArch64 state
 
+[Chinese](#)
+
 In AArch64 state, the ARMv8 architecture supports tagged addresses for data values.
 In these cases the top eight bits of the virtual address are ignored when determining:
 
