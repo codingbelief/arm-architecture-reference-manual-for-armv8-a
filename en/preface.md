@@ -1,7 +1,6 @@
 # Preface
 
-This preface introduces the ARM Architecture Reference Manual, ARMv8, for ARMv8-A architecture profile. It
-contains the following sections:
+This preface introduces the ARM Architecture Reference Manual, ARMv8, for ARMv8-A architecture profile. It contains the following sections:
 
  * About this manual on page xvi.
  * Using this manual on page xviii.
