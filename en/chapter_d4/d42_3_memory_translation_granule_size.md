@@ -2,7 +2,7 @@
 
 ## D4.2.3 Memory translation granule size
 
-[`英文版`](../../zh/chapter_d4/d42_3_memory_translation_granule_size.html)
+[`英文版`](../../en/chapter_d4/d42_3_memory_translation_granule_size.html)
 
 > The memory translation granule size defines both:
 * The maximum size of a single translation table.
