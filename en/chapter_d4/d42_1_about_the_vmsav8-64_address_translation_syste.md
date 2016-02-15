@@ -62,11 +62,11 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
  * About address translation on page D4-1644.
  * The VMSAv8-64 translation table format on page D4-1644.
 
-> ### ARMv8 VMSA naming
+### ARMv8 VMSA naming
 
-> The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
+The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
-> | | |
+| | |
 | -- | -- |
 | VMSAv8  | The overall translation scheme, within which an address translation has one or two stages. |
 | VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
