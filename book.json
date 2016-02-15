@@ -1,5 +1,4 @@
 {
-    "language": "zh",
     "plugins": ["disqus","splitter","ga","scripts"],
     "pluginsConfig": {
         "disqus": {
