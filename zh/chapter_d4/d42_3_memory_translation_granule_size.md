@@ -47,7 +47,7 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
     - The previous level of lookup resolves IA[(3n-7):(2n-3)].
 
     However, the level of lookup that resolves the most significant bits of the IA might not require a full-sized translation table. Therefore, in general, the address bits resolved in a level of lookup are:  
-        IA[Min(47, ((x-3)(n-3)+2n-4)):(n+(x-3)(n-3))], where:  
+    IA[Min(47, ((x-3)(n-3)+2n-4)):(n+(x-3)(n-3))], where:  
 
 | | |
 | -- | -- |
