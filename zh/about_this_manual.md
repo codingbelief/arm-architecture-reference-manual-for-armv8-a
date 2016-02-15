@@ -19,7 +19,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * 高性能的 SIMD 和浮点指令：
     - 支持单精度和双精度浮点数操作。
     - 双精度、单精度和半精度浮点数转换。
-    - 三种指令集都支持整形、单精度浮点数向量操作，在 A64 运行态下，还支持双精度向量操作。
+    - 三种指令集都支持整形、单精度浮点数向量操作。
     - 在 A64 运行态下，支持双精度浮点数向量操作。
  * The security model, that provides two security states to support secure applications.
  * The virtualization model, that support the virtualization of Non-secure operation.
