@@ -1,5 +1,7 @@
 # D4 The AArch64 Virtual Memory System Architecture
 
+[`中文版`](../../zh/chapter_d4/d4_the_aarch64_virtual_memory_system_archi.html)
+
 > This chapter provides a system level view 
  > of the AArch64 Virtual Memory System Architecture (VMSA),
  > the memory system architecture of an ARMv8 implementation that is executing in AArch64 state. 
