@@ -64,7 +64,9 @@ For more information see Overview of the VMSAv8-64 address translation stages[
 
 #### Security state of translation table lookups
 
-For a Non-secure translation regime, all translation table lookups are performed to Non-secure output addresses. For a Secure translation regimes, the initial translation table lookup is performed to a Secure output address.
+For a Non-secure translation regime, all translation table lookups are performed to Non-secure output addresses. 
+
+For a Secure translation regimes, the initial translation table lookup is performed to a Secure output address.
 If the translation table descriptor returned as a result of that initial lookup points to a second translation table, then the NSTable bit in that descriptor determines whether that translation table lookup is made to Secure or to Non-secure output addresses.
 This applies for all subsequent translation table lookups as part of that translation table walk, with the additional rule that any translation table descriptor that is returned from Non-secure memory is treated as if the NSTable bit in that descriptor indicates that the subsequent translation table lookup is to Non-secure memory.
 
