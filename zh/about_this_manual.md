@@ -29,7 +29,7 @@
 
 
 **Part A**  
-此部分内容主要对 ARMv8-A 体系结构进行简单介绍，同时概括性描述了 AArch64 和 AArch32 运行态。
+此部分内容主要对 ARMv8-A 体系结构进行简单介绍，概括性的描述了 AArch64 和 AArch32 运行态，简要描述其所支持的数据类型等。
 
 **Part B**
 Describes the application level view of the AArch64 Execution state, meaning the view from EL0. It describes the application level view of the programmers’ model and the memory model.
