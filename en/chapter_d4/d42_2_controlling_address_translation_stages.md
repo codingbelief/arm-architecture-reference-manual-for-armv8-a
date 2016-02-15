@@ -164,20 +164,5 @@ When entering an Exception level, on completion of a DSB instruction, no new mem
 * This does not require that speculative memory accesses cannot be performed using those entries if it is impossible to tell that those memory accesses have been observed by the observers.
 * This requirement does not imply that, on taking an exception to a higher Exception level, any translation table walks started before the exception was taken will be completed by the time the higher Exception level is entered, and therefore memory accesses required for such a translation table walk might, in effect, be performed speculatively. However, the execution of a DSB on entry to the higher Exception level ensures that these accesses are complete.
 
-#### Use of out-of-context translation regimes
-
-The architecture requires that:
-* 当运行在 EL3，EL2 或者 Secure EL1 时，PE 不能利用 Non-secure EL1&0 translation regime 相关的寄存器进行随机内存访问。
-* 当运行在 EL3 或者 Secure EL1 时，PE 不能利用 translation regime 相关的寄存器进行随机内存访问。
-* 当运行在 EL3，EL2 或者 Non-secure EL1 时，PE 不能利用 Secure EL1 translation regime 相关的寄存器进行随机内存访问。
-
-(译者注：这里的描述的需求，应该针对 PE 的实现者)
-
-当通过 DSB 指令进入到一个 Exception level 后，不应该存在使用低于当前 Exception level 的 translation regime 中的 translation table entries 进行的内存访问。
-(TODO: 此段不理解)
-
-> **NOTE:**  
-* This does not require that speculative memory accesses cannot be performed using those entries if it is impossible to tell that those memory accesses have been observed by the observers.
-* This requirement does not imply that, on taking an exception to a higher Exception level, any translation table walks started before the exception was taken will be completed by the time the higher Exception level is entered, and therefore memory accesses required for such a translation table walk might, in effect, be performed speculatively. However, the execution of a DSB on entry to the higher Exception level ensures that these accesses are complete.
 
 
