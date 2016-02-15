@@ -7,8 +7,7 @@ ARMv8-A Processing element (PE), and this manual includes descriptions of:
  * The instruction sets:
     - In AArch32 state, the A32 and T32 instruction sets, that are compatible with earlier versions of the ARM architecture.
     - In AArch64 state, the A64 instruction set.
- * The states that determine how a PE operates, including the current Exception level and Security state, and in
-   AArch32 state the PE mode.
+ * The states that determine how a PE operates, including the current Exception level and Security state, and in AArch32 state the PE mode.
  * The Exception model.
  * The interprocessing model, that supports transitioning between AArch64 state and AArch32 state.
  * The memory model, that defines memory ordering and memory management. This manual covers a single
