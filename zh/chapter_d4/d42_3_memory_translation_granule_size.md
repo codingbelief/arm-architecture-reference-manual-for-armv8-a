@@ -95,7 +95,6 @@ Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit inpu
 
 **Example D4-1 Effect of an IA width of 35 bits when using the 4KB granule size**
 
-> 
 ---
 With a 4KB granule size, a single level of lookup can resolve up to 9 bits of IA. If an implementation has a 35-bit input address range, IA[34:0], Table D4-10 on page D4-1654 shows that lookup must start at level 1, and that the initial lookup must resolve IA[34:30], meaning it resolves 5 bits of address: This 4-bit reduction in the required resolution means:
 * The translation table size is divided by 2^4, giving a size of 256B.
