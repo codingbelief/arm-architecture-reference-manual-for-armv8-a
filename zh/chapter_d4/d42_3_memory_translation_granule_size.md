@@ -93,7 +93,7 @@ Depending on the configuration and implementation choices, the required input ad
 Example D4-1 on page D4-1655 shows how this applies to translating a 35-bit input address range using the 4KB granule.
 
 
-> **Example D4-1 Effect of an IA width of 35 bits when using the 4KB granule size**
+**Example D4-1 Effect of an IA width of 35 bits when using the 4KB granule size**
 
 > 
 ---
