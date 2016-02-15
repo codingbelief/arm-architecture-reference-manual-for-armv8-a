@@ -1,6 +1,6 @@
 ## D4.2.2 Controlling address translation stages
 
-[`Chinese`](../../zh/chapter_d4/d42_2_controlling_address_translation_stages.html)
+[`中文版`](../../zh/chapter_d4/d42_2_controlling_address_translation_stages.html)
 
 [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) defines the translation regimes and stages. For each supported address translation stage:
 
