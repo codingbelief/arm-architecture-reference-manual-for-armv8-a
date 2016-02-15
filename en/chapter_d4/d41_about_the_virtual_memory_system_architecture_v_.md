@@ -1,6 +1,6 @@
 ># D4.1 About the Virtual Memory System Architecture (VMSA)
 
-[`Chinese`](../../zh/chapter_d4/d41_1_address_tagging_in_aarch64_state.html)
+[`Chinese`](../../zh/chapter_d4/d4_the_aarch64_virtual_memory_system_archi.html)
 
 > This chapter describes the Virtual Memory System Architecture (VMSA) 
  > that applies to a PE executing in AArch64 state.
