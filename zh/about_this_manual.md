@@ -19,6 +19,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * 高性能的 SIMD 和浮点指令：
     - 支持单精度和双精度浮点数操作。
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
+    - 双精度、单精度和半精度浮点数转换。
     - Integer, single-precision floating-point, and in A64, double-precision vector operations in all instruction sets.
     - Double-precision floating-point vector operations in the A64 instruction set.
  * The security model, that provides two security states to support secure applications.
