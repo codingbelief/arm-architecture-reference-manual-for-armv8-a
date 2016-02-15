@@ -35,7 +35,6 @@
 此部分内容从应用层 (application level) 视角 (即在 EL0 层次上) 来描述 AArch64 运行态，它主要介绍了应用层下的编程模型和内存模型。
 
 **Part C**  
-Describes the A64 instruction set, that is available in the AArch64 Execution state. The descriptions for each instruction also include the precise effects of each instruction when executed at EL0, described as unprivileged execution, including any restrictions on its use, and how the effects of the instruction differ at higher Exception levels. This information is of primary importance to authors and users of compilers, assemblers, and other programs that generate ARM machine code.
 此部分内容详细介绍了 AArch64 运行态下的 A64 指令集。对于每一个所描述的指令都详细的描述了其在 EL0 下执行 (即非特权模式执行) 时的效果，同时也描述了指令在其他更高级别的 Exception level 下执行时，与 EL0 下执行的差异。这部分内容，对于编译器、汇编器和其他用于生成 ARM 机器码的软件的设计者和使用者都非常关键。
 
 **Part D**  
