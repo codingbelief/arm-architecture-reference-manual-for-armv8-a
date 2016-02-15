@@ -23,6 +23,7 @@ For address translation stages controlled from AArch64:
     ![](table_d4_2.png)
 
 The following subsections give more information about controlling address translation:
+
 * System control registers relevant to MMU operation.
 * Address size configuration.
 * Atomicity of register changes on changing virtual machine on page D4-1650.
