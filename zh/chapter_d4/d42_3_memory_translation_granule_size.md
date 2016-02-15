@@ -54,34 +54,6 @@ Considering the resolution of the maximum IA range of 48 bits, with a translatio
 | x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
 
 
-根据 Table D4-8 中的信息，可以看到，translation granule 决定了：
-* 在一个 memory page 内寻址所需要的比特位
-* 一次 translation table lookup 解析的比特位
-
-这意味着 translation granule 决定了 translation 过程中， IA 是如何转换为 OA 的。  
-由于单次的 translation table lookup 只能解析有限的位数，所以将 IA 转换为 OA 的过程中，需要进行多次 lookup。  
-假定 IA 为 48 bits，translation granule size 为 2^n bytes：
-* IA 的 least-significant n bits 为 memory page 内的偏移。也就是说，OA[(n-1):0]=IA[(n-1):0]。
-* 剩下的 48 - n bits 需要进行 address translation 解析。
-* translation table descriptor 大小为 8 bytes，因此：
-    - 一个完整的 translation table 中保存了 2^(n-3) 个 descriptors
-    - 一个 level 的 translation 最多可以解析 (n-3) 个地址位。
-    (译者注：granule size 决定了一个 table 的 size，而 table 的 size 又决定了其能解析的地址比特数)  
-    在整个 translation 过程中，最后一次的 lookup 解析 IA 最后的 least significant 比特位，由于一次 lookup 解析的比特位数为 (n-3)，所以可以得出以下结论：
-        - 最后一次 lookup 解析的比特为 IA[(3n-7):(2n-3)]
-        - 倒数第二次的 lookup 解析的比特为 IA[(3n-7):(2n-3)]  
-    在具体实现中，IA 需要 translation 的比特位数并不一定是 (n-3) 的整数倍，第一次 lookup 解析的 most significant 比特位数可能小于 (n-3)，也就是所需要的 table 的也会比较小。因此，一次 lookup 能解析的比特位的通用公式如下：
-        IA[Min(47, ((x-3)(n-3)+2n-4)):(n+(x-3)(n-3))]
-    其中，
-
-| | |
-| -- | -- |
-| Min(a, b) | 是一个返回 a 和 b 之间最小值的函数 |
-| x | 为 lookup 的 level。translation 过程中的最后一个 lookup 定义为 level 3. |
-    
-
-
-
 The following diagrams show this model, for each of the permitted granule sizes.  
 Figure D4-4 shows how a 48-bit IA is resolved when using the 4KB translation granule.
 ![](figure_d4_4.png)
