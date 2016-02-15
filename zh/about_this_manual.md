@@ -45,7 +45,6 @@
 
 
 **Part E**  
-Describes the application level view of the AArch32 Execution state, meaning the view from the EL0. It describes the application level view of the programmers’ model and the memory model.
 此部分内容从应用层面 (application level view) 描述 AArch32 运行态 (也可以说在 EL0 层次上进行描述)，它主要介绍了应用层下的编程模型和内存模型。
 
 > **NOTE:**  
