@@ -50,9 +50,6 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 
 > Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
 
-每一个 stage 的 address translation 都会利用存储在 translation tables 中的地址转换规则和相关的内存属性信息来完成 address translation 功能。一次 address translation 会执行多次 translation table lookup 操作，每次 translation table lookup 处理 IA 特定位数的地址。这种操作也称作 different levels of lookup。  
-Translation table 中的条目可以被缓存在 Translation Lookaside Buffer (TLB) 中。
-
 > As well as defining the OA that corresponds to the IA, the translation table entries define the following properties:
 > * Access to the Secure or Non-secure address map, for accesses made from Secure state.
 * Memory access permission control.
