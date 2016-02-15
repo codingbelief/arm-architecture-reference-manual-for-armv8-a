@@ -41,7 +41,7 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 ![](table_d4_3.png)
 
 
-> ### Address size configuration
+### Address size configuration
 
 > The following subsubsections specify the configuration of the physical address size and of the input and output address sizes for each of the stages of address translation:
 * Physical address size.
