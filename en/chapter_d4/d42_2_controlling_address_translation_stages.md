@@ -54,8 +54,6 @@ The following subsubsections specify the configuration of the physical address s
 
 The [ID_AA64MMFR0_EL1.PARange](#) field indicates the implemented physical address size, as Table D4-4 shows.
 
-ID_AA64MMFR0_EL1.PARange 用于指示所支持的 physical address size:
-
 ![](table_d4_4.png)
 ![](table_d4_4_2.png)
 > All other PARange values are reserved.  
