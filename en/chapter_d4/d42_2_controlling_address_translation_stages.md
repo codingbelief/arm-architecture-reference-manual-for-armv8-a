@@ -144,7 +144,7 @@ From the viewpoint of software executing at Non-secure EL1 or EL0, when there is
     - MAIR_EL2 and AMAIR_EL2.
     - SCTLR_EL2.
 
->> **NOTE:**  
+> **NOTE:**  
 Only some bits of SCTLR_EL1 affect the stage 1 translation, and only some bits of SCTLR_EL2 affect the stage 2 translation. However, in each case, changing these bits requires a write to the register, and that write must be atomic
 with the other register updates.
 
