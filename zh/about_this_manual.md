@@ -68,7 +68,7 @@ User mode 只能是在软件执行处于非特权等级的模式
 
 **Part I**  
 Describes additional features of the architecture that are not closely coupled to a processing element (PE), and therefore are accessed through memory-mapped interfaces. Some of these features are OPTIONAL.
-
+此部分内容描述了体系结构中不属于 PE 的一些特性。这些特性通过映射到内存的相关接口来访问。此外，部分特在具体实现中不是必须实现的。
 
 **Appendixes**  
 Provide additional information. Some appendixes give information that is not part of the ARMv8 architectural requirements. The cover page of each appendix indicates its status.
