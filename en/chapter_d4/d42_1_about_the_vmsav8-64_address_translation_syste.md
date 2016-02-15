@@ -23,8 +23,7 @@ The translation granule specifies the granularity of the mapping from IA to OA. 
  * The page size for a stage of address translation, where a page is the smallest block of memory for which an IA to OA mapping can be specified.
  * The size of a complete translation table for that stage of address translation.
 
-The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. [The effects of disabling a stage of address translation
-on page D4-1677](#) defines how the MMU handles an access for which a required address translation stage is disabled.
+The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. [The effects of disabling a stage of address translation on page D4-1677](#) defines how the MMU handles an access for which a required address translation stage is disabled.
 
 > **NOTE:**
 
