@@ -116,17 +116,6 @@ The EL3 and Secure EL1 Exception levels provide independent definitions of physi
 
 > Each PA address space has a maximum address width of 48 bits, but an implementation can implement fewer than 48 bits of physical address. See [Address size configuration on page D4-1646](#).
 
-#### Physical address (PA)
-
-PA 是指向物理内存存储单元的地址。同时，也是 PE 输出给 memory system 的地址。  
-在 EL3 和 Secure EL1 上，对物理地址空间的访问，可以分为相互独立的 Secure 和 Non-secure 两种类别。也可以说，在这两个 EL 上，提供了两个独立的地址空间：
-* 在 Secure state 下对一个 VA 的访问，可能最终访问到 Secure 物理内存区域，也可能最终访问到 Non-secure 物理内存区域。
-* 在 Non-secure state 下对一个 VA 的访问，最终必然是访问到 Non-secure 的物理内存区域。
-* 
-
-PA 最多支持 48 位，在具体实现时，PA 的位数可以少于 48。更多的信息参考 [Address size configuration on page D4-1646](#) 章节
-
-
 > ### About address translation
 
 > For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first translation table required for the mapping from input address to output address. Each implemented translation stage shown in [VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642](#) requires its own set of translation tables.  
