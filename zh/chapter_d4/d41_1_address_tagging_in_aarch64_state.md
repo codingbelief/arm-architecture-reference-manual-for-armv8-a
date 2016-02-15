@@ -3,6 +3,8 @@
 
 ## D4.1.1 AArch64 下的地址 tagging
 
+[`英文版`](../../en/chapter_d4/d41_1_address_tagging_in_aarch64_state.html)
+
 > In AArch64 state, the ARMv8 architecture supports tagged addresses for data 
  > values. In these cases the top eight
 > bits of the virtual address are ignored when determining:
