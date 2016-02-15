@@ -41,7 +41,7 @@
 
 
 **Part D**  
-此部分内容从系统层面 (system level view) 描述 AArch64 运行态。它主要描述了系统层下的编程模型和内存模型，同时还详细介绍了 EL0 中无法访问的系统寄存器 (System registers)，self-hosted 等。
+此部分内容从系统层面 (system level view) 描述 AArch64 运行态。它主要描述了系统层下的编程模型和内存模型，同时还详细介绍了 EL0 中无法访问的系统寄存器 (System registers)，self-hosted 调试等。
 
 
 **Part E**  
@@ -59,7 +59,7 @@ User mode 只能是在软件执行处于非特权等级的模式
 
 **Part G**  
 Describes the system level view of the AArch32 Execution state, that is generally compatible with earlier versions of the ARM architecture. This part includes details of the System registers, most of which are not accessible from EL0, and the conceptual coprocessor interface to those registers. It also describes the system level view of the programmers’ model and the memory model.
-
+此部分内容从系统层面 (system level view) 描述 AArch32 运行态。它主要描述了系统层下的编程模型和内存模型，同时还详细介绍了 EL0 中无法访问的系统寄存器 (System registers)，self-hosted 调试等。
 
 **Part H**  
 Describes the Debug architecture for external debug. This provides configuration, breakpoint and watchpoint support, and a Debug Communications Channel (DCC) to a debug host.
