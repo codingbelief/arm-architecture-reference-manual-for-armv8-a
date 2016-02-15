@@ -3,7 +3,7 @@
 [`Chinese`](../../zh/chapter_d4/d42_3_memory_translation_granule_size.html)
 
 
-> The memory translation granule size defines both:
+The memory translation granule size defines both:
 * The maximum size of a single translation table.
 * The memory page size. That is, the granularity of a translation table lookup.
 
