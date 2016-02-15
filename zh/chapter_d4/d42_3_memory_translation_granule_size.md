@@ -26,8 +26,8 @@ Table D4-8 summarizes the effects of the different granule sizes.
 ### How the granule size affects the address translation process
 
 As Table D4-8 on page D4-1651 shows, the translation granule determines the number of address bits:
-* Required to address a memory page.
-* That can be resolved in a single translation table lookup.
+ * Required to address a memory page.
+ * That can be resolved in a single translation table lookup.
 
 > This means the translation granule determines how the input address (IA) is resolved to an output address (OA) by the translation process.  
 Because a single translation table lookup can resolve only a limited number of address bits, the IA to OA resolution requires multiple levels of lookup.  
