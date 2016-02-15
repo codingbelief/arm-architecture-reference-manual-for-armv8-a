@@ -55,7 +55,7 @@ As well as defining the OA that corresponds to the IA, the translation table ent
  * Memory access permission control.
  * Memory region attributes.
 
- For more information, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
+For more information, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
  The following subsections give more information:
  * ARMv8 VMSA naming.
  * VMSA address types and address spaces.
