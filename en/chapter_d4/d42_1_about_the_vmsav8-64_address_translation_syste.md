@@ -39,26 +39,25 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 
 ![](figure_d4_2.png)
 
-> [ARMv8 VMSA naming on page D4-1643](#) gives more information about the options for the different stages of address translation shown in Figure D4-2, and:
+ [ARMv8 VMSA naming on page D4-1643](#) gives more information about the options for the different stages of address translation shown in Figure D4-2, and:
 
-> * Chapter G4 The AArch32 Virtual Memory System Architecture describes:  
+ * Chapter G4 The AArch32 Virtual Memory System Architecture describes:  
    - The translation stages and translation regimes when EL3 is using AArch32.
    - Any stages of address translation that are using VMSAv8-32 when EL3 is using AArch64.
-> * [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) describes the effect on the address translation model when some Exception levels are not implemented.
+ * [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) describes the effect on the address translation model when some Exception levels are not implemented.
 
-> Each enabled stage of address translation uses a set of address translations and associated memory properties held in memory mapped tables called translation tables. A single translation table lookup can resolve only a limited number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described as different levels of lookup.
+ Each enabled stage of address translation uses a set of address translations and associated memory properties held in memory mapped tables called translation tables. A single translation table lookup can resolve only a limited number of bits of the IA, and therefore a single address translation can require multiple lookups. These are described as different levels of lookup.
 
-> Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
+ Translation table entries can be cached in a Translation Lookaside Buffer (TLB).
 
-> As well as defining the OA that corresponds to the IA, the translation table entries define the following properties:
-> * Access to the Secure or Non-secure address map, for accesses made from Secure state.
+ As well as defining the OA that corresponds to the IA, the translation table entries define the following properties:
+ * Access to the Secure or Non-secure address map, for accesses made from Secure state.
 * Memory access permission control.
 * Memory region attributes.
 
-> For more information, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
-
-> The following subsections give more information:
-> * ARMv8 VMSA naming.
+ For more information, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
+ The following subsections give more information:
+ * ARMv8 VMSA naming.
 * VMSA address types and address spaces.
 * About address translation on page D4-1644.
 * The VMSAv8-64 translation table format on page D4-1644.
