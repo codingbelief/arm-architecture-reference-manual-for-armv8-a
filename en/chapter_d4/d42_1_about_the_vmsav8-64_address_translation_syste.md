@@ -76,8 +76,6 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 
 > ### VMSA address types and address spaces  
 
-### VMSA 中的 address types 和 address spaces
-
 > A description of the VMSA refers to the following address types.
 
 >> **NOTE:**  
