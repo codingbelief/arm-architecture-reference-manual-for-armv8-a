@@ -34,7 +34,8 @@ The MMU is controlled by System registers, that provide independent control of e
 
 For an access to a stage of address translation that does not generate an MMU fault, the MMU translates the IA to the corresponding OA. System registers are used to report any faults that occur on a memory access.
 
-This section describes the address translation system for an implementation that includes all of the Exception levels, and gives a complete description of translations that are controlled by an Exception level that is using AArch64.  
+This section describes the address translation system for an implementation that includes all of the Exception levels, and gives a complete description of translations that are controlled by an Exception level that is using AArch64.
+
 Figure D4-2 shows these translation stages and translation regimes when EL3 is using AArch64.
 
 ![](figure_d4_2.png)
