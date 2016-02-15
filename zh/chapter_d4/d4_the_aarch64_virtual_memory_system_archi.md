@@ -15,7 +15,7 @@
  > * [D4.7 TLB maintenance requirements and the TLB maintenance instructions](d47_tlb_maintenance_requirements_and_the_tlb_maint.md)
  > * [D4.8 Caches in a VMSA implementation](d48_caches_in_a_vmsa_implementation.md)
 
-本章节在系统层面介绍了 ARMv8 在 AArch64 运行态下的虚拟内存系统架构的实现，
+本章在系统层面介绍了 ARMv8 在 AArch64 运行态下的虚拟内存系统架构的实现，
 即 VMSA ( AArch64 Virtual Memory System Architecture )。
 主要包括以下小节：
 
