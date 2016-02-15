@@ -145,7 +145,7 @@ If the OA address is smaller than 48 bits then the upper bits of this field must
     - TTBR[47:40] must be set to zero.
     - TTBR[39:16] holds the translation table base address.
 
-> In all cases, if TTBR[47:40] is not zero, any attempt to access the translation table generates an Address size fault.
+In all cases, if TTBR[47:40] is not zero, any attempt to access the translation table generates an Address size fault.
 
 translation table 以及串联合并后的 table 的地址必须对齐到实际的 table size。对于一个 address translation stage，TTBR 中保存着用于将 IA 映射到 OA 的 translation table 的 base address。
 
