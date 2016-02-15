@@ -22,8 +22,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * The virtualization model, that support the virtualization of Non-secure operation.
  * The Debug architecture, that provides software access to debug features.
 
-This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in textual form. However, this manual is not a tutorial for ARM assembler language, nor does it describe ARM assembler language, except at a very basic level. To make effective use of ARM assembler language, read the
-documentation supplied with the assembler being used.
+This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in textual form. However, this manual is not a tutorial for ARM assembler language, nor does it describe ARM assembler language, except at a very basic level. To make effective use of ARM assembler language, read the documentation supplied with the assembler being used.
 
 This manual is organized into parts:
 
