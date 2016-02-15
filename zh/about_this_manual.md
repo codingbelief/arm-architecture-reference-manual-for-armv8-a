@@ -25,7 +25,7 @@
 
 This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in textual form. However, this manual is not a tutorial for ARM assembler language, nor does it describe ARM assembler language, except at a very basic level. To make effective use of ARM assembler language, read the documentation supplied with the assembler being used.
 
-
+本手册中的指令是用文本形式的汇编语法来描述的，但是本手册并不是 ARM 汇编语言教程，手册中只简单的介绍了汇编语言最基础的部分，更多汇编语言的细节，需要参考所使用的汇编器的相关文档。
 
 This manual is organized into parts:
 
