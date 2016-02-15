@@ -27,20 +27,26 @@
 
 本手册的内容分为以下几个部分：
 
+
 **Part A**  
 Provides an introduction to the ARMv8-A architecture, and an overview of the AArch64 and AArch32 Execution states.
+
 
 **Part B**
 Describes the application level view of the AArch64 Execution state, meaning the view from EL0. It describes the application level view of the programmers’ model and the memory model.
 
+
 **Part C**  
 Describes the A64 instruction set, that is available in the AArch64 Execution state. The descriptions for each instruction also include the precise effects of each instruction when executed at EL0, described as unprivileged execution, including any restrictions on its use, and how the effects of the instruction differ at higher Exception levels. This information is of primary importance to authors and users of compilers, assemblers, and other programs that generate ARM machine code.
+
 
 **Part D**  
 Describes the system level view of the AArch64 Execution state. It includes details of the System registers, most of which are not accessible from EL0, and the system level view of the programmers’  model and the memory model. This part includes the description of self-hosted debug.
 
+
 **Part E**  
 Describes the application level view of the AArch32 Execution state, meaning the view from the EL0. It describes the application level view of the programmers’ model and the memory model.
+
 
 > **NOTE:**  
 In AArch32 state, execution at EL0 is execution in User mode.
@@ -53,8 +59,10 @@ of the instruction differ at higher Exception levels. This information is of pri
 >**NOTE:**  
 User mode is the only mode where software execution is unprivileged.
 
+
 **Part G**  
 Describes the system level view of the AArch32 Execution state, that is generally compatible with earlier versions of the ARM architecture. This part includes details of the System registers, most of which are not accessible from EL0, and the conceptual coprocessor interface to those registers. It also describes the system level view of the programmers’ model and the memory model.
+
 
 **Part H**  
 Describes the Debug architecture for external debug. This provides configuration, breakpoint and watchpoint support, and a Debug Communications Channel (DCC) to a debug host.
@@ -62,6 +70,7 @@ Describes the Debug architecture for external debug. This provides configuration
 
 **Part I**  
 Describes additional features of the architecture that are not closely coupled to a processing element (PE), and therefore are accessed through memory-mapped interfaces. Some of these features are OPTIONAL.
+
 
 **Appendixes**  
 Provide additional information. Some appendixes give information that is not part of the ARMv8 architectural requirements. The cover page of each appendix indicates its status.
