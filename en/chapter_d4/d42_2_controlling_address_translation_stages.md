@@ -125,15 +125,6 @@ If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum val
     - Checking whether the value of VTCR_EL2.T0SZ is consistent with the value of VTCR_EL2.SL0.
 * Generate a stage 2 level 0 Translation fault on any memory access that uses the second stage of translation.
 
-如果 VTCR_EL2.SL0 写入了一个大于 Table D4-6 中描述的最大值的数据，那么所有需要进行 stage 2 translation 的内存访问都会触发 stage 2 level 0 translation fault。
-如果 VTCR_EL2.T0SZ 写入了一个小于 Table D4-6 中描述的最小值的数据，根据具体的实现的不同，会有以下几种结果：
-* 除了直接读取 VTCR_EL2.T0SZ 时会返回写入的值，其他处理过程中，都会以最小值来处理。
-* 除了下列两种情况，其他处理过程中，都会以最小值来处理。
-    - 直接读取 VTCR_EL2.T0SZ 时
-    - 检查 VTCR_EL2.T0SZ 的值与 VTCR_EL2.SL0 的值是否相匹配时
-* 所有需要进行 stage 2 translation 的内存访问都会触发 stage 2 level 0 translation
-
-
 >> **NOTE:**  
 Programming VTCR_EL2.T0SZ to a value smaller than the effective minimum value shown in Table D4-6 can
 never provide support for a larger address range than the range given by the effective minimum value, because the
