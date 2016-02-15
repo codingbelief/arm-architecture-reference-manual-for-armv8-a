@@ -1,6 +1,6 @@
 # D4.2 The VMSAv8-64 address translation system
 
-This section describes the VMSAv8-64 address translation system, that maps VAs to PAs. Related to this:
+This section describes the VMSAv8-64 address translation system, that maps VAs to PAs. Related to this:  
 • VMSAv8-64 translation table format descriptors on page D4-1695 describes the translation table entries.
 • Access controls and memory region attributes on page D4-1704 describes the attributes that are held in the
    translation table entries, including how different attributes can interact.
