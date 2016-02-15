@@ -22,22 +22,6 @@ Table D4-8 summarizes the effects of the different granule sizes.
 
 ![](table_d4_8.png)
 
-Memory translation granule size 决定了以下两个参数：
-* 单个 translation table 的最大 size
-* Memory page size，即一次 translation table lookup 的粒度。
-
-VMSAv8-64 支持 4KB、16KB 和 64KB 的 translation granule size。在具体实现中，并不要求实现所有的 granule size，Table D4-7 中描述了如何确定各个 granule size 是否支持。
-
-VMSAv8-64 中的各个 address translation stage 可以单独配置 granule size。
-
-> **NOTE:**
-* 使用较大的 granule size 可以减少 address lookup 的次数，原因如下：
-    - 增加了 translation table size 意味着 translation table 中有更多的条目，也意味着单次的 lookup 可以解析 input address 中更多的比特位。
-    - 增加了 page size 意味着 input address 中更多的 least-significant 比特位可以直接映射到 output address 中，减少了需要进行 translation 的比特位。
-* ARM 建议把 memory-mapped 的外设对齐到所支持的最大的 granule size，这样可以保证各个外设的独立管理。
-
-Table D4-8 中汇总了不同 granule size 下的影响。
-
 > ### How the granule size affects the address translation process
 
 ### How the granule size affects the address translation process
