@@ -32,14 +32,14 @@
 此部分内容主要对 ARMv8-A 体系结构进行简单介绍，概括性的描述了 AArch64 和 AArch32 运行态，简要描述其所支持的数据类型等。
 
 **Part B**  
-此部分内容从应用层 (application level) 视角 (即在 EL0 层次上) 来描述 AArch64 运行态，它主要介绍了应用层下的编程模型和内存模型。
+此部分内容从应用层面 (application level view) 来描述 AArch64 运行态 (即在 EL0 层次上)，它主要介绍了应用层下的编程模型和内存模型。
 
 **Part C**  
 此部分内容详细介绍了 AArch64 运行态下的 A64 指令集。对于每一个所描述的指令都详细的描述了其在 EL0 下执行 (即非特权模式执行) 时的效果，同时也描述了指令在其他更高级别的 Exception level 下执行时，与 EL0 下执行的差异。这部分内容，对于编译器、汇编器和其他用于生成 ARM 机器码的软件的设计者和使用者都非常关键。
 
 **Part D**  
 Describes the system level view of the AArch64 Execution state. It includes details of the System registers, most of which are not accessible from EL0, and the system level view of the programmers’  model and the memory model. This part includes the description of self-hosted debug.
-此部分内容从系统层面 (system level view) 
+此部分内容从系统层面 (system level view) 描述
 
 **Part E**  
 Describes the application level view of the AArch32 Execution state, meaning the view from the EL0. It describes the application level view of the programmers’ model and the memory model.
