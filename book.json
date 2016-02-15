@@ -1,5 +1,5 @@
 {
-    "plugins": ["-disqus","-splitter","ga","baidu","-sitemap"],
+    "plugins": ["-disqus","-splitter","ga","baidu","sitemap"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
