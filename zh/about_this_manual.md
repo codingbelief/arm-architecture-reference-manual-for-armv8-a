@@ -14,8 +14,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * Exception 模型 (Exception model)。
  * 支持 AArch64 和 AArch32 运行态切换的内部交互模型 (interprocessing model)。
  * 定义内存端顺 (memory ordering) 和管理 (memory management) 的内存模型 (memory model)。本手册中，仅描述定义了虚拟内存系统架构 (VMSA) 的 ARMv8-A 架构的内存模型。
- * The programmers’ model, and its interfaces to System registers that control most PE and memory system features, and provide status information.
- * 编程模型 (programmers’ model)，主要描述用于控制 PE 和内存系统，以及提供相关状态信息的系统寄存器 (System registers) 接口
+ * 编程模型 (programmers’ model)，主要描述用于控制 PE 和内存系统，以及提供相关状态信息的系统寄存器 (System registers) 接口。
  * The Advanced SIMD and floating-point instructions, that provide high-performance:
     - Single-precision and double-precision floating-point operations.
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
