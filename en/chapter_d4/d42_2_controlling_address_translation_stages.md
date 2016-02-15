@@ -22,16 +22,6 @@ For address translation stages controlled from AArch64:
  * Table D4-2 shows the TCR and TTBR, or TTBRs, for each stage of address translation. In the table, each Controlling registers entry gives the TCR followed by the TTBR or TTBRs.  
     ![](table_d4_2.png)
 
-在 AArch64 运行态时，address translation stages 有以下的一些配置项：
-* Table D4-1 中描述了各个 address translation stage 的 endianness 和 MMU enable 的控制：
-    (译者注： EE 为 endianess 选择位， M 为 MMU 使能位)
-    > **NOTE:**  
-    If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.  
-    (TODO: 这段含义暂时没有理解，是说在 enable 或者 disable 的前，最好让 PA 和 VA 都保持一致么？)
-
-* Table D4-2 中汇总了各个 address translation stage 所对应的 TCR 和 TTBR。
-
-
 > The following subsections give more information about controlling address translation:
 * System control registers relevant to MMU operation.
 * Address size configuration.
