@@ -97,21 +97,6 @@ However, for the EL1&0 translation stage the VA range is split into two subrange
 > This means that there are two VA subranges, each of up to 256TB.  
 Each translation regime, that takes a VA as an input address, can be configured to support fewer than 48 bits of virtual address space, see [Address size configuration on page D4-1646](#).
 
-#### Virtual address (VA)
-
-Virtual Address (VA) 是用在 instruction 中，作为 data 或者 instruction 的地址。
-
-> **NOTE:**  
-也就是说，在寄存器 PC、LR、SP 或者 ELR 中保存的地址，都是 VA。
-在 AArch64 state 下，VA 的位数最多可以为 48 位，VA 的范围为 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF，支持 256TB 内存空间。
-
-在 EL1&0 的 translation stage 中，VA 的范围被分割为两个区块，分别为：  
-* 0x0000_0000_0000_0000 到 0x0000_FFFF_FFFF_FFFF 的内存空间块
-* 0xFFFF_0000_0000_0000 到 0xFFFF_FFFF_FFFF_FFFF 的内存空间块
-
-也就是说，在 EL1&0 中，支持两个大小为 256TB 的 VA 空间。  
-另外，每个 translation regime 都可以将 VA 的位数配置为 48 位一下。
-
 > #### Intermediate physical address (IPA)
 
 > In a translation regime that provides two stages of address translation, the IPA is:
