@@ -18,6 +18,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * The Advanced SIMD and floating-point instructions, that provide high-performance:
  * 高性能的 SIMD 和浮点指令：
     - Single-precision and double-precision floating-point operations.
+    - 单精度和双精度浮点数操作。
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
     - Integer, single-precision floating-point, and in A64, double-precision vector operations in all instruction sets.
     - Double-precision floating-point vector operations in the A64 instruction set.
