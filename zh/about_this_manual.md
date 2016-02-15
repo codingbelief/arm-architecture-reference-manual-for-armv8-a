@@ -17,8 +17,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * 编程模型 (programmers’ model)，主要描述用于控制 PE 和内存系统，以及提供相关状态信息的系统寄存器 (System registers) 接口。
  * The Advanced SIMD and floating-point instructions, that provide high-performance:
  * 高性能的 SIMD 和浮点指令：
-    - Single-precision and double-precision floating-point operations.
-    - 单精度和双精度浮点数操作。
+    - 支持单精度和双精度浮点数操作。
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
     - Integer, single-precision floating-point, and in A64, double-precision vector operations in all instruction sets.
     - Double-precision floating-point vector operations in the A64 instruction set.
