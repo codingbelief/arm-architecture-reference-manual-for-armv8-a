@@ -1,6 +1,6 @@
 # D4.1 About the Virtual Memory System Architecture (VMSA)
 
-[`Chinese`](../../zh/chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.html)
+[`中文版`](../../zh/chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.html)
 
  This chapter describes the Virtual Memory System Architecture (VMSA) 
   that applies to a PE executing in AArch64 state.
