@@ -11,8 +11,7 @@ ARMv8-A Processing element (PE), and this manual includes descriptions of:
  * The Exception model.
  * The interprocessing model, that supports transitioning between AArch64 state and AArch32 state.
  * The memory model, that defines memory ordering and memory management. This manual covers a single architecture profile, ARMv8-A, that defines a Virtual Memory System Architecture (VMSA).
- * The programmers’ model, and its interfaces to System registers that control most PE and memory system
-     features, and provide status information.
+ * The programmers’ model, and its interfaces to System registers that control most PE and memory system features, and provide status information.
  * The Advanced SIMD and floating-point instructions, that provide high-performance:
     - Single-precision and double-precision floating-point operations.
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
