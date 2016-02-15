@@ -1,6 +1,6 @@
 ## Preface
 
-[`中文版`](../../zh/about_this_manual.html)
+[`中文版`](../../zh/preface.html)
 
 This preface introduces the ARM Architecture Reference Manual, ARMv8, for ARMv8-A architecture profile. It contains the following sections:
 
