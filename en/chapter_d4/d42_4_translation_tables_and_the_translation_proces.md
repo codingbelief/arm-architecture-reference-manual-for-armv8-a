@@ -1,5 +1,7 @@
 ## D4.2.4 Translation tables and the translation process
 
+[`中文版`](../../zh/chapter_d4/d42_3_memory_translation_granule_size.html)
+
 The following subsections describe general properties of the translation tables and translation table walks, that are largely independent of the translation table format:
 * [Translation table walks](#).
 * [Security state of translation table lookups on page D4-1658](#).
