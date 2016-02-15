@@ -29,6 +29,5 @@ documentation supplied with the assembler being used.
 This manual is organized into parts:
 
 **Part A**
-Provides an introduction to the ARMv8-A architecture, and an overview of the AArch64 and
-AArch32 Execution states.
+Provides an introduction to the ARMv8-A architecture, and an overview of the AArch64 and AArch32 Execution states.
 
