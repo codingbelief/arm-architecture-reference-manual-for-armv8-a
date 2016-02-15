@@ -1,6 +1,6 @@
 ## D4.2.4 Translation tables and the translation process
 
-[`英文版`](../../zh/chapter_d4/d42_4_translation_tables_and_the_translation_proces.html)
+[`英文版`](../../en/chapter_d4/d42_4_translation_tables_and_the_translation_proces.html)
 
 The following subsections describe general properties of the translation tables and translation table walks, that are largely independent of the translation table format:
 * [Translation table walks](#).
