@@ -150,23 +150,6 @@ with the other register updates.
 
 > These registers apply to execution using the Non-secure EL1&0 translation regime. However, when updated as part of a switch of virtual machines they are updated by software executing at EL2. This means the registers are out of context when they are updated, and no synchronization precautions are required.
 
-#### Atomicity of register changes on changing virtual machine
-从运行在 Non-secure EL1 or EL0 的软件的视角来看，当从一个 virtual machine 切换到另外一个时， address translation 相关的配置寄存器的切换必须是原子的。也就是说，Non-secure EL1&0 translation regime 中，下列的寄存器的切换必须是原子的：
-* stage 1 translation 相关的寄存器：
-    - MAIR_EL1 and AMAIR_EL1.
-    - TTBR0_EL1, TTBR1_EL1, TCR_EL1, and CONTEXTIDR_EL1.
-    - SCTLR_EL1.
-* stage 2 translations 相关的寄存器:
-    - VTTBR_EL2 and VTCR_EL2.
-    - MAIR_EL2 and AMAIR_EL2.
-    - SCTLR_EL2.
-
-(TODO: 这里的原子操作指的是单个寄存器的原子性还是所有相关寄存器的更改的原子性)
-
-> **NOTE:**  
-在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
-
-上述的寄存器都是用于 Non-secure EL1&0 translation regime 的配置，然而这些寄存器在进行 virtual machine 切换时，是被运行在 EL2 上的软件进行更新的。这些寄存器被更新时，不是处在 EL1&0，也就不需要在 EL1&0 上做同步操作。
 
 #### Use of out-of-context translation regimes
 
