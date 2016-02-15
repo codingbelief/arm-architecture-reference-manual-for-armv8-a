@@ -49,11 +49,6 @@ The following subsubsections specify the configuration of the physical address s
  * [Input address size on page D4-1648](#).
  * [Supported IPA size on page D4-1649](#).
 
-### Address size 配置
-
-下面的小节主要描述各个 address translation stage 中的 PA、IA 和 OA size。
-
-> #### Physical address size
 
 #### Physical address size
 
