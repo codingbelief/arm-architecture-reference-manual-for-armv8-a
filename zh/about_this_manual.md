@@ -25,6 +25,8 @@
 
 This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in textual form. However, this manual is not a tutorial for ARM assembler language, nor does it describe ARM assembler language, except at a very basic level. To make effective use of ARM assembler language, read the documentation supplied with the assembler being used.
 
+
+
 This manual is organized into parts:
 
 **Part A**  
