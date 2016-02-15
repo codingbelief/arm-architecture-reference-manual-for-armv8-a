@@ -106,20 +106,6 @@ When using the 64KB translation granule to translate the maximum IA size of 48 b
 * The TTBR requires 7 more bits for the translation table base address, which becomes TTBR[47:9].
 
 
-Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translation 过程
-
-**Example D4-1 Effect of an IA width of 35 bits when using the 4KB granule size**
-
----
-当 granule size 配置为 4KB 时，单次的 lookup 最多可以解析 9 个比特位。假设在一个具体实现中，input address 有 35 位，即 IA[34:0]，根据 Table D4-10 中的描述，translation 从 level 1 lookup 开始，第一次 lookup 解析 IA[34:30]，即解析 5 个比特，对比后续的 lookup，少解析 4 个比特，也就意味着：
-* 其对应的 translation table size 为 256B，是其他的 table size 的 1/(2^4)
-* TTBR 指向第一次 lookup 的 translation table base address 为 TTBR[47:8]。(译者注：TTBR 中保存了 translation table base address，该 address 会对齐到 translation table size，因此在 table size 变化时，TTBR 中的 base address 的位数也会相应的变化)  
----
-
-当 granule size 配置为 64KB，IA 为 48 位时，根据 Table D4-10 中的描述，translation 从 level 1 lookup 开始，并且该 lookup 只解析 IA[47:42] 6 个比特。level 1 lookup 对比在此配置下的其他 lookup 需要解析 13 个 IA 比特位，少解析了 7 个比特，也就意味着：
-* 其对应的 translation table size 为 512B，是其他的 table size 的 1/(2^7)
-* TTBR 指向第一次 lookup 的 translation table base address 为 TTBR[47:9]
-
 #### Concatenated translation tables
 
 For stage 2 address translations, for the initial lookup, up to 16 translation tables can be concatenated. This means additional IA bits can be resolved at that lookup level. Each additional IA bit resolved:
