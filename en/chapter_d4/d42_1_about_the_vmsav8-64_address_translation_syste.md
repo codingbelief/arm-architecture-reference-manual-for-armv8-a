@@ -81,12 +81,6 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 >> **NOTE:**  
 > These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
-本小节主要描述 VMSA 中涉及到的 address types
-
-> **NOTE:**  
-此处的描述是基于 VMSAv8的，因此会比一般的术语表中的描述包含更多的细节信息。
-
-/
 > #### Virtual address (VA)
 
 > An address used in an instruction, as a data or instruction address, is a Virtual Address (VA).
