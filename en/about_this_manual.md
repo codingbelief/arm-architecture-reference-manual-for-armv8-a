@@ -64,7 +64,6 @@ Describes the Debug architecture for external debug. This provides configuration
 
 
 **Part I** 
-Describes additional features of the architecture that are not closely coupled to a processing element
-(PE), and therefore are accessed through memory-mapped interfaces. Some of these features are
+Describes additional features of the architecture that are not closely coupled to a processing element (PE), and therefore are accessed through memory-mapped interfaces. Some of these features are
 OPTIONAL.
 
