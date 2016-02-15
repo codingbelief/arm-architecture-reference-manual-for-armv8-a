@@ -73,9 +73,9 @@ The ARMv8 VMSA naming model reflects the possible stages of address translation,
 | VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
 
 
- ### VMSA address types and address spaces  
+### VMSA address types and address spaces  
 
- A description of the VMSA refers to the following address types.
+A description of the VMSA refers to the following address types.
 
 > **NOTE:**  
  These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
