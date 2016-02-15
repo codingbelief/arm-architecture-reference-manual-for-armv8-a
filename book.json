@@ -9,7 +9,7 @@
         },
         "scripts": {
             "files": [
-                "./baidu.zz.js"
+                "../../../baidu.zz.js"
             ]
         }
     }
