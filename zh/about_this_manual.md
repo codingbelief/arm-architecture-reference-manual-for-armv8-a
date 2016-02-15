@@ -32,8 +32,7 @@
 此部分内容主要对 ARMv8-A 体系结构进行简单介绍，概括性的描述了 AArch64 和 AArch32 运行态，简要描述其所支持的数据类型等。
 
 **Part B**
-Describes the application level view of the AArch64 Execution state, meaning the view from EL0. It describes the application level view of the programmers’ model and the memory model.
-
+此部分内容从应用层 (application level) 视角 (即在 EL0 层次上) 来描述 AArch64 运行态，它主要介绍了应用层下的编程模型和内存模型。
 
 **Part C**  
 Describes the A64 instruction set, that is available in the AArch64 Execution state. The descriptions for each instruction also include the precise effects of each instruction when executed at EL0, described as unprivileged execution, including any restrictions on its use, and how the effects of the instruction differ at higher Exception levels. This information is of primary importance to authors and users of compilers, assemblers, and other programs that generate ARM machine code.
