@@ -1,5 +1,7 @@
 > ## D4.2.2 Controlling address translation stages
 
+[`Chinese`](../../en/chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.html)
+
 ## D4.2.2 Address translation stages 配置
 
 > [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](#) defines the translation regimes and stages. For each supported address translation stage:
