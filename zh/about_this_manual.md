@@ -22,9 +22,9 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
     - 三种指令集都支持整形、单精度浮点数向量操作。
     - 在 A64 运行态下，支持双精度浮点数向量操作。
  * The security model, that provides two security states to support secure applications.
- * 安全模式 (security model)，提供了 secure 和 non-secure 两种安全状态，用于支持安全应用场景。 
+ * 安全模式 (security model)，提供了 secure 和 Non-secure 两种安全状态，用于支持安全应用场景。 
  * The virtualization model, that support the virtualization of Non-secure operation.
- * 虚拟化模型 () 
+ * 虚拟化模型 (virtualization model)，支持 Non-secure 操作的虚拟化。
  * The Debug architecture, that provides software access to debug features.
 
 This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in
