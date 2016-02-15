@@ -77,21 +77,6 @@ When using two stages of translation:
 * If stage 2 translation is enabled and the output address from the stage 1 translation does not generate a stage 1 Address Size fault, but is larger than the input address size specified for the stage 2 translation, then a stage 2 Translation fault is generated.
 
 
-#### Output address size
-
-在 address translation stage 使能后，对应的 TCR.IPS 或者 TCR.PS 必须正确的设定，该寄存器位用于设定 address translation stage 支持的最大 output address size，详细的配置参考 Table D4-5：
-
-> **NOTE:**  
-* TCR_EL1 寄存器中的 output address size 配置位的名称为 IPS (Intermediate Physical Address Size)，其他 EL 的 TCR 寄存器中的名称为 PS (Physical Address Size)
-* {I}PS 包含 3 个 bits，与 Table D4-4 中 PARange 低 3 个 bits 相对应。
-
-如果 {I}PS 中设定的 output address size 比实际支持的 physical address size (参考 Table D4-4) 大，那么 PE 会忽略 {I}PS 中的设定，并以实际的 physical address size 作为 output address size，也就是说 output address size 永远不可能比实际的 physical address size 大。另外，在具体的软件实现中，不应该依赖于这一特性，需要正确的去配置 {I}PS。
-
-TTBR、translation table entries 和 output address 中的 address 超过 output address size 比特位设置必须设定为 0，否则会在 translation 的相关阶段触发 address size fault。TTBR 中设置错误触发的 address size fault 称为 level 0 fault。如果 stage 1 translation 关闭时，input address 大于实际支持的 physical address size，那么就会触发 stage 1 level 0 Address size fault。
-对于有 2 个 stages 的translation：
-* 如果 stage 2 translation 关闭时，stage 1 translation 的 output address 大于实际支持的 physical address size，那么就会触发 stage 1 address size fault
-* 如果 stage 2 translation 使能时，stage 1 translation 没有触发address size fault，但是 output address 大于 stage 2 translation 的 input address size，那么就会触发 stage 2 translation fault。
-
 #### Input address size
 
 For each enabled stage of address translation, the TCR.TxSZ fields specify the input address size:
