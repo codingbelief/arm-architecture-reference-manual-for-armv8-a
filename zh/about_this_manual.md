@@ -9,7 +9,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * AArch64 和 AArch32 两个运行态。
  * 支持多种指令集:
     - 在 AArch32 运行态下, 支持兼容旧架构的 A32 和 T32 指令集.
-    - In AArch64 state, the A64 instruction set.
+    - 在 AArch64 运行态下, the A64 instruction set.
  * The states that determine how a PE operates, including the current Exception level and Security state, and in AArch32 state the PE mode.
  * The Exception model.
  * The interprocessing model, that supports transitioning between AArch64 state and AArch32 state.
