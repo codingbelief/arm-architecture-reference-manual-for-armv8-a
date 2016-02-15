@@ -57,11 +57,14 @@
 >**NOTE:**  
 User mode 只能是在软件执行处于非特权等级的模式
 
+
 **Part G**  
 此部分内容从系统层面 (system level view) 描述基本与旧 ARM 架构兼容的 AArch32 运行态。它主要描述了系统层下的编程模型和内存模型，同时还详细介绍了 EL0 中无法访问的系统寄存器 (System registers)，用于访问系统寄存器的虚拟协处理器接口 (conceptual coprocessor interface) 等。
 
+
 **Part H**  
 此部分内容主要描述了外部调试架构，介绍了调试宿主所需的配置、断点和看门狗，以及调试交互通道 (DCC, Debug Communications Channel) 等内容。
+
 
 **Part I**  
 Describes additional features of the architecture that are not closely coupled to a processing element (PE), and therefore are accessed through memory-mapped interfaces. Some of these features are OPTIONAL.
