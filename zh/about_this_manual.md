@@ -29,8 +29,7 @@
 
 
 **Part A**  
-Provides an introduction to the ARMv8-A architecture, and an overview of the AArch64 and AArch32 Execution states.
-此部分内容主要对 ARMv8-A 体系结构进行简单介绍，同时还概括描述了 AArch64 和 AArch32 运行态。
+此部分内容主要对 ARMv8-A 体系结构进行简单介绍，同时概括性描述了 AArch64 和 AArch32 运行态。
 
 **Part B**
 Describes the application level view of the AArch64 Execution state, meaning the view from EL0. It describes the application level view of the programmers’ model and the memory model.
