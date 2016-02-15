@@ -6,6 +6,9 @@
         },
         "ga": {
             "token": "UA-73737903-1"
+        },
+        "sitemap": {
+            "hostname": "http://mybook.com/"
         }
     }
 }
