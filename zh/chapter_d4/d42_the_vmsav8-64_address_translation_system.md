@@ -1,6 +1,6 @@
 # D4.2 The VMSAv8-64 address translation system
 
-[`Chinese`](../../en/chapter_d4/d42_the_vmsav8-64_address_translation_system.html)
+[`英文版`](../../en/chapter_d4/d42_the_vmsav8-64_address_translation_system.html)
 
 This section describes the VMSAv8-64 address translation system, that maps VAs to PAs. Related to this:
  * [VMSAv8-64 translation table format descriptors on page D4-1695](#) describes the translation table entries.
