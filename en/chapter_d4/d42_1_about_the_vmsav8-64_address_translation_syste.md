@@ -1,6 +1,6 @@
 > ## D4.2.1 About the VMSAv8-64 address translation system
 
-[`Chinese`](../../zh/chapter_d4/d4_the_aarch64_virtual_memory_system_archi.html)
+[`Chinese`](../../zh/chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.html)
 
 > The Memory Management Unit (MMU) controls address translation, memory access permissions, and memory attribute determination and checking, for memory accesses made by the PE.
 
