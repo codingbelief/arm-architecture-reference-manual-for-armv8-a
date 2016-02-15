@@ -62,7 +62,7 @@ User mode 只能是在软件执行处于非特权等级的模式
 
 **Part H**  
 Describes the Debug architecture for external debug. This provides configuration, breakpoint and watchpoint support, and a Debug Communications Channel (DCC) to a debug host.
-
+此部分内容主要描述了外部调试架构，介绍了调试宿主所需的配置、断点和看门狗，以及调试交互通道 (DCC, Debug Communications Channel) 等内容。
 
 **Part I**  
 Describes additional features of the architecture that are not closely coupled to a processing element (PE), and therefore are accessed through memory-mapped interfaces. Some of these features are OPTIONAL.
