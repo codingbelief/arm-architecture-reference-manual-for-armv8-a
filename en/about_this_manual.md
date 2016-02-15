@@ -67,6 +67,5 @@ Describes the Debug architecture for external debug. This provides configuration
 Describes additional features of the architecture that are not closely coupled to a processing element (PE), and therefore are accessed through memory-mapped interfaces. Some of these features are OPTIONAL.
 
 **Appendixes**  
-Provide additional information. Some appendixes give information that is not part of the ARMv8
-architectural requirements. The cover page of each appendix indicates its status.
+Provide additional information. Some appendixes give information that is not part of the ARMv8 architectural requirements. The cover page of each appendix indicates its status.
 
