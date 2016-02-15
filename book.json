@@ -9,6 +9,9 @@
         },
         "baidu": {
             "token": "4ad50191d5d2bcbc1008997dd0c05245"
+        },
+        "sitemap": {
+            "hostname": "http://mybook.com/"
         }
     }
 }
