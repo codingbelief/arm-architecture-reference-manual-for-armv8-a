@@ -4,7 +4,7 @@
 
 This manual describes the ARM® architecture v8, ARMv8. The architecture describes the operation of an ARMv8-A Processing element (PE), and this manual includes descriptions of:
 
-本手册主要描述了 ARMv8 体系结构。ARMv8 体系结构主要描述了 ARMv8-A 处理单元 (PE，Processing element) 的运行机制，包括一下方面内容：
+本手册主要描述了 ARMv8 体系结构。ARMv8 体系结构主要描述了 ARMv8-A 处理单元 (PE，Processing element) 的运行机制，包括以下方面内容：
 
  * AArch64 和 AArch32 两个运行态。
  * 多种指令集:
