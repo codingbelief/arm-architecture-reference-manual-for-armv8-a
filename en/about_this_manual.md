@@ -60,5 +60,8 @@ Describes the system level view of the AArch32 Execution state, that is generall
 
 
 **Part H**
+Describes the Debug architecture for external debug. This provides configuration, breakpoint and
+watchpoint support, and a Debug Communications Channel (DCC) to a debug host.
+
 
 **Part I** 
