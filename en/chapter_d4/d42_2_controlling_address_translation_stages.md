@@ -114,10 +114,6 @@ The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 t
 For the Non-secure EL1&0 translation regime, the maximum IPA size is the maximum input address size for the second stage of translation, that must be specified by VTCR_EL2.T0SZ, see [Input address size on page D4-1648](#).
 This value is constrained by the implemented PA size that is specified by ID_AA64MMFR0_EL1.PARange, see [Physical address size on page D4-1646](#). This implemented PA size also constrains the maximum value of VTCR_EL2.SL0, that specifies the level of the initial lookup. SL0 also depends on the translation granule, as described in [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
 
-#### Supported IPA size
-
-对于 Non-secure EL1&0 translation regime，stage 2 translation 的 input address size 的最大值就是 IPA size 的最大值，这个值由 VTCR_EL2.T0SZ 设定。
-IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA size 同时也约束着用于设定 initial lookup level 的 VTCR_EL2.SL0 的最大值。另外，SL0 还会受 translation granule 的影响。
 
 ![](table_d4_6.png)
 
