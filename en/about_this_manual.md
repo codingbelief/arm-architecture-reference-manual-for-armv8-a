@@ -27,3 +27,6 @@ assembler language, except at a very basic level. To make effective use of ARM a
 documentation supplied with the assembler being used.
 
 This manual is organized into parts:
+
+**Part A**
+
