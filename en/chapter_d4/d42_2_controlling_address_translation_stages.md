@@ -65,7 +65,7 @@ For each enabled stage of address translation, TCR.{I}PS must be programmed to m
 
 ![](table_d4_5.png)
 
->> **NOTE:**
+> **NOTE:**
 * This field is called IPS in the TCR_EL1, and PS in the other TCRs.
 * The {I}PS fields are 3-bit fields, corresponding to the least-significant PARange bits shown in Table D4-4 on page D4-1646.
 
