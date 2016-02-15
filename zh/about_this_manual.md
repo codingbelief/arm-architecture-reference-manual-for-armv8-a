@@ -23,6 +23,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
     - Integer, single-precision floating-point, and in A64, double-precision vector operations in all instruction sets.
     - 三种指令集都支持整形、单精度浮点数向量操作，在 A64 运行态下，还支持双精度向量操作。
     - Double-precision floating-point vector operations in the A64 instruction set.
+    - 在 A64 运行态下，支持双精度浮点数向量操作。
  * The security model, that provides two security states to support secure applications.
  * The virtualization model, that support the virtualization of Non-secure operation.
  * The Debug architecture, that provides software access to debug features.
