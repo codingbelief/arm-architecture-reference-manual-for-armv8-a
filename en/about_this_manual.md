@@ -49,6 +49,9 @@ In AArch32 state, execution at EL0 is execution in User mode.
 **Part F** 
 Describes the T32 and A32 instruction sets, that are available in the AArch32 Execution state. These instruction sets are backwards-compatible with earlier versions of the ARM architecture. This part describes the precise effects of each instruction when executed in User mode, described as unprivileged execution or execution at EL0, including any restrictions on its use, and how the effects
 of the instruction differ at higher Exception levels. This information is of primary importance to authors and users of compilers, assemblers, and other programs that generate ARM machine code.
+>**NOTE:**  
+User mode is the only mode where software execution is unprivileged.
+
 
 
 **Part G**
