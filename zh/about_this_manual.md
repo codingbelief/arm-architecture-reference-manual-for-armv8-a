@@ -15,17 +15,13 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * 支持 AArch64 和 AArch32 运行态切换的内部交互模型 (interprocessing model)。
  * 定义内存端顺 (memory ordering) 和管理 (memory management) 的内存模型 (memory model)。本手册中，仅描述定义了虚拟内存系统架构 (VMSA) 的 ARMv8-A 架构的内存模型。
  * 编程模型 (programmers’ model)，主要描述用于控制 PE 和内存系统，以及提供相关状态信息的系统寄存器 (System registers) 接口。
- * The Advanced SIMD and floating-point instructions, that provide high-performance:
  * 高性能的 SIMD 和浮点指令：
     - 支持单精度和双精度浮点数操作。
     - 双精度、单精度和半精度浮点数转换。
     - 三种指令集都支持整形、单精度浮点数向量操作。
     - 在 A64 运行态下，支持双精度浮点数向量操作。
- * The security model, that provides two security states to support secure applications.
- * 安全模式 (security model)，提供了 secure 和 Non-secure 两种安全状态，用于支持安全应用场景。 
- * The virtualization model, that support the virtualization of Non-secure operation.
+ * 安全模式 (security model)，提供了 secure 和 Non-secure 两种安全状态，用于支持安全应用场景。
  * 虚拟化模型 (virtualization model)，支持 Non-secure 操作的虚拟化。
- * The Debug architecture, that provides software access to debug features.
  * 调式架构，提供了可软件控制的调试特性。
 
 This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in
