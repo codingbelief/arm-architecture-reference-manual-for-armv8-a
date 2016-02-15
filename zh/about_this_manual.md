@@ -41,7 +41,7 @@
 
 
 **Part D**  
-此部分内容从系统层面 (system level view) 描述 AArch64 运行态。它主要描述了系统层下的编程模型和内存模型，同时还详细介绍了 EL0 中无法访问的系统寄存器 (System registers)等。
+此部分内容从系统层面 (system level view) 描述 AArch64 运行态。它主要描述了系统层下的编程模型和内存模型，同时还详细介绍了 EL0 中无法访问的系统寄存器 (System registers)，self-hosted 等。
 
 
 **Part E**  
