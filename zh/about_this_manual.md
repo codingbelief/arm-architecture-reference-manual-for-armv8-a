@@ -16,7 +16,7 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
  * 定义内存端顺 (memory ordering) 和管理 (memory management) 的内存模型 (memory model)。本手册中，仅描述定义了虚拟内存系统架构 (VMSA) 的 ARMv8-A 架构的内存模型。
  * 编程模型 (programmers’ model)，主要描述用于控制 PE 和内存系统，以及提供相关状态信息的系统寄存器 (System registers) 接口。
  * The Advanced SIMD and floating-point instructions, that provide high-performance:
- * 高性能的 SIMD 和浮点指令
+ * 高性能的 SIMD 和浮点指令：
     - Single-precision and double-precision floating-point operations.
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
     - Integer, single-precision floating-point, and in A64, double-precision vector operations in all instruction sets.
