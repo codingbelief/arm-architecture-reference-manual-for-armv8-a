@@ -58,7 +58,6 @@ The [ID_AA64MMFR0_EL1.PARange](#) field indicates the implemented physical addre
 ![](table_d4_4_2.png)
 All other PARange values are reserved.  
 
-PARange 其他任何值都作为保留使用。
 
 > #### Output address size
 
