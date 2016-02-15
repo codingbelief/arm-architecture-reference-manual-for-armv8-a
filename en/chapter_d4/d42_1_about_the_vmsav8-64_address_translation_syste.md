@@ -120,6 +120,7 @@ The EL3 and Secure EL1 Exception levels provide independent definitions of physi
 
 Each PA address space has a maximum address width of 48 bits, but an implementation can implement fewer than 48 bits of physical address. See [Address size configuration on page D4-1646](#).
 
+
 ### About address translation
 
 For a single stage of address translation, a Translation table base register (TTBR) indicates the start of the first translation table required for the mapping from input address to output address. Each implemented translation stage shown in [VMSAv8 AArch64 translation regimes, translation stages, and associated controls on page D4-1642](#) requires its own set of translation tables.
