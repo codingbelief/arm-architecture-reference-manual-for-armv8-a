@@ -58,9 +58,9 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
  For more information, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
  The following subsections give more information:
  * ARMv8 VMSA naming.
-* VMSA address types and address spaces.
-* About address translation on page D4-1644.
-* The VMSAv8-64 translation table format on page D4-1644.
+ * VMSA address types and address spaces.
+ * About address translation on page D4-1644.
+ * The VMSAv8-64 translation table format on page D4-1644.
 
 > ### ARMv8 VMSA naming
 
