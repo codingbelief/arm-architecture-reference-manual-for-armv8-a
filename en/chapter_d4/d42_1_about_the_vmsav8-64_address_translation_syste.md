@@ -96,7 +96,7 @@ However, for the EL1&0 translation stage the VA range is split into two subrange
 > This means that there are two VA subranges, each of up to 256TB.  
 Each translation regime, that takes a VA as an input address, can be configured to support fewer than 48 bits of virtual address space, see [Address size configuration on page D4-1646](#).
 
- #### Intermediate physical address (IPA)
+#### Intermediate physical address (IPA)
 
  In a translation regime that provides two stages of address translation, the IPA is:
 * The OA from the stage 1 translation.
@@ -106,14 +106,14 @@ In a translation regime that provides only one stage of address translation, the
 The IPA address space has a maximum address width of 48 bits, see [Address size configuration on page D4-1646](#).
 
 
- #### Physical address (PA)
+#### Physical address (PA)
 
- The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
+The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
 The EL3 and Secure EL1 Exception levels provide independent definitions of physical address spaces for Secure and Non-secure operation. This means they provide two independent address spaces, where:
 * A VA accessed in Secure state can be translated to either the Secure or the Non-secure physical address space.
 * When in Non-secure state, a VA is always mapped to the Non-secure physical address space.
 
- Each PA address space has a maximum address width of 48 bits, but an implementation can implement fewer than 48 bits of physical address. See [Address size configuration on page D4-1646](#).
+Each PA address space has a maximum address width of 48 bits, but an implementation can implement fewer than 48 bits of physical address. See [Address size configuration on page D4-1646](#).
 
  ### About address translation
 
