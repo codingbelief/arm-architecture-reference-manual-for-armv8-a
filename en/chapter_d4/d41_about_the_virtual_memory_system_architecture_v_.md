@@ -17,7 +17,6 @@
  > and Security states, and Figure D4-1 shows.
 
 Figure D4-1。
-(*TODO: 简单解释下图中的转换过程*)
 ![](figure_d4_1.png)
 
 > VMSAv8-64 supports tagging of VAs,
