@@ -48,7 +48,7 @@
 此部分内容从应用层面 (application level view) 描述 AArch32 运行态 (也可以说在 EL0 层次上进行描述)，它主要介绍了应用层下的编程模型和内存模型。
 
 > **NOTE:**  
-在 AArch32 运行态下，在 EL0 上的指令是在 User mode 下执行的。
+在 AArch32 运行态下，在 EL0 上执行的指令是在 User mode 下执行的。
 
 
 **Part F**  
