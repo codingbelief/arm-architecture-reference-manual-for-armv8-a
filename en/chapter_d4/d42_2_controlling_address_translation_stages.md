@@ -44,10 +44,10 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 ### Address size configuration
 
 The following subsubsections specify the configuration of the physical address size and of the input and output address sizes for each of the stages of address translation:
-* Physical address size.
-* [Output address size on page D4-1647](#).
-* [Input address size on page D4-1648](#).
-* [Supported IPA size on page D4-1649](#).
+ * Physical address size.
+ * [Output address size on page D4-1647](#).
+ * [Input address size on page D4-1648](#).
+ * [Supported IPA size on page D4-1649](#).
 
 ### Address size 配置
 
