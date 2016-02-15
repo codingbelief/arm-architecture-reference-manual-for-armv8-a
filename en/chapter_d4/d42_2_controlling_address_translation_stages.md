@@ -117,7 +117,7 @@ This value is constrained by the implemented PA size that is specified by ID_AA6
 
 ![](table_d4_6.png)
 
-> If VTCR_EL2.SL0 is programmed to a value larger than the maximum value shown in Table D4-6 then any memory access that uses the second stage of translation generates a stage 2 level 0 Translation fault.
+If VTCR_EL2.SL0 is programmed to a value larger than the maximum value shown in Table D4-6 then any memory access that uses the second stage of translation generates a stage 2 level 0 Translation fault.
 If VTCR_EL2.T0SZ is programmed to a value smaller than the effective minimum value shown in Table D4-6 then the implementation consistently does one of the following:
 * Treat the VTCR_EL2.T0SZ field as being programmed to the effective minimum value for all purposes other than reading back the value of the field.
 * Treat the VTCR_EL2.T0SZ field as being programmed to the effective minimum value for all purposes other than:
