@@ -55,8 +55,7 @@ User mode is the only mode where software execution is unprivileged.
 
 
 **Part G**
-Describes the system level view of the AArch32 Execution state, that is generally compatible with earlier versions of the ARM architecture. This part includes details of the System registers, most of which are not accessible from EL0, and the conceptual coprocessor interface to those registers. It
-also describes the system level view of the programmers’ model and the memory model.
+Describes the system level view of the AArch32 Execution state, that is generally compatible with earlier versions of the ARM architecture. This part includes details of the System registers, most of which are not accessible from EL0, and the conceptual coprocessor interface to those registers. It also describes the system level view of the programmers’ model and the memory model.
 
 
 
