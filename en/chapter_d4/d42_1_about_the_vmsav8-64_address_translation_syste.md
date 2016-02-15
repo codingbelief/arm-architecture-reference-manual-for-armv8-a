@@ -100,6 +100,7 @@ An address used in an instruction, as a data or instruction address, is a Virtua
 
 > Each translation regime, that takes a VA as an input address, can be configured to support fewer than 48 bits of virtual address space, see [Address size configuration on page D4-1646](#).
 
+
 #### Intermediate physical address (IPA)
 
  In a translation regime that provides two stages of address translation, the IPA is:
