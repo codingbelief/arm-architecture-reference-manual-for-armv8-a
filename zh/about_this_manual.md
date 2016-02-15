@@ -1,6 +1,6 @@
 ### 关于本参考手册
 
-[`英文版`](../../en/chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.html)
+[`英文版`](../../en/about_this_manual.html)
 
 This manual describes the ARM® architecture v8, ARMv8. The architecture describes the operation of an ARMv8-A Processing element (PE), and this manual includes descriptions of:
 
