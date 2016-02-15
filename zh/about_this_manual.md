@@ -23,8 +23,7 @@
  * 虚拟化模型 (virtualization model)，支持 Non-secure 操作的虚拟化。
  * 调式架构，提供了可软件控制的调试特性。
 
-This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in textual form. However, this manual is not a tutorial for ARM assembler language, nor does it describe ARM
-assembler language, except at a very basic level. To make effective use of ARM assembler language, read the
+This manual gives the assembler syntax for the instructions it describes, meaning that it describes instructions in textual form. However, this manual is not a tutorial for ARM assembler language, nor does it describe ARM assembler language, except at a very basic level. To make effective use of ARM assembler language, read the
 documentation supplied with the assembler being used.
 
 This manual is organized into parts:
