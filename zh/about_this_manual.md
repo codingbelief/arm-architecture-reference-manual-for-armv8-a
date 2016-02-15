@@ -25,8 +25,7 @@
 
 本手册中的指令是用文本形式的汇编语法来描述的，但是本手册并不是 ARM 汇编语言教程，手册中只简单的介绍了汇编语言最基础的部分，更多汇编语言的细节，需要参考实际所使用的汇编器的相关文档。
 
-This manual is organized into parts:
-
+本手册的内容分为一下几个部分：
 
 **Part A**  
 Provides an introduction to the ARMv8-A architecture, and an overview of the AArch64 and AArch32 Execution states.
