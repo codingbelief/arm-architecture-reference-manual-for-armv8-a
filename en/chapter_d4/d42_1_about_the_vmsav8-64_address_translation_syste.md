@@ -107,17 +107,6 @@ Each translation regime, that takes a VA as an input address, can be configured 
 The IPA address space has a maximum address width of 48 bits, see [Address size configuration on page D4-1646](#).
 
 
-#### Intermediate physical address (IPA)
-
-在包含 2 个 stage address translation 的 translation regime 中， IPA 的含义如下：
-* stage 1 translation 的 OA
-* stage 2 translation 的 IA
-
-在只包含 1 个 stage address translation 的 translation regime 中， 
-IPA 与 PA 相同，或者理解为没有 IPA。  
-IPA 最多支持 48 位，更多信息参考 [Address size configuration on page D4-1646](#) 章节。
-
-
 > #### Physical address (PA)
 
 > The address of a location in a physical memory map. That is, an output address from the PE to the memory system.  
