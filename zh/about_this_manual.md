@@ -6,7 +6,6 @@ This manual describes the ARM® architecture v8, ARMv8. The architecture describ
 
 本手册主要描述了 ARMv8 体系结构。ARMv8 体系结构主要描述了 ARMv8-A 处理单元 (PE，Processing element) 的运行机制，包括一下方面内容：
 
- * The two Execution states, AArch64 and AArch32.
  * AArch64 和 AArch32 两个运行态。
  * 支持多种指令集:
     - In AArch32 state, the A32 and T32 instruction sets, that are compatible with earlier versions of the ARM architecture.
