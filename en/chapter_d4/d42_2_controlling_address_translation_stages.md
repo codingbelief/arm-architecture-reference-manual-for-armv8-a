@@ -109,7 +109,7 @@ The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 t
 [Supported IPA size](#) defines the effective minimum value of T0SZ, that depends on the supported PA size, and also describes the possible effects of programming T0SZ to a value that is smaller than this effective minimum value.
 
 
-> #### Supported IPA size
+#### Supported IPA size
 
 > For the Non-secure EL1&0 translation regime, the maximum IPA size is the maximum input address size for the second stage of translation, that must be specified by VTCR_EL2.T0SZ, see [Input address size on page D4-1648](#).
 This value is constrained by the implemented PA size that is specified by ID_AA64MMFR0_EL1.PARange, see [Physical address size on page D4-1646](#). This implemented PA size also constrains the maximum value of VTCR_EL2.SL0, that specifies the level of the initial lookup. SL0 also depends on the translation granule, as described in [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
