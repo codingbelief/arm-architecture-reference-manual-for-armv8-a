@@ -31,3 +31,6 @@ This manual is organized into parts:
 **Part A**
 Provides an introduction to the ARMv8-A architecture, and an overview of the AArch64 and AArch32 Execution states.
 
+**Part B**
+Describes the application level view of the AArch64 Execution state, meaning the view from EL0. It describes the application level view of the programmers’ model and the memory model.
+
