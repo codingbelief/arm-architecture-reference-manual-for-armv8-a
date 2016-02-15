@@ -1,5 +1,5 @@
 {
-    "plugins": ["disqus","splitter","ga","scripts"],
+    "plugins": ["disqus","splitter","ga"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "codingbelief-gitbook"
@@ -7,10 +7,5 @@
         "ga": {
             "token": "UA-73737903-1"
         },
-        "scripts": {
-            "files": [
-                "../../../baidu.zz.js"
-            ]
-        }
     }
 }
