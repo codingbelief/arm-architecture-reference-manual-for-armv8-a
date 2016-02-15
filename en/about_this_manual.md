@@ -15,8 +15,7 @@ ARMv8-A Processing element (PE), and this manual includes descriptions of:
  * The Advanced SIMD and floating-point instructions, that provide high-performance:
     - Single-precision and double-precision floating-point operations.
     - Conversions between double-precision, single-precision, and half-precision floating-point values.
-    - Integer, single-precision floating-point, and in A64, double-precision vector operations in all
-   instruction sets.
+    - Integer, single-precision floating-point, and in A64, double-precision vector operations in all instruction sets.
     - Double-precision floating-point vector operations in the A64 instruction set.
  * The security model, that provides two security states to support secure applications.
  * The virtualization model, that support the virtualization of Non-secure operation.
