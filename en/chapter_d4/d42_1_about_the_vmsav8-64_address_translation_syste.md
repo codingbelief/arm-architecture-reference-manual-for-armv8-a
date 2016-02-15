@@ -65,8 +65,6 @@ Figure D4-2 shows these translation stages and translation regimes when EL3 is u
 
 > ### ARMv8 VMSA naming
 
-### ARMv8 VMSA 命名规则
-
 > The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
 
 > | | |
