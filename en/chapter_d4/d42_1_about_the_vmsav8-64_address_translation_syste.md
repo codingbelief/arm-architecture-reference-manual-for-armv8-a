@@ -23,18 +23,6 @@
 > * The page size for a stage of address translation, where a page is the smallest block of memory for which an IA to OA mapping can be specified.
 > * The size of a complete translation table for that stage of address translation.
 
-从 IA 映射到 OA 处理过程定义为地址转换 (address translation)，或者单阶段地址转换 (single stage of address translation)。
-
-VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包含下面两个中的其中一个：
-* 将 IA 映射到 OA 的单阶段的 address translation。
-* 连续的两个阶段的 address translation。
-    - 第一阶段，将输出的 VA 转换为中间物理地址 (IPA，intermediate physical address)
-    - 第二阶段，将 IPA 转换为 PA。
-
-Address translation 中，IA 到 OA 的映射是按内存块进行的。Translation granule 则定义了 IA 映射到 OA 的粒度，即映射块的大小，这个粒度会影响以下的两个方面：
-* 单个阶段的 address translation 中的页面大小，即一次 IA 到 OA 映射所支持的最小内存块的大小。 
-* 单个阶段的 address translation 的 translation table 所占内存的最大值。
-
 > The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. [The effects of disabling a stage of address translation
 on page D4-1677](#) defines how the MMU handles an access for which a required address translation stage is disabled.
 
