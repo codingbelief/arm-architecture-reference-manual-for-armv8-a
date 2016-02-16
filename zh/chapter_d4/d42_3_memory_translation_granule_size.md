@@ -24,6 +24,8 @@ VMSAv8-64 中的各个 address translation stage 可以单独配置 granule size
 
 Table D4-8 中汇总了不同 granule size 下的影响。
 
+![](table_d4_8.png)
+
 > ### How the granule size affects the address translation process
 
 ### How the granule size affects the address translation process
