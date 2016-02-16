@@ -54,13 +54,6 @@ Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的�
 
 更多的信息可以参考章节 [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#)
 
-
-> The following subsections give more information:
-> * ARMv8 VMSA naming.
-* VMSA address types and address spaces.
-* About address translation on page D4-1644.
-* The VMSAv8-64 translation table format on page D4-1644.
-
 后续的小节主要描述下面的内容：
 * ARMv8 VMSA 命名规则
 * VMSA 中的 address type 和 address spaces
