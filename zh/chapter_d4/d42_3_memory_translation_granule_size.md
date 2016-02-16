@@ -121,7 +121,6 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 * TTBR 中保存的 translation table base address 由 TTBR[47:12] 变为 TTBR[47:13]。
 ---
 
-
 translation table 以及串联合并后的 table 的地址必须对齐到实际的 table size。对于一个 address translation stage，TTBR 中保存着用于将 IA 映射到 OA 的 translation table 的 base address。
 
 本小节后续内容将假定 translation stage 的 OA 为 48 bits，此时的 translation table base address 如下：
