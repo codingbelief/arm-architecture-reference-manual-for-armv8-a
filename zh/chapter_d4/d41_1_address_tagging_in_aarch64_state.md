@@ -35,13 +35,6 @@ Address tagging 功能通过以下的方式来配置：
 
 > **NOTE**:  
 > 不管对应的 translation regime 是否使能，寄存器位 TCR_ELx.TBIn 都决定着 address tagging 功能是否启用.
-  
---
-> An address tag enable bit also has an effect on the PC value in the following cases:
-> * Any branch or procedure return within the controlled Exception level.
-> * On taking an exception to the controlled Exception level, regardless of whether this is also the Exception level from which the exception was taken.
-> * On performing an exception return to the controlled Exception level, regardless of whether this is also the Exception level from which the exception return was performed.
-> * Exiting from debug state to the controlled Exception level.
 
 开启 address tagging 功能后，由于 VA 的高 8 位被用作为 tag，因此在下列需要更新 PC 寄存器的场景中，需要对写入 PC 的值做特殊的处理：
 * 开启了 address tagging 功能的 Exception level 下的所有的 branch 和 procedure return 操作。
