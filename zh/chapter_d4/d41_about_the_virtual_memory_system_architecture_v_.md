@@ -10,8 +10,7 @@ VMSA 包含内存管理单元，即 MMU (Memory Management Unit)。MMU 在系统
 访问权限控制以及内存属性的设定和校验功能。
 
 MMU 中的地址转换过程，是将 PE 发起的内存访问的虚拟地址 (VA, virtual addresse)
-映射到物理内存设备的真实物理地址 (PA, physical addresse) 上。这一转换过程，会因 PE 所在的
-Exception levels 和所处的 Security states 的不同而不同，具体的差异可以参考 Figure D4-1。
+映射到物理内存设备的真实物理地址 (PA, physical addresse) 上。这一转换过程，会因 PE 所在的 Exception levels 和所处的 Security states 的不同而不同，具体的差异可以参考 Figure D4-1。
 
 ![](figure_d4_1.png)
 
