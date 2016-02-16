@@ -62,14 +62,6 @@ Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的�
 
 ### ARMv8 VMSA 命名规则
 
-> The ARMv8 VMSA naming model reflects the possible stages of address translation, as follows:
-
-> | | |
-| -- | -- |
-| VMSAv8  | The overall translation scheme, within which an address translation has one or two stages. |
-| VMSAv8-32 | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch32. |
-| VMSAv8-64  | The translation scheme for a single stage of address translation that is managed from an Exception level that is using AArch64. |
-
 ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命名：
 
 | | |
