@@ -27,33 +27,6 @@ Table D4-8 中汇总了不同 granule size 下的影响。
 
 ### How the granule size affects the address translation process
 
-> As Table D4-8 on page D4-1651 shows, the translation granule determines the number of address bits:
-* Required to address a memory page.
-* That can be resolved in a single translation table lookup.
-
-> This means the translation granule determines how the input address (IA) is resolved to an output address (OA) by the translation process.  
-Because a single translation table lookup can resolve only a limited number of address bits, the IA to OA resolution requires multiple levels of lookup.  
-Considering the resolution of the maximum IA range of 48 bits, with a translation granule size of 2^n bytes:
-
-> * The least-significant n bits of the IA address the memory page. This means OA[(n-1):0]=IA[(n-1):0].
-* The remaining (48-n) bits of the IA, IA[47:n], must be resolved by the address translation.
-* A translation table descriptor is 8 bytes. Therefore:
-    - A complete translation table holds 2^(n-3) descriptors.
-    - A single level of translation can resolve a maximum of (n-3) bits of address.  
-
-  >   Consider the translation process, working back from the final level of lookup, that resolves the least significant of the address bits that require translation. Because a level of lookup can resolve (n-3) bits of address:
-    - The final level of lookup resolves IA[(2n-4):n].
-    - The previous level of lookup resolves IA[(3n-7):(2n-3)].
-
-  >  However, the level of lookup that resolves the most significant bits of the IA might not require a full-sized translation table. Therefore, in general, the address bits resolved in a level of lookup are:  
-    IA[Min(47, ((x-3)(n-3)+2n-4)):(n+(x-3)(n-3))], where:  
->
-| | |
-| -- | -- |
-| Min(a, b) | Is a function that returns the minimum of a and b. |
-| x | Indicates the level of lookup. This is defined so that the level that resolves the least significantbit of the translated IA bits is level 3. |
-
-
 根据 Table D4-8 中的信息，可以看到，translation granule 决定了：
 * 在一个 memory page 内寻址所需要的比特位
 * 一次 translation table lookup 解析的比特位
