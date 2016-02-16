@@ -6,7 +6,7 @@
 
 > Table D4-8 summarizes the effects of the different granule sizes.
 
-![](table_d4_8.png)
+
 
 Memory translation granule size 决定了以下两个参数：
 * 单个 translation table 的最大 size
