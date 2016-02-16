@@ -90,7 +90,7 @@ For each enabled stage of address translation, the TCR.TxSZ fields specify the i
 * Each of the other TCRs has a single T0SZ field, and input addresses are translated using a single TTBR.
 Attempting to translate an address that is larger than the configured input address size generates a Translation fault. This means:
 * For a TCR with a single T0SZ field, Figure D4-3 shows the input address map:  
-    ![](figure_d4_3.png)
+    
 * For a TCR with two TxSZ fields, the input address is always a VA, and [Selection between TTBR0 and TTBR1 on page D4-1670](#) describes the VA address map.
 
 
