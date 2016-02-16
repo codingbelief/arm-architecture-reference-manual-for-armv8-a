@@ -142,7 +142,3 @@ translation table 以及串联合并后的 table 的地址必须对齐到实际�
 如果 OA 为 40 bits 时，TTBR[47:40] 没有设为 0，那么进行 address translation 时，就会触发 Address size fault。
 
 
-
-
-
-
