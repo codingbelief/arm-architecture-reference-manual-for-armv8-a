@@ -1,4 +1,3 @@
-> ## D4.2.3 Memory translation granule size
 
 ## D4.2.3 Memory translation granule size
 
