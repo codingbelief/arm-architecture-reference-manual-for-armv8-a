@@ -15,7 +15,7 @@
 * 当地址转换未使能时，判定虚拟地址是否超出范围，并产生 Address size fault。
 * 当进行 TLB 设置指定地址的条目失效操作时。
 
-(译者注：VA 的 tag 通常是在软件层面使用，例如用来作为对象的引用计数、标示指针的有效与否等。参考阅读 [Tagged_pointer](https://en.wikipedia.org/wiki/Tagged_pointer))
+(译者注：VA 的 tag 通常是在软件层面使用，例如用来作为对象的引用计数、标示指针的有效与否等。参考阅读：[Tagged_pointer](https://en.wikipedia.org/wiki/Tagged_pointer))
 
 > The use of address tags is controlled as follows:
 
