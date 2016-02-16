@@ -81,23 +81,6 @@ TTBR、translation table entries 和 output address 中的 address 超过 output
 
 (译者注：IPS for Intermediate Physical Address Size，PS for Physical Address Size)
 
-#### Input address size
-
-For each enabled stage of address translation, the TCR.TxSZ fields specify the input address size:
-* TCR_EL1 has two TxSZ fields, corresponding to the two VA subranges:
-    - TCR_EL1.T0SZ specifies the size for the lower VA range, translated using TTBR0_EL1.
-    - TCR_EL1.T1SZ specifies the size for the upper VA range, translated using TTBR1_EL1.
-* Each of the other TCRs has a single T0SZ field, and input addresses are translated using a single TTBR.
-Attempting to translate an address that is larger than the configured input address size generates a Translation fault. This means:
-* For a TCR with a single T0SZ field, Figure D4-3 shows the input address map:  
-    ![](figure_d4_3.png)
-* For a TCR with two TxSZ fields, the input address is always a VA, and [Selection between TTBR0 and TTBR1 on page D4-1670](#) describes the VA address map.
-
-
-For the Non-secure EL1&0 translation regime, when both stages of translation are enabled, if the output address from the stage 1 translation does not generate a stage 1 address size fault, and is larger than the input address specified by VTCR_EL2.T0SZ, then the input address size check for the stage 2 translation generates a Translation fault.  
-Although software can configure the input address size to be smaller than 48 bits, all implemented AArch64 TTBRs must support address sizes of up to 48 bits.  
-[Overview of the VMSAv8-64 address translation stages on page D4-1658](#) gives more information about the relationship between the required input address size, the value of TxSZ, and the required initial lookup level, and how these are affected by the translation granule size. However:
-
 
 #### Input address size
 
