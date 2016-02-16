@@ -164,8 +164,6 @@ The architecture requires that:
 
 (译者注：这里的描述的需求，应该针对 PE 的实现者)
 
-当通过 DSB 指令进入到一个 Exception level 后，不应该存在使用低于当前 Exception level 的 translation regime 中的 translation table entries 进行的内存访问。
-
 When entering an Exception level, on completion of a DSB instruction, no new memory accesses using any translation table entries from a translation regime of an Exception level lower than the Exception level that has been entered will be observed by any observers, to the extent that those accesses are required to be observed as determined by the shareability and cacheability of those translation table entries.
 
 > **NOTE:**  
