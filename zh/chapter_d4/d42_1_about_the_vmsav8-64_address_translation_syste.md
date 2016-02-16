@@ -60,6 +60,7 @@ Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的�
 * address translation 简介
 * VMSAv8-64 translation table 格式描述
 
+
 ### ARMv8 VMSA 命名规则
 
 ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命名：
@@ -70,12 +71,8 @@ ARMv8 VMSA 根据 address translation 的 stages 的不同，有以下 3 个命�
 | VMSAv8-32 | translation scheme 中在运行态为 AArch32 的 EL 中进行的，只有一个 stage 的 address translation |
 | VMSAv8-64 | translation scheme 中在运行态为 AArch64 的 EL 中进行的，只有一个 stage 的 address translation |
 
+
 ### VMSA 中的 address types 和 address spaces
-
-> A description of the VMSA refers to the following address types.
-
->> **NOTE:**  
-> These descriptions relate to the VMSAv8 description and therefore give more detail than the generic definitions given in the glossary.
 
 本小节主要描述 VMSA 中涉及到的 address types
 
