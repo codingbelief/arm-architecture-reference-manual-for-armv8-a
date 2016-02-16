@@ -6,8 +6,7 @@
 本小节描述了 AArch64 运行态下的 PE 中的虚拟内存系统架构 (VMSA)，
 即 VMSAv8-64 (Virtual Memory System Architecture on AArch64)。
 
-VMSA 包含内存管理单元，即 MMU (Memory Management Unit)。MMU 在系统中为 PE 的内存操作提供地址转换，
-访问权限控制以及内存属性的设定和校验功能。
+VMSA 包含内存管理单元，即 MMU (Memory Management Unit)。MMU 在系统中为 PE 的内存操作提供地址转换，访问权限控制以及内存属性的设定和校验功能。
 
 MMU 中的地址转换过程，是将 PE 发起的内存访问的虚拟地址 (VA, virtual addresse)
 映射到物理内存设备的真实物理地址 (PA, physical addresse) 上。这一转换过程，会因 PE 所在的 Exception levels 和所处的 Security states 的不同而不同，具体的差异可以参考 Figure D4-1。
