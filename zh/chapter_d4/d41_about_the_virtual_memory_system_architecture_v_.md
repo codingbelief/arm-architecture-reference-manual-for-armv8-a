@@ -17,12 +17,6 @@ Exception levels 和所处的 Security states 的不同而不同，具体的差�
 
 VMSAv8-64 支持 VAs 的 tagging，address tagging 不会对地址转换的处理产生影响，后续的[D4.1.1 AArch64 下的 Address Tagging ](d41_1_address_tagging_in_aarch64_state.md)小节会对此进行详细的描述。
 
-> The remainder of this chapter gives a full description of VMSAv8-64
- > for an implementation that includes all of the Exception levels.
-> [The implemented Exception levels and the resulting translation stages and regimes on
- >page D4-1679](todo.md) describes the differences in the VMSA
- > if some Exception levels are not implemented.
- 
 本章节后续的内容将对实现了所有 Exception levels 的系统上的 VMSAv8-64 进行详细的介绍。
 对于只实现了部分 Exception levels 的系统上的 VMSAv8-64，可以参考
 [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](todo.md) 
