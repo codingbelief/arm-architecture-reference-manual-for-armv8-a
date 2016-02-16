@@ -135,6 +135,7 @@ IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA si
 * The PA size, for a VMSAv8-64 stage 1 translation.
 * 40 bits, for a VMSAv8-32 stage 1 translation.
 
+
 #### Atomicity of register changes on changing virtual machine
 从运行在 Non-secure EL1 or EL0 的软件的视角来看，当从一个 virtual machine 切换到另外一个时， address translation 相关的配置寄存器的切换必须是原子的。也就是说，Non-secure EL1&0 translation regime 中，下列的寄存器的切换必须是原子的：
 * stage 1 translation 相关的寄存器：
