@@ -77,17 +77,8 @@ Table D4-10 shows the IA bits resolved at each level of lookup, and how these co
 
 Table D4-9 refers to accessing a complete translation table, of 4KB, 16KB, or 64KB. However, the ARMv8 translation system supports the following possible variations from the information in Table D4-9:
 
-> #### Reduced IA width
 
 #### Reduced IA width
-
-Depending on the configuration and implementation choices, the required input address width for the initial level of lookup might be smaller than the number of address bits that can be resolved at that level. This means that, for this initial level of lookup:
-* The translation table size is reduced. For each 1 bit reduction in the input address size the size of the translation table is halved.
-> **NOTE:**  
-    - This has no effect on the translation table size for subsequent levels of lookup, for which the lookups always use full-sized translation tables.
-    - For a stage 2 translation, it might be possible to start the translation at a lower level, see [Concatenated translation tables on page D4-1655](#).
-
-* More low-order TTBR bits are needed to hold the translation table base address.
 
 根据具体实现和配置的不同，translation 过程中的第一次 lookup 所解析的 IA 的比特位可能会比后面几次 lookup 的少，也就是说，对于第一次 lookup：
 * 其 translation table size 会比较小。第一次 lookup 解析的比特位每少一位，table size 就缩小一半。
