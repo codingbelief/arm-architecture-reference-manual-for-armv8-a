@@ -25,12 +25,12 @@ Address tagging 功能通过以下的方式来配置：
 
 **对于使用 VMSAv8-64 EL2 translation regime 的地址**
 
-如果使能了 stage 1 的转换，那么 TCR_EL2.TBI 控制是否启用 address tags 功能，
+如果使能了 stage 1 的转换，那么 TCR_EL2.TBI 控制是否启用 address tagging 功能，
 寄存器 TTBR0_EL2 保存地址转换表的基地址。
 
 **对于使用 VMSAv8-64 EL3 translation regime 的地址**
 
-如果使能了 stage 1 的转换，那么 TCR_EL3.TBI 控制是否启用 address tags 功能，
+如果使能了 stage 1 的转换，那么 TCR_EL3.TBI 控制是否启用 address tagging 功能，
 寄存器 TTBR0_EL3 保存地址转换表的基地址。
 > **NOTE**:  
 
