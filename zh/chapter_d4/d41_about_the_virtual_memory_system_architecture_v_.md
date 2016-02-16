@@ -3,20 +3,9 @@
 
 [`英文版`](../../en/chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.html)
 
-> This chapter describes the Virtual Memory System Architecture (VMSA) 
- > that applies to a PE executing in AArch64 state.
-> This is VMSAv8-64, as defined in [ARMv8 VMSA naming on page D4-1643](todo.md).
-
 此小节描述了 AArch64 运行态下的 PE 中的虚拟内存系统架构 (VMSA)，
 即 VMSAv8-64 (Virtual Memory System Architecture on AArch64)。
-(*TODO: 添加 PE 的解释*)
 
-> A VMSA provides a Memory Management Unit (MMU), 
- > that controls address translation, access permissions,
- > and memory attribute determination and checking, 
- > for memory accesses made by the PE.
-
-<!-- VMSA 定义了内存管理单元 这句不知道如何翻译会更贴切 -->
 VMSA 定义了内存管理单元，即 MMU。MMU 在系统中为 PE 的内存操作提供地址转换，
 访问权限控制以及内存属性的设定和校验功能。
 
