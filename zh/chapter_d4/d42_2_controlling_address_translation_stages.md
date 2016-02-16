@@ -99,19 +99,6 @@ TTBR、translation table entries 和 output address 中的 address 超过 output
 章节 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) 更详细的描述了 input address size、TxSZ、initial lookup level 和 translation granule 直接的相互关系。
 
 
-> **For all translation stages**  
-The maximum TxSZ value is 39. If TxSZ is programmed to a value larger than 39 then it is IMPLEMENTATION DEFINED whether:
-* The implementation behaves as if the field is programmed to 39 for all purposes other than reading back the value of the field.
-* Any use of the TxSZ value generates a Level 0 Translation fault for the stage of translation at which TxSZ is used.
-
-> **For a stage 1 translation**  
-The minimum TxSZ value is 16. If TxSZ is programmed to a value smaller than 16 then it is IMPLEMENTATION DEFINED whether:
-* The implementation behaves as if the field were programmed to 16 for all purposes other than reading back the value of the field.
-* Any use of the TxSZ value generates a stage 1 Level 0 Translation fault.
-
-> **For a stage 2 translation**  
-[Supported IPA size](#) defines the effective minimum value of T0SZ, that depends on the supported PA size, and also describes the possible effects of programming T0SZ to a value that is smaller than this effective minimum value.
-
 **For all translation stages**  
 TxSZ 的最大值为 39，如果软件向 TxSZ 中写入超过 39 的值，那么根据不同的实现，可能会有以下两种结果：
 * 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 39 来处理。
