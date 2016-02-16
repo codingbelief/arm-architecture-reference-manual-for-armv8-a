@@ -47,13 +47,6 @@ Figure D4-2 描述了 EL3 在 AArch64 运行态下的 translation stages 和 tra
 每一个 stage 的 address translation 都会利用存储在 translation tables 中的地址转换规则和相关的内存属性信息来完成 address translation 功能。一次 address translation 会执行多次 translation table lookup 操作，每次 translation table lookup 处理 IA 特定位数的地址。这种操作也称作 different levels of lookup。  
 Translation table 中的条目可以被缓存在 Translation Lookaside Buffer (TLB) 中。
 
-> As well as defining the OA that corresponds to the IA, the translation table entries define the following properties:
-> * Access to the Secure or Non-secure address map, for accesses made from Secure state.
-* Memory access permission control.
-* Memory region attributes.
-
-> For more information, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
-
 Translation table 条目不仅包含了 IA 所对应的 OA，还包含下面的相关信息：
 * 对于处于 Secure state 的访问，指示 OA 是属于 Secure 还是 Non-secure state。
 * 内存访问权限控制信息
