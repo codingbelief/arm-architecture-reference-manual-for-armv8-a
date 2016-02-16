@@ -13,7 +13,7 @@ MMU 中的地址转换过程，是将 PE 发起的内存访问的虚拟地址 (V
 
 ![](figure_d4_1.png)
 
-VMSAv8-64 支持虚拟地址标签功能 (Virtual Address Tagging)，可以将虚拟地址的若干位作为标签，用于其他用途。 VA 的 tagging，address tagging 不会对地址转换的处理产生影响，后续的[D4.1.1 AArch64 下的 Address Tagging ](d41_1_address_tagging_in_aarch64_state.md)小节会对此进行详细的描述。
+VMSAv8-64 支持虚拟地址标签功能 (Virtual Address Tagging)，可以将虚拟地址的若干位作为标签，用于其他用途。虚拟地址标签不会对地址转换的处理产生影响，后续的[D4.1.1 AArch64 下的 Address Tagging ](d41_1_address_tagging_in_aarch64_state.md)小节会对此进行详细的描述。
 
 本章节后续的内容将对实现了所有 Exception levels 的系统上的 VMSAv8-64 进行详细的介绍。对于只实现了部分 Exception levels 的系统上的 VMSAv8-64，可以参考
 [The implemented Exception levels and the resulting translation stages and regimes on page D4-1679](todo.md) 
