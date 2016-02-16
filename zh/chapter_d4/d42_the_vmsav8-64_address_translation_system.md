@@ -3,7 +3,7 @@
 [`英文版`](../../zh/chapter_d4/d42_the_vmsav8-64_address_translation_system.html)
 
 This section describes the VMSAv8-64 address translation system, that maps VAs to PAs. Related to this:
-本小节介绍了将虚拟地址转换为物理地址的 VMSAv8-64 地址转换系统，主要由以下几个章节：
+本小节介绍了将虚拟地址转换为物理地址的 VMSAv8-64 地址转换系统，主要由以下几方面内容：
  * [VMSAv8-64 translation table format descriptors on page D4-1695](#) describes the translation table entries.
  * [Access controls and memory region attributes on page D4-1704](#) describes the attributes that are held in the translation table entries, including how different attributes can interact.
  * [Translation Lookaside Buffers (TLBs) on page D4-1729](#) describes the caching of translation table lookups in TLBs, and the architected instructions for maintaining TLBs.
