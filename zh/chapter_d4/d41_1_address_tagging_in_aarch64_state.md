@@ -141,17 +141,6 @@ instruction was executed from.
 * exception entry 所要进入的 Exception level。
 
 
->> *NOTE:*
->> * The TCR_ELx.TBIx fields have the effect shown in the pseudocode regardless of whether the corresponding translation regime is enabled.
->> * In the case of an Illegal exception return, the tag bits of the address can be propagated to the PC if all of the following apply:
-
->>     - The implementation treats the target_exception_level as being the Exception level that was described in the SPSR at the time of the exception return.
->>     - For the Exception level that was described in the SPSR at the time of the exception return, the value
-   of TCR_ELx.TBI is 0.
->>     - In the Exception level that the exception was taken from, the value of TCR_ELx.TBI is 1.
-
->>  In all other cases, the tag bits cannot be propagated to the PC.
-
 > *NOTE:*
 > * 不管 translation regime 是否使能，寄存器 TCR_ELx 的 TBIx 位都会参与上面伪代码的算法处理过程。
 > * 在 Illegal exception return 中, 如果下面的几个条件都符合，那么 VA 的 tag bits 会被加载到 PC 寄存器中:
