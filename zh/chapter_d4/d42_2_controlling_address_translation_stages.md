@@ -51,7 +51,6 @@
 
 下面的小节主要描述各个 address translation stage 中的 PA、IA 和 OA size。
 
-> #### Physical address size
 
 #### Physical address size
 
