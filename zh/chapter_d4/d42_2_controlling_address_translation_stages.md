@@ -32,7 +32,7 @@
 
 
 
-![](table_d4_3.png)
+
 
 
 ### System control registers 中 MMU 相关配置
