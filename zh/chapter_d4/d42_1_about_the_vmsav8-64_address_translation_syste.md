@@ -32,7 +32,8 @@ translation regime 包含两个连续的 translation stages，其中部分 regim
 >   - 返回的 OA 与 IA 相同，此时称为 flat mapping of the IA to the OA.
 >   - Stage 2 不改变 stage 1 中得到的内存属性。
 
-在一个 stage 的 address translation 中，如果没有产生 MMU fault，那么 MMU 就会把 IA 转换为对应的 OA，如果产生了 MMU fault，那么在 System registers 中会记录该 MMU faults。  
+在一个 stage 的 address translation 中，如果没有产生 MMU fault，那么 MMU 就会把 IA 转换为对应的 OA，如果产生了 MMU fault，那么在 System registers 中会记录该 MMU faults。
+
 在本章节中，所描述的地址转换系统，都是基于实现了所有 Exception levels，并且运行在 AArch64 下的实现。  
 Figure D4-2 描述了 EL3 在 AArch64 运行态下的 translation stages 和 translation regimes。
 
