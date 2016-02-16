@@ -121,25 +121,6 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 * TTBR 中保存的 translation table base address 由 TTBR[47:12] 变为 TTBR[47:13]。
 ---
 
-> In all cases, the translation table, or block of concatenated translation tables, must be aligned to the actual size of the table or block of concatenated tables.
-The translation table base address held in the TTBR is defined in the OA map for that stage of address translation.
-The information given in this section assumes this stage of translation has an OA size of 48 bits, meaning the translation table base address is:
-* TTBR[47:12] if using the 4KB translation granule.
-* TTBR[47:14] if using the 16KB translation granule.
-* TTBR[47:16] if using the 64KB translation granule.
-
-> If the OA address is smaller than 48 bits then the upper bits of this field must be written as zero. For example, for a 40-bit OA range:
-* If using the 4KB translation granule:
-    - TTBR[47:40] must be set to zero.
-    - TTBR[39:12] holds the translation table base address.
-* If using the 16KB translation granule:
-    - TTBR[47:40] must be set to zero.
-    - TTBR[39:14] holds the translation table base address.
-* If using the 64KB translation granule:
-    - TTBR[47:40] must be set to zero.
-    - TTBR[39:16] holds the translation table base address.
-
-> In all cases, if TTBR[47:40] is not zero, any attempt to access the translation table generates an Address size fault.
 
 translation table 以及串联合并后的 table 的地址必须对齐到实际的 table size。对于一个 address translation stage，TTBR 中保存着用于将 IA 映射到 OA 的 translation table 的 base address。
 
