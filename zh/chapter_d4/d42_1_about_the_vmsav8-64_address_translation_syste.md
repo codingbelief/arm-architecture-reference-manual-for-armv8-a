@@ -38,7 +38,7 @@ Figure D4-2 描述了 EL3 在 AArch64 运行态下的 translation stages 和 tra
 
 ![](figure_d4_2.png)
 
-[ARMv8 VMSA 命名](#) 小节提供了更多关于不同 stage 的 address translation 相关的信息，另外：
+[ARMv8 VMSA 命名规则](#) 小节提供了更多关于不同 stage 的 address translation 相关的信息，另外：
 * Chapter G4 The AArch32 Virtual Memory System Architecture 描述了：
     - EL3 在 AArch32 运行态下的 translation stages 和 translation regimes。
     - EL3 在 AArch64 运行态下，但是部分 stage 的 address translation 处于 AArch32 运行态时的场景。
