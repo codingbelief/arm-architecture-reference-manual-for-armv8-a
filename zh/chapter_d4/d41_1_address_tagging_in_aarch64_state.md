@@ -34,7 +34,7 @@ Address tagging 功能通过以下的方式来配置：
 寄存器 TTBR0_EL3 保存地址转换表的基地址。
 
 > **NOTE**:  
-> 不管对应的 translation regime 是否使能，寄存器位 TCR_ELx.TBIn 都决定着 address tags 功能是否启用.
+> 不管对应的 translation regime 是否使能，寄存器位 TCR_ELx.TBIn 都决定着 address tagging 功能是否启用.
   
 --
 > An address tag enable bit also has an effect on the PC value in the following cases:
