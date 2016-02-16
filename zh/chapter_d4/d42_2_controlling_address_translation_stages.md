@@ -79,7 +79,6 @@ TTBR、translation table entries 和 output address 中的 address 超过 output
 * 如果 stage 2 translation 关闭时，stage 1 translation 的 output address 大于实际支持的 physical address size，那么就会触发 stage 1 address size fault
 * 如果 stage 2 translation 使能时，stage 1 translation 没有触发address size fault，但是 output address 大于 stage 2 translation 的 input address size，那么就会触发 stage 2 translation fault。
 
-
 (译者注：IPS for Intermediate Physical Address Size，PS for Physical Address Size)
 
 #### Input address size
