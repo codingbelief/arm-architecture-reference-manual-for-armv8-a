@@ -10,7 +10,7 @@
 > * Whether the address causes an Address size fault from being out of range if the translation system is not enabled.
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
-在 AArch64 运行态下，ARMv8 架构支持地址标签 (Address Tagging) 功能。在启用了虚拟地址标签时，虚拟地址的高 8 个比特将作为 tag 使用，同时在下列的几个处理过程，高 8 bits 将被忽略：
+在 AArch64 运行态下，ARMv8 架构支持地址标签 (Address Tagging) 功能。在启用了虚拟地址标签时，虚拟地址的高 8 个比特将作为标签 (tag) 使用，同时在下列的几个处理过程，高 8 bits 将被忽略：
 * 当地址转换使能时，判定 VA 是否超出范围，并产生 Translation fault。
 * 当地址转换未使能时，判定 VA 是否超出范围，并产生 Address size fault。
 * 当进行 TLB 设置指定地址的条目失效操作时。
