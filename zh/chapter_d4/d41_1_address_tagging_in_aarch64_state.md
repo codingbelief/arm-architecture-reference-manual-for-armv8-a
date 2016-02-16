@@ -11,8 +11,8 @@
 > * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
 
 在 AArch64 运行态下，ARMv8 架构支持虚拟地址标签 (Address Tagging) 功能。在启用了虚拟地址标签时，虚拟地址的高 8 个比特将作为标签 (tag) 使用，同时在下列的几个处理过程，高 8 比特将被忽略：
-* 当地址转换使能时，判定 VA 是否超出范围，并产生 Translation fault。
-* 当地址转换未使能时，判定 VA 是否超出范围，并产生 Address size fault。
+* 当地址转换使能时，判定虚拟地址是否超出范围，并产生 Translation fault。
+* 当地址转换未使能时，判定虚拟地址是否超出范围，并产生 Address size fault。
 * 当进行 TLB 设置指定地址的条目失效操作时。
 
 (译者注：VA 的 tag 通常是在软件层面使用，例如用来作为对象的引用计数、标示指针的有效与否等)
