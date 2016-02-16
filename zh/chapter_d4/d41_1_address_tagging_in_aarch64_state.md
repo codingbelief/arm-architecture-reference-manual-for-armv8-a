@@ -10,18 +10,6 @@
 
 (译者注：VA 的 tag 通常是在软件层面使用，例如用来作为对象的引用计数、标示指针的有效与否等。参考资料：[Tagged_pointer](https://en.wikipedia.org/wiki/Tagged_pointer))
 
-> The use of address tags is controlled as follows:
-
-> **For addresses using the VMSAv8-64 EL1&0 translation regime**
-
-> The value of bit[55] of the VA determines the register bit that controls the use of address tags, as
-> follows:
-
-> | | |
-> | -- | -- |
-> | VA[55]==0 | TCR_EL1.TBI0 determines whether address tags are used. If stage 1 translation is enabled, TTBR0_EL1 holds the base address of the translationtables used to translate the address.|
-> | VA[55]==1 | TCR_EL1.TBI1 determines whether address tags are used. If stage 1 translation is enabled, TTBR1_EL1 holds the base address of the translation tables used to translate the address.|
-
 Address tagging 功能通过以下的方式来配置：
 
 **对于使用 VMSAv8-64 EL1&0 translation regime 的地址**  
