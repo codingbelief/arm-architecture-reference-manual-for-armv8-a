@@ -86,11 +86,6 @@ integer AddrTop(bits(64) address)
 
 Address tagging 使能后，软件可以使用 VA 的高 8 位来保存额外的信息，但是软件需要保证在直接操作保存有 tag 信息的 VA 时，VA 的高 8 位没有被错误的更改。另外，当发生 Data Abort 和 Watchpoint 时，tag 信息会和 VA 一起被保存到 FAR ( Fault Address Register )。
 
->**Relaxation of the tagged address handling requirements on an Illegal exception return**
-
-> The AddrTop() pseudocode function, and the pseudocode description of exception return, does not cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
->The following pseudocode describes the algorithm for the address branched to, ensuring that any address tag is not propagated to the PC:
-
 **Relaxation of the tagged address handling requirements on an Illegal exception return**
 
 The AddrTop() pseudocode function, and the pseudocode description of exception return, does not cover a relaxation to the requirements for tagged address handling that applies to an Illegal exception return.
