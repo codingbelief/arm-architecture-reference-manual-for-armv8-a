@@ -132,19 +132,6 @@ Translation table 的条目可以被缓存在 Translation Lookaside Buffer 中�
 
 ### The VMSAv8-64 translation table format
 
-Stages of address translation that are controlled by an Exception level that is using AArch64 use the VMSAv8-64 translation table format. This format uses 64-bit descriptor entries in the translation tables.
-
-> **NOTE:**  
-This format is an extension of the VMSAv8-32 Long-descriptor translation table format originally defined by the ARMv7 Large Physical Address Extension, and extended slightly by ARMv8. VMSAv8-32 also supports a Short-descriptor translation table format. [Chapter G4 The AArch32 Virtual Memory System Architecture](#) describes both of these formats.
-
-The VMSAv8-64 translation table format provides:
-* Up to four levels of address lookup.
-* Input addresses of up to 48 bits.
-* Output addresses of up to 48 bits.
-* A translation granule size of 4KB, 16KB, or 64KB.
-
-### The VMSAv8-64 translation table format
-
 在 AArch64 state 下的 Exception level 的 address translation 的 translation table 的条目是一个 64 位的描述符。
 
 > **NOTE:**
