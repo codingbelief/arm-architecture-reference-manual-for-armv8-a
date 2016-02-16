@@ -24,12 +24,24 @@
     ![](table_d4_2.png)
 
 
+> The following subsections give more information about controlling address translation:
+* System control registers relevant to MMU operation.
+* Address size configuration.
+* Atomicity of register changes on changing virtual machine on page D4-1650.
+* Use of out-of-context translation regimes on page D4-1650.
+
 后续的几个章节更详细的描述了 address translation 相关的配置：
 * System control registers 中 MMU 相关的配置.
 * Address size 配置.
 * Atomicity of register changes on changing virtual machine on page D4-1650.
 * Use of out-of-context translation regimes on page D4-1650.
 
+> ### System control registers relevant to MMU operation
+
+> In AArch64 state, system control registers have a suffix, that indicates the lowest Exception level from which they can be accessed. In some general descriptions of MMU control and address translation, this chapter uses a Common abbreviation for each of the system control registers that affects MMU operation, as Table D4-3 shows. The common abbreviation is used when describing features that apply to all the translation regimes.  
+
+>> **NOTE:**  
+The only translation regime that supports a stage 2 translation is the Non-secure EL1&0 translation regime.
 
 
 
