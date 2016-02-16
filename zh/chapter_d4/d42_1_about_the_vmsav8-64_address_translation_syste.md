@@ -95,15 +95,6 @@ Virtual Address (VA) 是用在 instruction 中，作为 data 或者 instruction 
 也就是说，在 EL1&0 中，支持两个大小为 256TB 的 VA 空间。  
 另外，每个 translation regime 都可以将 VA 的位数配置为 48 位一下。
 
-> #### Intermediate physical address (IPA)
-
-> In a translation regime that provides two stages of address translation, the IPA is:
-* The OA from the stage 1 translation.
-* The IA for the stage 2 translation.
-
-> In a translation regime that provides only one stage of address translation, the IPA is identical to the PA. Alternatively, the translation regime can be considered as having no concept of IPAs.  
-The IPA address space has a maximum address width of 48 bits, see [Address size configuration on page D4-1646](#).
-
 
 #### Intermediate physical address (IPA)
 
