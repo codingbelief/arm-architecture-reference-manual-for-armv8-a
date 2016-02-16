@@ -104,14 +104,6 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 
 
 #### Concatenated translation tables
-
-For stage 2 address translations, for the initial lookup, up to 16 translation tables can be concatenated. This means additional IA bits can be resolved at that lookup level. Each additional IA bit resolved:
-* Doubles the number of translation tables required. Resolving an additional n bits requires 2^n concatenated translation tables at the initial lookup level.
-* Reduces by 1 bit the width of the translation table base address held in the TTBR.  
-
-This means that, for the initial lookup of a stage 2 translation table, the IA ranges shown in Table D4-10 on page D4-1654 can be extended by up to 4 bits. Example D4-2 shows how concatenation can be used to resolve a 40-bit IA when using the 4KB translation granule.
-
-#### Concatenated translation tables
 (译者注：将多个小的 translation tables 串联合并成为一个更大的 translation table)
 
 在 stage 2 address translation 的 initial lookup 中，最多可以将 16 个 translation tables 串联起来。串联起来后，由于 translation table 变大了，也就意味着 initial lookup 可以解析额外的 IA 的比特位。每增加 1 个比特的解析：
