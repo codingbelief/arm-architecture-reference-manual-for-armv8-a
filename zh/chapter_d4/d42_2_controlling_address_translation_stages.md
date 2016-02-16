@@ -171,7 +171,6 @@ translation table entries from a translation regime of an Exception level lower 
 entered will be observed by any observers, to the extent that those accesses are required to be observed as
 determined by the shareability and cacheability of those translation table entries.
 
-
 > **NOTE:**  
 * This does not require that speculative memory accesses cannot be performed using those entries if it is impossible to tell that those memory accesses have been observed by the observers.
 * This requirement does not imply that, on taking an exception to a higher Exception level, any translation table walks started before the exception was taken will be completed by the time the higher Exception level is entered, and therefore memory accesses required for such a translation table walk might, in effect, be performed speculatively. However, the execution of a DSB on entry to the higher Exception level ensures that these accesses are complete.  
