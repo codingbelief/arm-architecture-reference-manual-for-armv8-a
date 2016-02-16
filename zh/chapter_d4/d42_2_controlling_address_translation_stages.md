@@ -84,6 +84,8 @@ When using two stages of translation:
 
 在 address translation stage 使能后，对应的 TCR.IPS 或者 TCR.PS 必须正确的设定，该寄存器位用于设定 address translation stage 支持的最大 output address size，详细的配置参考 Table D4-5：
 
+![](table_d4_5.png)
+
 > **NOTE:**  
 * TCR_EL1 寄存器中的 output address size 配置位的名称为 IPS (Intermediate Physical Address Size)，其他 EL 的 TCR 寄存器中的名称为 PS (Physical Address Size)
 * {I}PS 包含 3 个 bits，与 Table D4-4 中 PARange 低 3 个 bits 相对应。
