@@ -22,23 +22,6 @@ Address tagging 功能通过以下的方式来配置：
 | VA[55]==1，即高 16 位全为 1 的区块 | 如果使能了 stage 1 的转换, 那么 TCR_EL1.TBI1 控制是否启用 address tags 功能. 寄存器 TTBR1_EL1 保存地址转换表的基地址.|
  
 （译者注：TCR for Translation Control Register，TBI for Top Byte Ignore，TTBR for Translation Table Base Register）
-> **For addresses using the VMSAv8-64 EL2 translation regime**
-
-> TCR_EL2.TBI determines whether address tags are used. If stage 1 translation is enabled,
-> TTBR0_EL2 holds the base address of the translation tables used to translate the address.
-
-
-> **For addresses using the VMSAv8-64 EL3 translation regime**
-
-> TCR_EL3.TBI determines whether address tags are used. If stage 1 translation is enabled,
-> TTBR0_EL3 holds the base address of the translation tables used to translate the address.
-
-
->> **NOTE**:  
-
->> The TCR_ELx.TBIn bits determine whether address tags are used regardless of whether the corresponding
->> translation regime is enabled.
-
 
 **对于使用 VMSAv8-64 EL2 translation regime 的地址**
 
