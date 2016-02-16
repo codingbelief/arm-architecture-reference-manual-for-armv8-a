@@ -3,13 +3,6 @@
 
 [`英文版`](../../en/chapter_d4/d41_1_address_tagging_in_aarch64_state.html)
 
-> In AArch64 state, the ARMv8 architecture supports tagged addresses for data 
- > values. In these cases the top eight
-> bits of the virtual address are ignored when determining:
-> * Whether the address causes a Translation fault from being out of range if the translation system is enabled.
-> * Whether the address causes an Address size fault from being out of range if the translation system is not enabled.
-> * Whether the address requires invalidation when performing a TLB invalidation instruction by address.
-
 在 AArch64 运行态下，ARMv8 架构支持虚拟地址标签 (Address Tagging) 功能。在启用了虚拟地址标签时，虚拟地址的高 8 个比特将作为标签 (tag) 使用，同时在下列的几个处理过程，高 8 比特将被忽略：
 * 当地址转换使能时，判定虚拟地址是否超出范围，并产生 Translation fault。
 * 当地址转换未使能时，判定虚拟地址是否超出范围，并产生 Address size fault。
