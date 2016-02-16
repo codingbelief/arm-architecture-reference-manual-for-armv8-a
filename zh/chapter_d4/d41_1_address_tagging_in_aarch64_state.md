@@ -42,20 +42,6 @@ Address tagging 功能通过以下的方式来配置：
 * exception 返回到开启了 address tagging 功能的 Exception level 时.
 * 从 debug 状态退出，并返回到开启了 address tagging 功能的 Exception level 时。
 
->> **NOTE:**  
-
->> As an example of what is meant by the controlled Exception level, TCR_EL2.TBI controls this effect for:
->> * A branch or procedure return within EL2.
->> * Taking an exception to EL2.
->> * Performing an exception return or a debug state exit to EL2.
-
-> The effect of the controlling TBI{n} bit is:  
-
-> | | |
-> | -- | -- |
-> | For EL0 or EL1 | EL1 If the controlling TBIn bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be a sign-extension of bit[55] of that address. |
-> | For EL2 or EL3 | If the controlling TBI bit for the address being loaded into the PC is set to 1, then bits[63:56] of the PC are forced to be 0x00. |
-
 > **NOTE:**  
 
 > 下面以 Exception level 2 为例, 在设置 TCR_EL2.TBI 使能了 address tagging 功能后，在下面的场景中，需要对写入 PC 寄存器的值做特殊的处理:
