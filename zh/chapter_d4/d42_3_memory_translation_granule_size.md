@@ -53,8 +53,6 @@ Table D4-8 中汇总了不同 granule size 下的影响。
 | x | 为 lookup 的 level。translation 过程中的最后一个 lookup 定义为 level 3. |
     
 
-
-
 The following diagrams show this model, for each of the permitted granule sizes.  
 Figure D4-4 shows how a 48-bit IA is resolved when using the 4KB translation granule.
 ![](figure_d4_4.png)
