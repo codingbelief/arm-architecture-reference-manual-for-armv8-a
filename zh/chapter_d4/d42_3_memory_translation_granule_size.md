@@ -104,6 +104,7 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 
 
 #### Concatenated translation tables
+
 (译者注：Concatenated translation tables 即为将多个小的 translation tables 串联合并成为一个更大的 translation table)
 
 在 stage 2 address translation 的 initial lookup 中，最多可以将 16 个 translation tables 串联起来。串联起来后，由于 translation table 变大了，也就意味着 initial lookup 可以解析额外的 IA 的比特位。每增加 1 个比特的解析：
