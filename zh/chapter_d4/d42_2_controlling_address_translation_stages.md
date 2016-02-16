@@ -104,10 +104,12 @@ TxSZ 的最大值为 39，如果软件向 TxSZ 中写入超过 39 的值，那�
 * 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 39 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 level 0 translation fault。
 
+
 **For a stage 1 translation**  
 TxSZ 的最大值为 16，如果软件向 TxSZ 中写入超过 16 的值，那么根据不同的实现，可能会有以下两种结果：
 * 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 16 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 stage 1 level 0 translation fault。
+
 
 **For a stage 2 translation**  
 [Supported IPA size](#) 决定了 T0SZ 的最小值，同时也决定了往 T0SZ 写入一个小于最小值数据时的行为。(译者注：细节在下一个小节描述)
