@@ -9,20 +9,6 @@
 * 返回输入地址 IA 所对应的输出地址 OA (Output Address)，以及 OA 所指向的内存属性信息。
 * 如果 MMU 无法进行地址转换操作，那么就会产生 MMU fault exception。MMU fault 根据产生时所在的转换 stage 的不同，可以分为 stage 1 MMU fault 和 stage 2 MMU fault 两大类。
 
-> The process of mapping an IA to an OA is an address translation, or more precisely a single stage of address translation.
-
-> The architecture defines a number of translation regimes, where a translation regime comprises either:
-
-> * A single stage of address translation. This maps an input virtual address (VA) to an output physical address (PA).
-> * Two, sequential, stages of address translation, where:
-  - Stage 1 maps an input VA to an output intermediate physical address (IPA).
-  - Stage 2 maps an input IPA to an output PA.
-
-> The translation granule specifies the granularity of the mapping from IA to OA. That is, it defines both:
-
-> * The page size for a stage of address translation, where a page is the smallest block of memory for which an IA to OA mapping can be specified.
-> * The size of a complete translation table for that stage of address translation.
-
 从 IA 映射到 OA 处理过程定义为地址转换 (address translation)，或者单阶段地址转换 (single stage of address translation)。
 
 VMSAv8-64 还定义了多个 translaton regimes，一个 translation regime 包含下面两个中的其中一个：
