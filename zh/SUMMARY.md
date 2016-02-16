@@ -7,7 +7,7 @@
    * [D4.1 虚拟内存系统架构(VMSA)简介](chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.md)
        * [D4.1.1 AArch64 下的地址标签 (Address Tagging)](chapter_d4/d41_1_address_tagging_in_aarch64_state.md)
    * [D4.2 VMSAv8-64 地址转换系统](chapter_d4/d42_the_vmsav8-64_address_translation_system.md)
-       * [D4.2.1 About the VMSAv8-64 address translation system](chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.md)
+       * [D4.2.1 VMSAv8-64 地址转换系统简介](chapter_d4/d42_1_about_the_vmsav8-64_address_translation_syste.md)
        * [D4.2.2 Controlling address translation stages](chapter_d4/d42_2_controlling_address_translation_stages.md)
        * [D4.2.3 Memory translation granule size](chapter_d4/d42_3_memory_translation_granule_size.md)
        * [D4.2.4 Translation tables and the translation process](chapter_d4/d42_4_translation_tables_and_the_translation_proces.md)
