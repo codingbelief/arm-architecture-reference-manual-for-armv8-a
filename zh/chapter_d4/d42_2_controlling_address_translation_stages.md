@@ -54,6 +54,7 @@ The only translation regime that supports a stage 2 translation is the Non-secur
 > **NOTE:**
 只有 Non-secure EL1&0 translation regime 才有 stage 2 translation。
 
+![](table_d4_3.png)
 
 > ### Address size configuration
 
