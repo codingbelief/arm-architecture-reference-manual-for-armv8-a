@@ -118,7 +118,7 @@ PC = NewAddress;
 
 *NewAddress*：指的是跳转到的目的 VA，或者调用返回时的目的 VA。
 
-*target_exception_level* 则可能有以下几种情况：
+*target_exception_level*： 则可能有以下几种情况：
 * branch 或者 procedure return 所在的 Exception level
 * exception return 所要返回的 Exception level。  
   如果在 exception return 时触发了 Illegal exception return 机制，那么 target_exception_level 可能是 exception return 时 SPSR 寄存器所指示的 Exception level，也可能是 exception return 执行时所在的 Exception level，选择哪一个由具体实现决定。
