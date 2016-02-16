@@ -3,7 +3,7 @@
 
 [`英文版`](../../en/chapter_d4/d41_about_the_virtual_memory_system_architecture_v_.html)
 
-此小节描述了 AArch64 运行态下的 PE 中的虚拟内存系统架构 (VMSA)，
+本小节描述了 AArch64 运行态下的 PE 中的虚拟内存系统架构 (VMSA)，
 即 VMSAv8-64 (Virtual Memory System Architecture on AArch64)。
 
 VMSA 包含内存管理单元，即 MMU (Memory Management Unit)。MMU 在系统中为 PE 的内存操作提供地址转换，
