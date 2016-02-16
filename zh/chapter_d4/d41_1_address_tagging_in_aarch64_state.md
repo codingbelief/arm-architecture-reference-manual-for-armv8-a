@@ -1,7 +1,7 @@
 
 > ## D4.1.1 Address tagging in AArch64 state
 
-## D4.1.1 AArch64 下的地址 tagging
+## D4.1.1 AArch64 下的地址标签 (Address Tagging)
 
 [`英文版`](../../en/chapter_d4/d41_1_address_tagging_in_aarch64_state.html)
 
