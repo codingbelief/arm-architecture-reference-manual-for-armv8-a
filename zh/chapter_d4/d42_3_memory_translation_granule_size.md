@@ -102,6 +102,7 @@ Example D4-1 中描述了 IA 为 35 bits，granule size 为 4KB 时的 translati
 * 其对应的 translation table size 为 512B，是其他的 table size 的 1/(2^7)
 * TTBR 指向第一次 lookup 的 translation table base address 为 TTBR[47:9]
 
+
 #### Concatenated translation tables
 
 For stage 2 address translations, for the initial lookup, up to 16 translation tables can be concatenated. This means additional IA bits can be resolved at that lookup level. Each additional IA bit resolved:
