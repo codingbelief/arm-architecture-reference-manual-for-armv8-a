@@ -21,8 +21,6 @@ Address translation 中，IA 到 OA 的映射是按内存块进行的。Translat
 * 单个阶段的 address translation 中的页面大小，即一次 IA 到 OA 映射所支持的最小内存块的大小。 
 * 单个阶段的 address translation 的 translation table 所占内存的最大值。
 
-> The MMU is controlled by System registers, that provide independent control of each address translation stage, including a control to disable the stage of address translation. [The effects of disabling a stage of address translation
-on page D4-1677](#) defines how the MMU handles an access for which a required address translation stage is disabled.
 
 >> **NOTE:**
 
