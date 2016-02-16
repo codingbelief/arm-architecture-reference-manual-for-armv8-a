@@ -30,6 +30,8 @@ Memory translation granule size 决定了以下两个参数：
 
 VMSAv8-64 支持 4KB、16KB 和 64KB 的 translation granule size。在具体实现中，并不要求实现所有的 granule size，Table D4-7 中描述了如何确定各个 granule size 是否支持。
 
+![](table_d4_7.png)
+
 VMSAv8-64 中的各个 address translation stage 可以单独配置 granule size。
 
 > **NOTE:**
