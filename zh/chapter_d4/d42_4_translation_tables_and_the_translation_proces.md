@@ -27,6 +27,8 @@ The translation table walk starts with a read of the translation table for the i
     - If the translation is in a Secure translation regime, the descriptor indicates whether that base address is in the Secure or Non-secure address space, unless a hierarchical control at a previous level of lookup has indicated that it must be in the Non-secure address space.
 * The descriptor is invalid. In this case, the memory access generates a Translation fault.
 
+一个 translation table walk 中的每个 translation table lookup 都是进行对应 translation table 的一次查表操作。其中第一个 lookup 的所查找的 translation table 的基地址保存在 TTBR 中，后续的 lookup 的 translation table 的基地址则由上一个 lookup 的查表结果提供。
+
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
 ![](figure_d4_7.png)
