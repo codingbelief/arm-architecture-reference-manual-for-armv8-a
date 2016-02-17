@@ -23,7 +23,7 @@ The translation table walk starts with a read of the translation table for the i
 
 * The entry is the final entry of the walk. In this case, the entry contains the OA, and the permissions and attributes for the access.
 * An additional level of lookup is required. In this case, the entry contains the translation table base address for that lookup. In addition:
-    - The descriptor provides hierarchical attributes that are applied to the final translation, see [Hierarchical control of Secure or Non-secure memory accesses on page D4-1703](#) and Hierarchical control of data access permissions on page D4-1706.
+    - The descriptor provides hierarchical attributes that are applied to the final translation, see [Hierarchical control of Secure or Non-secure memory accesses on page D4-1703](#) and [Hierarchical control of data access permissions on page D4-1706](#).
     - If the translation is in a Secure translation regime, the descriptor indicates whether that base address is in the Secure or Non-secure address space, unless a hierarchical control at a previous level of lookup has indicated that it must be in the Non-secure address space.
 * The descriptor is invalid. In this case, the memory access generates a Translation fault.
 
