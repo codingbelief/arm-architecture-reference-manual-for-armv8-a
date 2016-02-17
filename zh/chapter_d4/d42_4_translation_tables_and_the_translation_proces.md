@@ -31,7 +31,7 @@ The translation table walk starts with a read of the translation table for the i
 * 最后一次 lookup 所返回的描述符包含 OA 以及此次内存访问的权限和属性信息。
 * 非最后一次 lookup 所返回的描述符包含下一次 lookup 所对应的 translation table 的基地址，另外还包含以下的信息：
     - 层级属性信息，更多相介绍可以参考 [Hierarchical control of Secure or Non-secure memory accesses](#) 和 [Hierarchical control of data access permissions](#) 章节。
-    - 
+    - 如果此次 translation 是属于 Secure translation regime，那么描述符会包含下一次 lookup 的 translation table 的基地址是属于 Secure 还是 Non-secure 地址空间；
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
