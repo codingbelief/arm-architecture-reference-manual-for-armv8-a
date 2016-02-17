@@ -29,7 +29,9 @@ The translation table walk starts with a read of the translation table for the i
 
 一次 translation table walk 中的每次 translation table lookup 都是进行对应 translation table 的一次查表操作。其中第一个 lookup 的所查找的 translation table 的基地址保存在 TTBR 中，后续的 lookup 的 translation table 的基地址则由上一个 lookup 的查表结果提供。一次 translation table lookup 返回一个描述符 (descriptor)，该描述符包含以下的信息：
 * 最后一次 lookup 所返回的描述符包含 OA 以及此次内存访问的权限和属性信息。
-* 
+* 非最后一次 lookup 所返回的描述符包含下一次 lookup 所对应的 translation table 的基地址，另外还包含以下的信息：
+    - 层级属性信息，更多相介绍可以参考 [Hierarchical control of Secure or Non-secure memory accesses](#) 和 [Hierarchical control of data access permissions](#) 章节。
+    - 
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
