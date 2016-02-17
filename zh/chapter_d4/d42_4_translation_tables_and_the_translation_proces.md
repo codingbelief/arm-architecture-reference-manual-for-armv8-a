@@ -14,7 +14,7 @@ See also [Selection between TTBR0 and TTBR1 on page D4-1670](#) 章节.
 
 ### Translation table walks
 
-一个 translation table walk 完成一次虚拟地址到物理地址的转换，它由一个或者多个 translation table lookup 组成。在 Non-secure EL1&0 translation regime 中，translation table walk 包含了stage 1 和 stage 2 转换中的 translation table lookup。Translation table walk 完成后，将会返回以下信息：
+一次 translation table walk 完成一次虚拟地址到物理地址的转换，它由一次或者多次 translation table lookup 组成。在 Non-secure EL1&0 translation regime 中，translation table walk 包含了stage 1 和 stage 2 转换中的 translation table lookup。Translation table walk 完成后，将会返回以下信息：
 * 转换后的目的物理地址。如果进行转换的内存访问是在 Secure state 下发起的，那么还会包含转换后的目的物理地址是属于安全物理地址空间还是非安全物理地址空间这一信息。参考 [Security state of translation table lookups](#).
 * 目的物理地址所在内存区块 (memory region) 的内存属性 (memory attributes)。更多内存属性相关的信息，可以参考 [Memory types and attributes](#) 和 [Memory region attributes](#) 章节。
 * 目的物理地址所在内存区块的访问权限 (access permissions)。更多访问权限相关的信息，可以参考 [Memory access control](#) 章节。
@@ -27,7 +27,8 @@ The translation table walk starts with a read of the translation table for the i
     - If the translation is in a Secure translation regime, the descriptor indicates whether that base address is in the Secure or Non-secure address space, unless a hierarchical control at a previous level of lookup has indicated that it must be in the Non-secure address space.
 * The descriptor is invalid. In this case, the memory access generates a Translation fault.
 
-一个 translation table walk 中的每个 translation table lookup 都是进行对应 translation table 的一次查表操作。其中第一个 lookup 的所查找的 translation table 的基地址保存在 TTBR 中，后续的 lookup 的 translation table 的基地址则由上一个 lookup 的查表结果提供。
+一次 translation table walk 中的每次 translation table lookup 都是进行对应 translation table 的一次查表操作。其中第一个 lookup 的所查找的 translation table 的基地址保存在 TTBR 中，后续的 lookup 的 translation table 的基地址则由上一个 lookup 的查表结果提供。一次 translation table lookup 返回一个描述符 (descriptor)，该描述符包含以下的信息：
+* 
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
