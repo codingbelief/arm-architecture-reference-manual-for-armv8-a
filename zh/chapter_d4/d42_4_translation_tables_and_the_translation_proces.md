@@ -19,6 +19,8 @@ A translation table walk comprises one or more translation table lookups. The tr
 * The memory attributes for the target memory region, as described in [Memory types and attributes on page B2-93](#). For more information about how the translation table descriptors specify these attributes see [Memory region attributes on page D4-1712](#).
 * The access permissions for the target memory regions. For more information about how the translation table descriptors specify these permissions see Memory access control on page D4-1704.
 
+
+
 The translation table walk starts with a read of the translation table for the initial lookup. The TTBR for the stage of translation holds the base address of this table. Each translation table lookup returns a descriptor, that indicates one of the following:
 
 * The entry is the final entry of the walk. In this case, the entry contains the OA, and the permissions and attributes for the access.
