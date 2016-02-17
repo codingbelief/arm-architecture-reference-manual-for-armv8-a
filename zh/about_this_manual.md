@@ -13,7 +13,7 @@
  * 当前 Exception 等级， 安全状态和运行态的不同对 PE 行为的影响。
  * Exception 模型 (Exception model)。
  * 支持 AArch64 和 AArch32 运行态切换的内部交互模型 (interprocessing model)。
- * 定义内存端顺 (memory ordering) 和管理 (memory management) 的内存模型 (memory model)。本手册中，仅描述定义了虚拟内存系统架构 (VMSA) 的 ARMv8-A 架构的内存模型。
+ * 定义 Memory Ordering 和 Memory Management 的内存模型 (memory model)。本手册中，仅描述定义了虚拟内存系统架构 (VMSA) 的 ARMv8-A 架构的内存模型。
  * 编程模型 (programmers’ model)，主要描述用于控制 PE 和内存系统，以及提供相关状态信息的系统寄存器 (System registers) 接口。
  * 高性能的 SIMD 和浮点指令：
     - 支持单精度和双精度浮点数操作。
