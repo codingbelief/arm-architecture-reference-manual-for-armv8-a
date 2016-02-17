@@ -14,11 +14,6 @@ See also [Selection between TTBR0 and TTBR1 on page D4-1670](#) 章节.
 
 ### Translation table walks
 
-A translation table walk comprises one or more translation table lookups. The translation table walk is the set of lookups that are required to translate the virtual address to the physical address. For the Non-secure EL1&0 translation regime, this set includes lookups for both the stage 1 translation and the stage 2 translation. The information returned by a successful translation table walk is:
-* The required physical address. If the access is from Secure state this includes identifying whether the access is to the Secure physical address space or the Non-secure physical address space, see [Security state of translation table lookups on page D4-1658](#).
-* The memory attributes for the target memory region, as described in [Memory types and attributes on page B2-93](#). For more information about how the translation table descriptors specify these attributes see [Memory region attributes on page D4-1712](#).
-* The access permissions for the target memory regions. For more information about how the translation table descriptors specify these permissions see Memory access control on page D4-1704.
-
 一个 translation table walk 完成一次虚拟地址到物理地址的转换，它由一个或者多个 translation table lookup 组成。在 Non-secure EL1&0 translation regime 中，translation table walk 包含了stage 1 和 stage 2 转换中的 translation table lookup。Translation table walk 完成后，将会返回以下信息：
 * 转换后的目的物理地址。如果进行转换的内存访问是在 Secure state 下发起的，那么还会包含转换后的目的物理地址是属于安全物理地址空间还是非安全物理地址空间这一信息。参考 [Security state of translation table lookups](#).
 * 目的物理地址所在内存区块 (memory region) 的内存属性 (memory attributes)。更多内存属性相关的信息，可以参考 [Memory types and attributes](#) 和 [Memory region attributes](#) 章节。
