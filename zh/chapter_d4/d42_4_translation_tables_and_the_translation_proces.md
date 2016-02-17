@@ -32,6 +32,7 @@ The translation table walk starts with a read of the translation table for the i
 * 非最后一次 lookup 所返回的描述符包含下一次 lookup 所对应的 translation table 的基地址，另外还包含以下的信息：
     - 层级属性信息，更多相介绍可以参考 [Hierarchical control of Secure or Non-secure memory accesses](#) 和 [Hierarchical control of data access permissions](#) 章节。
     - 如果此次 translation 是属于 Secure translation regime，那么描述符会包含 translation table 的基地址是属于 Secure 还是 Non-secure 地址空间这一信息。如果此次 translation 不属于 Secure translation regime 那么上一次的 lookup 结果就已经决定了此次 lookup 得到的 translation table 的基地主必然是属于 Non-secure 地址空间。
+* 如果描述符是一个非法描述符，那么此次内存访问就会产生一个 Translation fualt。
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
