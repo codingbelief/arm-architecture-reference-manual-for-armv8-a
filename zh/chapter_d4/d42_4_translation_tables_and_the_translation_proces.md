@@ -1,6 +1,6 @@
 ## D4.2.4 Translation tables and the translation process
 
-## D4.2.4 
+## D4.2.4 Translation tables 和 the translation process
 
 [`英文版`](../../en/chapter_d4/d42_4_translation_tables_and_the_translation_proces.html)
 
