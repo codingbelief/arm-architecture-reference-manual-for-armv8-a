@@ -12,7 +12,11 @@ The following subsections describe general properties of the translation tables 
 
 See also [Selection between TTBR0 and TTBR1 on page D4-1670](#).
 
-后续的几个小节主要介绍与 translation table format 无关的 translation tables 和 translation table walks 内容。
+后续的几个小节主要介绍与 translation table format 无关的 translation tables 和 translation table walks 内容：
+* [Translation table walks](#).
+* [Security state of translation table lookups on page D4-1658](#).
+* [Control of translation table walks on page D4-1658](#).
+* [Security state of translation table lookups on page D4-1658](#).
 
 ### Translation table walks
 
