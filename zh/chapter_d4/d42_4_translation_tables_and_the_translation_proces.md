@@ -18,7 +18,7 @@ See also [Selection between TTBR0 and TTBR1 on page D4-1670](#).
 * [Control of translation table walks](#).
 * [Security state of translation table lookups](#).
 
-See also [Selection between TTBR0 and TTBR1 on page D4-1670](#).
+相关信息也可以参考 [Selection between TTBR0 and TTBR1 on page D4-1670](#) 章节.
 
 ### Translation table walks
 
