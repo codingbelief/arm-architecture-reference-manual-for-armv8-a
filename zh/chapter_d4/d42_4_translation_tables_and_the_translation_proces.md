@@ -19,14 +19,6 @@ See also [Selection between TTBR0 and TTBR1 on page D4-1670](#) 章节.
 * 目的物理地址所在内存区块 (memory region) 的内存属性 (memory attributes)。更多内存属性相关的信息，可以参考 [Memory types and attributes](#) 和 [Memory region attributes](#) 章节。
 * 目的物理地址所在内存区块的访问权限 (access permissions)。更多访问权限相关的信息，可以参考 [Memory access control](#) 章节。
 
-The translation table walk starts with a read of the translation table for the initial lookup. The TTBR for the stage of translation holds the base address of this table. Each translation table lookup returns a descriptor, that indicates one of the following:
-
-* The entry is the final entry of the walk. In this case, the entry contains the OA, and the permissions and attributes for the access.
-* An additional level of lookup is required. In this case, the entry contains the translation table base address for that lookup. In addition:
-    - The descriptor provides hierarchical attributes that are applied to the final translation, see [Hierarchical control of Secure or Non-secure memory accesses on page D4-1703](#) and [Hierarchical control of data access permissions on page D4-1706](#).
-    - If the translation is in a Secure translation regime, the descriptor indicates whether that base address is in the Secure or Non-secure address space, unless a hierarchical control at a previous level of lookup has indicated that it must be in the Non-secure address space.
-* The descriptor is invalid. In this case, the memory access generates a Translation fault.
-
 一次 translation table walk 中的每次 translation table lookup 都是进行对应 translation table 的一次查表操作。其中第一个 lookup 的所查找的 translation table 的基地址保存在 TTBR 中，后续的 lookup 的 translation table 的基地址则由上一个 lookup 的查表结果提供。一次 translation table lookup 返回一个描述符 (descriptor)，该描述符包含以下的信息：
 * 最后一次 lookup 所返回的描述符包含 OA 以及此次内存访问的权限和属性信息。
 * 非最后一次 lookup 所返回的描述符包含下一次 lookup 所对应的 translation table 的基地址，另外还包含以下的信息：
