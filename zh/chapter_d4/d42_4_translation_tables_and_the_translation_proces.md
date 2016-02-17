@@ -19,7 +19,7 @@ A translation table walk comprises one or more translation table lookups. The tr
 * The memory attributes for the target memory region, as described in [Memory types and attributes on page B2-93](#). For more information about how the translation table descriptors specify these attributes see [Memory region attributes on page D4-1712](#).
 * The access permissions for the target memory regions. For more information about how the translation table descriptors specify these permissions see Memory access control on page D4-1704.
 
-一个 translation table walk 完成一次虚拟地址到物理地址的转换，它由一个或者多个 translation table lookup 组成。在 Non-secure EL1&0 translation regime 中，translation table walk 包含了stage 1 translation and the stage 2 转换中的 translation table lookup。
+一个 translation table walk 完成一次虚拟地址到物理地址的转换，它由一个或者多个 translation table lookup 组成。在 Non-secure EL1&0 translation regime 中，translation table walk 包含了stage 1  stage 2 转换中的 translation table lookup。
 
 The translation table walk starts with a read of the translation table for the initial lookup. The TTBR for the stage of translation holds the base address of this table. Each translation table lookup returns a descriptor, that indicates one of the following:
 
