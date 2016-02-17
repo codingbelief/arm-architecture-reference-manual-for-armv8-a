@@ -20,7 +20,7 @@
     - 双精度、单精度和半精度浮点数转换。
     - 三种指令集都支持整形、单精度浮点数向量操作。
     - 在 A64 运行态下，支持双精度浮点数向量操作。
- * 安全模式 (security model)，提供了 secure 和 Non-secure 两种安全状态，用于支持安全应用场景。
+ * 安全模型 (security model)，提供了 secure 和 Non-secure 两种安全状态，用于支持安全应用场景。
  * 虚拟化模型 (virtualization model)，支持 Non-secure 操作的虚拟化。
  * 调式架构，提供了可软件控制的调试特性。
 
