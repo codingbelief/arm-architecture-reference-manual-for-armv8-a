@@ -63,7 +63,7 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 * In a two stage translation system, a translation table lookup from stage 1, that has the Normal memory type defined at stage 1 by this rule, can still be given the Device memory type as part of the stage 2 translation of that address.
 * 在具有两个 stage 的地址转换中，即使 stage 1 中的 translation table lookup 内存访问被设定了 Normal memory type，stage 2 中的 translation table lookup 也还可以设定为 Device memory type。然而，ARM 强烈不建议这样设定，同时，在体系结构中，EL2 检测到这种行为时，就会触发 trap。更多的信息可以参考 [Stage 2 fault on a stage 1 translation table walk](#) 章节。
 * The rules about mismatched attributes given in [Mismatched memory attributes on page B2-104](#) apply to the relationship between translation table walks and explicit memory accesses to the translation tables in the same way that they apply to the relationship between different explicit memory accesses to the same location. For this reason, ARM strongly recommends that the attributes that the TTBR applies to the translation tables are the same as the attributes that are applied for explicit accesses to the memory that holds the translation tables.
-* [Mismatched memory attributes](#) 章节中描述的 mismatched attributes 规则，在 translation table walks 和 explicit memory accesses 场景与在两个 explicit memory accesses 
+* [Mismatched memory attributes](#) 章节中描述的 mismatched attributes 规则，在 translation table walks 和 explicit memory accesses 场景与在两个 explicit memory accesses 场景是相同的
 
 
 For more information see Overview of the VMSAv8-64 address translation stages[
