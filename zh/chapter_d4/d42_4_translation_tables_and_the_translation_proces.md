@@ -55,7 +55,7 @@ The appropriate TTBR holds the output address of the base of the translation tab
     
     > 其中，S1 是完成 stage 1 的转换所需要的 lookup 次数，S2 是完成 stage 2 的转换所需要的次数。
 
-TTBR 中还决定了一个 stage 的地址转换中的所有 translation table lookup 的 memory cacheability 和 shareability 属性。
+TTBR 中还决定了一个 stage 的地址转换中的所有 translation table lookup 内存访问的 memory cacheability 和 shareability 属性。
 
 同时，translation table lookup 的 memory type 为 Normal memory type。
 
