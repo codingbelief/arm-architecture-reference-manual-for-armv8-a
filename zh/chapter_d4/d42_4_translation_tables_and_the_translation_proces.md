@@ -66,7 +66,7 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 
 For more information see Overview of the VMSAv8-64 address translation stages[
 ](#). See also [Selection between TTBR0 and TTBR1 on page D4-1670](#).
-
+更多的相关信息可以参考 
 
 #### Security state of translation table lookups
 
