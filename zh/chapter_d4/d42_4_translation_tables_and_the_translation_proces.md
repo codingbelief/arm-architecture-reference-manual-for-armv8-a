@@ -59,8 +59,6 @@ The TTBR also determines the memory cacheability and shareability attributes tha
 
 TTBR 中还决定了一个 stage 的地址转换中的所有 translation table lookup 的 memory cacheability 和 shareability 属性。
 
-The Normal memory type is the memory type defined for a translation table lookup for a stage of translation.
-
 同时，translation table lookup 的 memory type 为 Normal memory type。
 
 > **NOTE:**
