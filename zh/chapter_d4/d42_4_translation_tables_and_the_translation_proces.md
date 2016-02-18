@@ -46,6 +46,7 @@ The appropriate TTBR holds the output address of the base of the translation tab
 第一次 lookup 的 translation table 的基地址保存在相应的 TTBR 中，另外：
 * For all address translation stages other than Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the PA of the base of the translation table.
 * 除了 Non-secure EL1&0 stage 1 以外的其他 stage 的地址转换中，保存在 TTBR 和 lookup 返回的描述符中的 translation table 的基地址都是物理地址。
+* 
 * For Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the IPA of the base of the translation table. This means that if stage 2 address translation is enabled, each of these OAs is subject to second stage translation.
 
     > **NOTE:**
