@@ -43,6 +43,7 @@ Address translation stages are disabled by setting an SCTLR.M bit to 0. See the 
 
 
 The appropriate TTBR holds the output address of the base of the translation table used for the initial lookup, and:
+第一次 lookup 的 translation table 的基地址保存在相应的 TTBR 中
 * For all address translation stages other than Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the PA of the base of the translation table.
 * For Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the IPA of the base of the translation table. This means that if stage 2 address translation is enabled, each of these OAs is subject to second stage translation.
 
