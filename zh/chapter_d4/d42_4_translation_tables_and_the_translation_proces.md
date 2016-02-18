@@ -40,6 +40,8 @@ Because any change to an SCTLR.EE, bit requires synchronization before it is vis
 * Executing with address translation disabled for any stage of translation affected by the EE bit being changed.
 Address translation stages are disabled by setting an SCTLR.M bit to 0. See the appropriate register description for more information.
 
+
+
 The appropriate TTBR holds the output address of the base of the translation table used for the initial lookup, and:
 * For all address translation stages other than Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the PA of the base of the translation table.
 * For Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the IPA of the base of the translation table. This means that if stage 2 address translation is enabled, each of these OAs is subject to second stage translation.
