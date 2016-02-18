@@ -39,7 +39,6 @@ Because any change to an SCTLR.EE, bit requires synchronization before it is vis
 * Executing with address translation disabled for any stage of translation affected by the EE bit being changed.
 Address translation stages are disabled by setting an SCTLR.M bit to 0. See the appropriate register description for more information.
 
-
 (TODO：此处关于 endianness 的相关描述不理解)
 
 The appropriate TTBR holds the output address of the base of the translation table used for the initial lookup, and:
