@@ -81,6 +81,8 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 
 For the first stage of the EL1&0 translation regime, the TCR_EL1.{EPD0, EPD1} bits determine whether the translation tables for that regime are valid. EPD0 indicates whether the table that TTBR0_EL1 points to is valid, and EPD1 indicates whether the table that TTBR1_EL1 points to is valid. The effect of these bits is:
 
+
+
 | | |
 | -- | -- |
 | EPDn == 0 | The translation table is valid, and can be used for a translation table lookup. |
