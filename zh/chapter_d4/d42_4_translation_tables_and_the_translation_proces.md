@@ -75,7 +75,7 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 If the translation table descriptor returned as a result of that initial lookup points to a second translation table, then the NSTable bit in that descriptor determines whether that translation table lookup is made to Secure or to Non-secure output addresses.
 
 一个 translation table walk 中的所有 lookup 所返回的描述符中的 NSTable 位指示了当次 lookup 所返回的基地址是属于 Secure 还是 Non-secure 地址。
-
+另外，如果 lookup 所返回的描述符是从 Non-secure memory 中读取到的，那就意味着下一次 lookup 操作也将会访问 Non-secure memory。
 This applies for all subsequent translation table lookups as part of that translation table walk, with the additional rule that any translation table descriptor that is returned from Non-secure memory is treated as if the NSTable bit in that descriptor indicates that the subsequent translation table lookup is to Non-secure memory.
 
 
