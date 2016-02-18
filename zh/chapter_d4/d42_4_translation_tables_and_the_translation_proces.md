@@ -64,8 +64,7 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 * [Mismatched memory attributes](#) 章节中描述的 mismatched attributes 规则，在 translation table walks 和 explicit memory accesses 访问 translation table 场景与在两个不同 explicit memory accesses 访问的场景是相同的。因此，ARM 强烈建议 TTBR 中设定的 translation table lookup 访问 translation table 的内存属性与 explicit memory accesses 访问 translation table 的内存属性保持一致。(原句：The rules about mismatched attributes given in [Mismatched memory attributes on page B2-104](#) apply to the relationship between translation table walks and explicit memory accesses to the translation tables in the same way that they apply to the relationship between different explicit memory accesses to the same location. For this reason, ARM strongly recommends that the attributes that the TTBR applies to the translation tables are the same as the attributes that are applied for explicit accesses to the memory that holds the translation tables.)
 
 
-For more information see Overview of the VMSAv8-64 address translation stages[
-](#). See also [Selection between TTBR0 and TTBR1 on page D4-1670](#).
+For more information see[ Overview of the VMSAv8-64 address translation stages](#). See also [Selection between TTBR0 and TTBR1 on page D4-1670](#).
 更多的相关信息可以参考 
 
 #### Security state of translation table lookups
