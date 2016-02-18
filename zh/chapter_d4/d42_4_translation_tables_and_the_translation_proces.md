@@ -68,13 +68,13 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 
 #### Security state of translation table lookups
 
-在 Non-secure translation regime 中，所有 translation table lookup 返回的地址都是属于 Non-secure 地址。
+在 Non-secure translation regime 中，所有 translation table lookup 访问的地址都是属于 Non-secure 地址。
 
-在 Secure translation regime 中，第一次 translation table lookup 返回的地址属于 Secure 地址。
+在 Secure translation regime 中，第一次 translation table lookup 访问的地址属于 Secure 地址。
 
 If the translation table descriptor returned as a result of that initial lookup points to a second translation table, then the NSTable bit in that descriptor determines whether that translation table lookup is made to Secure or to Non-secure output addresses.
 
-
+一个 translation table walk 中的所有 lookup 所返回的描述符中的 NSTable 位
 
 This applies for all subsequent translation table lookups as part of that translation table walk, with the additional rule that any translation table descriptor that is returned from Non-secure memory is treated as if the NSTable bit in that descriptor indicates that the subsequent translation table lookup is to Non-secure memory.
 
