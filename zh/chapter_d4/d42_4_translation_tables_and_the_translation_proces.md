@@ -30,7 +30,6 @@ Figure D4-7 描述了 1 个 stage，包含三次 lookup 的地址转换过程。
 
 ![](figure_d4_7.png)
 
-ARM DDI 0487A.g ID070815
 A translation table lookup from VMSAv8-64 performs a single-copy atomic 64-bit access to the translation table entry. This means the translation table entry is treated as a 64-bit object for the purpose of endianness. SCTLR.EE determines the endianness of the translation table lookups.
 
 > **NOTE:**
