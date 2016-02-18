@@ -28,6 +28,8 @@ See also [Selection between TTBR0 and TTBR1 on page D4-1670](#) 章节.
 
 Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
 
+Figure D4-7 描述了 1 个 stage，包含三次 lookup 的地址转换过程。
+
 ![](figure_d4_7.png)
 
 ARM DDI 0487A.g ID070815
