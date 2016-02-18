@@ -26,8 +26,6 @@ See also [Selection between TTBR0 and TTBR1 on page D4-1670](#) 章节.
     - 如果此次 translation 是属于 Secure translation regime，那么描述符会包含 translation table 的基地址是属于 Secure 还是 Non-secure 地址空间这一信息。如果此次 translation 不属于 Secure translation regime 那么上一次的 lookup 结果就已经决定了此次 lookup 得到的 translation table 的基地主必然是属于 Non-secure 地址空间。
 * 如果描述符是一个非法描述符，那么此次内存访问就会产生一个 Translation fualt。
 
-Figure D4-7 on page D4-1657 gives a generalized view of a single stage of address translation, where three levels of lookup are required.
-
 Figure D4-7 描述了 1 个 stage，包含三次 lookup 的地址转换过程。
 
 ![](figure_d4_7.png)
