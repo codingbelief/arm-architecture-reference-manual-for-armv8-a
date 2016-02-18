@@ -57,7 +57,7 @@ The appropriate TTBR holds the output address of the base of the translation tab
 
 TTBR 中还决定了一个 stage 的地址转换中的所有 translation table lookup 内存访问的 memory cacheability 和 shareability 属性。
 
-同时，translation table lookup 的 memory cacheability 和 shareability 属性。的 memory type 为 Normal memory type。
+同时，translation table lookup 内存访问的 memory type 为 Normal memory type。
 
 > **NOTE:**
 * In a two stage translation system, a translation table lookup from stage 1, that has the Normal memory type defined at stage 1 by this rule, can still be given the Device memory type as part of the stage 2 translation of that address. ARM strongly recommends against such a remapping of the memory type, and the architecture includes a trap of this behavior to EL2. For more information, see Stage 2 fault on a stage 1 translation table walk on page D4-1726.
