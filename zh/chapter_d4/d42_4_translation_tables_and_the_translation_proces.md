@@ -49,8 +49,7 @@ The appropriate TTBR holds the output address of the base of the translation tab
 * 在 Non-secure EL1&0 stage 1 的地址转换中，保存在 TTBR 和 lookup 返回的描述符中的 translation table 的基地址则是 IPA。也就是，如果使能了 stage 2 的地址转换，这些返回的基地址的实际物理地址还要经过 stage 2 的地址转换才能得到。(原句：This means that if stage 2 address translation is enabled, each of these OAs is subject to second stage translation.)
 
     > **NOTE:**  
-    TLB 缓冲机制可以减少完成地址转换所需要执行的 lookup 次数。由于 stage 1 中 lookup 返回的基地址还需要进行 stage 2 的转换才能得到实际的物理地址，所以，如果 
-    TLB 中缓存的 translation table entries 是无效的，那么完成转换所需的 lookup 次数会成倍增长。
+    TLB 缓冲机制可以减少完成地址转换所需要执行的 lookup 次数。由于 stage 1 中 lookup 返回的基地址还需要进行 stage 2 的转换才能得到实际的物理地址，所以，如果 TLB 中缓存的 translation table entries 是无效的，那么完成转换所需的 lookup 次数会成倍增长。
     TLB caching can be used to minimise the number of translation table lookups that must be performed. Because each stage 1 OA generated during a translation table walk is subject to a stage 2 translation, if the caching of translation table entries is ineffective, a VA to PA address translation with two stages of translation can give rise to multiple translation table lookups. The number of lookups required is given by the following equation:
     
     > (S1+1)*(S2+1) - 1
