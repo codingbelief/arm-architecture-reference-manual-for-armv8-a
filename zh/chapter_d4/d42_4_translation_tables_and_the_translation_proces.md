@@ -31,7 +31,6 @@ Figure D4-7 描述了 1 个 stage，包含三次 lookup 的地址转换过程。
 ![](figure_d4_7.png)
 
 A translation table lookup from VMSAv8-64 performs a single-copy atomic 64-bit access to the translation table entry. This means the translation table entry is treated as a 64-bit object for the purpose of endianness. SCTLR.EE determines the endianness of the translation table lookups.
-(TODO：此处关于 endianness 的相关描述不理解)
 
 > **NOTE:**
 **Dynamically changing translation table endianness**
@@ -41,6 +40,7 @@ Because any change to an SCTLR.EE, bit requires synchronization before it is vis
 Address translation stages are disabled by setting an SCTLR.M bit to 0. See the appropriate register description for more information.
 
 
+(TODO：此处关于 endianness 的相关描述不理解)
 
 The appropriate TTBR holds the output address of the base of the translation table used for the initial lookup, and:
 * For all address translation stages other than Non-secure EL1&0 stage 1 translations, the output address held in the TTBR, and any translation table base address returned by a translation table descriptor, is the PA of the base of the translation table.
