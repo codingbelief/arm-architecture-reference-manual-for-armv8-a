@@ -50,8 +50,7 @@ The appropriate TTBR holds the output address of the base of the translation tab
 
     > **NOTE:**  
     TLB 缓冲机制可以减少完成地址转换所需要执行的 lookup 次数。由于 stage 1 中 lookup 返回的基地址还需要进行 stage 2 的转换才能得到实际的物理地址，所以，如果 TLB 中缓存的 translation table entries 是无效的，那么完成转换所需的 lookup 次数会成倍增长。完成转换所需的 lookup 次数的计算公式如下：
-    TLB caching can be used to minimise the number of translation table lookups that must be performed. Because each stage 1 OA generated during a translation table walk is subject to a stage 2 translation, if the caching of translation table entries is ineffective, a VA to PA address translation with two stages of translation can give rise to multiple translation table lookups. The number of lookups required is given by the following equation:
-    
+
     > (S1+1)*(S2+1) - 1
     
     > Where, for the Non-secure EL1&0 translation regime, S1 is the number of levels of lookup required for a stage 1 translation, and S2 is the number of levels of lookup required for a stage 2 translation.
