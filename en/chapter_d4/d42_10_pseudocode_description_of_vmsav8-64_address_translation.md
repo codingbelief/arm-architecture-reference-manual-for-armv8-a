@@ -211,6 +211,12 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
         ipaddress = S1.paddress.physicaladdress<47:0>;
         S2 = AArch64.TranslationTableWalk(ipaddress, vaddress, acctype, iswrite, secondstage,
                                           s2fs1walk, size);
+
+// Check for unaligned data accesses to Device memory
+if (!wasaligned && !IsFault(S2.addrdesc) && S2.addrdesc.memattrs.type == MemType_Device &&
+acctype != AccType_IFETCH) then
+S2.addrdesc.fault = AArch64.AlignmentFault(acctype, iswrite, secondstage);
+
 ```
 
 
