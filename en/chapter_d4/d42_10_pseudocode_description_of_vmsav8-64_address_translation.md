@@ -75,6 +75,15 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
         S1 = AArch64.TranslationTableWalk(ipaddress, vaddress, acctype, iswrite, secondstage,
                                           s2fs1walk, size);
         permissioncheck = TRUE;
+    else
+        S1 = AArch64.TranslateAddressS1Off(vaddress, acctype, iswrite); 
+        permissioncheck = FALSE;
+    
+    // Check for unaligned data accesses to Device memory
+    if (!wasaligned && !IsFault(S1.addrdesc) && S1.addrdesc.memattrs.type == MemType_Device &&
+        acctype != AccType_IFETCH) then
+        S1.addrdesc.fault = AArch64.AlignmentFault(acctype, iswrite, secondstage);
+        
 ```
 
 
