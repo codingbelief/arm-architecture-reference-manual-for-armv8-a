@@ -151,6 +151,14 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
             result.addrdesc.memattrs.inner.hints = MemHint_No;
         result.addrdesc.memattrs.shareable = TRUE; 
         result.addrdesc.memattrs.outershareable = TRUE;
+    
+    result.addrdesc.memattrs.outer = result.addrdesc.memattrs.inner;
+    
+    result.addrdesc.memattrs = MemAttrDefaults(result.addrdesc.memattrs);
+    
+    result.perms.ap = bits(3) UNKNOWN; 
+    result.perms.xn = '0'; 
+    result.perms.pxn = '0';
  
  
 ```
