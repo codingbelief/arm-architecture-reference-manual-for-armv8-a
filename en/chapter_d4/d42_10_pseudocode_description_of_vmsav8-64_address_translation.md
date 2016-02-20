@@ -110,6 +110,8 @@ When stage 1 translation is disabled, the function AArch64.TranslateAddressS1Off
 // Note that there are additional constraints on instruction prefetching that are not described in
 // this pseudocode.
 
+TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, boolean iswrite)
+    assert !ELUsingAArch32(S1TranslationRegime());
 ```
 
 
