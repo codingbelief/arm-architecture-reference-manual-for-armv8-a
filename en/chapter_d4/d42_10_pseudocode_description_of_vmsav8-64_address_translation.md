@@ -62,11 +62,11 @@ The function AArch64.FirstStageTranslate() performs a stage 1 translation, calli
 // similar except it uses the translation regime specified for the instruction.
 
 AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype, boolean iswrite,                                                boolean wasaligned, integer size)
-if HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
-s1_enabled = HCR_EL2.TGE == '0' && HCR_EL2.DC == '0' && SCTLR_EL1.M == '1';
-else
-s1_enabled = SCTLR[].M == '1';
-ipaddress = bits(48) UNKNOWN; secondstage = FALSE;
+    if HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
+        s1_enabled = HCR_EL2.TGE == '0' && HCR_EL2.DC == '0' && SCTLR_EL1.M == '1';
+    else
+        s1_enabled = SCTLR[].M == '1';
+    ipaddress = bits(48) UNKNOWN; secondstage = FALSE;
 ```
 
 
