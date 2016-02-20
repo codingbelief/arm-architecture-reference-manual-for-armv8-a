@@ -73,7 +73,13 @@ When EL3 is using AArch64, this section applies to:
 * The behaviors in Non-secure state apply regardless of the Execution state that EL3 is using.
 * When the value of HCR_EL2.DC is 1, then the behavior of the Non-secure EL1&0 translation regime is as if stage 1 translation is disabled and stage 2 translation is enabled, as described in [Behavior when stage 1 address translation is disabled on page D4-1677](#).
 
-
+In these cases, a memory location might be accessed as a result of an instruction fetch if the following condition is met:
+* The memory location is in the same block of memory as, or in the next contiguous block of memory to, an instruction that a simple sequential execution of the program either requires to be fetched now or has required to be fetched since any of:
+    - The last reset.
+    - The last synchronization of instruction cache maintenance targeting the address of the instruction.
+    - When executing in AArch32 state, the last synchronization of branch predictor maintenance targeting the address of the instruction.
+In this description, the blocks of memory referred to are of the size of the minimum implemented translation granule and are aligned to that size.
+These accesses can be caused by speculative instruction fetches, regardless of whether the prefetched instruction is committed for execution.
 
 
 
