@@ -37,3 +37,5 @@ Table D4-25 shows the translation table descriptor address, for each level of lo
 ![](table_d4_25.png)
 
 
+
+
