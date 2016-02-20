@@ -159,6 +159,15 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
     result.perms.ap = bits(3) UNKNOWN; 
     result.perms.xn = '0'; 
     result.perms.pxn = '0';
+    
+    result.nG = bit UNKNOWN;
+    result.contiguous = boolean UNKNOWN;
+    result.domain = bits(4) UNKNOWN;
+    result.level = integer UNKNOWN;
+    result.blocksize = integer UNKNOWN; 
+    result.addrdesc.paddress.physicaladdress = vaddress<47:0>; 
+    result.addrdesc.paddress.NS = if IsSecure() then '0' else '1'; 
+    result.addrdesc.fault = AArch64.NoFault();
  
  
 ```
