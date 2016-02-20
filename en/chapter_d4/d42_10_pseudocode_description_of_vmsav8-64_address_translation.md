@@ -244,6 +244,7 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
 
 ### Translation table walk
 
+The function AArch64.TranslationTableWalk() returns the result, in the form of a TLBRecord, of a translation table walk made for a memory access from an Exception level that is using AArch64.
 
 
 
