@@ -130,7 +130,7 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
     if default_cacheable then
         // Use default cacheable settings 
         result.addrdesc.memattrs.type = MemType_Normal; 
-        result.addrdesc.memattrs.inner.attrs = MemAttr_WB; 
+        result.addrdesc.memattrs.inner.attrs = MemAttr_WB;   // Write-back
         result.addrdesc.memattrs.inner.hints = MemHint_RWA; 
         result.addrdesc.memattrs.shareable = FALSE; 
         result.addrdesc.memattrs.outershareable = FALSE;
