@@ -202,6 +202,7 @@ The AArch64.SecondStageTranslate() function performs the stage 2 address transla
 AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) vaddress,
                                                AccType acctype, boolean iswrite, boolean wasaligned,
                                                boolean s2fs1walk, integer size)
+    assert HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1};
 ```
 
 
