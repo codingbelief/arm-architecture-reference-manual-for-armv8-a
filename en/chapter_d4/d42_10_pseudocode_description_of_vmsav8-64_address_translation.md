@@ -203,6 +203,9 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
                                                AccType acctype, boolean iswrite, boolean wasaligned,
                                                boolean s2fs1walk, integer size)
     assert HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1};
+    
+    s2_enabled = HCR_EL2.VM == '1' || HCR_EL2.DC == '1'; 
+    secondstage = TRUE;
 ```
 
 
