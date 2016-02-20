@@ -55,6 +55,17 @@ return result;
 
 The function AArch64.FirstStageTranslate() performs a stage 1 translation, calling the function AArch64.TranslationTableWalk(), described in [Translation table walk on page D4-1684](#), to perform the required translation table walk. However, if stage 1 translation is disabled, it calls the function AArch64.TranslateAddressS1Off(), described in this section, to set the memory attributes.
 
+```
+// AArch64.FirstStageTranslate()
+// =============================
+// Perform a stage 1 translation walk. The function used by Address Translation operations is // similar except it uses the translation regime specified for the instruction.
+AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype, boolean iswrite, boolean wasaligned, integer size)
+if HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
+s1_enabled = HCR_EL2.TGE == '0' && HCR_EL2.DC == '0' && SCTLR_EL1.M == '1';
+else
+s1_enabled = SCTLR[].M == '1';
+ipaddress = bits(48) UNKNOWN; secondstage = FALSE;
+```
 
 
 
