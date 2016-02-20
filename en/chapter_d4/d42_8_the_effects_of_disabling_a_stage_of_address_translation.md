@@ -44,6 +44,9 @@ When the value of HCR_EL2.DC is 1, in Non-secure state:
 * The SCTLR_EL1.M bit behaves as if it is 0, for all purposes other than reading the value of the bit. This means Non-secure EL1&0 stage 1 address translation is disabled.
 * The HCR_EL2.VM bit behaves as if it is 1, for all purposes other than reading the value of the bit. This means that Non-secure EL1&0 stage 2 address translation is enabled.
 
+See also [Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679](#).
+
+
 
 
 
