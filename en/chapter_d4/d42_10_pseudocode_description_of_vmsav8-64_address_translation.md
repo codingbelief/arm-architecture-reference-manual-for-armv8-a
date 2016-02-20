@@ -143,6 +143,16 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
         // Instruction cacheability controlled by SCTLR_ELx.I 
         cacheable = SCTLR[].I == '1'; 
         result.addrdesc.memattrs.type = MemType_Normal;
+        if cacheable then
+            result.addrdesc.memattrs.inner.attrs = MemAttr_WT;
+            result.addrdesc.memattrs.inner.hints = MemHint_RA;
+        else
+            result.addrdesc.memattrs.inner.attrs = MemAttr_NC;
+            result.addrdesc.memattrs.inner.hints = MemHint_No;
+        result.addrdesc.memattrs.shareable = TRUE; 
+        result.addrdesc.memattrs.outershareable = TRUE;
+ 
+ 
 ```
 
 
