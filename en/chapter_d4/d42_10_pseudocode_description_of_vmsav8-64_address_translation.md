@@ -9,3 +9,5 @@ The following subsections gives a pseudocode description of the translation tabl
 * [Support functions on page D4-1689](#).
 
 ### Definitions required for address translation
+
+In pseudocode, the result of a translation table lookup, in either Execution state, is returned in a TLBRecord structure.
