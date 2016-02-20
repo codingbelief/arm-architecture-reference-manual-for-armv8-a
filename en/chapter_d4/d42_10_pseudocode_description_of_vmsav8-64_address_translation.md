@@ -29,3 +29,23 @@ type TLBRecord is (
 
 The function AArch64.FullTranslate() performs a full translation table walk. For any translation regime it performs a stage 1 translation for the supplied virtual address, and for the Non-secure EL1&0 translation regime it then performs a stage 2 translation of the returned address.
 
+```
+// AArch64.FullTranslate()
+// =======================
+// Perform both stage 1 and stage 2 translation walks for the current translation regime. The 
+// function used by Address Translation operations is similar except it uses the translation 
+// regime specified for the instruction.
+
+AddressDescriptor AArch64.FullTranslate(bits(64) vaddress, AccType acctype, boolean iswrite,
+
+// First Stage Translation
+S1 = AArch64.FirstStageTranslate(vaddress, acctype, iswrite, wasaligned, size);
+
+if !IsFault(S1) && HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
+    s2fs1walk = FALSE;
+    result = AArch64.SecondStageTranslate(S1, vaddress, acctype, iswrite, wasaligned, s2fs1walk, size);
+else
+result = S1;
+return result;
+
+```
