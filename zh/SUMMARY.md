@@ -14,7 +14,7 @@
        * [D4.2.5 Overview of the VMSAv8-64 address translation stages](chapter_d4/d42_5_overview_of_the_vmsav8-64_address_translation.md)
        * [D4.2.6 The VMSAv8-64 translation table format](chapter_d4/d42_6_the_vmsav8-64_translation_table_format.md)
        * [D4.2.7 The algorithm for finding the translation table entries](chapter_d4/d42_7_the_algorithm_for_finding_the_translation_table_entries.md)
-       * D4.2.8 The effects of disabling a stage of address translation
+       * [D4.2.8 The effects of disabling a stage of address translation](chapter_d4/d428_the_effects_of_disabling_a_stage_of_address_translation.md)
    * [D4.3 VMSAv8-64 translation table format descriptors](chapter_d4/d43_vmsav8-64_translation_table_format_descriptors.md)
    * [D4.4 Access controls and memory region attributes](chapter_d4/d44_access_controls_and_memory_region_attributes.md)
    * [D4.5 MMU faults](chapter_d4/d45_mmu_faults.md)
