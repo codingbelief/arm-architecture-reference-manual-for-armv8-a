@@ -36,6 +36,6 @@ Table D4-25 shows the translation table descriptor address, for each level of lo
 
 ![](table_d4_25.png)
 
-
+Table D4-7 on page D4-1651 shows how software can determine whether an implementation supports the 4KB granule size.
 
 
