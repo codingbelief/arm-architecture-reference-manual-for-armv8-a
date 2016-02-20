@@ -24,3 +24,5 @@ type TLBRecord is (
 ```
 
 [Memory data type definitions on page D3-1626](#) includes definitions of the Permissions and AddressDescriptor parameters.
+
+### Performing the full address translation
