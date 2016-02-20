@@ -58,7 +58,9 @@ The function AArch64.FirstStageTranslate() performs a stage 1 translation, calli
 ```
 // AArch64.FirstStageTranslate()
 // =============================
-// Perform a stage 1 translation walk. The function used by Address Translation operations is // similar except it uses the translation regime specified for the instruction.
+// Perform a stage 1 translation walk. The function used by Address Translation operations is 
+// similar except it uses the translation regime specified for the instruction.
+
 AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype, boolean iswrite, boolean wasaligned, integer size)
 if HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
 s1_enabled = HCR_EL2.TGE == '0' && HCR_EL2.DC == '0' && SCTLR_EL1.M == '1';
