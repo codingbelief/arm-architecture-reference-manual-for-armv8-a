@@ -58,7 +58,9 @@ TLB invalidate operations act on the target TLB regardless of whether any stage 
 When stage 2 address translation is disabled:
 * The IPA output from the stage 1 translation maps flat to the PA.
 * The memory attributes and permissions from the stage 1 translation apply to the PA.
-When both stages of address translation are disabled, see also Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679.
+When both stages of address translation are disabled, see also [Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679](#).
+
+
 
 
 
