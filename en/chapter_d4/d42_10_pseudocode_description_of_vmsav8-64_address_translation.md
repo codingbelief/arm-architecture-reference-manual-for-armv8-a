@@ -168,6 +168,8 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
     result.addrdesc.paddress.physicaladdress = vaddress<47:0>; 
     result.addrdesc.paddress.NS = if IsSecure() then '0' else '1'; 
     result.addrdesc.fault = AArch64.NoFault();
+    
+    return result;
  
  
 ```
