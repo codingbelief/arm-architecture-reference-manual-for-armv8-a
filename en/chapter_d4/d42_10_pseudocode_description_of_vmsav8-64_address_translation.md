@@ -134,6 +134,11 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
         result.addrdesc.memattrs.inner.hints = MemHint_RWA; 
         result.addrdesc.memattrs.shareable = FALSE; 
         result.addrdesc.memattrs.outershareable = FALSE;
+    elsif acctype != AccType_IFETCH then
+        // Treat data as Device
+        result.addrdesc.memattrs.type = MemType_Device; 
+        result.addrdesc.memattrs.device = DeviceType_nGnRnE; 
+        result.addrdesc.memattrs.inner = MemAttrHints UNKNOWN;
 ```
 
 
