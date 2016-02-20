@@ -16,3 +16,4 @@ For the Non-secure EL1&0 translation regime, when the value of HCR_EL2.DC is 1, 
 > **NOTE: **  
 This applies for both instruction and data accesses.
 
+**All other accesses**
