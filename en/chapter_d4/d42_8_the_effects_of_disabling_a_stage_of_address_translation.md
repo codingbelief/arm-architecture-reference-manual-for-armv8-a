@@ -26,3 +26,4 @@ For all other accesses, when stage 1 address translation is disabled, the assign
 The stage 1 translation assigns the Device-nGnRnE memory type.
 
 **Instruction access**
+The stage 1 translation assigns the Normal memory attribute, with the cacheability and shareability attributes determined by the value of the SCTLR.I bit for the translation regime, as follows:
