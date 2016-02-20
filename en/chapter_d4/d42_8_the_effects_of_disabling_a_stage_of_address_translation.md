@@ -78,6 +78,7 @@ In these cases, a memory location might be accessed as a result of an instructio
     - The last reset.
     - The last synchronization of instruction cache maintenance targeting the address of the instruction.
     - When executing in AArch32 state, the last synchronization of branch predictor maintenance targeting the address of the instruction.  
+
 In this description, the blocks of memory referred to are of the size of the minimum implemented translation granule and are aligned to that size.
 
 These accesses can be caused by speculative instruction fetches, regardless of whether the prefetched instruction is committed for execution.
