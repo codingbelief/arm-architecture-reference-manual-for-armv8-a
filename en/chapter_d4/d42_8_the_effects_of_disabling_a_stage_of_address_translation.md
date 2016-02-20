@@ -41,8 +41,7 @@ For every access, the input address of the stage 1 translation is flat-mapped to
 For a Non-secure EL1 or EL0 access, if EL1&0 stage 2 address translation is enabled, the stage 1 memory attribute assignments and output address can be modified by the stage 2 translation.
 
 When the value of HCR_EL2.DC is 1, in Non-secure state:
-* The SCTLR_EL1.M bit behaves as if it is 0, for all purposes other than reading the value of the bit. This
-means Non-secure EL1&0 stage 1 address translation is disabled.
+* The SCTLR_EL1.M bit behaves as if it is 0, for all purposes other than reading the value of the bit. This means Non-secure EL1&0 stage 1 address translation is disabled.
 * The HCR_EL2.VM bit behaves as if it is 1, for all purposes other than reading the value of the bit. This means that Non-secure EL1&0 stage 2 address translation is enabled.
 
 
