@@ -139,6 +139,8 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
         result.addrdesc.memattrs.type = MemType_Device; 
         result.addrdesc.memattrs.device = DeviceType_nGnRnE; 
         result.addrdesc.memattrs.inner = MemAttrHints UNKNOWN;
+    else
+        // Instruction cacheability controlled by SCTLR_ELx.I cacheable = SCTLR[].I == '1'; result.addrdesc.memattrs.type = MemType_Normal;
 ```
 
 
