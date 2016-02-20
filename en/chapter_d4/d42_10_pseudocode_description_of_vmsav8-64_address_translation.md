@@ -26,3 +26,6 @@ type TLBRecord is (
 [Memory data type definitions on page D3-1626](#) includes definitions of the Permissions and AddressDescriptor parameters.
 
 ### Performing the full address translation
+
+The function AArch64.FullTranslate() performs a full translation table walk. For any translation regime it performs a stage 1 translation for the supplied virtual address, and for the Non-secure EL1&0 translation regime it then performs a stage 2 translation of the returned address.
+
