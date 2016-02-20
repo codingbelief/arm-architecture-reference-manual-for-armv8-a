@@ -206,6 +206,9 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
     
     s2_enabled = HCR_EL2.VM == '1' || HCR_EL2.DC == '1'; 
     secondstage = TRUE;
+    
+    if s2_enabled then // Second stage enabled
+    
 ```
 
 
