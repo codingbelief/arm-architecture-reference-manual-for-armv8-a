@@ -13,3 +13,6 @@ When a stage 1 address translation is disabled, memory accesses that would other
 
 For the Non-secure EL1&0 translation regime, when the value of HCR_EL2.DC is 1, the stage 1 translation assigns the Normal Non-shareable, Inner Write-Back Read-Write-Allocate, Outer Write-Back Read-Write-Allocate memory attributes.
 
+> **NOTE: **  
+This applies for both instruction and data accesses.
+
