@@ -122,7 +122,7 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
         secondstage = FALSE;
         s2fs1walk = FALSE;
         result.addrdesc.fault = AArch64.AddressSizeFault(ipaddress, level, acctype,
-        iswrite, secondstage, s2fs1walk);
+                                                         iswrite, secondstage, s2fs1walk);
         return result;
 ```
 
