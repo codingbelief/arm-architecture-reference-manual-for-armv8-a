@@ -242,6 +242,9 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
 
 ```
 
+### Translation table walk
+
+
 
 
 
