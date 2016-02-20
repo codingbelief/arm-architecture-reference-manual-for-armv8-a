@@ -183,7 +183,12 @@ In the Non-secure EL1&0 translation regime, a descriptor address returned by sta
 
 AddressDescriptor AArch64.SecondStageWalk(AddressDescriptor S1, bits(64) vaddress, AccType acctype,
                                           boolean iswrite, integer size)
-
+    assert HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1};
+    
+    s2fs1walk = TRUE;
+    wasaligned = TRUE;
+    return AArch64.SecondStageTranslate(S1, vaddress, acctype, iswrite, wasaligned, s2fs1walk,
+                                        size);
 ```
 
 
