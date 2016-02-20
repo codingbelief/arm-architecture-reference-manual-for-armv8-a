@@ -61,6 +61,7 @@ When stage 2 address translation is disabled:
 When both stages of address translation are disabled, see also [Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679](#).
 
 
+### Behavior of instruction fetches when all associated stages of translation are disabled
 
 
 
