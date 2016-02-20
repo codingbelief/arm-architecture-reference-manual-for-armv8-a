@@ -88,6 +88,15 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
         S1.addrdesc.fault = AArch64.CheckPermission(S1.perms, vaddress, S1.level,
                                                     S1.addrdesc.paddress.NS,
                                                     acctype, iswrite);
+                                                    
+    
+    // Check for instruction fetches from Device memory not marked as execute-never. If there has
+    // not been a Permission Fault then the memory is not marked execute-never.
+    if (!IsFault(S1.addrdesc) && S1.addrdesc.memattrs.type == MemType_Device &&
+        acctype == AccType_IFETCH) then
+        S1.addrdesc = AArch64.InstructionDevice(S1.addrdesc, vaddress, ipaddress, S1.level,
+                                                acctype, iswrite,
+                                                secondstage, s2fs1walk);
 ```
 
 
