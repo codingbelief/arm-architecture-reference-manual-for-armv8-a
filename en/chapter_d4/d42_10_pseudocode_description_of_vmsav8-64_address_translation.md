@@ -216,6 +216,10 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
     if (!wasaligned && !IsFault(S2.addrdesc) && S2.addrdesc.memattrs.type == MemType_Device &&
         acctype != AccType_IFETCH) then
         S2.addrdesc.fault = AArch64.AlignmentFault(acctype, iswrite, secondstage);
+        
+    if !IsFault(S2.addrdesc) then
+        S2.addrdesc.fault = AArch64.CheckS2Permission(S2.perms, vaddress, ipaddress, S2.level,
+                                                      acctype, iswrite, s2fs1walk);
 
 ```
 
