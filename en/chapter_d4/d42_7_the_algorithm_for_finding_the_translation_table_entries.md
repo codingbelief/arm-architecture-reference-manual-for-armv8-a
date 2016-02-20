@@ -42,5 +42,9 @@ Table D4-7 on page D4-1651 shows how software can determine whether an implement
 
 Table D4-26 shows the translation table descriptor address, for each level of lookup, when using the 16KB translation granule. See the start of [The algorithm for finding the translation table entries on page D4-1674](#) for more information about terms used in the table.
 
+![](table_d4_26.png)
+
+
+
 
 
