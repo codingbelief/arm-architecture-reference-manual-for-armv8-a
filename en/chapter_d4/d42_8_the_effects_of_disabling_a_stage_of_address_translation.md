@@ -33,4 +33,6 @@ The stage 1 translation assigns the Normal memory attribute, with the cacheabili
 
 For this stage of translation, no memory access permission checks are performed, and therefore no MMU faults can be generated for this stage of address translation.
 
+> **NOTE: **  
+Alignment checking is performed, and therefore Alignment faults can occur.
 
