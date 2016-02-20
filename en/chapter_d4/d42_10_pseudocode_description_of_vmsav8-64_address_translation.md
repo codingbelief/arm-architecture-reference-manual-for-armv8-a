@@ -226,7 +226,7 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
     if (!IsFault(S2.addrdesc) && S2.addrdesc.memattrs.type == MemType_Device &&
         acctype == AccType_IFETCH) then
         S2.addrdesc = AArch64.InstructionDevice(S2.addrdesc, vaddress, ipaddress, S2.level,
-        acctype, iswrite, secondstage, s2fs1walk);
+                                                acctype, iswrite, secondstage, s2fs1walk);
 ```
 
 
