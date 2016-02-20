@@ -20,9 +20,5 @@ type TLBRecord is (
     integer           level,      // In AArch32 Short-descriptort format, indicates Section/Page
     integer           blocksize,  // Describes size of memory translated in KBytes
     AddressDescriptor addrdesc
-
-// AArch32 only
-
- 
 )
 ```
