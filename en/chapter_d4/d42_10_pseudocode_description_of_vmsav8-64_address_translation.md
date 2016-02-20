@@ -128,7 +128,12 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
     default_cacheable = (HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} && HCR_EL2.DC == '1');
     
     if default_cacheable then
-        // Use default cacheable settings result.addrdesc.memattrs.type = MemType_Normal; result.addrdesc.memattrs.inner.attrs = MemAttr_WB; result.addrdesc.memattrs.inner.hints = MemHint_RWA; result.addrdesc.memattrs.shareable = FALSE; result.addrdesc.memattrs.outershareable = FALSE;
+        // Use default cacheable settings 
+        result.addrdesc.memattrs.type = MemType_Normal; 
+        result.addrdesc.memattrs.inner.attrs = MemAttr_WB; 
+        result.addrdesc.memattrs.inner.hints = MemHint_RWA; 
+        result.addrdesc.memattrs.shareable = FALSE; 
+        result.addrdesc.memattrs.outershareable = FALSE;
 ```
 
 
