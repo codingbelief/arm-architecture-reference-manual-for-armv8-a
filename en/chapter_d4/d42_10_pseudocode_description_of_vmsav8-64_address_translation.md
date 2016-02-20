@@ -66,7 +66,12 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
         s1_enabled = HCR_EL2.TGE == '0' && HCR_EL2.DC == '0' && SCTLR_EL1.M == '1';
     else
         s1_enabled = SCTLR[].M == '1';
-    ipaddress = bits(48) UNKNOWN; secondstage = FALSE;
+        
+    ipaddress = bits(48) UNKNOWN; 
+    secondstage = FALSE;
+    s2fs1walk = FALSE;
+    
+    
 ```
 
 
