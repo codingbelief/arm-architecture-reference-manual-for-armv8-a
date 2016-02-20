@@ -31,4 +31,6 @@ The stage 1 translation assigns the Normal memory attribute, with the cacheabili
 
 **When the value of I is 1**: The stage 1 translation assigns the Cacheable, Inner Write-Through no Write-Allocate Read-Allocate, Outer Write-Through no Write-Allocate Read Allocate Outer Shareable attribute.
 
+For this stage of translation, no memory access permission checks are performed, and therefore no MMU faults can be generated for this stage of address translation.
+
 
