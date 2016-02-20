@@ -174,7 +174,11 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
 
 ### Stage 2 translation
 
+In the Non-secure EL1&0 translation regime, a descriptor address returned by stage 1 lookup is in the IPA address space, and must be mapped to a PA by a stage 2 translation. Function AArch64.SecondStageWalk() performs this translation, by calling the AArch64.SecondStageTranslate() function.When called from AArch64.SecondStageWalk(), the AArch64.SecondStageTranslate() function performs a second stage translation, from IPA to PA, of the supplied address, including checking that the access has read permission at the second stage. If the access does not have second stage read permission it generates a second stage Permission fault on the first stage translation table walk. The second stage translation might hit in a TLB, or might involve a translation table walk, which will use the algorithm described in this section.
 
+```
+
+```
 
 
 
