@@ -104,6 +104,11 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
 When stage 1 translation is disabled, the function AArch64.TranslateAddressS1Off() sets the memory attributes.
 
 ```
+// AArch64.TranslateAddressS1Off()
+// ===============================
+// Called for stage 1 translations when translation is disabled to supply a default translation.
+// Note that there are additional constraints on instruction prefetching that are not described in
+// this pseudocode.
 
 ```
 
