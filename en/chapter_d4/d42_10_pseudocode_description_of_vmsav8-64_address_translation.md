@@ -97,6 +97,8 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
         S1.addrdesc = AArch64.InstructionDevice(S1.addrdesc, vaddress, ipaddress, S1.level,
                                                 acctype, iswrite,
                                                 secondstage, s2fs1walk);
+    
+    return S1.addrdesc;
 ```
 
 
