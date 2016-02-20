@@ -10,3 +10,5 @@ If an implementation does not include EL2 then:
 
 Figure D4-2 on page D4-1642 shows the set of translation regimes for an implementation that implements all of the Exception levels. Table D4-28 shows how the supported translation stages depend on the implemented Exception levels, and in some cases on the Execution state being used by the highest implemented Exception level.
 
+![](table_d4_28.png)
+
