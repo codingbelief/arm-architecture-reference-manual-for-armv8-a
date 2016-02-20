@@ -46,7 +46,8 @@ When the value of HCR_EL2.DC is 1, in Non-secure state:
 
 See also [Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679](#).
 
-
+**Effect of disabling address translation on maintenance and address translation instruction
+instructions**
 
 
 
