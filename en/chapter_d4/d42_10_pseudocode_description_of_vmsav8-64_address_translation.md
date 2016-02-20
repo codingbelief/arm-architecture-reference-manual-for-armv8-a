@@ -198,6 +198,10 @@ The AArch64.SecondStageTranslate() function performs the stage 2 address transla
 // ==============================
 // Perform a stage 2 translation walk. The function used by Address Translation operations is 
 // similar except it uses the translation regime specified for the instruction.
+
+AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) vaddress,
+                                               AccType acctype, boolean iswrite, boolean wasaligned,
+                                               boolean s2fs1walk, integer size)
 ```
 
 
