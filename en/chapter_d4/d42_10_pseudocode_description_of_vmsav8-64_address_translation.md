@@ -16,13 +16,13 @@ type TLBRecord is (
     Permissions       perms,
     bit               nG,         // '0' = Global, '1' = not Global
     bits(4)           domain,     // AArch32 only
-    boolean           contiguous, // AArch32 only
-    integer           level, 
-    integer           blocksize, 
+    boolean           contiguous, // Contiguous bit from page table
+    integer           level,      // In AArch32 Short-descriptort format, indicates Section/Page
+    integer           blocksize,  // Describes size of memory translated in KBytes
     AddressDescriptor addrdesc
 
 // AArch32 only
-// Contiguous bit from page table
-// In AArch32 Short-descriptort format, indicates Section/Page // Describes size of memory translated in KBytes
+
+ 
 )
 ```
