@@ -181,7 +181,9 @@ In the Non-secure EL1&0 translation regime, a descriptor address returned by sta
 // =========================
 // Perform a stage 2 translation on a stage 1 translation page table walk access.
 
-AddressDescriptor AArch64.SecondStageWalk(AddressDescriptor S1, bits(64) vaddress, AccType acctype,                                           boolean iswrite, integer size)
+AddressDescriptor AArch64.SecondStageWalk(AddressDescriptor S1, bits(64) vaddress, AccType acctype,
+                                          boolean iswrite, integer size)
+
 ```
 
 
