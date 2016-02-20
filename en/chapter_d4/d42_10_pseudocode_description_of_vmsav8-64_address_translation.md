@@ -112,6 +112,18 @@ When stage 1 translation is disabled, the function AArch64.TranslateAddressS1Off
 
 TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, boolean iswrite)
     assert !ELUsingAArch32(S1TranslationRegime());
+    
+    TLBRecord result;
+    
+    Top = AddrTop(vaddress);
+    if !IsZero(vaddress<Top:PAMax()>) then
+    level = 0;
+    ipaddress = bits(48) UNKNOWN;
+    secondstage = FALSE;
+    s2fs1walk = FALSE;
+    result.addrdesc.fault = AArch64.AddressSizeFault(ipaddress, level, acctype,
+    iswrite, secondstage, s2fs1walk);
+    return result;
 ```
 
 
