@@ -71,7 +71,7 @@ When EL3 is using AArch64, this section applies to:
 
 > **NOTE: **  
 * The behaviors in Non-secure state apply regardless of the Execution state that EL3 is using.
-* When the value of HCR_EL2.DC is 1, then the behavior of the Non-secure EL1&0 translation regime is as if stage 1 translation is disabled and stage 2 translation is enabled, as described in Behavior when stage 1 address translation is disabled on page D4-1677.
+* When the value of HCR_EL2.DC is 1, then the behavior of the Non-secure EL1&0 translation regime is as if stage 1 translation is disabled and stage 2 translation is enabled, as described in [Behavior when stage 1 address translation is disabled on page D4-1677](#).
 
 
 
