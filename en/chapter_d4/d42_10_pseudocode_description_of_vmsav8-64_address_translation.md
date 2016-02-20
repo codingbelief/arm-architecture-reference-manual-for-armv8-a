@@ -73,7 +73,7 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
     
     if s1_enabled then        // First stage enabled
     S1 = AArch64.TranslationTableWalk(ipaddress, vaddress, acctype, iswrite, secondstage,
- s2fs1walk, size);
+                                      s2fs1walk, size);
 ```
 
 
