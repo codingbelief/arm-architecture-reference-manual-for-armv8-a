@@ -38,13 +38,19 @@ Table D4-25 shows the translation table descriptor address, for each level of lo
 
 Table D4-7 on page D4-1651 shows how software can determine whether an implementation supports the 4KB granule size.
 
+
 ### Finding the translation table entry when using the 16KB translation granule
 
 Table D4-26 shows the translation table descriptor address, for each level of lookup, when using the 16KB translation granule. See the start of [The algorithm for finding the translation table entries on page D4-1674](#) for more information about terms used in the table.
 
 ![](table_d4_26.png)
 
+Table D4-7 on page D4-1651 shows how software can determine whether an implementation supports the 16KB granule size.
 
+
+### Finding the translation table descriptor when using the 64KB translation granule
+
+Table D4-27 shows the translation table descriptor address, for each level of lookup, when using the 64KB translation granule. See the start of The algorithm for finding the translation table entries on page D4-1674 for more information about terms used in the table.
 
 
 
