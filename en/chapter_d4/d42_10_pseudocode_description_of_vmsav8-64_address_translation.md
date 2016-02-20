@@ -11,3 +11,18 @@ The following subsections gives a pseudocode description of the translation tabl
 ### Definitions required for address translation
 
 In pseudocode, the result of a translation table lookup, in either Execution state, is returned in a TLBRecord structure.
+```
+type TLBRecord is (
+    Permissions perms,
+    bit nG,
+    bits(4) domain, 
+    boolean contiguous, 
+    integer level, 
+    integer blocksize, 
+    AddressDescriptor addrdesc
+// '0' = Global, '1' = not Global
+// AArch32 only
+// Contiguous bit from page table
+// In AArch32 Short-descriptort format, indicates Section/Page // Describes size of memory translated in KBytes
+)
+```
