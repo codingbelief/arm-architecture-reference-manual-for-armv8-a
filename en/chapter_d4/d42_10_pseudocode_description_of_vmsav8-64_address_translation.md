@@ -221,6 +221,12 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
         S2.addrdesc.fault = AArch64.CheckS2Permission(S2.perms, vaddress, ipaddress, S2.level,
                                                       acctype, iswrite, s2fs1walk);
 
+    // Check for instruction fetches from Device memory not marked as execute-never. As there 
+    // has not been a Permission Fault then the memory is not marked execute-never.
+    if (!IsFault(S2.addrdesc) && S2.addrdesc.memattrs.type == MemType_Device &&
+        acctype == AccType_IFETCH) then
+        S2.addrdesc = AArch64.InstructionDevice(S2.addrdesc, vaddress, ipaddress, S2.level,
+        acctype, iswrite, secondstage, s2fs1walk);
 ```
 
 
