@@ -82,5 +82,8 @@ In this description, the blocks of memory referred to are of the size of the min
 
 These accesses can be caused by speculative instruction fetches, regardless of whether the prefetched instruction is committed for execution.
 
-
+> **NOTE: **  
+To ensure architectural compliance, software must ensure that both of the following apply:
+* Instructions that will be executed when all associated stages of address translation are disabled are located in blocks of the address space, of the translation granule size, that contain only memory that is tolerant to speculative accesses.
+* Each block of the address space, of the translation granule size, that immediately follows a similar block that holds instructions that will be executed when all associated stages address translation are disabled, contains only memory that is tolerant to speculative accesses.
 
