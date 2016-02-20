@@ -5,3 +5,8 @@ This subsection gives the algorithms for finding the translation table entry tha
 * [Finding the translation table entry when using the 16KB translation granule on page D4-1676](#).
 * [Finding the translation table descriptor when using the 64KB translation granule on page D4-1677](#).
 Each subsection uses the following terms:
+
+**BaseAddress**
+The base address for the level of lookup, as defined by:
+* For the initial lookup level, the appropriate TTBR.
+* Otherwise, the translation table address returned by the previous level of lookup.
