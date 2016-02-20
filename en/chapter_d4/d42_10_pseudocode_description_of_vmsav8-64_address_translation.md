@@ -22,3 +22,5 @@ type TLBRecord is (
     AddressDescriptor addrdesc
 )
 ```
+
+[Memory data type definitions on page D3-1626](#) includes definitions of the Permissions and AddressDescriptor parameters.
