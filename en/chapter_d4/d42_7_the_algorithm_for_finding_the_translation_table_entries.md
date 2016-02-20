@@ -24,5 +24,9 @@ For EL1&0 stage 2 -- VTCR_EL2.T0SZ.
 For EL2 stage 1 -- TCR_EL2.T0SZ.
 For EL3 stage 1 -- TCR_EL3.T0SZ.
 
+**SL0**
+VTCR_EL2.SL0. Applies to the Non-secure EL1&0 stage 2 translation only.
+
+These subsections show only architecturally-valid programming of the TCR. See also [Possible translation table registers programming errors on page D4-1673](#).
 
 
