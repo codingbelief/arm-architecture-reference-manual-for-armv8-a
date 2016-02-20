@@ -29,4 +29,11 @@ VTCR_EL2.SL0. Applies to the Non-secure EL1&0 stage 2 translation only.
 
 These subsections show only architecturally-valid programming of the TCR. See also [Possible translation table registers programming errors on page D4-1673](#).
 
+
 ### Finding the translation table entry when using the 4KB translation granule
+
+Table D4-25 shows the translation table descriptor address, for each level of lookup, when using the 4KB translation granule. See the start of [The algorithm for finding the translation table entries on page D4-1674](#) for more information about terms used in the table.
+
+
+
+
