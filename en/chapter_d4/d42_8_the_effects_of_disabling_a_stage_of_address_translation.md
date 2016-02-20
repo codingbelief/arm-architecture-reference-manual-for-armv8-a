@@ -63,7 +63,11 @@ When both stages of address translation are disabled, see also [Behavior of inst
 
 ### Behavior of instruction fetches when all associated stages of translation are disabled
 
-
+When EL3 is using AArch64, this section applies to:
+* The Secure EL1&0 translation regime when Secure EL1&0 stage 1 address translation is disabled.
+* The Secure EL3 translation regime, when Secure EL3 stage 1 address translation is disabled.
+* The Non-secure EL2 translation regime, when Non-secure EL2 stage 1 address translation is disabled
+* The Non-secure EL1&0 translation regime, when both stages of address translation are disabled.
 
 
 
