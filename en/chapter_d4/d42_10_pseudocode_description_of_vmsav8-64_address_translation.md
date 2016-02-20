@@ -84,6 +84,10 @@ AddressDescriptor AArch64.FirstStageTranslate(bits(64) vaddress, AccType acctype
         acctype != AccType_IFETCH) then
         S1.addrdesc.fault = AArch64.AlignmentFault(acctype, iswrite, secondstage);
         
+    if !IsFault(S1.addrdesc) && permissioncheck then
+        S1.addrdesc.fault = AArch64.CheckPermission(S1.perms, vaddress, S1.level,
+                                                    S1.addrdesc.paddress.NS,
+                                                    acctype, iswrite);
 ```
 
 
