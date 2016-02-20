@@ -234,8 +234,10 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
         S2.addrdesc.memattrs.type == MemType_Device) then
         S2.addrdesc.fault = AArch64.PermissionFault(ipaddress, S2.level, acctype,
                                                     iswrite, secondstage, s2fs1walk);
-
-
+    result = CombineS1S2Desc(S1, S2.addrdesc);
+else
+    result = S1;
+return result;
 
 ```
 
