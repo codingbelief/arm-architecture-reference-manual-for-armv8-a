@@ -46,10 +46,12 @@ When the value of HCR_EL2.DC is 1, in Non-secure state:
 
 See also [Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679](#).
 
-**Effect of disabling address translation on maintenance and address translation instruction
-instructions**
+***Effect of disabling address translation on maintenance and address translation instruction
+instructions***
 
-
+Cache maintenance instructions act on the target cache regardless of whether any stages of address translation are disabled, and regardless of the values of the memory attributes. However, if a stage of address translation is disabled, they use the flat address mapping for that translation stage.
+TLB invalidate operations act on the target TLB regardless of whether any stage of address translation is disabled. The value of HCR_EL2.DC affect some address translation instructions, see Address translation instructions, AT*
+on page D4-1692.
 
 
 
