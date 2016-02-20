@@ -191,6 +191,10 @@ AddressDescriptor AArch64.SecondStageWalk(AddressDescriptor S1, bits(64) vaddres
                                         size);
 ```
 
+The AArch64.SecondStageTranslate() function performs the stage 2 address translation.
+
+```
+```
 
 
 
