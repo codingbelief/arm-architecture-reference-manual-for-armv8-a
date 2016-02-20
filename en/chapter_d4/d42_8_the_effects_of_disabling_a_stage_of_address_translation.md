@@ -21,3 +21,5 @@ This applies for both instruction and data accesses.
 #### All other accesses
 
 For all other accesses, when stage 1 address translation is disabled, the assigned attributes depend on whether the access is a data access or an instruction access, as follows:
+
+**Data access**
