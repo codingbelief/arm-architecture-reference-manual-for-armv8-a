@@ -43,7 +43,8 @@ S1 = AArch64.FirstStageTranslate(vaddress, acctype, iswrite, wasaligned, size);
 
 if !IsFault(S1) && HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
     s2fs1walk = FALSE;
-    result = AArch64.SecondStageTranslate(S1, vaddress, acctype, iswrite, wasaligned, s2fs1walk, size);
+    result = AArch64.SecondStageTranslate(S1, vaddress, acctype, iswrite, wasaligned, s2fs1walk,
+                                         size);
 else
 result = S1;
 return result;
