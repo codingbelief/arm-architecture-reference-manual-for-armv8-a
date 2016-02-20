@@ -196,7 +196,8 @@ The AArch64.SecondStageTranslate() function performs the stage 2 address transla
 ```
 // AArch64.SecondStageTranslate()
 // ==============================
-// Perform a stage 2 translation walk. The function used by Address Translation operations is // similar except it uses the translation regime specified for the instruction.
+// Perform a stage 2 translation walk. The function used by Address Translation operations is 
+// similar except it uses the translation regime specified for the instruction.
 ```
 
 
