@@ -14,13 +14,13 @@ In pseudocode, the result of a translation table lookup, in either Execution sta
 ```
 type TLBRecord is (
     Permissions       perms,
-    bit               nG,
-    bits(4)           domain, 
-    boolean           contiguous, 
+    bit               nG,         // '0' = Global, '1' = not Global
+    bits(4)           domain,     // AArch32 only
+    boolean           contiguous, // AArch32 only
     integer           level, 
     integer           blocksize, 
     AddressDescriptor addrdesc
-// '0' = Global, '1' = not Global
+
 // AArch32 only
 // Contiguous bit from page table
 // In AArch32 Short-descriptort format, indicates Section/Page // Describes size of memory translated in KBytes
