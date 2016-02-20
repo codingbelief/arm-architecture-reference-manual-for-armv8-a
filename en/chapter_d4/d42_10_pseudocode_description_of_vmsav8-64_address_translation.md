@@ -170,9 +170,9 @@ TLBRecord AArch64.TranslateAddressS1Off(bits(64) vaddress, AccType acctype, bool
     result.addrdesc.fault = AArch64.NoFault();
     
     return result;
- 
- 
 ```
+
+### Stage 2 translation
 
 
 
