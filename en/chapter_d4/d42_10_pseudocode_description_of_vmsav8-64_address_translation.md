@@ -208,7 +208,9 @@ AddressDescriptor AArch64.SecondStageTranslate(AddressDescriptor S1, bits(64) va
     secondstage = TRUE;
     
     if s2_enabled then // Second stage enabled
-    
+        ipaddress = S1.paddress.physicaladdress<47:0>;
+        S2 = AArch64.TranslationTableWalk(ipaddress, vaddress, acctype, iswrite, secondstage,
+                                          s2fs1walk, size);
 ```
 
 
