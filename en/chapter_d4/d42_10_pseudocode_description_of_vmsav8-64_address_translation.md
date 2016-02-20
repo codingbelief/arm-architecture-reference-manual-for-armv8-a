@@ -38,17 +38,17 @@ The function AArch64.FullTranslate() performs a full translation table walk. For
 
 AddressDescriptor AArch64.FullTranslate(bits(64) vaddress, AccType acctype, boolean iswrite,
 
-// First Stage Translation
-S1 = AArch64.FirstStageTranslate(vaddress, acctype, iswrite, wasaligned, size);
+    // First Stage Translation
+    S1 = AArch64.FirstStageTranslate(vaddress, acctype, iswrite, wasaligned, size);
 
-if !IsFault(S1) && HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
-    s2fs1walk = FALSE;
-    result = AArch64.SecondStageTranslate(S1, vaddress, acctype, iswrite, wasaligned, s2fs1walk,
-                                          size);
-else
-    result = S1;
-
-return result;
+    if !IsFault(S1) && HaveEL(EL2) && !IsSecure() && PSTATE.EL IN {EL0,EL1} then
+        s2fs1walk = FALSE;
+        result = AArch64.SecondStageTranslate(S1, vaddress, acctype, iswrite, wasaligned, s2fs1walk,
+                                              size);
+    else
+        result = S1;
+    
+    return result;
 ```
 
 ### Stage 1 translation
