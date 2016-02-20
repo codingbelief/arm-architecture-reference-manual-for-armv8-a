@@ -25,3 +25,4 @@ For all other accesses, when stage 1 address translation is disabled, the assign
 **Data access**
 The stage 1 translation assigns the Device-nGnRnE memory type.
 
+**Instruction access**
