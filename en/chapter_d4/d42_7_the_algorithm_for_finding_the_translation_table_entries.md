@@ -34,6 +34,6 @@ These subsections show only architecturally-valid programming of the TCR. See al
 
 Table D4-25 shows the translation table descriptor address, for each level of lookup, when using the 4KB translation granule. See the start of [The algorithm for finding the translation table entries on page D4-1674](#) for more information about terms used in the table.
 
-
+![](table_d4_25.png)
 
 
