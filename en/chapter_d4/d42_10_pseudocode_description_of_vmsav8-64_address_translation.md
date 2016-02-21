@@ -462,6 +462,15 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         otherwise   outputsize = 48;
         
     if outputsize > PAMax() then outputsize = PAMax();
+    
+    if outputsize != 48 && !IsZero(baseregister<47:outputsize>) then
+        level = 0;
+        result.addrdesc.fault = AArch64.AddressSizeFault(ipaddress, level, acctype, iswrite,
+                                                         secondstage, s2fs1walk);
+        return result;
+
+
+
 
 ```
 
