@@ -691,7 +691,9 @@ The function AArch64.CheckPermission() checks the access permissions returned by
 
 The function AArch64.CheckS2Permission() checks the access permissions returned by a stage 2 translation table lookup.
 
+```
 
+```
 
 
 
