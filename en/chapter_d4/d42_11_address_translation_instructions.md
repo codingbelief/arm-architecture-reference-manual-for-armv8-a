@@ -5,4 +5,6 @@ The available instructions only perform translations that are accessible from th
 * No instruction executed in Non-secure state can return the result of a Secure address translation stage.
 * No instruction can return the result of an address translation stage that is controlled by an Exception level that is higher than the Exception level at which the instruction is executed.
 
-Address translation instructions, AT* on page D4-1692 summarizes the A64 address translation instructions. See also A64 system instructions for address translation on page C5-334.
+[Address translation instructions, AT* on page D4-1692](#) summarizes the A64 address translation instructions. 
+
+See also [A64 system instructions for address translation on page C5-334](#).
