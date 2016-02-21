@@ -588,8 +588,10 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         result.perms.xn = xn OR xn_table;
         result.perms.ap<2> = ap<2> OR ap_table<1>; // Force read-only
         
-        // PXN, nG and AP[1] apply only in EL1&0 stage 1 translation regimes if !singlepriv then
-        result.perms.ap<1> = ap<1> AND NOT(ap_table<0>); // Force privileged only result.perms.pxn = pxn OR pxn_table;
+        // PXN, nG and AP[1] apply only in EL1&0 stage 1 translation regimes 
+        if !singlepriv then
+            result.perms.ap<1> = ap<1> AND NOT(ap_table<0>); // Force privileged only
+            result.perms.pxn = pxn OR pxn_table;
         // Pages from Non-secure tables are marked non-global in Secure EL1&0
         if IsSecure() then
         result.nG = nG OR ns_table; else
