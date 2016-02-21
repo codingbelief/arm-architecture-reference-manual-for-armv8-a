@@ -373,12 +373,16 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         level = 4 - RoundUp(Real(inputsize - grainsize) / Real(stride));
     else
         // Second stage translation
-        inputaddr = ZeroExtend(ipaddress); inputsize = 64 - UInt(VTCR_EL2.T0SZ); if inputsize > 48 then
-        c = ConstrainUnpredictable();
-        assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 48;
+        inputaddr = ZeroExtend(ipaddress); 
+        inputsize = 64 - UInt(VTCR_EL2.T0SZ); 
+        if inputsize > 48 then
+            c = ConstrainUnpredictable();
+            assert c IN {Constraint_FORCE, Constraint_FAULT}; 
+            if c == Constraint_FORCE then inputsize = 48;
         if inputsize < 25 then
-        c = ConstrainUnpredictable();
-        assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 25;
+            c = ConstrainUnpredictable();
+            assert c IN {Constraint_FORCE, Constraint_FAULT}; 
+            if c == Constraint_FORCE then inputsize = 25;
         largegrain = VTCR_EL2.TG0 == '01';
         midgrain = VTCR_EL2.TG0 == '10';
         ps = VTCR_EL2.PS;
