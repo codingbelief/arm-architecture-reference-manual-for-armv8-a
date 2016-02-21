@@ -620,6 +620,9 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
 
 ```
 
+### Support functions
+
+
 
 
 
