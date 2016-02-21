@@ -43,6 +43,12 @@ Where:
 If EL2 is not implemented, the AT S1E2R and AT S1E2W instructions are UNDEFINED.
 
 > **NOTE:**  
+If EL2 is not implemented but EL3 is implemented, the AT S12E* instructions are not UNDEFINED, but behave the same way as the equivalent AT S1E* instructions. This is consistent with the behavior if EL2 is implemented but stage 2 translation is disabled.
+
+For all of these instructions, the current context information determines which entries in TLB caching structures are used, and how the translation table walk is performed. However, it is IMPLEMENTATION DEFINED whether the Address translation instructions return the values held in a TLB or the result of a translation table walk. Therefore, ARM recommends that these instructions are not used at a time when the TLB entries might be different from the underlying translation tables held in memory.
+
+When Non-secure EL1&0 stage 1 address translation is disabled, any AT S1E0*, AT S1E1*, AT S12E0*, or ATS12E1* address translation instruction that accesses the Non-secure state translation reflects the effect of the HCR_EL2.DC bit as described in [Behavior when stage 1 address translation is disabled on page D4-1677](#).
+
 
 
 
