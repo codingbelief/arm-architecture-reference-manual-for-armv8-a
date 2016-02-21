@@ -517,9 +517,21 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             blocktranslate = TRUE;                         
         else                                                    // Table (11)
             if outputsize != 48 && !IsZero(desc<47:outputsize>) then
-result.addrdesc.fault = AArch64.AddressSizeFault(ipaddress, level, acctype, iswrite, secondstage, s2fs1walk);
-return result;
-baseaddress = desc<47:grainsize>:Zeros(grainsize);
+                result.addrdesc.fault = AArch64.AddressSizeFault(ipaddress, level, acctype, 
+                                                                 iswrite, secondstage, s2fs1walk);
+                return result;
+                
+            baseaddress = desc<47:grainsize>:Zeros(grainsize);
+
+            if !secondstage then
+                // Unpack the upper and lower table attributes
+                ns_table = ns_table OR desc<63>;
+                ap_table<1> = ap_table<1> OR desc<62>;      // read-only
+                xn_table = xn_table OR desc<60>;
+                // pxn_table and ap_table[0] apply only in EL1&0 translation regimes 
+                if !singlepriv then
+                    ap_table<0> = ap_table<0> OR desc<61>;  // privileged
+                    pxn_table = pxn_table OR desc<59>;
 
 ```
 
