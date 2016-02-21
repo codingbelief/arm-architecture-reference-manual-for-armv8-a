@@ -409,6 +409,17 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             firstblocklevel = 1;            // Largest block is 1GB (2^30 bytes)
         stride = grainsize - 3;             // Log2(page size / 8 bytes)
 
+        // Limits on IPA controls based on implemented PA size. Level 0 is only 
+        // supported by small grain translations
+        if largegrain then // 64KB pages
+            // Level 1 only supported if implemented PA size is greater than 2^42 bytes
+            if level == 0 || (level == 1 && PAMax() <= 42) then basefound = FALSE; 
+        elsif midgrain then // 16KB pages
+            // Level 1 only supported if implemented PA size is greater than 2^40 bytes
+            if level == 0 || (level == 1 && PAMax() <= 40) then basefound = FALSE; 
+        else // Small grain, 4KB pages
+            // Level 0 only supported if implemented PA size is greater than 2^42 bytes 
+            if level < 0 || (level == 0 && PAMax() <= 42) then basefound = FALSE;
 
 
 
