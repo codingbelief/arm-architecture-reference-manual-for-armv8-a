@@ -699,8 +699,7 @@ The function AArch64.CheckS2Permission() checks the access permissions returned 
 FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits(48) ipaddress,
                                       integer level, AccType acctype, boolean iswrite,
                                       boolean s2fs1walk)
-
-assert HaveEL(EL2) && !IsSecure() && !ELUsingAArch32(EL2) && PSTATE.EL != EL2;
+    assert HaveEL(EL2) && !IsSecure() && !ELUsingAArch32(EL2) && PSTATE.EL != EL2;
 
 != '0000' then
 // Normal
