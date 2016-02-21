@@ -557,6 +557,13 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                                                              iswrite, secondstage, s2fs1walk);
             return result;
 
+    // Check the output address is inside the supported range 
+    if outputsize != 48 && !IsZero(desc<47:outputsize>) then
+        result.addrdesc.fault = AArch64.AddressSizeFault(ipaddress, level, acctype, 
+                                                         iswrite, secondstage, s2fs1walk);
+        return result;
+
+
 ```
 
 
