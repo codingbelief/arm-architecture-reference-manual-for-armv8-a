@@ -104,6 +104,11 @@ The exceptions to this reporting the fault in PAR_EL1 are:
 
 ***Synchronization requirements of the address translation instructions***
 
+Where an instruction results in an update to a system register, as is the case with the AT * address translation instructions, explicit synchronization must be performed before the result is guaranteed to be visible to subsequent direct reads of the PAR_EL1.
+
+> **NOTE:**  
+This is consistent with the AArch32 requirement, where the VA to PA translation instructions are expressed as CP15 register writes, and the effect of those writes to other registers require explicit synchronization before the result is guaranteed to be visible to subsequent instructions.
+
 
 
 
