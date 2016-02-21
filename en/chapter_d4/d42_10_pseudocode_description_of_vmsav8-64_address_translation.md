@@ -436,7 +436,7 @@ if inputsize > PAMax() && (!ELUsingAArch32(EL1) || inputsize > 40) then
             // Generate a translation fault
             basefound = FALSE; 
         otherwise
-        Unreachable();
+            Unreachable();
 
 
 
