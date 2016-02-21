@@ -424,23 +424,27 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         // If the inputsize exceeds the PAMax value, the behavior is CONSTRAINED UNPREDICTABLE
         inputsizecheck = inputsize;
         if inputsize > PAMax() && (!ELUsingAArch32(EL1) || inputsize > 40) then
-        case ConstrainUnpredictable() of 
-            when Constraint_FORCE
-                // Restrict the inputsize to the PAMax value 
-                inputsize = PAMax();
-                inputsizecheck = PAMax();
-            when Constraint_FORCENOSLCHECK
-                // As FORCE, except use the configured inputsize in the size checks below
-                inputsize = PAMax();
-            when Constraint_FAULT
-                // Generate a translation fault
-                basefound = FALSE; 
-            otherwise
-                Unreachable();
-    
-    // Number of entries in the starting level table =
-    // (Size of Input Address)/((Address per level)^(Num levels remaining)*(Size of Table)) startsizecheck = inputsizecheck - ((3 - level)*stride + grainsize); // Log2(Num of entries)
+            case ConstrainUnpredictable() of 
+                when Constraint_FORCE
+                    // Restrict the inputsize to the PAMax value 
+                    inputsize = PAMax();
+                    inputsizecheck = PAMax();
+                when Constraint_FORCENOSLCHECK
+                    // As FORCE, except use the configured inputsize in the size checks below
+                    inputsize = PAMax();
+                when Constraint_FAULT
+                    // Generate a translation fault
+                    basefound = FALSE; 
+                otherwise
+                    Unreachable();
+        
+        // Number of entries in the starting level table =
+        // (Size of Input Address)/((Address per level)^(Num levels remaining)*(Size of Table)) startsizecheck = inputsizecheck - ((3 - level)*stride + grainsize); // Log2(Num of entries)
 
+        // Check for starting level table with fewer than 2 entries or longer than 16 pages. 
+        // Lower bound check is: startsizecheck < Log2(2 entries)
+        // Upper bound check is: startsizecheck > Log2(pagesize/8*16)
+        if startsizecheck < 1 || startsizecheck > stride + 4 then basefound = FALSE;
 
  
 
