@@ -577,7 +577,7 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     nG = desc<11>;
     sh = desc<9:8>;
     ap = desc<7:6>:'1'; 
-    memattr = desc<5:2>;
+    memattr = desc<5:2>;                // AttrIndx and NS bit in stage 1
 
 
 ```
