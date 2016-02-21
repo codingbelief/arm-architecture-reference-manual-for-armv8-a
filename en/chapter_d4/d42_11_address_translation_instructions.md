@@ -93,7 +93,8 @@ The exceptions to this reporting the fault in PAR_EL1 are:
     - ESR_EL2 indicates that the fault occurred on a translation table walk, and that the operation that
     faulted was a cache maintenance instruction.
     - HPFAR_EL2 holds the IPA that faulted
-    - FAR_EL2 holds the VA that the executing software supplied to the address translation instruction. This fault can occur for any of the following reasons:
+    - FAR_EL2 holds the VA that the executing software supplied to the address translation instruction. 
+  This fault can occur for any of the following reasons:
     - Stage 2 Translation fault.
     - Stage 2 Access fault.
     - Stage 2 Permission fault.
