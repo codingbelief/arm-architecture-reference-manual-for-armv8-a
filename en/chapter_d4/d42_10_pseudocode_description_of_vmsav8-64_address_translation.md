@@ -325,9 +325,11 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             
         else
             if inputaddr<top> == '0' then
-                inputsize = 64 - UInt(TCR_EL1.T0SZ); if inputsize > 48 then
-                c = ConstrainUnpredictable();
-                assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 48;
+                inputsize = 64 - UInt(TCR_EL1.T0SZ); 
+                if inputsize > 48 then
+                    c = ConstrainUnpredictable();
+                    assert c IN {Constraint_FORCE, Constraint_FAULT}; 
+                    if c == Constraint_FORCE then inputsize = 48;
                 if inputsize < 25 then
                 c = ConstrainUnpredictable();
                 assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 25;
