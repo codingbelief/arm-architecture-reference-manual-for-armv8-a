@@ -678,7 +678,7 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
         memattrs.outer = LongConvertAttrsHints(attrfield<7:4>, acctype); 
         memattrs.inner = LongConvertAttrsHints(attrfield<3:0>, acctype); 
         memattrs.shareable = SH<1> == '1';
-    memattrs.outershareable = SH == '10';
+        memattrs.outershareable = SH == '10';
 
 
 
