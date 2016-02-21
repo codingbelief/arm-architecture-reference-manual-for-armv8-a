@@ -264,6 +264,22 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     else
         assert HaveEL(EL2) && !IsSecure() && !ELUsingAArch32(EL2) && PSTATE.EL != EL2;
 
+    TLBRecord result;
+    AddressDescriptor descaddr;
+    bits(64) baseregister;
+    bits(64) inputaddr; // Input Address is 'vaddress' for stage 1, 'ipaddress' for stage 2
+    
+    descaddr.memattrs.type = MemType_Normal;
+
+    // Derived parameters for the page table walk:
+    // grainsize = Log2(Size of Table) - Size of Table is 4KB, 16KB or 64KB in AArch64 
+    // stride = Log2(Address per Level) - Bits of address consumed at each level
+    // firstblocklevel = First level where a block entry is allowed
+    // ps = Physical Address size as encoded in TCR_EL1.IPS or TCR_ELx/VTCR_EL2.PS
+    // inputsize = Log2(Size of Input Address) - Input Address size in bits
+    // level = Level to start walk from
+    // This means that the number of levels after start level = 3-level
+
 ```
 
 
