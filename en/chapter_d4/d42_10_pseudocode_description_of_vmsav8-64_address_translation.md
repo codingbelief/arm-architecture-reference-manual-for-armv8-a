@@ -672,7 +672,11 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
             when '1000' memattrs.device = DeviceType_nGRE;
             when '1100' memattrs.device = DeviceType_GRE;
             otherwise   Unreachable();         // Reserved, handled above
-    
+
+elsif attrfield<3:0> != '0000' then // Device
+memattrs.type = MemType_Normal;
+memattrs.outer = LongConvertAttrsHints(attrfield<7:4>, acctype); memattrs.inner = LongConvertAttrsHints(attrfield<3:0>, acctype); memattrs.shareable = SH<1> == '1';
+memattrs.outershareable = SH == '10';
 
 
 
