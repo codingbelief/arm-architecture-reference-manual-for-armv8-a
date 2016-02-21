@@ -371,6 +371,7 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         stride = grainsize - 3;   // Log2(page size / 8 bytes)
         // The starting level is the number of strides needed to consume the input address 
         level = 4 - RoundUp(Real(inputsize - grainsize) / Real(stride));
+        
     else
         // Second stage translation
         inputaddr = ZeroExtend(ipaddress); 
