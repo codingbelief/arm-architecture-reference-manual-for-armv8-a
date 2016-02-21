@@ -354,6 +354,10 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                 basefound = inputsize >= 25 && inputsize <= 48 && IsOnes(inputaddr<top:inputsize>); disabled = TCR_EL1.EPD1 == '1';
                 baseregister = TTBR1_EL1;
                 descaddr.memattrs = WalkAttrDecode(TCR_EL1.SH1, TCR_EL1.ORGN1, TCR_EL1.IRGN1);
+            ps = TCR_EL1.IPS;
+            reversedescriptors = SCTLR_EL1.EE == '1'; 
+            lookupsecure = IsSecure();
+            singlepriv = FALSE;
 
 
 
