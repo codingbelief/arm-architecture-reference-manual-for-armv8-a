@@ -533,6 +533,10 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                     ap_table<0> = ap_table<0> OR desc<61>;  // privileged
                     pxn_table = pxn_table OR desc<59>;
 
+            level = level + 1;
+            addrselecttop = addrselectbottom - 1; blocktranslate = FALSE;
+    until blocktranslate;
+
 ```
 
 
