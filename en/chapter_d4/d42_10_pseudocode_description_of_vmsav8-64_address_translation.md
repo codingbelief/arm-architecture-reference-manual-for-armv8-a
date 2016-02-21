@@ -483,7 +483,38 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
 
     addrselecttop = inputsize - 1;
 
+    repeat
+        addrselectbottom = (3-level)*stride + grainsize;
+        
+        bits(48) index = ZeroExtend(inputaddr<addrselecttop:addrselectbottom>:'000'); descaddr.paddress.physicaladdress = baseaddress OR index; 
+        descaddr.paddress.NS = ns_table;
+        
+        // If there are two stages of translation, then the first stage table walk addresses 
+        // are themselves subject to translation
+        if !HaveEL(EL2) || secondstage || IsSecure() || PSTATE.EL == EL2 then
+            descaddr2 = descaddr;
+        else
+            descaddr2 = AArch64.SecondStageWalk(descaddr, vaddress, acctype, iswrite, 8); 
+            // Check for a fault on the stage 2 walk
+            if IsFault(descaddr2) then
+                result.addrdesc.fault = descaddr2.fault; 
+                return result;
 
+        // Update virtual address for abort functions 
+        descaddr2.vaddress = ZeroExtend(vaddress);
+
+        desc = _Mem[descaddr2, 8, AccType_PTW];
+        if reversedescriptors then desc = BigEndianReverse(desc);
+        
+        if desc<0> == '0' || (desc<1:0> == '01' && level == 3) then 
+            // Fault (00), Reserved (10), or Block (01) at level 3
+            result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, iswrite,
+                                                             secondstage, s2fs1walk);
+            return result;
+        // Valid Block, Page, or Table entry
+        if desc<1:0> == '01' || level == 3 then
+        blocktranslate = TRUE; else
+        // Block (01) or Page (11)
 
 ```
 
