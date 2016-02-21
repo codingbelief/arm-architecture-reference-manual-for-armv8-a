@@ -89,15 +89,15 @@ The exceptions to this reporting the fault in PAR_EL1 are:
     - The FAR_ELx of the target Exception Level holds the virtual address for the translation request
 
 * For the AT S1E0* and AT S1E1* instructions executed from the Non-secure EL1 Exception level, if there is a synchronous stage 2 fault on a memory access made as part of the translation table walk then if the value of SCR_EL3.EA is 1 then a synchronous external abort on a stage 2 translation table walk is taken to EL3. In all other cases of a synchronous stage 2 fault on a memory access made as part of the translation table walk, the fault is taken as an exception to EL2, and:
-— PAR_EL1 is UNKNOWN
-— ESR_EL2 indicates that the fault occurred on a translation table walk, and that the operation that
+- PAR_EL1 is UNKNOWN
+- ESR_EL2 indicates that the fault occurred on a translation table walk, and that the operation that
 faulted was a cache maintenance instruction.
-— HPFAR_EL2 holds the IPA that faulted
-— FAR_EL2 holds the VA that the executing software supplied to the address translation instruction. This fault can occur for any of the following reasons:
-— Stage 2 Translation fault.
-— Stage 2 Access fault.
-— Stage 2 Permission fault.
-— Stage 2 Address size fault.
-— Synchronous external abort on a stage 2 translation table walk.
+- HPFAR_EL2 holds the IPA that faulted
+- FAR_EL2 holds the VA that the executing software supplied to the address translation instruction. This fault can occur for any of the following reasons:
+- Stage 2 Translation fault.
+- Stage 2 Access fault.
+- Stage 2 Permission fault.
+- Stage 2 Address size fault.
+- Synchronous external abort on a stage 2 translation table walk.
 
 
