@@ -81,7 +81,6 @@ The exceptions to this reporting the fault in PAR_EL1 are:
     - If the address translation instruction was executed at EL3, the synchronous Data Abort exception is taken to EL3.
     - If the address translation instruction was executed at EL2 or EL1, the Data Abort exception is taken to the Exception level to which a synchronous external abort on a stage 2 translation table walk for a memory access from that Exception level would be taken.  
 
-
   In any case where the address translation instruction causes a synchronous Data Abort exception to be taken:
 
     - The PAR_EL1 is UNKNOWN.
