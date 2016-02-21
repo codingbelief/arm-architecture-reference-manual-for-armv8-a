@@ -446,7 +446,9 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         // Upper bound check is: startsizecheck > Log2(pagesize/8*16)
         if startsizecheck < 1 || startsizecheck > stride + 4 then basefound = FALSE;
 
- 
+    if !basefound || disabled then
+        level = 0; // AArch32 reports this as a level 1 fault 
+        result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, iswrite,
 
 
 
