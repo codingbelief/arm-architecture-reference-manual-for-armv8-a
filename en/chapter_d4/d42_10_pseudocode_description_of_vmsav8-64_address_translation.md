@@ -687,6 +687,9 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
 
 ```
 
+The function AArch64.CheckPermission() checks the access permissions returned by a stage 1 translation table lookup, see Access permission checking on page D3-1631.
+
+The function AArch64.CheckS2Permission() checks the access permissions returned by a stage 2 translation table lookup.
 
 
 
