@@ -460,6 +460,8 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         when '100'  outputsize = 44;
         when '101'  outputsize = 48;
         otherwise   outputsize = 48;
+        
+    if outputsize > PAMax() then outputsize = PAMax();
 
 ```
 
