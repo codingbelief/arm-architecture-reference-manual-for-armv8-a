@@ -696,7 +696,9 @@ The function AArch64.CheckS2Permission() checks the access permissions returned 
 // ===========================
 // Function used for permission checking from AArch64 stage 2 translations
 
-FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits(48) ipaddress, integer level, AccType acctype, boolean iswrite,
+FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits(48) ipaddress,
+                                      integer level, AccType acctype, 
+                                      boolean iswrite,
 != '0000' then
 // Normal
 boolean s2fs1walk)
