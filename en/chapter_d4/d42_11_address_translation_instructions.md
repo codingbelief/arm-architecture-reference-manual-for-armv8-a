@@ -102,4 +102,13 @@ The exceptions to this reporting the fault in PAR_EL1 are:
     - Stage 2 Address size fault.
     - Synchronous external abort on a stage 2 translation table walk.
 
+***Synchronization requirements of the address translation instructions***
+
+
+
+
+
+
+
+
 
