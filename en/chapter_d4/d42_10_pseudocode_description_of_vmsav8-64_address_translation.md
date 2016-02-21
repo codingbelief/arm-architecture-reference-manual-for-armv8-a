@@ -454,7 +454,11 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
 
 case ps of 
 when '000' outputsize = 32;
-
+when '001' outputsize = 32;
+when '010' outputsize = 32;
+when '011' outputsize = 32;
+when '100' outputsize = 32;
+when '101' outputsize = 32;
 
 ```
 
