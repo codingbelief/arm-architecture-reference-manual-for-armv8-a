@@ -583,21 +583,22 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     result.level = level;
     result.blocksize = 2^((3-level)*stride + grainsize);
 
-// Stage 1 translation regimes also inherit attributes from the tables 
-if !secondstage then
-result.perms.xn = xn OR xn_table;
-result.perms.ap<2> = ap<2> OR ap_table<1>; // Force read-only
-// PXN, nG and AP[1] apply only in EL1&0 stage 1 translation regimes if !singlepriv then
-result.perms.ap<1> = ap<1> AND NOT(ap_table<0>); // Force privileged only result.perms.pxn = pxn OR pxn_table;
-// Pages from Non-secure tables are marked non-global in Secure EL1&0
-if IsSecure() then
-result.nG = nG OR ns_table; else
-result.nG = nG; else
-result.perms.ap<1> result.perms.pxn result.nG
-= '1'; = '0'; = '0';
-result.perms.ap<0>
-result.addrdesc.memattrs = AArch64.S1AttrDecode(sh, memattr<2:0>, acctype); result.addrdesc.paddress.NS = memattr<3> OR ns_table;
-else
+    // Stage 1 translation regimes also inherit attributes from the tables 
+    if !secondstage then
+        result.perms.xn = xn OR xn_table;
+        result.perms.ap<2> = ap<2> OR ap_table<1>; // Force read-only
+        
+        // PXN, nG and AP[1] apply only in EL1&0 stage 1 translation regimes if !singlepriv then
+        result.perms.ap<1> = ap<1> AND NOT(ap_table<0>); // Force privileged only result.perms.pxn = pxn OR pxn_table;
+        // Pages from Non-secure tables are marked non-global in Secure EL1&0
+        if IsSecure() then
+        result.nG = nG OR ns_table; else
+        result.nG = nG; else
+        result.perms.ap<1> result.perms.pxn result.nG
+        = '1'; = '0'; = '0';
+        result.perms.ap<0>
+        result.addrdesc.memattrs = AArch64.S1AttrDecode(sh, memattr<2:0>, acctype); result.addrdesc.paddress.NS = memattr<3> OR ns_table;
+    else
 
 ```
 
