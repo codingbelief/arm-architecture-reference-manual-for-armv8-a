@@ -663,17 +663,16 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
         (attrfield<7:4> == '0000' && attrfield<3:0> != 'xx00')) then 
         // Reserved, maps to an allocated value
         (-, attrfield) = ConstrainUnpredictableBits();
-
-if attrfield<7:4> == '0000' then     // Device
-memattrs.type = MemType_Device; 
-case attrfield<3:0> of
-
-when '0000' memattrs.device = DeviceType_nGnRnE; 
-when '0100' memattrs.device = DeviceType_nGnRE; 
-when '1000' memattrs.device = DeviceType_nGRE;
-when '1100' memattrs.device = DeviceType_GRE;
-otherwise   Unreachable();    // Reserved, handled above
-
+    
+    if attrfield<7:4> == '0000' then     // Device
+        memattrs.type = MemType_Device; 
+        case attrfield<3:0> of
+            when '0000' memattrs.device = DeviceType_nGnRnE; 
+            when '0100' memattrs.device = DeviceType_nGnRE; 
+            when '1000' memattrs.device = DeviceType_nGRE;
+            when '1100' memattrs.device = DeviceType_GRE;
+            otherwise   Unreachable();    // Reserved, handled above
+    
 
 
 
