@@ -452,8 +452,12 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                                                          secondstage, s2fs1walk);
         return result;
 
+case ps of 
+when '000' outputsize = 32;
+
 
 ```
+
 
 
 
