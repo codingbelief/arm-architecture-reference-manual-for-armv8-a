@@ -692,7 +692,16 @@ The function AArch64.CheckPermission() checks the access permissions returned by
 The function AArch64.CheckS2Permission() checks the access permissions returned by a stage 2 translation table lookup.
 
 ```
-
+// AArch64.CheckS2Permission()
+// ===========================
+// Function used for permission checking from AArch64 stage 2 translations
+FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits(48) ipaddress, integer level, AccType acctype, boolean iswrite,
+!= '0000' then
+// Normal
+boolean s2fs1walk)
+assert HaveEL(EL2) && !IsSecure() && !ELUsingAArch32(EL2) && PSTATE.EL != EL2;
+r = perms.ap<1> == '1'; w = perms.ap<2> == '1'; xn = perms.xn == '1';
+// Stage 1 walk is checked as a read, regardless of the original type
 ```
 
 
