@@ -622,7 +622,25 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
 
 ### Support functions
 
+In the translation table walk functions, the WalkAttrDecode() function determines the attributes for a translation table lookup.
 
+```
+// WalkAttrDecode() 
+// ================
+
+MemoryAttributes WalkAttrDecode(bits(2) SH, bits(2) ORGN, bits(2) IRGN) 
+
+    MemoryAttributes memattrs;
+    
+    AccType acctype = AccType_NORMAL;
+    
+    memattrs.type = MemType_Normal;
+    memattrs.inner = ShortConvertAttrsHints(IRGN, acctype); 
+    memattrs.outer = ShortConvertAttrsHints(ORGN, acctype); 
+    memattrs.shareable = SH<1> == '1'; 
+    memattrs.outershareable = SH == '10';
+
+```
 
 
 
