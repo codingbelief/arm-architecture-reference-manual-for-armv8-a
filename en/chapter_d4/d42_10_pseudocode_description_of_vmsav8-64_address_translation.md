@@ -680,7 +680,8 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
         memattrs.shareable = SH<1> == '1';
         memattrs.outershareable = SH == '10';
 
-
+    else
+        Unreachable(); // Reserved, handled above
 
 ```
 
