@@ -386,7 +386,8 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         largegrain = VTCR_EL2.TG0 == '01';
         midgrain = VTCR_EL2.TG0 == '10';
         ps = VTCR_EL2.PS;
-        basefound = inputsize >= 25 && inputsize <= 48 && IsZero(inputaddr<63:inputsize>); disabled = FALSE;
+        basefound = inputsize >= 25 && inputsize <= 48 && IsZero(inputaddr<63:inputsize>); 
+        disabled = FALSE;
         baseregister = VTTBR_EL2;
         descaddr.memattrs = WalkAttrDecode(VTCR_EL2.IRGN0, VTCR_EL2.ORGN0, VTCR_EL2.SH0); reversedescriptors = SCTLR_EL2.EE == '1';
         lookupsecure = FALSE;
