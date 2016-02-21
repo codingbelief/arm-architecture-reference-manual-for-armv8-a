@@ -724,6 +724,10 @@ FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits
         return AArch64.NoFault();
 ```
 
+The AddrTop() function returns the bit number of the most significant valid bit of a VA in the current translation regime. If EL1 is using AArch64 and EL0 is using AArch32 then an address from EL0 is zero-extended to 64 bits.
 
+```
+integer AddrTop(bits(64) address);
+```
 
 
