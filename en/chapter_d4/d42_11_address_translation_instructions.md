@@ -39,3 +39,10 @@ Where:
                     W           Write.
 <Xt>        The address to be translated. No alignment restrictions apply for the address.
 ```
+
+If EL2 is not implemented, the AT S1E2R and AT S1E2W instructions are UNDEFINED.
+
+> **NOTE:**  
+
+
+
