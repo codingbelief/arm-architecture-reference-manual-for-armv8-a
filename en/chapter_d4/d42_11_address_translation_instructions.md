@@ -69,6 +69,8 @@ In addition:
 * If the address translation instruction requires two stages of translation then these faults could arise from either stage 1 or stage 2.
 * For a stage 1 translation for the Non-secure EL1&0 translation regime, the fault might be generated on the stage 2 translation of an address accessed as part of the stage 1 translation table walk, see [Stage 2 fault on a stage 1 translation table walk on page D4-1726](#).
 
+Except as described in this section, these faults are not taken as an exception for the address translation instructions, but instead the PAR_EL1.FST field holds the fault status information. In these cases the PAR_EL1.PA field does not hold the output address of the translation.
 
+The exceptions to this reporting the fault in PAR_EL1 are:
 
 
