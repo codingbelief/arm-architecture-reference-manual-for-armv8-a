@@ -33,8 +33,9 @@ Where:
                     E2          EL2.
                     E3          EL3.
                     If <level> is higher than the current Exception Level the instruction is UNDEFINED.
-<read|write>
-Is one of:
-R Read. W Write.
-<Xt> The address to be translated. No alignment restrictions apply for the address.
+            <read|write>
+                    Is one of:
+                    R           Read. 
+                    W           Write.
+<Xt>        The address to be translated. No alignment restrictions apply for the address.
 ```
