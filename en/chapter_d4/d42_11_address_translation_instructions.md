@@ -49,6 +49,9 @@ For all of these instructions, the current context information determines which 
 
 When Non-secure EL1&0 stage 1 address translation is disabled, any AT S1E0\*, AT S1E1\*, AT S12E0\*, or ATS12E1\* address translation instruction that accesses the Non-secure state translation reflects the effect of the HCR_EL2.DC bit as described in [Behavior when stage 1 address translation is disabled on page D4-1677](#).
 
-
+Executing AT S1E2R or AT S1E2W at EL3 with SCR_EL3.NS==0 is UNDEFINED.
+> **NOTE:**  
+AT S12E* instructions at EL3 with SCR_EL3.NS==0 are not UNDEFINED but behave the same way as the equivalent 
+AT S1E* instructions.
 
 
