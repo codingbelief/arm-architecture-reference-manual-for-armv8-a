@@ -704,12 +704,16 @@ FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits
     r = perms.ap<1> == '1'; 
     w = perms.ap<2> == '1'; 
     xn = perms.xn == '1';
-!= '0000' then
-// Normal
 
-
-
-// Stage 1 walk is checked as a read, regardless of the original type
+    // Stage 1 walk is checked as a read, regardless of the original type
+    if acctype == AccType_IFETCH && !s2fs1walk then 
+        fail = xn;
+    elsif iswrite && !s2fs1walk then 
+        fail = !w;
+        failedread = FALSE; 
+    else
+        fail = !r; 
+        failedread = TRUE;
 ```
 
 
