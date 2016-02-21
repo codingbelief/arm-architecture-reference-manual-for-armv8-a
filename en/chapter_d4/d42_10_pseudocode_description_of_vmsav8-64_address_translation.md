@@ -367,7 +367,10 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             firstblocklevel =2;   // Largest block is 32MB (2^25 bytes)
         else // Small grain
             grainsize = 12;       // Log2(4KB page size)
-        
+            firstblocklevel = 1;  // Largest block is 1GB (2^30 bytes) 
+        stride = grainsize - 3;   // Log2(page size / 8 bytes)
+        // The starting level is the number of strides needed to consume the input address 
+        level = 4 - RoundUp(Real(inputsize - grainsize) / Real(stride));
         
         
         
