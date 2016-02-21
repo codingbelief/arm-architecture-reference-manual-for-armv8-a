@@ -311,8 +311,9 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                 assert c IN {Constraint_FORCE, Constraint_FAULT}; 
                 if c == Constraint_FORCE then inputsize = 48;
             if inputsize < 25 then
-            c = ConstrainUnpredictable();
-            assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 25;
+                c = ConstrainUnpredictable();
+                assert c IN {Constraint_FORCE, Constraint_FAULT}; 
+                if c == Constraint_FORCE then inputsize = 25;
             largegrain = TCR_EL2.TG0 == '01';
             midgrain = TCR_EL2.TG0 == '10';
             ps = TCR_EL2.PS;
@@ -321,6 +322,21 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             descaddr.memattrs = WalkAttrDecode(TCR_EL2.SH0, TCR_EL2.ORGN0, TCR_EL2.IRGN0); reversedescriptors = SCTLR_EL2.EE == '1';
             lookupsecure = FALSE;
             singlepriv = TRUE;
+            
+        else
+            if inputaddr<top> == '0' then
+            inputsize = 64 - UInt(TCR_EL1.T0SZ); if inputsize > 48 then
+            c = ConstrainUnpredictable();
+            assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 48;
+            if inputsize < 25 then
+            c = ConstrainUnpredictable();
+            assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 25;
+            largegrain = TCR_EL1.TG0 == '01';
+            midgrain = TCR_EL1.TG0 == '10';
+            basefound = inputsize >= 25 && inputsize <= 48 && IsZero(inputaddr<top:inputsize>); disabled = TCR_EL1.EPD0 == '1';
+            baseregister = TTBR0_EL1;
+            descaddr.memattrs = WalkAttrDecode(TCR_EL1.SH0, TCR_EL1.ORGN0, TCR_EL1.IRGN0);
+
 
 
 
