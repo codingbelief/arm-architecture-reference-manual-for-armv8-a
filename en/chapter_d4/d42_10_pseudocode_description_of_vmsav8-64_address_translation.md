@@ -259,6 +259,11 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                                        AccType acctype, boolean iswrite, boolean secondstage,
                                        boolean s2fs1walk, integer size)
 
+    if !secondstage then
+        assert !ELUsingAArch32(S1TranslationRegime());
+    else
+        assert HaveEL(EL2) && !IsSecure() && !ELUsingAArch32(EL2) && PSTATE.EL != EL2;
+
 ```
 
 
