@@ -543,6 +543,14 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                                                          iswrite, secondstage, s2fs1walk);
         return result;
 
+    // Check for misprogramming of the contiguous bit 
+    if largegrain then
+        contiguousbitcheck = level == 2 && inputsize < 34; 
+    elsif midgrain then
+        contiguousbitcheck = level == 2 && inputsize < 30; 
+    else
+        contiguousbitcheck = level == 1 && inputsize < 34;
+
 
 ```
 
