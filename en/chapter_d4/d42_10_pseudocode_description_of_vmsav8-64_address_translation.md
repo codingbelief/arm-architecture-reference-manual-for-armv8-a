@@ -682,6 +682,8 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
 
     else
         Unreachable();                         // Reserved, handled above
+    
+    return MemAttrDefaults(memattrs);
 
 ```
 
