@@ -360,18 +360,18 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             singlepriv = FALSE;
 
         if largegrain then 
-            grainsize = 16;
-            firstblocklevel =2; 
+            grainsize = 16;       // Log2(64KB page size)
+            firstblocklevel =2;   // Largest block is 512MB (2^29 bytes)
         elsif midgrain then
-            grainsize = 14;
-            firstblocklevel =2; 
+            grainsize = 14;       // Log2(16KB page size)
+            firstblocklevel =2;   // Largest block is 32MB (2^25 bytes)
         else // Small grain
-            grainsize = 12;
-        // Log2(64KB page size)
-        // Largest block is 512MB (2^29 bytes)
-        // Log2(16KB page size)
-        // Largest block is 32MB (2^25 bytes)
-        // Log2(4KB page size)
+            grainsize = 12;       // Log2(4KB page size)
+        
+        
+        
+        
+        
 
 
 ```
