@@ -569,6 +569,17 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                                                         iswrite, secondstage, s2fs1walk);
         return result;
 
+    // Unpack the descriptor into address and upper and lower block attributes 
+    outputaddress = desc<47:addrselectbottom>:inputaddr<addrselectbottom-1:0>; 
+    xn = desc<54>;
+    pxn = desc<53>;
+    contiguousbit = desc<52>; 
+    nG = desc<11>;
+    sh = desc<9:8>;
+    ap = desc<7:6>:'1'; 
+    memattr = desc<5:2>;
+
+
 ```
 
 
