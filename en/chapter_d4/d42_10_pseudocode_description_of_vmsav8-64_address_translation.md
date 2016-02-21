@@ -553,8 +553,9 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
 
     if contiguousbitcheck && desc<52> == '1' then
         if boolean IMPLEMENTATION_DEFINED "Translation fault on misprogrammed contiguous bit" then
-            result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, iswrite, secondstage, s2fs1walk);
-    return result;
+            result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, 
+                                                             iswrite, secondstage, s2fs1walk);
+            return result;
 
 ```
 
