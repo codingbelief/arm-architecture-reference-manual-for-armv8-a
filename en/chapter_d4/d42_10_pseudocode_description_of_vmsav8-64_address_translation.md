@@ -421,7 +421,17 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             // Level 0 only supported if implemented PA size is greater than 2^42 bytes 
             if level < 0 || (level == 0 && PAMax() <= 42) then basefound = FALSE;
 
-
+// If the inputsize exceeds the PAMax value, the behavior is inputsizecheck = inputsize;
+if inputsize > PAMax() && (!ELUsingAArch32(EL1) || inputsize
+case ConstrainUnpredictable() of when Constraint_FORCE
+// Restrict the inputsize to the PAMax value inputsize = PAMax();
+inputsizecheck = PAMax();
+when Constraint_FORCENOSLCHECK
+// As FORCE, except use the configured inputsize inputsize = PAMax();
+when Constraint_FAULT
+// Generate a translation fault
+CONSTRAINED UNPREDICTABLE > 40) then
+in the size checks below
 
 
  
