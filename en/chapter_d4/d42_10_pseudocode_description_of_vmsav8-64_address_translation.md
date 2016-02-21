@@ -567,7 +567,7 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     if desc<10> == '0' then
         result.addrdesc.fault = AArch64.AccessFlagFault(ipaddress, level, acctype, 
                                                         iswrite, secondstage, s2fs1walk);
-
+        return result;
 
 ```
 
