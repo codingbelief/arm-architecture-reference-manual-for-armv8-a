@@ -331,8 +331,9 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                     assert c IN {Constraint_FORCE, Constraint_FAULT}; 
                     if c == Constraint_FORCE then inputsize = 48;
                 if inputsize < 25 then
-                c = ConstrainUnpredictable();
-                assert c IN {Constraint_FORCE, Constraint_FAULT}; if c == Constraint_FORCE then inputsize = 25;
+                    c = ConstrainUnpredictable();
+                    assert c IN {Constraint_FORCE, Constraint_FAULT}; 
+                    if c == Constraint_FORCE then inputsize = 25;
                 largegrain = TCR_EL1.TG0 == '01';
                 midgrain = TCR_EL1.TG0 == '10';
                 basefound = inputsize >= 25 && inputsize <= 48 && IsZero(inputaddr<top:inputsize>); disabled = TCR_EL1.EPD0 == '1';
