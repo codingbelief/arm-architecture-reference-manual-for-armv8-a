@@ -66,8 +66,8 @@ The address translation instructions use the translation mechanism, and that mec
 * Synchronous external aborts during a translation table walk.
 
 In addition:
-• If the address translation instruction requires two stages of translation then these faults could arise from either stage 1 or stage 2.
-• For a stage 1 translation for the Non-secure EL1&0 translation regime, the fault might be generated on the stage 2 translation of an address accessed as part of the stage 1 translation table walk, see Stage 2 fault on a stage 1 translation table walk on page D4-1726.
+* If the address translation instruction requires two stages of translation then these faults could arise from either stage 1 or stage 2.
+* For a stage 1 translation for the Non-secure EL1&0 translation regime, the fault might be generated on the stage 2 translation of an address accessed as part of the stage 1 translation table walk, see Stage 2 fault on a stage 1 translation table walk on page D4-1726.
 
 
 
