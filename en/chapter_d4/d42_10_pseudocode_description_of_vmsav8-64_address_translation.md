@@ -295,6 +295,14 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                 c = ConstrainUnpredictable();
                 assert c IN {Constraint_FORCE, Constraint_FAULT}; 
                 if c == Constraint_FORCE then inputsize = 25;
+            largegrain = TCR_EL3.TG0 == '01';
+            midgrain = TCR_EL3.TG0 == '10';
+            ps = TCR_EL3.PS;
+            basefound = inputsize >= 25 && inputsize <= 48 && IsZero(inputaddr<top:inputsize>); disabled = FALSE;
+            baseregister = TTBR0_EL3;
+            descaddr.memattrs = WalkAttrDecode(TCR_EL3.SH0, TCR_EL3.ORGN0, TCR_EL3.IRGN0); reversedescriptors = SCTLR_EL3.EE == '1';
+            lookupsecure = TRUE;
+            singlepriv = TRUE;
 
 
 
