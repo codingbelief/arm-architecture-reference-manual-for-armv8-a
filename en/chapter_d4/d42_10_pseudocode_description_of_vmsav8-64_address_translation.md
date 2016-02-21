@@ -508,13 +508,15 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         
         if desc<0> == '0' || (desc<1:0> == '01' && level == 3) then 
             // Fault (00), Reserved (10), or Block (01) at level 3
-            result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, iswrite,
-                                                             secondstage, s2fs1walk);
+            result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, 
+                                                             iswrite, secondstage, s2fs1walk);
             return result;
+            
         // Valid Block, Page, or Table entry
-        if desc<1:0> == '01' || level == 3 then
-        blocktranslate = TRUE; else
-        // Block (01) or Page (11)
+        if desc<1:0> == '01' || level == 3 then                 // Block (01) or Page (11)
+            blocktranslate = TRUE;                         
+        else
+        
 
 ```
 
