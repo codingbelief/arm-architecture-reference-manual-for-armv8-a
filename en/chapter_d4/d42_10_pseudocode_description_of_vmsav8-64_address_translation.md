@@ -668,13 +668,13 @@ if attrfield<7:4> == '0000' then     // Device
 memattrs.type = MemType_Device; 
 case attrfield<3:0> of
 
-when '0000' = DeviceType_nGnRnE; 
-when '0100' = DeviceType_nGnRE; 
-when '1000' = DeviceType_nGRE;
-when '1100' = DeviceType_GRE;
+when '0000' memattrs.device = DeviceType_nGnRnE; 
+when '0100' memattrs.device = DeviceType_nGnRE; 
+when '1000' memattrs.device = DeviceType_nGRE;
+when '1100' memattrs.device = DeviceType_GRE;
 otherwise   Unreachable();    // Reserved, handled above
    
-memattrs.device memattrs.device memattrs.device memattrs.device 
+ memattrs.device memattrs.device memattrs.device 
 
 
 ```
