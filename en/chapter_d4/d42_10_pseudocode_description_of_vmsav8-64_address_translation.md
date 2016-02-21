@@ -272,8 +272,8 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     descaddr.memattrs.type = MemType_Normal;
 
     // Derived parameters for the page table walk:
-    // grainsize = Log2(Size of Table) - Size of Table is 4KB, 16KB or 64KB in AArch64 
-    // stride = Log2(Address per Level) - Bits of address consumed at each level
+    // grainsize = Log2(Size of Table)         - Size of Table is 4KB, 16KB or 64KB in AArch64 
+    // stride = Log2(Address per Level)        - Bits of address consumed at each level
     // firstblocklevel = First level where a block entry is allowed
     // ps = Physical Address size as encoded in TCR_EL1.IPS or TCR_ELx/VTCR_EL2.PS
     // inputsize = Log2(Size of Input Address) - Input Address size in bits
