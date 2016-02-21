@@ -643,6 +643,17 @@ MemoryAttributes WalkAttrDecode(bits(2) SH, bits(2) ORGN, bits(2) IRGN)
     return MemAttrDefaults(memattrs);
 ```
 
+The function AArch64.S1AttrDecode() decodes the attributes from a stage 1 translation table lookup.
+
+```
+// AArch64.S1AttrDecode()
+// ======================
+// Converts the Stage 1 attribute fields, using the MAIR, to orthogonal // attributes and hints.
+MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
+
+```
+
+
 
 
 
