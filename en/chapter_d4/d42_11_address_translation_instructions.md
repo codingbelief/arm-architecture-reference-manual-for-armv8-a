@@ -73,7 +73,8 @@ Except as described in this section, these faults are not taken as an exception 
 
 The exceptions to this reporting the fault in PAR_EL1 are:
 
-* Synchronous external aborts during a translation table walk are taken as a Data Abort exception.  
+* Synchronous external aborts during a translation table walk are taken as a Data Abort exception.
+
 For an address translation instruction executed at a particular Exception level, if the synchronous external abort is generated on a stage 1 translation table walk, the Data Abort exception is taken to the Exception level to which a synchronous external abort on a stage 1 translation table walk for a memory access from that Exception level would be taken.
 If the synchronous external abort is generated on a stage 2 translation table walk then:
 — If the address translation instruction was executed at EL3, the synchronous Data Abort exception is taken to EL3.
