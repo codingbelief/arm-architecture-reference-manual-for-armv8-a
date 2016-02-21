@@ -592,12 +592,15 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         if !singlepriv then
             result.perms.ap<1> = ap<1> AND NOT(ap_table<0>); // Force privileged only
             result.perms.pxn = pxn OR pxn_table;
-        // Pages from Non-secure tables are marked non-global in Secure EL1&0
-        if IsSecure() then
-        result.nG = nG OR ns_table; else
-        result.nG = nG; else
-        result.perms.ap<1> result.perms.pxn result.nG
-        = '1'; = '0'; = '0';
+            // Pages from Non-secure tables are marked non-global in Secure EL1&0
+            if IsSecure() then
+                result.nG = nG OR ns_table; 
+            else
+                result.nG = nG; 
+        else
+            result.perms.ap<1> = '1';
+            result.perms.pxn   = '0';
+            result.nG          = '0';
         result.perms.ap<0>
         result.addrdesc.memattrs = AArch64.S1AttrDecode(sh, memattr<2:0>, acctype); result.addrdesc.paddress.NS = memattr<3> OR ns_table;
     else
