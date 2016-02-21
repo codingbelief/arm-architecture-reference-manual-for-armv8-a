@@ -421,24 +421,25 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             // Level 0 only supported if implemented PA size is greater than 2^42 bytes 
             if level < 0 || (level == 0 && PAMax() <= 42) then basefound = FALSE;
 
-// If the inputsize exceeds the PAMax value, the behavior is CONSTRAINED UNPREDICTABLE
-inputsizecheck = inputsize;
-if inputsize > PAMax() && (!ELUsingAArch32(EL1) || inputsize > 40) then
-    case ConstrainUnpredictable() of 
-        when Constraint_FORCE
-            // Restrict the inputsize to the PAMax value 
-            inputsize = PAMax();
-            inputsizecheck = PAMax();
-        when Constraint_FORCENOSLCHECK
-            // As FORCE, except use the configured inputsize in the size checks below
-            inputsize = PAMax();
-        when Constraint_FAULT
-            // Generate a translation fault
-            basefound = FALSE; 
-        otherwise
-            Unreachable();
-
-
+        // If the inputsize exceeds the PAMax value, the behavior is CONSTRAINED UNPREDICTABLE
+        inputsizecheck = inputsize;
+        if inputsize > PAMax() && (!ELUsingAArch32(EL1) || inputsize > 40) then
+        case ConstrainUnpredictable() of 
+            when Constraint_FORCE
+                // Restrict the inputsize to the PAMax value 
+                inputsize = PAMax();
+                inputsizecheck = PAMax();
+            when Constraint_FORCENOSLCHECK
+                // As FORCE, except use the configured inputsize in the size checks below
+                inputsize = PAMax();
+            when Constraint_FAULT
+                // Generate a translation fault
+                basefound = FALSE; 
+            otherwise
+                Unreachable();
+    
+    // Number of entries in the starting level table =
+    // (Size of Input Address)/((Address per level)^(Num levels remaining)*(Size of Table)) startsizecheck = inputsizecheck - ((3 - level)*stride + grainsize); // Log2(Num of entries)
 
 
  
