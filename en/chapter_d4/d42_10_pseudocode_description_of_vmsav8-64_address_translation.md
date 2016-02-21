@@ -640,6 +640,7 @@ MemoryAttributes WalkAttrDecode(bits(2) SH, bits(2) ORGN, bits(2) IRGN)
     memattrs.shareable = SH<1> == '1'; 
     memattrs.outershareable = SH == '10';
 
+    return MemAttrDefaults(memattrs);
 ```
 
 
