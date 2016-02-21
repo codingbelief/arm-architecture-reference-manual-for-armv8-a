@@ -604,8 +604,8 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
         result.perms.ap<0> = '1';
         result.addrdesc.memattrs = AArch64.S1AttrDecode(sh, memattr<2:0>, acctype); result.addrdesc.paddress.NS = memattr<3> OR ns_table;
     else
-result.perms.ap<2:1> = ap<2:1>
-result.perms.ap<0>
+result.perms.ap<2:1> = ap<2:1>;
+result.perms.ap<0>= '1';
 result.perms.xn
 result.perms.pxn
 result.nG
