@@ -249,10 +249,16 @@ The function AArch64.TranslationTableWalk() returns the result, in the form of a
 ```
 // AArch64.TranslationTableWalk()
 // ==============================
-// Returns a result of a translation table walk //
+// Returns a result of a translation table walk 
+//
 // Implementations might cache information from memory in any number of non-coherent TLB
 // caching structures, and so avoid memory accesses that have been expressed in this
 // pseudocode. The use of such TLBs is not expressed in this pseudocode.
+
+TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
+                                       AccType acctype, boolean iswrite, boolean secondstage,
+                                       boolean s2fs1walk, integer size)
+
 ```
 
 
