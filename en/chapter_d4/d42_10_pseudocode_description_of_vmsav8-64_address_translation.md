@@ -673,8 +673,8 @@ when '0100' memattrs.device = DeviceType_nGnRE;
 when '1000' memattrs.device = DeviceType_nGRE;
 when '1100' memattrs.device = DeviceType_GRE;
 otherwise   Unreachable();    // Reserved, handled above
-   
- memattrs.device memattrs.device memattrs.device 
+
+
 
 
 ```
