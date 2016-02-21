@@ -481,6 +481,10 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     xn_table = '0';
     pxn_table = '0';
 
+    addrselecttop = inputsize - 1;
+
+
+
 ```
 
 
