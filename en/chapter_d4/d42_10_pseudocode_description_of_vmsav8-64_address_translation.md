@@ -280,6 +280,14 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
     // level = Level to start walk from
     // This means that the number of levels after start level = 3-level
 
+
+    if !secondstage then
+        // First stage translation 
+        inputaddr = ZeroExtend(vaddress); 
+        top = AddrTop(inputaddr);
+
+
+
 ```
 
 
