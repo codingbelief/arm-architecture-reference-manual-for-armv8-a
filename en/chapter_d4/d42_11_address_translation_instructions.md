@@ -80,13 +80,13 @@ The exceptions to this reporting the fault in PAR_EL1 are:
     If the synchronous external abort is generated on a stage 2 translation table walk then:
     - If the address translation instruction was executed at EL3, the synchronous Data Abort exception is taken to EL3.
     - If the address translation instruction was executed at EL2 or EL1, the Data Abort exception is taken to the Exception level to which a synchronous external abort on a stage 2 translation table walk for a memory access from that Exception level would be taken.
-In any case where the address translation instruction causes a synchronous Data Abort exception to be taken:
-— —
-—
-The PAR_EL1 is UNKNOWN.
-The ESR_ELx of the target Exception Level of the exception indicates that the fault was due to a
-translation table walk for a cache maintenance instruction.
-The FAR_ELx of the target Exception Level holds the virtual address for the translation request
+    
+    In any case where the address translation instruction causes a synchronous Data Abort exception to be taken:
+
+    - The PAR_EL1 is UNKNOWN.
+    - The ESR_ELx of the target Exception Level of the exception indicates that the fault was due to a
+    translation table walk for a cache maintenance instruction.
+    - The FAR_ELx of the target Exception Level holds the virtual address for the translation request
 
 
 
