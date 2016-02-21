@@ -469,8 +469,17 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
                                                          secondstage, s2fs1walk);
         return result;
 
+    // Bottom bound of the Base address is:
+    //     Log2(8 bytes per entry)+Log2(Number of entries in starting level table)
+    // Number of entries in starting level table =
+    //     (Size of Input Address)/(Address pre level)^(Num level remaining)*(Size of Table))
+    baselowerbound = 3 + inputsize - ((3-level)*stride + grainsize); // Log2(Num of entries*8)
+    baseaddress = baseregister<47:baselowerbound>:Zeros(baselowerbound);
 
-
+    ns_table = if lookupsecure then '0' else '1'; 
+    ap_table = '00';
+    xn_table = '0';
+    pxn_table = '0';
 
 ```
 
