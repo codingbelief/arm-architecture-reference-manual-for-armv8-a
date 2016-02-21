@@ -715,13 +715,13 @@ FaultRecord AArch64.CheckS2Permission(Permissions perms, bits(64) vaddress, bits
         fail = !r; 
         failedread = TRUE;
 
-if fail then
-domain = bits(4) UNKNOWN;
-secondstage = TRUE;
-return AArch64.PermissionFault(ipaddress, level, acctype,
-!failedread, secondstage, s2fs1walk);
-else
-return AArch64.NoFault();
+    if fail then
+        domain = bits(4) UNKNOWN;
+        secondstage = TRUE;
+        return AArch64.PermissionFault(ipaddress, level, acctype,
+                                       !failedread, secondstage, s2fs1walk);
+    else
+        return AArch64.NoFault();
 ```
 
 
