@@ -656,9 +656,13 @@ MemoryAttributes AArch64.S1AttrDecode(bits(2) SH, bits(3) attr, AccType acctype)
     MemoryAttributes memattrs;
     
     mair = MAIR[];
-    index = 8 * UInt(attr); attrfield = mair<index+7:index>;
-    if ((attrfield<7:4> != '0000' && attrfield<3:0> == '0000') || (attrfield<7:4> == '0000' && attrfield<3:0> != 'xx00')) then // Reserved, maps to an allocated value
-    (-, attrfield) = ConstrainUnpredictableBits();
+    index = 8 * UInt(attr); 
+    attrfield = mair<index+7:index>;
+    
+    if ((attrfield<7:4> != '0000' && attrfield<3:0> == '0000') || 
+        (attrfield<7:4> == '0000' && attrfield<3:0> != 'xx00')) then 
+        // Reserved, maps to an allocated value
+        (-, attrfield) = ConstrainUnpredictableBits();
 
 ```
 
