@@ -537,6 +537,12 @@ TLBRecord AArch64.TranslationTableWalk(bits(48) ipaddress, bits(64) vaddress,
             addrselecttop = addrselectbottom - 1; blocktranslate = FALSE;
     until blocktranslate;
 
+// Check block size is supported at this level if level < firstblocklevel then
+
+result.addrdesc.fault = AArch64.TranslationFault(ipaddress, level, acctype, iswrite, secondstage, s2fs1walk);
+return result;
+
+
 ```
 
 
