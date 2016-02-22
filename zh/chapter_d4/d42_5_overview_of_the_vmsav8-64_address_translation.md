@@ -106,7 +106,6 @@ Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换�
 
 ### Overview of VMSAv8-64 address translation using the 64KB translation granule
 
-
 stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差异。
 
 #### Overview of stage 1 translations, 64KB granule
