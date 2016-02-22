@@ -61,7 +61,7 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 Figure D4-9 shows the stage 2 address translation, for an input address size of between 40 and 43 bits. For an input address size in this range, the lookup can start at either level 0 or level 1.
 
-Figure D4-9 描述了 stage 2 的地址转换
+Figure D4-9 描述了 stage 2 的地址转换。对于 40 至 43 位的输入地址，第一次 lookup 所在的 level 可能是 0，也可能是 1,
 
 ![](figure_d4_9.png)
 
