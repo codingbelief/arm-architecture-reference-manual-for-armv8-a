@@ -49,7 +49,7 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 > **NOTE: **  
 * 当使用 4KB translation granule 时，第一次 lookup 不会在 level 3。
-* 当使用 4KB translation granule 时，如果使用了 table 连接作为第一次 lookup 的 table，那么
+* 当使用 4KB translation granule 时，如果使用了 table 连接作为第一次 lookup 的 table，那么第一次 lookup 不会在 level 0。
 
 In addition, VTCR_EL2.SL0 indicates the required initial lookup level, as Table D4-13 shows.
 
