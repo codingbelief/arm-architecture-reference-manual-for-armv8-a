@@ -145,7 +145,6 @@ VTCR_EL2.SL0 寄存器位指示了第一次 lookup 所在的 level。如 Table D
 
 ![](table_d4_19.png)
 
-
 Because the maximum number of concatenated translation tables is 16, there is a relationship between the permitted VTCR_EL2.{T0SZ, SL0} values. If, when a translation table walk is started, the T0SZ value is not consistent with the SL0 value, a stage 2 level 0 translation fault is generated.
 
 Figure D4-14 shows the stage 2 address translation, for an input address size of between 43 and 46 bits. This means the lookup can start at either level 1 or level 2.
