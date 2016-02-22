@@ -50,7 +50,7 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 > **NOTE: **  
 * 当使用 4KB translation granule 时，第一次 lookup 不会在 level 3。
 * 当使用 4KB translation granule 时，如果使用了 table 连接作为第一次 lookup 的 table，那么第一次 lookup 不会在 level 0。(译者注：使用 table 连接后，第一次 lookup 解析的地址为增加了，相应的也可以减少整个地址转换所需要执行的 lookup 次数)
-* 
+* IA 的一些地址位不需要通过 translation table lookup 来解析，它们是直接映射到 OA 中，使用 4KB translation granule 时的所有转换中 IA[11:0] = OA[11:0]。
 
 In addition, VTCR_EL2.SL0 indicates the required initial lookup level, as Table D4-13 shows.
 
