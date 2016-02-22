@@ -120,7 +120,7 @@ For a stage 1 translation, the required initial lookup level is determined only 
 
 > **NOTE:**
 * When using the 64KB translation granule, there are no level 0 lookups.
-* 当使用 64KB translation granule 时，没有 lookup 在 level 0。
+* 当使用 64KB translation granule 时，不支持任何 level 0 上的 lookup。
 * Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA. When using the 64KB translation granule, IA[15:0] = OA[15:0] for all translations.
 
 Figure D4-13 shows the stage 1 address translation, for an address translation using the 64KB granule with a an input address size greater than 42 bits.
