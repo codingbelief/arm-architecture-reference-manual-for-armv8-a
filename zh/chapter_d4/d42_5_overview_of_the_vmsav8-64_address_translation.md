@@ -65,7 +65,7 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 ![](table_d4_14.png)
 
-The configuration options for an initial lookup at level 1, level 2, or level 3 are also permitted for stage 2 translations, but stage 2 translation does not permit an initial lookup at level 0.
+在 stage 2 地址转换中，不能设定第一次 lookup 所在的 level 为 level 0，其他 level 的设定则与 stage 1 一样。
 
 > **NOTE:**
 * When using the 16KB translation granule, a maximum of 1 bit of IA is resolved by a level 0 lookup.
