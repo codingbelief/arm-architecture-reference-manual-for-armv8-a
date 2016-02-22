@@ -124,7 +124,7 @@ For a stage 1 translation, the required initial lookup level is determined only 
 * IA 的一些地址位不需要通过 translation table lookup 来解析，它们是直接映射到 OA 中，使用 64KB translation granule 时的所有转换中 IA[15:0] = OA[15:0]。
 
 Figure D4-13 shows the stage 1 address translation, for an address translation using the 64KB granule with a an input address size greater than 42 bits.
-Figure D4-13 中描述了使用 64KB translation granule、输入地址大于 39 位时的 stage 1 地址转换过程。 
+Figure D4-13 中描述了使用 64KB translation granule、输入地址大于 42 位时的 stage 1 地址转换过程。 
 
 
 ![](figure_d4_13.png)
