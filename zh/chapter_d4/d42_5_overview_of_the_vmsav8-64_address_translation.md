@@ -58,6 +58,8 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 Because the maximum number of concatenated translation tables is 16, there is a relationship between the permitted VTCR_EL2.{T0SZ, SL0} values. If, when a translation table walk is started, the T0SZ value is not consistent with the SL0 value, a stage 2 level 0 translation fault is generated.
 
+
+
 Figure D4-9 shows the stage 2 address translation, for an input address size of between 40 and 43 bits. For an input address size in this range, the lookup can start at either level 0 or level 1.
 
 ![](figure_d4_9.png)
