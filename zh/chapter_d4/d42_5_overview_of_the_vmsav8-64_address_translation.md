@@ -147,7 +147,7 @@ Figure D4-14 shows the stage 2 address translation, for an input address size of
 
 由于最多可以将 16 个 table 连接作为第一次 lookup 的 table，所以 VTCR_EL2.{T0SZ, SL0} 两个寄存器位的合法值需要相互匹配并满足一定的条件。在 translation table walk 开始时，如果发现 T0SZ 和 SL0 不匹配，那么就会产生一个 stage 2 level 0 translation fault。
 
-Figure D4-14 描述了 stage 2 translation 在输入地址为 43 到 46 位时的转换过程。在此条件下，第一次 lookup 会在 level 1 或者 level 2.
+Figure D4-14 描述了 stage 2 translation 在输入地址为 43 到 46 位时的转换过程。在此条件下，第一次 lookup 会在 level 1 或者 level 2。
 
 ![](figure_d4_14.png)
 
