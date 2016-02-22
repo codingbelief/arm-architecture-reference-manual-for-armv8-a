@@ -57,8 +57,7 @@ Figure D4-9 描述了 stage 2 的地址转换。对于 40 至 43 位的输入地
 ![](figure_d4_9.png)
 
 ### Overview of VMSAv8-64 address translation using the 16KB translation granule
-
-The requirements for the level of the initial lookup are different for stage 1 and stage 2 translations.
+stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差异。
 
 #### Overview of stage 1 translations, 16KB granule
 
