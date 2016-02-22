@@ -18,6 +18,8 @@ The following subsections summarize the multiple levels of lookup that can be re
 * stage 2 转换过程中的 [Concatenated translation tables](#)。
 * TTBR 中第一次 lookup 的 translation table 的基地址的存储方式。
 
+本小节中，将汇总不同 granule size 对地址转换过程中的 1 个 stage 中的 lookup 的影响，主要包括以下内容：
+
 
 
 ### Overview of VMSAv8-64 address translation using the 4KB translation granule
