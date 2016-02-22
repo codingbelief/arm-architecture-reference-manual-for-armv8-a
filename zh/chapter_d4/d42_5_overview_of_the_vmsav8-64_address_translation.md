@@ -15,6 +15,8 @@
 
 The requirements for the level of the initial lookup are different for stage 1 and stage 2 translations.
 
+
+
 #### Overview of stage 1 translations, 4KB granule
 
 For a stage 1 translation, the required initial lookup level is determined only by the required input address range specified by the corresponding TCR.TxSZ field. When using the 4KB translation granule, Table D4-11 shows this requirement.
