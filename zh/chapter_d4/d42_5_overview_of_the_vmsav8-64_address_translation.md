@@ -23,7 +23,6 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 ![](table_d4_11.png)
 
-These configuration options are also permitted for stage 2 translations.
 上面的配置关系对于 stage 2 的地址转换同样适用。
 
 > **NOTE:**
