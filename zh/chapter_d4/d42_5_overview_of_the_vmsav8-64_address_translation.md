@@ -1,4 +1,4 @@
-## D4.2.5 VMSAv8-64 address translation stages 简介
+## D4.2.5 Overview of the VMSAv8-64 address translation stages
 
 As shown in [Memory translation granule size on page D4-1651](#)
 , the granule size determines significant aspects of the address translation process. [Effect of granule size on translation table addressing and indexing on page D4-1654](#)
