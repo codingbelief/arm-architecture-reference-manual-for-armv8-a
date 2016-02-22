@@ -54,7 +54,7 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 In addition, VTCR_EL2.SL0 indicates the required initial lookup level, as Table D4-13 shows.
 
-
+另外，VTCR_EL2.SL0 寄存器位指示了第一次 lookup 所在的 level。如 Table D4-13 所示：
 
 ![](table_d4_13.png)
 
