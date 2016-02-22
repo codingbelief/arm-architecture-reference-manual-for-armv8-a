@@ -13,8 +13,6 @@
 
 ### Overview of VMSAv8-64 address translation using the 4KB translation granule
 
-The requirements for the level of the initial lookup are different for stage 1 and stage 2 translations.
-
 stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差异。
 
 #### Overview of stage 1 translations, 4KB granule
