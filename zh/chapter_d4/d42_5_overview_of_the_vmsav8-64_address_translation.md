@@ -54,6 +54,8 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 In addition, VTCR_EL2.SL0 indicates the required initial lookup level, as Table D4-13 shows.
 
+
+
 ![](table_d4_13.png)
 
 Because the maximum number of concatenated translation tables is 16, there is a relationship between the permitted VTCR_EL2.{T0SZ, SL0} values. If, when a translation table walk is started, the T0SZ value is not consistent with the SL0 value, a stage 2 level 0 translation fault is generated.
