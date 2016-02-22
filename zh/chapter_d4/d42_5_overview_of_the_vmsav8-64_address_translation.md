@@ -40,6 +40,8 @@ Figure D4-8 中描述了使用 4KB translation granule、输入地址大于 39 �
 
 When using the 4KB translation granule, Table D4-12 shows all possibilities for the initial lookup for a stage 2 translation.
 
+
+
 ![](table_d4_12.png)
 
 > **NOTE:**
