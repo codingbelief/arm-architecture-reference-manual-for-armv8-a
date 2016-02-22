@@ -116,7 +116,7 @@ For a stage 1 translation, the required initial lookup level is determined only 
 
 ![](table_d4_17.png)
 
-These configuration options are also permitted for stage 2 translations.
+上面的配置关系对于 stage 2 的地址转换同样适用。
 
 > **NOTE:**
 * When using the 64KB translation granule, there are no level 0 lookups.
