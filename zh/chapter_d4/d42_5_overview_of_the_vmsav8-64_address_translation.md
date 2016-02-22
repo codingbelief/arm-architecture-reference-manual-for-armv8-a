@@ -29,9 +29,7 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 * 当使用 4KB translation granule 时，第一次 lookup 不会在 level 3。
 * IA 的一些地址位不需要通过 translation table lookup 来解析，它们是直接映射到 OA 中，例如，在 4KB translation granule 中，所有转换中 IA[11:0] = OA[11:0]。
 
-Figure D4-8 shows the stage 1 address translation, for an address translation using the 4KB granule with an input address size greater than 39 bits.
-
-Figure D4-8 中描述了使用 4KB translation granule，输入地址大于 39 位时的 stage 1 地址转换过程。 
+Figure D4-8 中描述了使用 4KB translation granule、输入地址大于 39 位时的 stage 1 地址转换过程。 
 
 ![](figure_d4_8.png)
 
