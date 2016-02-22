@@ -131,7 +131,7 @@ Figure D4-13 中描述了使用 64KB translation granule、输入地址大于 42
 
 For a stage 2 translation, up to 16 translation tables can be concatenated at the initial lookup level. For certain input address sizes, concatenating tables in this way means that the lookup starts at a lower level than would otherwise be the case. For more information see Concatenated translation tables for the initial stage 2 lookup on page D4-1671.
 
-
+在 stage 2 地址转换中，第一次 lookup 的 translation table 最多可以由 16 个 translation table 连接起来。在输入地址大小一定的条件下，连接更多的 table 意味着第一次 lookup 可以在更低的 level 开始。更多信息可以参考 [Concatenated translation tables for the initial stage 2 lookup](#) 章节。
 
 When using the 64KB translation granule, Table D4-18 shows all possibilities for the initial lookup for a stage 2 translation.
 
