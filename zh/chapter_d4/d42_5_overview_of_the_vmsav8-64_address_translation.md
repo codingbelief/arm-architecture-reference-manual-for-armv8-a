@@ -135,6 +135,8 @@ For a stage 2 translation, up to 16 translation tables can be concatenated at th
 
 When using the 64KB translation granule, Table D4-18 shows all possibilities for the initial lookup for a stage 2 translation.
 
+Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换的第一次 lookup 的所有可能的配置：
+
 ![](table_d4_18.png)
 
 > **NOTE:**
