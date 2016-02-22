@@ -20,7 +20,7 @@ The following subsections summarize the multiple levels of lookup that can be re
 
 本小节中，将汇总不同 granule size 对地址转换过程中的 1 个 stage 中的 lookup 的影响，主要包括以下内容：
 
-
+* 
 
 ### Overview of VMSAv8-64 address translation using the 4KB translation granule
 
