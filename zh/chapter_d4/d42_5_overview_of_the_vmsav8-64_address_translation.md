@@ -81,8 +81,6 @@ Figure D4-10 中描述了使用 16KB translation granule、输入地址为 48 �
 
 当使用 16KB granule 时，在 stage 2 translation 中，如果输入地址为 48 位，那么第一次 lookup 必须在 level 1，并且其 translation table 为 2 个 table 连接起来的。
 
-When using the 16KB translation granule, Table D4-15 shows all possibilities for the initial lookup for a stage 2 translation.
-
 Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换的第一次 lookup 的所有可能的配置：
 
 ![](table_d4_15.png)
