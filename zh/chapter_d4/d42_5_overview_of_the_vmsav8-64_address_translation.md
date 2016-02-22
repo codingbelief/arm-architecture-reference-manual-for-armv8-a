@@ -25,10 +25,6 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 上面的配置关系对于 stage 2 的地址转换同样适用。
 
-> **NOTE:**
-* When using the 4KB translation granule, the initial lookup cannot be at level 3.
-* Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA, When using the 4KB translation granule, IA[11:0] = OA[11:0] for all translations.
-
 > **NOTE:**  
 * 当使用 4KB translation granule 时，第一次 lookup 不会在 level 3。
 * IA 的一些地址位不需要通过 translation table lookup 来解析，它们是直接映射到 OA 中，例如，在 4KB translation granule 中，所有转换中 IA[11:0] = OA[11:0]。
