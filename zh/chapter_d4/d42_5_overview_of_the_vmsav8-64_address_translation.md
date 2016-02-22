@@ -137,7 +137,6 @@ Table D4-18 描述了使用 64KB translation granule 时，stage 2 地址转换�
 
 > **NOTE:**
 
-* When using the 64KB translation granule, there are no level 0 lookups.
 * 当使用 64KB translation granule 时，不支持任何 level 0 上的 lookup。
 * Because concatenating translation tables reduces the number of levels of lookup required, when using the 64KB translation granule, tables cannot be concatenated at level 1.
 * Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA. When using the 64KB translation granule, IA[15:0] = OA[15:0] for all translations.
