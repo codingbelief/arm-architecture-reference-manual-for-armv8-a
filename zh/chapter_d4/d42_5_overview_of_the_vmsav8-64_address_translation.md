@@ -75,7 +75,6 @@ Figure D4-10 shows the stage 1 address translation, for an address translation u
 
 Figure D4-10 中描述了使用 16KB translation granule、输入地址为 48 位时的 stage 1 地址转换过程。 
 
-
 ![](figure_d4_10.png)
 
 #### Overview of stage 2 translations, 16KB granule
