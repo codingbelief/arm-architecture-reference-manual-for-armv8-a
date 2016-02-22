@@ -67,9 +67,8 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 在 stage 2 地址转换中，不能设定第一次 lookup 所在的 level 为 level 0，其他 level 的设定则与 stage 1 一样。
 
-> **NOTE:**
-* When using the 16KB translation granule, a maximum of 1 bit of IA is resolved by a level 0 lookup.
-* 
+> **NOTE:**  
+* 当使用 16KB translation granule 时，处于 level 0 的 lookup 操作只能解析 1 个地址位。
 * Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA, When using the 16KB translation granule, IA[13:0] = OA[13:0] for all translations.
 
 Figure D4-10 shows the stage 1 address translation, for an address translation using the 16KB granule with an input address size of 48 bits.
