@@ -36,7 +36,7 @@ Figure D4-8 中描述了使用 4KB translation granule、输入地址大于 39 �
 
 #### Overview of stage 2 translations, 4KB granule
 
-在 stage 2 地址转换中，第一次 lookup 的 translation table 最多可以由 16 个 translation table 连接起来 (译者注：连接的 table 越多，单次 lookup 可以解析的地址位就越多。)。 在输入地址大小一定的条件下，连接更多的 table 意味着第一次 lookup 可以在更低的 level 开始。更多信息可以参考 [Concatenated translation tables for the initial stage 2 lookup](#) 章节。
+在 stage 2 地址转换中，第一次 lookup 的 translation table 最多可以由 16 个 translation table 连接起来 (译者注：连接的 table 越多，单次 lookup 可以解析的地址位就越多)。 在输入地址大小一定的条件下，连接更多的 table 意味着第一次 lookup 可以在更低的 level 开始。更多信息可以参考 [Concatenated translation tables for the initial stage 2 lookup](#) 章节。
 
 Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换的第一次 lookup 的所有可能的配置：
 
