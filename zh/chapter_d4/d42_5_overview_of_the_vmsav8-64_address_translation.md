@@ -101,6 +101,8 @@ Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换�
 
 However, for an input address size of between 37 and 40 bits, Table D4-15 on page D4-1663 shows that translation can start with either a level 1 lookup or a level 2 lookup, and Figure D4-12 shows these options.
 
+
+
 ![](figure_d4_12.png)
 
 ### Overview of VMSAv8-64 address translation using the 64KB translation granule
