@@ -101,7 +101,7 @@ Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换�
 
 However, for an input address size of between 37 and 40 bits, Table D4-15 on page D4-1663 shows that translation can start with either a level 1 lookup or a level 2 lookup, and Figure D4-12 shows these options.
 
-
+对于位数在 37 至 40 之间的输入地址，第一次 lookup 可以在 level 1 或者 level 2。Figure D4-12 描述了此种条件下的转换过程。
 
 ![](figure_d4_12.png)
 
