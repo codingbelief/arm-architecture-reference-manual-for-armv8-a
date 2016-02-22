@@ -13,7 +13,8 @@ The following subsections summarize the multiple levels of lookup that can be re
 * [Overview of VMSAv8-64 address translation using the 16KB translation granule on page D4-1662](#). 
 * [Overview of VMSAv8-64 address translation using the 64KB translation granule on page D4-1665](#).
 
-[Memory translation granule size](#) 章节
+[Memory translation granule size](#) 章节介绍了不同的 granule size 对地址转换过程中的影响。[Effect of granule size on translation table addressing and indexing on page D4-1654](#) 章节则介绍了，各个 granule size 下：
+* 
 
 ### Overview of VMSAv8-64 address translation using the 4KB translation granule
 
