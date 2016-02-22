@@ -13,6 +13,8 @@ The following subsections summarize the multiple levels of lookup that can be re
 * [Overview of VMSAv8-64 address translation using the 16KB translation granule on page D4-1662](#). 
 * [Overview of VMSAv8-64 address translation using the 64KB translation granule on page D4-1665](#).
 
+[Memory translation granule size](#) 章节
+
 ### Overview of VMSAv8-64 address translation using the 4KB translation granule
 
 The requirements for the level of the initial lookup are different for stage 1 and stage 2 translations.
