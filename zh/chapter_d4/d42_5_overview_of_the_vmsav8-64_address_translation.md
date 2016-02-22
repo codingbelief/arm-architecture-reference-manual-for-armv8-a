@@ -97,8 +97,6 @@ Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换�
 
 如果 stage 2 translation 的输入地址为 48 位，那么第一次 lookup 必须在 level 1，并且其 translation table 为 2 个 table 连接起来的。Figure D4-11 描述了此种条件下的转换过程。
 
- shows the translation for this case.
-
 ![](figure_d4_11.png)
 
 However, for an input address size of between 37 and 40 bits, Table D4-15 on page D4-1663 shows that translation can start with either a level 1 lookup or a level 2 lookup, and Figure D4-12 shows these options.
