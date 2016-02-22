@@ -73,7 +73,7 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 Figure D4-10 shows the stage 1 address translation, for an address translation using the 16KB granule with an input address size of 48 bits.
 
-Figure D4-8 中描述了使用 4KB translation granule、输入地址大于 39 位时的 stage 1 地址转换过程。 
+Figure D4-10 中描述了使用 4KB translation granule、输入地址大于 39 位时的 stage 1 地址转换过程。 
 
 
 ![](figure_d4_10.png)
