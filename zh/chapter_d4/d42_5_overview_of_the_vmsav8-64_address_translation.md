@@ -87,7 +87,7 @@ Table D4-15 描述了使用 16KB translation granule 时，stage 2 地址转换�
 
 > **NOTE:**
 * When using the 16KB translation granule for a stage 2 translation, the initial lookup cannot be at level 0. When a 48-bit input address is required, translation must start with a level 1 lookup using two concatenated translation tables.
-* Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA. When using the 16KB translation granule, IA[13:0] = OA[13:0] for all translations.
+* IA 的一些地址位不需要通过 translation table lookup 来解析，它们是直接映射到 OA 中，使用 4KB translation granule 时的所有转换中 IA[11:0] = OA[11:0]。
 
 In addition, VTCR_EL2.SL0 indicates the required initial lookup level, as Table D4-16 shows.
 
