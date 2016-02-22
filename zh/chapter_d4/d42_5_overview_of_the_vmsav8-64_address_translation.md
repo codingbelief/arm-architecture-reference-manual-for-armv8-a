@@ -42,11 +42,6 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 ![](table_d4_12.png)
 
-> **NOTE:**
-* When using the 4KB translation granule, the initial lookup cannot be at level 3.
-* Because concatenating translation tables reduces the number of levels of lookup required, when using the 4KB translation granule, tables cannot be concatenated at level 0.
-* Some bits of the IA do not require resolution by the translation table lookup, because they always map directly to the OA. When using the 4KB translation granule, IA[11:0] = OA[11:0] for all translations.
-
 > **NOTE: **  
 * 当使用 4KB translation granule 时，第一次 lookup 不会在 level 3。
 * 当使用 4KB translation granule 时，如果使用了 table 连接作为第一次 lookup 的 table，那么第一次 lookup 不会在 level 0。(译者注：使用 table 连接后，第一次 lookup 解析的地址为增加了，相应的也可以减少整个地址转换所需要执行的 lookup 次数)
