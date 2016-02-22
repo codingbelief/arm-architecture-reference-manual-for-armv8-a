@@ -56,7 +56,6 @@ Table D4-12 描述了使用 4KB translation granule 时，stage 2 地址转换�
 
 ![](table_d4_13.png)
 
-Because the maximum number of concatenated translation tables is 16, there is a relationship between the permitted VTCR_EL2.{T0SZ, SL0} values. If, when a translation table walk is started, the T0SZ value is not consistent with the SL0 value, a stage 2 level 0 translation fault is generated.
 
 由于最多可以将 16 个 table 连接作为第一次 lookup 的 table，所以 VTCR_EL2.{T0SZ, SL0} 两个寄存器位的合法值需要满足一定的条件。在 translation table walk 开始时，如果发现 T0SZ 和 SL0 不匹配，那么就会产生一个 stage 2 level 0 translation fault。
 
