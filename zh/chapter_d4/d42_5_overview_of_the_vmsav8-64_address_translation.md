@@ -112,7 +112,7 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 For a stage 1 translation, the required initial lookup level is determined only by the required input address range specified by the corresponding TCR.TxSZ field. When using the 64KB translation granule, Table D4-17 shows this requirement.
 
-在 stage 1 地址转换中，第一次 lookup 所在的 level 由 TCR.TxSZ 寄存器位所设定的输入地址范围唯一决定。在使用 16KB granule 时，具体的关系如 Table D4-11 所示：
+在 stage 1 地址转换中，第一次 lookup 所在的 level 由 TCR.TxSZ 寄存器位所设定的输入地址范围唯一决定。在使用 64KB granule 时，具体的关系如 Table D4-11 所示：
 
 ![](table_d4_17.png)
 
