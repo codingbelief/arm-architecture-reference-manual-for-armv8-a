@@ -25,7 +25,7 @@ The following subsections describe the use of this translation table format:
 * TCR_EL1.{SH0, ORGN0, IRGN0, SH1, ORGN1, IRGN1} 寄存器位定义了使用 TTBR0_EL1 和 TTBR1_EL1 的 translation table walk 的所访问的内存属性。
 * 在 Secure 和 Non-secure EL1&0 的 stage 1 translation 中，TTBR0_EL1 和 TTBR1_EL1 都包含 ASID (Address Space ID) 位，而 TCR_EL1.A1 寄存器位则用于设定使用哪一个 ASID。(TODO: 此处需要添加 ASID 的简单介绍) 
 
-
+对于 translation table 的格式，在 [Overview of the VMSAv8-64 address translation stages](#) 章节中已经汇总了 lookup level 相关的信息，而在[Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats](#) 章节中则介绍了 translation table entry 的相关内容。
 
 
 ### Translation granule size and associate block and page sizes
