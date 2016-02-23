@@ -68,11 +68,10 @@ Which TTBR is used depends only on the VA presented for translation:
 * If the top bits of the VA are zero, then TTBR0_EL1 is used.
 * If the top bits of the VA are one, then TTBR1_EL1 is used.
 
-It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see Address tagging in AArch64 state on page D4-1638.
+It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see [Address tagging in AArch64 state on page D4-1638](#).
 
 > **NOTE:**
-The handling of the Contiguous bit can mean that the boundary between the translation regions defined by the
-TCR_EL1.TnSZ values and the region for which an access generates a Translation fault is wider than shown in Figure D4-15. That is, if the descriptor for an access to the region shown as generating a fault has the Contiguous bit set to 1, the access might not generate a fault. Possible translation table registers programming errors on page D4-1673 describes this possibility.
+The handling of the Contiguous bit can mean that the boundary between the translation regions defined by the TCR_EL1.TnSZ values and the region for which an access generates a Translation fault is wider than shown in Figure D4-15. That is, if the descriptor for an access to the region shown as generating a fault has the Contiguous bit set to 1, the access might not generate a fault. Possible translation table registers programming errors on page D4-1673 describes this possibility.
 
 Example D4-3 on page D4-1671 shows a typical application of this VA split.
 
