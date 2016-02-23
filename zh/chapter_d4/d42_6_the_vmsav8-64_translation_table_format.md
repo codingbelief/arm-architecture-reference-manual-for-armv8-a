@@ -56,7 +56,8 @@ If a supplied input address is larger than the configured input address size, a 
 > **NOTE:**
 Larger translation granule sizes typically requires fewer levels of translation tables to translate a particular size of virtual address.
 
-For the TCR programming requirements for the initial lookup, see Overview of the VMSAv8-64 address translation stages on page D4-1658.
+For the TCR programming requirements for the initial lookup, see [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
+
 
 ### Selection between TTBR0 and TTBR1
 
