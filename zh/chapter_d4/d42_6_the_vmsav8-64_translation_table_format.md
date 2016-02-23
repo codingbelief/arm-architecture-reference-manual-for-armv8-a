@@ -97,6 +97,7 @@ The minimum TnSZ value is 16, corresponding to the maximum input address range o
 
 
 Example D4-4 Maximum VA ranges for EL1&0 stage 1 translations
+
 ---
 
 The maximum VA subranges correspond to T0SZ and T1SZ each having the minimum value of 16. In this case the subranges are:
