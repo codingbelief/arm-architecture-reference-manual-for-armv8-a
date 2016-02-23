@@ -53,7 +53,7 @@ For the initial lookup level:
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
-> **NOTE:**
+> **NOTE:**  
 Larger translation granule sizes typically requires fewer levels of translation tables to translate a particular size of virtual address.
 
 For the TCR programming requirements for the initial lookup, see [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
@@ -75,7 +75,7 @@ Which TTBR is used depends only on the VA presented for translation:
 
 It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see [Address tagging in AArch64 state on page D4-1638](#).
 
-> **NOTE:**
+> **NOTE:**  
 The handling of the Contiguous bit can mean that the boundary between the translation regions defined by the TCR_EL1.TnSZ values and the region for which an access generates a Translation fault is wider than shown in Figure D4-15. That is, if the descriptor for an access to the region shown as generating a fault has the Contiguous bit set to 1, the access might not generate a fault. Possible translation table registers programming errors on page D4-1673 describes this possibility.
 
 Example D4-3 on page D4-1671 shows a typical application of this VA split.
@@ -131,7 +131,7 @@ Where a stage 2 translation would require 16 entries or fewer in its top-level t
 
 In addition, when using the 16KB translation granule and requiring a 48-bit input address size for the stage 2 translations, lookup must start with two concatenated translation tables at level 1.
 
-> **NOTE:**
+> **NOTE:**  
 This translation scheme:
 * Avoids the overhead of an additional level of translation.
 * Requires the software that is defining the translation to:
@@ -159,7 +159,7 @@ As an example of the concatenation of translation tables at the initial lookup l
 
 ![](table_d4_24.png)
 
-> **NOTE:**
+> **NOTE:**  
 Because concatenation is permitted only for a stage 2 translation, the input addresses in the table are IPAs.
 
 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) identifies all of the possible uses of concatenation. In all cases, the block of concatenated translation tables must be aligned to the block size.
@@ -194,7 +194,7 @@ The architecture guarantees that misprogramming of the Contiguous bit cannot pro
 * Software executing at EL1 or EL0 accessing regions of physical memory with attributes or permissions that are not possible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
 * Software executing in Non-secure state accessing Secure physical memory.
 
-> **NOTE:**
+> **NOTE:**  
 Hardware implementations must ensure that use of the Contiguous bit cannot provide a mechanism for avoiding output address range checking. This might occur if a Contiguous bit block size of 0.5GB or 1GB is used in a system with the output address size configured to 4GB. The architecture permits the implemented mechanism for preventing any avoidance of output address range checking to suppress the use of the Contiguous bit for such entries in such a system.
 
 Where the Contiguous bit is used to mark a set of blocks as contiguous, if the address range translated by a set of blocks marked as contiguous is larger than the size of the input address supported at a stage of translation used to translate that address at that stage of translation, as defined by the TCR.TxSZ field, then this is a programming error. An implementation is permitted, but not required, to:
