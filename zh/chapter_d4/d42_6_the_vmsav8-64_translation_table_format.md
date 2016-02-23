@@ -171,6 +171,7 @@ If one or more of the following errors is made in programming the translation ta
 Such misprogramming of the translation tables means the output address, memory permissions, or attributes for a lookup might be corrupted, and might be equal to values that are not consistent with any of the programmed translation table values.
 
 In some implementations, such misprogramming might also give rise to a TLB Conflict abort.
+
 The architecture guarantees that misprogramming of the Contiguous bit cannot provide a mechanism for any of the following to occur:
 * Software executing at EL1 or EL0 accessing regions of physical memory that are not accessible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
 * Software executing at EL1 or EL0 accessing regions of physical memory with attributes or permissions that are not possible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
