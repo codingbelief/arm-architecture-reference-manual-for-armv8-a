@@ -28,6 +28,7 @@ Bit[1] of a translation table descriptor identifies whether the descriptor is a 
 * The 4KB granule size supports block descriptors only in level 1and level 2 translation tables.
 * The 16KB and 64KB granule sizes support block descriptors only in level2 translation tables,
 Setting bit[1] of a descriptor to 0 in a translation table that does not support block descriptors gives a Translation fault.
+
 For translations managed from AArch64 state, the following tables expand the information for each granule size, showing for each lookup level and when accessing a single translation table:
 * The maximum IA size, and the address bits that are resolved for that maximum size.
 * The maximum OA range resolved by the translation table descriptors at this level, and the corresponding
