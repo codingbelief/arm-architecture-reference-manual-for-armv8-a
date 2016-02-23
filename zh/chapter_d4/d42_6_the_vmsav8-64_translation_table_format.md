@@ -167,6 +167,7 @@ If one or more of the following errors is made in programming the translation ta
 * One or more of the contiguous translation table entries does not have the Contiguous bit set to 1.
 * One or more of the contiguous translation table entries holds an output address that is not consistent with all of the entries pointing to the same aligned contiguous address range.
 * The attributes and permissions of the contiguous entries are not all the same.
+
 Such misprogramming of the translation tables means the output address, memory permissions, or attributes for a lookup might be corrupted, and might be equal to values that are not consistent with any of the programmed translation table values.
 In some implementations, such misprogramming might also give rise to a TLB Conflict abort.
 The architecture guarantees that misprogramming of the Contiguous bit cannot provide a mechanism for any of the following to occur:
