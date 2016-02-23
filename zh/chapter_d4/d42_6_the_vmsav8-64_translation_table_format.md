@@ -82,6 +82,7 @@ Example D4-3 on page D4-1671 shows a typical application of this VA split.
 Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls
 
 ---
+
 **TTBR0_EL1**  
 Used for process-specific addresses.
 Each process maintains a separate level 1 translation table. On a context switch:
