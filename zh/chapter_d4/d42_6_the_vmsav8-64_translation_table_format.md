@@ -87,6 +87,7 @@ Each process maintains a separate level 1 translation table. On a context switch
 
 **TTBR1_EL1**
 Used for operating system and I/O addresses, that do not change on a context switch.
+
 ---
 
 For each VA subrange, the input address size is 2(64-TnSZ), where TnSZ is one of TCR_EL1.{T0SZ, T1SZ}, This means the two VA subranges are:
