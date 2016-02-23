@@ -12,10 +12,10 @@ For this translation table format, [Overview of the VMSAv8-64 address translatio
 
 The following subsections describe the use of this translation table format:
 
-* Translation granule size and associate block and page sizes on page D4-1668.
-* Selection between TTBR0 and TTBR1 on page D4-1670.
-* Concatenated translation tables for the initial stage 2 lookup on page D4-1671.
-* Possible translation table registers programming errors on page D4-1673.
+* [Translation granule size and associate block and page sizes on page D4-1668](#).
+* [Selection between TTBR0 and TTBR1 on page D4-1670](#).
+* [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
+* [Possible translation table registers programming errors on page D4-1673](#).
 
 ### Translation granule size and associate block and page sizes
 
