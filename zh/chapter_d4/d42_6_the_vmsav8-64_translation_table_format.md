@@ -162,6 +162,7 @@ For a stage 2 translation, the programming of the VTCR_EL2.{T0SZ, SL0} fields mu
 
 #### Misprogramming of the Contiguous bit
 For more information about the Contiguous bit, and the range of translation table entries that must have the bit set to 1 to mark the entries as contiguous, see [The Contiguous bit on page D4-1715](#).
+
 If one or more of the following errors is made in programming the translation tables, the TLB might contain overlapping entries:
 * One or more of the contiguous translation table entries does not have the Contiguous bit set to 1.
 * One or more of the contiguous translation table entries holds an output address that is not consistent with all of the entries pointing to the same aligned contiguous address range.
