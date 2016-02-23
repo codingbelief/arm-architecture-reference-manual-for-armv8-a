@@ -22,7 +22,7 @@ The following subsections describe the use of this translation table format:
 
 对于 AArch64 运行态下的一个 Exception level 中的地址转换过程：
 
-* 
+* TCR_EL1.{SH0, ORGN0, IRGN0, SH1, ORGN1, IRGN1} 寄存器位定义了
 
 
 ### Translation granule size and associate block and page sizes
