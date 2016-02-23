@@ -91,8 +91,8 @@ Used for operating system and I/O addresses, that do not change on a context swi
 ---
 
 For each VA subrange, the input address size is 2(64-TnSZ), where TnSZ is one of TCR_EL1.{T0SZ, T1SZ}, This means the two VA subranges are:
-Lower VA subrange 0x0000_0000_0000_0000 to (2(64-T0SZ) - 1).
-Upper VA subrange (264 - 2(64-T1SZ)) to 0xFFFF_FFFF_FFFF_FFFF.
+**Lower VA subrange** 0x0000_0000_0000_0000 to (2(64-T0SZ) - 1).
+**Upper VA subrange** (264 - 2(64-T1SZ)) to 0xFFFF_FFFF_FFFF_FFFF.
 The minimum TnSZ value is 16, corresponding to the maximum input address range of 48 bits. Example D4-4 shows the two VA subranges when T0SZ and T1SZ are both set to this minimum value.
 
 
