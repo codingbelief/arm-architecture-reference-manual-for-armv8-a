@@ -150,7 +150,7 @@ As an example of the concatenation of translation tables at the initial lookup l
 > **NOTE:**
 Because concatenation is permitted only for a stage 2 translation, the input addresses in the table are IPAs.
 
-Overview of the VMSAv8-64 address translation stages on page D4-1658 identifies all of the possible uses of concatenation. In all cases, the block of concatenated translation tables must be aligned to the block size.
+[Overview of the VMSAv8-64 address translation stages on page D4-1658](#) identifies all of the possible uses of concatenation. In all cases, the block of concatenated translation tables must be aligned to the block size.
 
 ### Possible translation table registers programming errors
 
