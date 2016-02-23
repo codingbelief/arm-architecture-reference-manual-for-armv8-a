@@ -49,7 +49,7 @@ Table D4-21 shows this information for the 4KB translation granule size, Table D
 
 For the initial lookup level:
 * If the IA range specified by the TCR.TxSZ field is smaller than the maximum size shown in these table then this reduces the number of addresses in the table and therefore reduces the table size. The smaller translation table is aligned to its table size.
-* For stage 2 translations, multiple translation tables can be concatenated to extend the maximum IA size beyond that shown in these tables. For more information see the stage 2 translation overviews in Overview of the VMSAv8-64 address translation stages on page D4-1658 and Concatenated translation tables for the initial stage 2 lookup on page D4-1671.
+* For stage 2 translations, multiple translation tables can be concatenated to extend the maximum IA size beyond that shown in these tables. For more information see the stage 2 translation overviews in [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) and [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
