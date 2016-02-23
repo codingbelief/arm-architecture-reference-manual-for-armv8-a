@@ -27,6 +27,7 @@ Table D4-20 shows the supported granule sizes, block sizes and page sizes, for t
 Bit[1] of a translation table descriptor identifies whether the descriptor is a block descriptor, and:
 * The 4KB granule size supports block descriptors only in level 1 and level 2 translation tables.
 * The 16KB and 64KB granule sizes support block descriptors only in level2 translation tables,
+
 Setting bit[1] of a descriptor to 0 in a translation table that does not support block descriptors gives a Translation fault.
 
 For translations managed from AArch64 state, the following tables expand the information for each granule size, showing for each lookup level and when accessing a single translation table:
