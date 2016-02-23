@@ -28,6 +28,10 @@ The following subsections describe the use of this translation table format:
 对于 translation table 的格式，在 [Overview of the VMSAv8-64 address translation stages](#) 章节中已经汇总了 lookup level 相关的信息，而在[Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats](#) 章节中则介绍了 translation table entry 的相关内容。
 
 本章节主要介绍以下几个方面的内容：
+* [Translation granule size and associate block and page sizes on page D4-1668](#).
+* [Selection between TTBR0 and TTBR1 on page D4-1670](#).
+* [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
+* [Possible translation table registers programming errors on page D4-1673](#).
 
 
 ### Translation granule size and associate block and page sizes
