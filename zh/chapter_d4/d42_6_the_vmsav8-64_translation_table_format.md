@@ -8,6 +8,7 @@ the translation table walk, for each of TTBR0_EL1 and TTBR1_EL1.
 an ASID field, and the TCR_EL1.A1 field selects which ASID to use.
 
 For this translation table format, [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) summarizes the lookup levels, and [Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats on page D4-1696](#) describes the translation table entries.
+
 The following subsections describe the use of this translation table format:
 
 * Translation granule size and associate block and page sizes on page D4-1668.
