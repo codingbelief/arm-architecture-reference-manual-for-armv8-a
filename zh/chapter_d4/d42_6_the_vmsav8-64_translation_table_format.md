@@ -23,7 +23,7 @@ The following subsections describe the use of this translation table format:
 对于 AArch64 运行态下的一个 Exception level 中的地址转换过程：
 
 * TCR_EL1.{SH0, ORGN0, IRGN0, SH1, ORGN1, IRGN1} 寄存器位定义了使用 TTBR0_EL1 和 TTBR1_EL1 的 translation table walk 的所访问的内存属性。
-* 
+* 在 Secure 和 Non-secure EL1&0 的 stage 1 translation 中，TTBR0_EL1 和 TTBR1_EL1 都包含 ASID (Address Space ID) 位，而 TCR_EL1.A1 寄存器位则用于设定使用哪一个 ASID。(TODO: 此处需要添加 ASID 的介绍) 
 
 ### Translation granule size and associate block and page sizes
 
