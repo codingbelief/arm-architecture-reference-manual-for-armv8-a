@@ -17,6 +17,7 @@ The following subsections describe the use of this translation table format:
 * [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
 * [Possible translation table registers programming errors on page D4-1673](#).
 
+
 ### Translation granule size and associate block and page sizes
 
 Table D4-20 shows the supported granule sizes, block sizes and page sizes, for the different granule sizes. For completeness, this table includes information for AArch32 state. In the table, the OA bit ranges are the OA bits that the translation table descriptor specifies to address the block or page of memory, in an implementation that supports a 48-bit OA range.
