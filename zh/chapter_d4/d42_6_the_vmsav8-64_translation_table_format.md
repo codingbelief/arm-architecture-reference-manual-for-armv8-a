@@ -18,7 +18,7 @@ The following subsections describe the use of this translation table format:
 * [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
 * [Possible translation table registers programming errors on page D4-1673](#).
 
-
+本小节主要描述 VMSAv8-64 的 translation table 的格式。
 
 ### Translation granule size and associate block and page sizes
 
