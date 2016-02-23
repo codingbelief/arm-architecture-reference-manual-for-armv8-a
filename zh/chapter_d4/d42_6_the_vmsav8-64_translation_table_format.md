@@ -175,6 +175,7 @@ For a stage 2 translation, the programming of the VTCR_EL2.{T0SZ, SL0} fields mu
 For more information about the Contiguous bit, and the range of translation table entries that must have the bit set to 1 to mark the entries as contiguous, see [The Contiguous bit on page D4-1715](#).
 
 If one or more of the following errors is made in programming the translation tables, the TLB might contain overlapping entries:
+
 * One or more of the contiguous translation table entries does not have the Contiguous bit set to 1.
 * One or more of the contiguous translation table entries holds an output address that is not consistent with all of the entries pointing to the same aligned contiguous address range.
 * The attributes and permissions of the contiguous entries are not all the same.
@@ -184,6 +185,7 @@ Such misprogramming of the translation tables means the output address, memory p
 In some implementations, such misprogramming might also give rise to a TLB Conflict abort.
 
 The architecture guarantees that misprogramming of the Contiguous bit cannot provide a mechanism for any of the following to occur:
+
 * Software executing at EL1 or EL0 accessing regions of physical memory that are not accessible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
 * Software executing at EL1 or EL0 accessing regions of physical memory with attributes or permissions that are not possible by programming the translation tables, from EL1, with arbitrary chosen values that do not misprogram the Contiguous bit.
 * Software executing in Non-secure state accessing Secure physical memory.
@@ -192,6 +194,7 @@ The architecture guarantees that misprogramming of the Contiguous bit cannot pro
 Hardware implementations must ensure that use of the Contiguous bit cannot provide a mechanism for avoiding output address range checking. This might occur if a Contiguous bit block size of 0.5GB or 1GB is used in a system with the output address size configured to 4GB. The architecture permits the implemented mechanism for preventing any avoidance of output address range checking to suppress the use of the Contiguous bit for such entries in such a system.
 
 Where the Contiguous bit is used to mark a set of blocks as contiguous, if the address range translated by a set of blocks marked as contiguous is larger than the size of the input address supported at a stage of translation used to translate that address at that stage of translation, as defined by the TCR.TxSZ field, then this is a programming error. An implementation is permitted, but not required, to:
+
 * Treat such a block within a contiguous set of blocks as causing a Translation fault, even though the block is valid, and the address accessed within that block is within the size of the input address supported at a stage of translation, as defined by the TCR.TxSZ field.
 * Treat such a block within a contiguous set of blocks as not causing a Translation fault, even though the address accessed within that block is outside the size of the input address supported at a stage of translation, as defined by the TCR.TxSZ field, provided that both of the following apply:
     - The block is valid.
