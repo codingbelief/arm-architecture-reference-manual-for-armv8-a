@@ -107,8 +107,7 @@ Upper VA subrange 0xFFFF_0000_0000_0000 to 0xFFFF_FFFF_FFFF_FFFF.
 ---
 
 Figure D4-15 on page D4-1670 indicates the effect of varying the TnSZ values.
-As described in Overview of the VMSAv8-64 address translation stages on page D4-1658, the TnSZ values also
-determine the initial lookup level for the translation.
+As described in Overview of the VMSAv8-64 address translation stages on page D4-1658, the TnSZ values also determine the initial lookup level for the translation.
 
 ### Concatenated translation tables for the initial stage 2 lookup
 
