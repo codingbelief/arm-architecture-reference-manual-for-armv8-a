@@ -1,6 +1,7 @@
 ## D4.2.6 The VMSAv8-64 translation table format
 
 This section provides the full description of the VMSAv8-64 translation table format, its use for address translations that are controlled by an Exception level using AArch64.
+
 For the address translations that are controlled by an Exception level that is using AArch64:
 * The TCR_EL1.{SH0, ORGN0, IRGN0, SH1, ORGN1, IRGN1} fields define memory region attributes for
 the translation table walk, for each of TTBR0_EL1 and TTBR1_EL1.
