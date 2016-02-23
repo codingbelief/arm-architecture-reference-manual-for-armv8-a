@@ -35,6 +35,7 @@ For translations managed from AArch64 state, the following tables expand the inf
 * The maximum OA range resolved by the translation table descriptors at this level, and the corresponding
 memory region size.
 * The maximum size of the translation table. This is the size required for the maximum IA size.
+
 Table D4-21 shows this information for the 4KB translation granule size, Table D4-22 on page D4-1669 shows this information for the 16KB translation granule size, and Table D4-23 on page D4-1669 shows this information for the 64KB translation granule size.
 
 ![](table_d4_21_1.png)
