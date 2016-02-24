@@ -37,7 +37,7 @@ For translations managed from AArch64 state, the following tables expand the inf
 后续的几个表格中，描述了在 AArch64 运行态下的 translation 的各个 level 下 的 lookup 在不同 granule size 下的相关信息，包括：
 * 所支持的最大的 IA 大小，以及在该 IA 大小下，该 level 的 lookup 所解析的地址位。
 * 该 level 上的 translation table descriptor 所转换能的最大的 OA 范围，以及其所对应的 memory region 大小。
-* 
+* 解析最大 IA 所需要的 translation table 的大小。
 
 * The maximum IA size, and the address bits that are resolved for that maximum size.
 * The maximum OA range resolved by the translation table descriptors at this level, and the corresponding memory region size.
