@@ -39,8 +39,6 @@ For translations managed from AArch64 state, the following tables expand the inf
 * 该 level 上的 translation table descriptor 所转换能的最大的 OA 范围，以及其所对应的 memory region 大小。
 * 解析最大 IA 所需要的 translation table 的大小。
 
-Table D4-21 shows this information for the 4KB translation granule size, Table D4-22 on page D4-1669 shows this information for the 16KB translation granule size, and Table D4-23 on page D4-1669 shows this information for the 64KB translation granule size.
-
 ![](table_d4_21_1.png)
 ![](table_d4_21_2.png)
 
