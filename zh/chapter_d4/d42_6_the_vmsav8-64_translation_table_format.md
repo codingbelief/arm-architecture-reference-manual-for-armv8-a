@@ -28,7 +28,7 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 * 使用 4KB granule size 时，只有在 level 1 和 2 的 translation table 中支持 block descriptor。
 * 使用 16KB 和 64KB granule size 时，只有在 level 2 的 Translation table 支持  block descriptor。
 
-(TODO: 解释块描述符)
+(TODO: 解释 block descriptor 的)
 
 Setting bit[1] of a descriptor to 0 in a translation table that does not support block descriptors gives a Translation fault.
 
