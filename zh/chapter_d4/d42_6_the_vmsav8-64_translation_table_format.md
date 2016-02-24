@@ -28,6 +28,8 @@ Translation table 描述符的 bit[1] 用于指示该描述符是否为块描述
 * 使用 4KB granule size 时，只有在 level 1 和 2 的 translation table 中支持块描述符。
 * 使用 16KB 和 64KB granule size 时，只有在 level 2 的 Translation table 支持块描述符。
 
+(TODO: 解释块描述符)
+
 Setting bit[1] of a descriptor to 0 in a translation table that does not support block descriptors gives a Translation fault.
 
 For translations managed from AArch64 state, the following tables expand the information for each granule size, showing for each lookup level and when accessing a single translation table:
