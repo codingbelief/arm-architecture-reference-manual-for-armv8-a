@@ -51,6 +51,7 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 如果给出的输入地址大于所配置的大小，那么就会触发 Translation fault。
 
 > **NOTE:**  
+对于特定的虚拟地址，如果 granule 
 Larger translation granule sizes typically requires fewer levels of translation tables to translate a particular size of virtual address.
 
 For the TCR programming requirements for the initial lookup, see [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
