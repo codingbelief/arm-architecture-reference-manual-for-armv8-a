@@ -49,7 +49,7 @@ For the initial lookup level:
 
 对于第一次 lookup 所在的 level：
 
-* 
+* TCR.TxSZ 寄存器位所设定的 IA 范围小于上面表格中的最大值时，
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
