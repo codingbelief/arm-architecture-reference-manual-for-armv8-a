@@ -27,7 +27,7 @@ Bit[1] of a translation table descriptor identifies whether the descriptor is a 
 
 Translation table 描述符的 bit[1] 用于指示该描述符是否为块描述符 (block descriptor)，另外：
 
-* 
+* 使用 4KB granule size 时，只有在 level 1 和 2 的 translation table 中支持块描述符。
 * The 4KB granule size supports block descriptors only in level 1 and level 2 translation tables.
 * The 16KB and 64KB granule sizes support block descriptors only in level2 translation tables,
 
