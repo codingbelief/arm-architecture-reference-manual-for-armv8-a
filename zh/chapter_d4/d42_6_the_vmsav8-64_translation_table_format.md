@@ -52,7 +52,6 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 
 > **NOTE:**  
 对于特定大小的虚拟地址，如果使用较大的 granule size，相对于使用较小的 granule size 可以较少解析地址所需要的 lookup。
-Larger translation granule sizes typically requires fewer levels of translation tables to translate a particular size of virtual address.
 
 For the TCR programming requirements for the initial lookup, see [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
 
