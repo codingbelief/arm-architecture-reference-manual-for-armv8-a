@@ -43,10 +43,6 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 ![](table_d4_22.png)
 ![](table_d4_23.png)
 
-For the initial lookup level:
-* If the IA range specified by the TCR.TxSZ field is smaller than the maximum size shown in these table then this reduces the number of addresses in the table and therefore reduces the table size. The smaller translation table is aligned to its table size.
-* For stage 2 translations, multiple translation tables can be concatenated to extend the maximum IA size beyond that shown in these tables. For more information see the stage 2 translation overviews in [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) and [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#).
-
 对于第一次 lookup 所在的 level：
 
 * TCR.TxSZ 寄存器位所设定的 IA 范围小于上面表格中的最大值时，translation table 中保存的 descriptor 也会小于最大值，相应的 translation table 的大小也会变小。
