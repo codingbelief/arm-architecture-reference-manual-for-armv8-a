@@ -50,6 +50,8 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
+如果给出的输入地址大于所配置的大小，那么就会触发 Translation fault。
+
 > **NOTE:**  
 Larger translation granule sizes typically requires fewer levels of translation tables to translate a particular size of virtual address.
 
