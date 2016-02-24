@@ -29,8 +29,6 @@ Translation table 描述符的 bit[1] 用于指示该描述符是否为块描述
 
 * 使用 4KB granule size 时，只有在 level 1 和 2 的 translation table 中支持块描述符。
 * 使用 16KB 和 64KB granule size 时，只有在 level 2 的 Translation table 支持块描述符。
-* The 4KB granule size supports block descriptors only in level 1 and level 2 translation tables.
-* The 16KB and 64KB granule sizes support block descriptors only in level2 translation tables,
 
 Setting bit[1] of a descriptor to 0 in a translation table that does not support block descriptors gives a Translation fault.
 
