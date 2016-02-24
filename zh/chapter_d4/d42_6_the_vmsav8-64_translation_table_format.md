@@ -46,16 +46,14 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 对于第一次 lookup 所在的 level：
 
 * TCR.TxSZ 寄存器位所设定的 IA 范围小于上面表格中的最大值时，translation table 中保存的 descriptor 也会小于最大值，相应的 translation table 的大小也会变小。
-* 对于 stage 2 translation，由于可以进行 translation table 的连接操作，其解析的 IA 大小可以超过上面表格中的值。更多的信息可以参考 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) and [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#) 章节。
+* 对于 stage 2 translation，由于可以进行 translation table 的连接操作，其解析的 IA 大小可以超过上面表格中的值。更多的信息可以参考 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) and [Concatenated translation tables for the initial stage 2 lookup](#) 章节。
 
 如果给出的输入地址大于所配置的大小，那么就会触发 Translation fault。
 
 > **NOTE:**  
 对于特定大小的虚拟地址，如果使用较大的 granule size，相对于使用较小的 granule size 可以较少解析地址所需要的 lookup 次数。
 
-For the TCR programming requirements for the initial lookup, see [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
-
-关于 TCR 寄存器中对 initial lookup 的配置，可以参考 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) 章节。
+关于 TCR 寄存器中对 initial lookup 的配置，可以参考 [Overview of the VMSAv8-64 address translation stages](#) 章节。
 
 ### Selection between TTBR0 and TTBR1
 
