@@ -49,7 +49,8 @@ For the initial lookup level:
 
 对于第一次 lookup 所在的 level：
 
-* TCR.TxSZ 寄存器位所设定的 IA 范围小于上面表格中的最大值时，
+* TCR.TxSZ 寄存器位所设定的 IA 范围小于上面表格中的最大值时，translation table 中保存的 descriptor 也会小于最大值，相应的 translation table 的大小也会变小。
+* 
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
