@@ -23,7 +23,7 @@ Table D4-20 描述了在输出地址为 48 位时，不同 granule size 下的 b
 
 ![](table_d4_20.png)
 
-Translation table 描述符的 bit[1] 用于指示该描述符是否为块描述符 (block descriptor)，另外：
+Translation table 中的 descriptor  bit[1] 用于指示该描述符是否为 block descriptor，另外：
 
 * 使用 4KB granule size 时，只有在 level 1 和 2 的 translation table 中支持块描述符。
 * 使用 16KB 和 64KB granule size 时，只有在 level 2 的 Translation table 支持块描述符。
