@@ -34,6 +34,8 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 
 For translations managed from AArch64 state, the following tables expand the information for each granule size, showing for each lookup level and when accessing a single translation table:
 
+
+
 * The maximum IA size, and the address bits that are resolved for that maximum size.
 * The maximum OA range resolved by the translation table descriptors at this level, and the corresponding
 memory region size.
