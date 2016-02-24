@@ -50,7 +50,7 @@ For the initial lookup level:
 对于第一次 lookup 所在的 level：
 
 * TCR.TxSZ 寄存器位所设定的 IA 范围小于上面表格中的最大值时，translation table 中保存的 descriptor 也会小于最大值，相应的 translation table 的大小也会变小。
-* 
+* 对于 stage 2 translation，由于可以进行 translation table 的连接操作，其解析的 IA 大小可以超过上面表格中的值。更多的信息可以参考 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) and [Concatenated translation tables for the initial stage 2 lookup on page D4-1671](#) 章节。
 
 If a supplied input address is larger than the configured input address size, a Translation fault is generated.
 
