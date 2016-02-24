@@ -32,7 +32,7 @@ Translation table 描述符的 bit[1] 用于指示该描述符是否为块描述
 
 Setting bit[1] of a descriptor to 0 in a translation table that does not support block descriptors gives a Translation fault.
 
-
+如果将不支持 block descriptor 的 translation table 中的 descriptor 的 bit[1] 设为 0，将会触发 Translation fault。
 
 For translations managed from AArch64 state, the following tables expand the information for each granule size, showing for each lookup level and when accessing a single translation table:
 
