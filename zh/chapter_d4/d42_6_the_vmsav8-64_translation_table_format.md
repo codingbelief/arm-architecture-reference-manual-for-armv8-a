@@ -25,6 +25,8 @@ Table D4-20 描述了在输出地址为 48 位时，不同 granule size 下的 b
 
 Bit[1] of a translation table descriptor identifies whether the descriptor is a block descriptor, and:
 
+
+
 * The 4KB granule size supports block descriptors only in level 1 and level 2 translation tables.
 * The 16KB and 64KB granule sizes support block descriptors only in level2 translation tables,
 
