@@ -21,6 +21,8 @@
 
 Table D4-20 shows the supported granule sizes, block sizes and page sizes, for the different granule sizes. For completeness, this table includes information for AArch32 state. In the table, the OA bit ranges are the OA bits that the translation table descriptor specifies to address the block or page of memory, in an implementation that supports a 48-bit OA range.
 
+Table D4-20 描述了在输出地址为 48 位时，不同 granule size 下的 block size 和 page size。
+
 ![](table_d4_20.png)
 
 Bit[1] of a translation table descriptor identifies whether the descriptor is a block descriptor, and:
