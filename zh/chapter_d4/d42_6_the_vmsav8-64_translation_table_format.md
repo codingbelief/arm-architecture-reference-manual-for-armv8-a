@@ -80,7 +80,7 @@ The handling of the Contiguous bit can mean that the boundary between the transl
 
 Example D4-3 描述了 VA 分割的一个例子.
 
-Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls
+**Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 controls**
 
 ---
 
