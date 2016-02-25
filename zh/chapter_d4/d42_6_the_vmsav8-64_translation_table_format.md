@@ -61,7 +61,7 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 Every translation table walk starts by accessing the translation table addressed by the TTBR for the stage 1 translation for the required translation regime.
 For the EL1&0 translation regime, the VA range is split into two subranges as shown in Figure D4-15, and:
 
-在 translation regime 的 stage 1 translation 中，translation table walk 第一个访问的 translation table 的地址都是从 TTBR 中得到的。在 EL1&0 translation regime 中， VA 被分割为两个区块，在这种场景下：
+在 translation regime 的 stage 1 translation 中，translation table walk 第一个访问的 translation table 的地址都是从 TTBR 中得到的。在 EL1&0 translation regime 中， VA 被分割为两个 range，在这种场景下：
 
 * TTBR0_EL1 points to the initial translation table for the lower VA subrange, that starts at address 0x0000_0000_0000_0000,
 * 从 0x0000_0000_0000_0000 开始的 VA range 的 initial translation table 的基地址保存在 TTBR0_EL1 中
