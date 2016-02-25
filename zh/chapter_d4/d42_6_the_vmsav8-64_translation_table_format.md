@@ -73,8 +73,6 @@ For the EL1&0 translation regime, the VA range is split into two subranges as sh
 * 如果 VA 的 top bits 都为 0，那么将使用 TTBR0_EL1
 * 如果 VA 的 top bits 都为 1，那么将使用 TTBR1_EL1
 
-It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see [Address tagging in AArch64 state on page D4-1638](#).
-
 top bits 根据配置可以是 VA[63:56] 或者 VA[55:48]，更多信息可以参考 [Address tagging in AArch64 state](#) 章节。
 
 > **NOTE:**  
