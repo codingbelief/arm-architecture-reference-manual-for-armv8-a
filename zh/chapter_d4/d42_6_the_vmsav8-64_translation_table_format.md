@@ -55,6 +55,7 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 
 关于 TCR 寄存器中对 initial lookup 的配置，可以参考 [Overview of the VMSAv8-64 address translation stages](#) 章节。
 
+
 ### Selection between TTBR0 and TTBR1
 
 Every translation table walk starts by accessing the translation table addressed by the TTBR for the stage 1 translation for the required translation regime.
