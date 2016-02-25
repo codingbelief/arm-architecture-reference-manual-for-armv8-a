@@ -63,7 +63,6 @@ For the EL1&0 translation regime, the VA range is split into two subranges as sh
 
 在 translation regime 的 stage 1 translation 中，translation table walk 第一个访问的 translation table 的地址都是从 TTBR 中得到的。在 EL1&0 translation regime 中， VA 被分割为两个 range，在这种场景下：
 
-* TTBR0_EL1 points to the initial translation table for the lower VA subrange, that starts at address 0x0000_0000_0000_0000,
 * 从 0x0000_0000_0000_0000 开始的 VA range 的 initial translation table 的基地址保存在 TTBR0_EL1 中。
 * TTBR1_EL1 points to the initial translation table for the upper VA subrange, that runs up to address 0xFFFF_FFFF_FFFF_FFFF.
 * 以 0xFFFF_FFFF_FFFF_FFFF 结束的 VA range 的 initial translation table 的基地址保存在 TTBR1_EL1 中。
