@@ -72,6 +72,10 @@ Which TTBR is used depends only on the VA presented for translation:
 * If the top bits of the VA are zero, then TTBR0_EL1 is used.
 * If the top bits of the VA are one, then TTBR1_EL1 is used.
 
+在 translation 中，最终决定使用哪一个 TTBR 的，是需要进行转换的 VA：
+
+* 
+
 It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see [Address tagging in AArch64 state on page D4-1638](#).
 
 > **NOTE:**  
