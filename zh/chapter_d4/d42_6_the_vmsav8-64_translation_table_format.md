@@ -87,6 +87,7 @@ Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 
 **TTBR0_EL1**  
 Used for process-specific addresses.
 Each process maintains a separate level 1 translation table. On a context switch:
+每一个进程拥有一个独立的 level 1 translation table，在进行上下文切换时：
 * TTBR0_EL1 is updated to point to the level 1 translation table for the new context
 * TCR_EL1 is updated if this change changes the size of the translation table
 * CONTEXTIDR_EL1 is updated.
