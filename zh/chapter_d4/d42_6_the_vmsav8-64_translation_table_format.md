@@ -75,7 +75,7 @@ For the EL1&0 translation regime, the VA range is split into two subranges as sh
 
 It is configurable whether this determination depends on the values of VA[63:56] or on the values of VA[55:48], see [Address tagging in AArch64 state on page D4-1638](#).
 
-top bits 根据配置可以是 VA[63:56] 或者 VA[55:48]
+top bits 根据配置可以是 VA[63:56] 或者 VA[55:48]，更多信息可以参考 [Address tagging in AArch64 state](#) 章节
 
 > **NOTE:**  
 The handling of the Contiguous bit can mean that the boundary between the translation regions defined by the TCR_EL1.TnSZ values and the region for which an access generates a Translation fault is wider than shown in Figure D4-15. That is, if the descriptor for an access to the region shown as generating a fault has the Contiguous bit set to 1, the access might not generate a fault. [Possible translation table registers programming errors on page D4-1673](#) describes this possibility.
