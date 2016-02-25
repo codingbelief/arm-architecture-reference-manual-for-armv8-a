@@ -98,7 +98,7 @@ Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 
 
 For each VA subrange, the input address size is 2^(64-TnSZ), where TnSZ is one of TCR_EL1.{T0SZ, T1SZ}, This means the two VA subranges are:
 
-对于每个 VA subrange，
+对于每个 VA subrange，输入地址的大小为 2^(64-TnSZ)，其中 TnSZ 为 TCR_EL1.T0SZ 或者 TCR_EL1.T1SZ
 
 **Lower VA subrange** 0x0000_0000_0000_0000 to (2^(64-T0SZ) - 1).
 
