@@ -111,7 +111,7 @@ Example D4-4 Maximum VA ranges for EL1&0 stage 1 translations
 ---
 
 The maximum VA subranges correspond to T0SZ and T1SZ each having the minimum value of 16. In this case the subranges are:
-当 T0SZ 和 T1SZ 都设为最小值 16 时，两个 VA subrange 达到最大范围：
+当 T0SZ 和 T1SZ 都设为最小值 16 时，两个 VA subrange 达到最大范围，分别为：
 **Lower VA subrange** 0x0000_0000_0000_0000 to 0x0000_FFFF_FFFF_FFFF. 
 
 **Upper VA subrange** 0xFFFF_0000_0000_0000 to 0xFFFF_FFFF_FFFF_FFFF.
