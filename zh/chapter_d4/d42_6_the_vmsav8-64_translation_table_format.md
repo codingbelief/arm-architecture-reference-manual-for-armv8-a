@@ -93,6 +93,7 @@ Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 
 
 **TTBR1_EL1**  
 Used for operating system and I/O addresses, that do not change on a context switch.
+用于操作系统和 I/O 相关的地址设定，此寄存器不会在上下文切换时改变。
 
 ---
 
