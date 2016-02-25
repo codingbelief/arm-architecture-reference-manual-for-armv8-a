@@ -85,7 +85,7 @@ Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 
 ---
 
 **TTBR0_EL1**  
-用于进程相关的地址转换控制
+用于进程相关的地址
 每一个进程拥有一个独立的 level 1 translation table，在进行上下文切换时：
 * TTBR0_EL1 会被设置为新的进程 level 1 translation table 的基地址。
 * 如果 translation table 的大小发生变化，那么 TCR_EL1 也会相应的更新。
