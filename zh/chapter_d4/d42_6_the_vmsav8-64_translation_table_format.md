@@ -104,7 +104,7 @@ Example D4-3 描述了 VA 分割的一个例子.
 
 TnSZ 的最小值为 16，此时输出地址的范围达到最大，即 48。Example D4-4 描述了在 T0SZ 和 T1SZ 都为 16 时的两个 VA subrange。
 
-Example D4-4 Maximum VA ranges for EL1&0 stage 1 translations
+Example D4-4 Maximum VA ranges for EL1&0 stage 1 translations****
 
 ---
 
