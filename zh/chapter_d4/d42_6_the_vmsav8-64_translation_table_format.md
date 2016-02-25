@@ -91,8 +91,7 @@ Each process maintains a separate level 1 translation table. On a context switch
 * TTBR0_EL1 is updated to point to the level 1 translation table for the new context
 * TTBR0_EL1 会被设置为新的进程 level 1 translation table 的基地址。
 * 如果 translation table 的大小发生变化，那么 TCR_EL1 也会相应的更新。
-* CONTEXTIDR_EL1 (Identifies the current Process Identifier.
-) 会相应的更新。
+* CONTEXTIDR_EL1 (Identifies the current Process Identifier) 会相应的更新。
 * TCR_EL1 is updated if this change changes the size of the translation table
 * CONTEXTIDR_EL1 is updated.
 
