@@ -68,10 +68,6 @@ For the EL1&0 translation regime, the VA range is split into two subranges as sh
 
 ![](figure_d4_15.png)
 
-Which TTBR is used depends only on the VA presented for translation:
-* If the top bits of the VA are zero, then TTBR0_EL1 is used.
-* If the top bits of the VA are one, then TTBR1_EL1 is used.
-
 在 translation 中，最终决定使用哪一个 TTBR 的，是需要进行转换的 VA：
 
 * 如果 VA 的 top bits 都为 0，那么将使用 TTBR0_EL1
