@@ -102,8 +102,6 @@ Example D4-3 描述了 VA 分割的一个例子.
 
 **Upper VA subrange** (2^64 - 2^(64-T1SZ)) to 0xFFFF_FFFF_FFFF_FFFF.
 
-The minimum TnSZ value is 16, corresponding to the maximum input address range of 48 bits. Example D4-4 shows the two VA subranges when T0SZ and T1SZ are both set to this minimum value.
-
 TnSZ 的最小值为 16，此时输出地址的范围达到最大，即 48。Example D4-4 描述了在 T0SZ 和 T1SZ 都为 16 时的两个 VA subrange。
 
 Example D4-4 Maximum VA ranges for EL1&0 stage 1 translations
