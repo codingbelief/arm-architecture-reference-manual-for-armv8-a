@@ -118,6 +118,7 @@ TnSZ 的最小值为 16，此时输出地址的范围达到最大，即 48。Exa
 Figure D4-15 描述了改变 TnSZ 的大小对两个 VA range 的影响。
 
 As described in [Overview of the VMSAv8-64 address translation stages on page D4-1658](#), the TnSZ values also determine the initial lookup level for the translation.
+TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参考 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#)
 
 ### Concatenated translation tables for the initial stage 2 lookup
 
