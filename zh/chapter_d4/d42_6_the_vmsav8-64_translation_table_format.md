@@ -105,6 +105,7 @@ Example D4-3 Example use of the split VA range, and the TTBR0_EL1 and TTBR1_EL1 
 The minimum TnSZ value is 16, corresponding to the maximum input address range of 48 bits. Example D4-4 shows the two VA subranges when T0SZ and T1SZ are both set to this minimum value.
 
 
+
 Example D4-4 Maximum VA ranges for EL1&0 stage 1 translations
 
 ---
