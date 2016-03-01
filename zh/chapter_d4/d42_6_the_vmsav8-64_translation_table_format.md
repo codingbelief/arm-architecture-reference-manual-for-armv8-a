@@ -121,11 +121,13 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 
 ### Concatenated translation tables for the initial stage 2 lookup
 
-[Overview of the VMSAv8-64 address translation stages on page D4-1658](#) introduced the ability to concatenate translation tables for the initial stage 2 translation lookup. This section gives more information about that concatenation.
+[Overview of the VMSAv8-64 address translation stages](#) 章节简单介绍了 initial stage 2 translation lookup 的 concatenate translation table 功能。本小节将更详细的介绍该功能。
 
 Where a stage 2 translation would require 16 entries or fewer in its top-level translation table, the system designer can instead:
 * Require the corresponding number of concatenated translation tables at the next translation level, aligned to the size of the block of concatenated translation tables.
 * Start the translation at that next translation level.
+
+
 
 In addition, when using the 16KB translation granule and requiring a 48-bit input address size for the stage 2 translations, lookup must start with two concatenated translation tables at level 1.
 
