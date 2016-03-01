@@ -140,7 +140,7 @@ This translation scheme:
     - Program VTCR_EL2 to indicate the required input address range and initial lookup level.
     
 
-Concatenating additional translation tables at the initial level of look up resolves additional address bits at that level. To resolve n additional address bits requires 2n concatenated translation tables. Example D4-5 shows how, for level 1 lookups using the 4KB translation granule, translation tables can be concatenated to resolve three additional address bits.
+Concatenating additional translation tables at the initial level of look up resolves additional address bits at that level. To resolve n additional address bits requires 2^n concatenated translation tables. Example D4-5 shows how, for level 1 lookups using the 4KB translation granule, translation tables can be concatenated to resolve three additional address bits.
 
 Example D4-5 Adding three bits of address resolution at level 1 lookup, using the 4KB granule
 
