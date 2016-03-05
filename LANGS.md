@@ -1,4 +1,3 @@
 
-
-* [English](en/)
 * [Chinese](zh/)
+* [English](en/)
