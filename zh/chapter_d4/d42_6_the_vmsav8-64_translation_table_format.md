@@ -127,6 +127,8 @@ Where a stage 2 translation would require 16 entries or fewer in its top-level t
 * Require the corresponding number of concatenated translation tables at the next translation level, aligned to the size of the block of concatenated translation tables.
 * Start the translation at that next translation level.
 
+如果 stage 2 translation 
+
 此外，当 stage 2 translation 使用 16KB translation granule 进行 48-bit input address 转换时，必须使用 2 个 concatenated translation table， 同时第一次 lookup 必须在 level 1。
 
 > **NOTE:**  
