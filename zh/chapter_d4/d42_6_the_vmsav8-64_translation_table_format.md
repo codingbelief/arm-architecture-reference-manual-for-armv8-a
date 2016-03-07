@@ -130,7 +130,7 @@ Where a stage 2 translation would require 16 entries or fewer in its top-level t
 如果 stage 2 translation 的 top-level translation table 的 entry 小于等于 16 个，那么系统设计时，可以考虑按照下面的方式来优化：
 * 在 next translation level 中使用相应数量的 concatenated translation table。
 * 将 initial lookup 设定到 next translation level 上。
-（译者注：）
+（译者注：top-level translation table 的 entry 小于等于 16 个也就意味着该 level 的所解析的地址位数小于 4 位，通过 concatenated translation table 机制，可以将 top-level 所解析的地址位放到 next level 上解析，这样可以减少 translation 过程中的一次 lookup 操作，达到优化的效果）
 
 此外，当 stage 2 translation 使用 16KB translation granule 进行 48-bit input address 转换时，必须使用 2 个 concatenated translation table， 同时第一次 lookup 必须在 level 1。
 
