@@ -155,7 +155,7 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 
 As an example of the concatenation of translation tables at the initial lookup level, when using the 4KB translation granule, Table D4-24 shows the possible uses of concatenated translation tables to permit lookup to start at level 1 rather than at level 0. For completeness, the table starts with the case where the required IPA range means lookup starts at level 1 with a single translation table at that level.
 
-Table D4-24 描述了采用 4KB translation granule 
+Table D4-24 描述了采用 4KB translation granule 时
 
 ![](table_d4_24.png)
 
