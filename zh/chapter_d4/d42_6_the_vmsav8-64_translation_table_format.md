@@ -140,7 +140,7 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 
 Concatenating additional translation tables at the initial level of look up resolves additional address bits at that level. To resolve n additional address bits requires 2^n concatenated translation tables. Example D4-5 shows how, for level 1 lookups using the 4KB translation granule, translation tables can be concatenated to resolve three additional address bits.
 
-
+在 initial level lookup 中使用 concatenated translation table 可以在该 level 上解析额外的地址位
 
 ***Example D4-5 Adding three bits of address resolution at level 1 lookup, using the 4KB granule***
 
