@@ -148,8 +148,9 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 * concatenated translation table 总的大小为 8 × 4KB = 32KB。
 * 用于存储 concatenated translation table 的内存块的起始地址必须对齐到 32KB。
 * 此次 lookup 所解析的地址范围为 A[41:30]，其中：
-  - 
-
+  - A[41:39] 地址位用于选择 4KB translation table
+  -
+ 
 When using the 4KB translation granule, a level1 lookup with a single translation table resolves address bits[38:30]. To add three more address bits requires 2^3 translation tables, that is, eight translation tables. This means:
 * The total size of the concatenated translation tables is 8 × 4KB = 32KB.
 * This block of concatenated translation tables must be aligned to 32KB.
