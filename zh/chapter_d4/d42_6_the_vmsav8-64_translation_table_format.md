@@ -133,6 +133,7 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 > **NOTE:**  
 This translation scheme:
 * Avoids the overhead of an additional level of translation.
+* 减少了一个额外的 translation 
 * Requires the software that is defining the translation to:
     - Define the concatenated translation tables with the required overall alignment.
     - Program VTTBR_EL2 to hold the address of the first of the concatenated translation tables.
