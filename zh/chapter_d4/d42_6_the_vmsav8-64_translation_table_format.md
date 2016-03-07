@@ -159,6 +159,7 @@ Table D4-24 汇总了采用 4KB translation granule， concatenated translation 
 
 > **NOTE:**  
 Because concatenation is permitted only for a stage 2 translation, the input addresses in the table are IPAs.
+concatenation 只存在与 stage 2 translation，因此上面 table 中的 input address 是 IPA。
 
 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) identifies all of the possible uses of concatenation. In all cases, the block of concatenated translation tables must be aligned to the block size.
 
