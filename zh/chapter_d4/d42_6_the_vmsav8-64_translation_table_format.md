@@ -131,7 +131,7 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 此外，当 stage 2 translation 使用 16KB translation granule 进行 48-bit input address 转换时，必须使用 2 个 concatenated translation table， 同时第一次 lookup 必须在 level 1。
 
 > **NOTE:**  
-This translation scheme:
+在这种 translation scheme 中:
 * 减少了一个额外的 translation level，即较少了一次 lookup 操作。
 * 需要软件进行以下的配置操作：
     - 构建 concatenated translation table 并将其基地址对齐到 table size。
