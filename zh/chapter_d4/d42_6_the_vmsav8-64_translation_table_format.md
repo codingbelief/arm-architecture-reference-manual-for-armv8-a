@@ -153,7 +153,7 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 
 ---
 
-Table D4-24 描述了采用 4KB translation granule，initial lookup 设定在 level 0 和 1 时的 concatenated translation table 的使用情况。
+Table D4-24 汇总了采用 4KB translation granule， concatenated translation table 的各种使用情况。
 
 ![](table_d4_24.png)
 
