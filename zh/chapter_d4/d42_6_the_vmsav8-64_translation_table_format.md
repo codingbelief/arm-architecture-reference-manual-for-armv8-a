@@ -163,6 +163,7 @@ Concatenation 只存在与 stage 2 translation，因此上面 table 中的 input
 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) identifies all of the possible uses of concatenation. In all cases, the block of concatenated translation tables must be aligned to the block size.
 
 
+
 ### Possible translation table registers programming errors
 
 This subsection describes possible errors in programming the translation table registers.
