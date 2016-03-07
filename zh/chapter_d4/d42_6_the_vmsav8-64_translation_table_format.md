@@ -144,7 +144,7 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
 
 ---
 
-When using the 4KB translation granule, a level1 lookup with a single translation table resolves address bits[38:30]. To add three more address bits requires 23 translation tables, that is, eight translation tables. This means:
+When using the 4KB translation granule, a level1 lookup with a single translation table resolves address bits[38:30]. To add three more address bits requires 2^3 translation tables, that is, eight translation tables. This means:
 * The total size of the concatenated translation tables is 8 × 4KB = 32KB.
 * This block of concatenated translation tables must be aligned to 32KB.
 * The address range resolved at this lookup level is A[41:30].of which:
@@ -152,6 +152,8 @@ When using the 4KB translation granule, a level1 lookup with a single translatio
     - Bits A[38:30] index a descriptor within that translation table.
 
 ---
+
+
 
 As an example of the concatenation of translation tables at the initial lookup level, when using the 4KB translation granule, Table D4-24 shows the possible uses of concatenated translation tables to permit lookup to start at level 1 rather than at level 0. For completeness, the table starts with the case where the required IPA range means lookup starts at level 1with a single translation table at that level.
 
