@@ -142,7 +142,7 @@ Concatenating additional translation tables at the initial level of look up reso
 
 
 
-*Example D4-5 Adding three bits of address resolution at level 1 lookup, using the 4KB granule*
+***Example D4-5 Adding three bits of address resolution at level 1 lookup, using the 4KB granule***
 
 ---
 
