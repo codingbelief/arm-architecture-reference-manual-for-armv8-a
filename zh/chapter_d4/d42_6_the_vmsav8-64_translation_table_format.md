@@ -135,7 +135,7 @@ This translation scheme:
 * Avoids the overhead of an additional level of translation.
 * 减少了一个额外的 translation level，即较少了一次 lookup 操作。
 * 需要软件进行以下的配置操作：
-    - 配置 concatenated translation table 并将基地址对齐到 table size。
+    - 构建 concatenated translation table 并将其基地址对齐到 table size。
     - 设定 VTTBR_EL2 为 concatenated translation table 的基地址。
     - 设定 VTCR_EL2 中的 input address range 和 initial lookup level。
 * Requires the software that is defining the translation to:
