@@ -138,9 +138,6 @@ TnSZ 的值还决定了 initial lookup 所在的 level，更多信息可以参�
     - 设定 VTTBR_EL2 为 concatenated translation table 的基地址。
     - 设定 VTCR_EL2 中的 input address range 和 initial lookup level。
 
-
-
-
 Concatenating additional translation tables at the initial level of look up resolves additional address bits at that level. To resolve n additional address bits requires 2^n concatenated translation tables. Example D4-5 shows how, for level 1 lookups using the 4KB translation granule, translation tables can be concatenated to resolve three additional address bits.
 
 Example D4-5 Adding three bits of address resolution at level 1 lookup, using the 4KB granule
