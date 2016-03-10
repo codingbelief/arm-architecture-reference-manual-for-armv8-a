@@ -168,7 +168,6 @@ Concatenation 只存在与 stage 2 translation，因此上面 table 中的 input
 
 #### Misprogramming the VTCR_EL2.{T0SZ, SL0} fields
 
-For a stage 2 translation, the programming of the VTCR_EL2.{T0SZ, SL0} fields must be consistent, see [Overview of the VMSAv8-64 address translation stages on page D4-1658](#).
 对于 stage 2 translation，VTCR_EL2 寄存器中的 T0SZ （The size offset of the memory region addressed by VTTBR_EL2） 和 SL0 （Starting level）位存在一定的关系，进行配置时，必须要满足相应的条件。这两个寄存器位之间的关系，可以参考 [Overview of the VMSAv8-64 address translation stages](#) 章节。
 
 #### Misprogramming of the Contiguous bit
