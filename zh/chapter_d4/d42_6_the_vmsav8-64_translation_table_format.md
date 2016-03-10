@@ -165,7 +165,7 @@ Concatenation 只存在与 stage 2 translation，因此上面 table 中的 input
 ### Possible translation table registers programming errors
 
 This subsection describes possible errors in programming the translation table registers.
-
+本小节主要描述在配置 translation table 相关的寄存器时，可能出现的错误情况。
 
 #### Misprogramming the VTCR_EL2.{T0SZ, SL0} fields
 
