@@ -170,7 +170,7 @@ Concatenation 只存在与 stage 2 translation，因此上面 table 中的 input
 
 对于 stage 2 translation，VTCR_EL2 寄存器中的 T0SZ （The size offset of the memory region addressed by VTTBR_EL2） 和 SL0 （Starting level）位存在一定的关系，进行配置时，必须要满足相应的条件。这两个寄存器位之间的关系，可以参考 [Overview of the VMSAv8-64 address translation stages](./d42_5_overview_of_the_vmsav8-64_address_translation.html) 章节。
 
-（TODO: 后面的文章将在完成 The Contiguous bit 章节的翻译后再进行翻译）
+（TODO: 后面内容的翻译将在完成 The Contiguous bit 章节的翻译后再进行）
 #### Misprogramming of the Contiguous bit
 For more information about the Contiguous bit, and the range of translation table entries that must have the bit set to 1 to mark the entries as contiguous, see [The Contiguous bit on page D4-1715](#).
 
