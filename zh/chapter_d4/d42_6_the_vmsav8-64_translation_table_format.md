@@ -173,6 +173,7 @@ Concatenation 只存在与 stage 2 translation，因此上面 table 中的 input
 #### Misprogramming of the Contiguous bit
 For more information about the Contiguous bit, and the range of translation table entries that must have the bit set to 1 to mark the entries as contiguous, see [The Contiguous bit on page D4-1715](#).
 
+
 If one or more of the following errors is made in programming the translation tables, the TLB might contain overlapping entries:
 
 * One or more of the contiguous translation table entries does not have the Contiguous bit set to 1.
