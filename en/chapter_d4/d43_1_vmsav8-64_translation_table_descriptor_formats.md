@@ -25,3 +25,37 @@ A block entry in a level 2 table describes the mapping of the associated 512MB i
 ![](figure_d4_16.png)
 
 ### Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
