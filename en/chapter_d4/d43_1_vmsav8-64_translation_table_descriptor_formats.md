@@ -34,8 +34,8 @@ Descriptor bit[1] identifies the descriptor type, and is encoded as:
 
 | 0:0 | 1:0 |
 | -- | -- |
-| 0:2 | 1:2 |
-| 0:0 | 1:0 |
+| **0, Block** | 1:2 |
+| **1, Table** | 1:0 |
 
 
 
