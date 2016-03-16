@@ -6,6 +6,7 @@ In general, a descriptor is one of:
 * A block entry, that defines the memory properties for the access.
 * A reserved format.
 Bit[1] of the descriptor indicates the descriptor type, and bit[0] indicates whether the descriptor is valid.
+
 The following sections describe the ARMv8 translation table descriptor formats:
 * VMSAv8-64 translation table level 0, level 1, and level 2 descriptor formats.
 * ARMv8 translation table level 3 descriptor formats on page D4-1698.
