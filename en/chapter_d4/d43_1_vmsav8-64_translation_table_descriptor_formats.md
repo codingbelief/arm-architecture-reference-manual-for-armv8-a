@@ -29,8 +29,8 @@ A block entry in a level 2 table describes the mapping of the associated 512MB i
 Descriptor bit[0] identifies whether the descriptor is valid, and is 1 for a valid descriptor. If a lookup returns an invalid descriptor, the associated input address is unmapped, and any attempt to access it generates a Translation fault.  
 Descriptor bit[1] identifies the descriptor type, and is encoded as:
 
-0, Block The descriptor gives the base address of a block of memory, and the attributes for that memory region.
-1, Table The descriptor gives the address of the next level of translation table, and for a stage 1 translation, some attributes for that translation.
+**0, Block** The descriptor gives the base address of a block of memory, and the attributes for that memory region.
+**1, Table** The descriptor gives the address of the next level of translation table, and for a stage 1 translation, some attributes for that translation.
 
 
 
