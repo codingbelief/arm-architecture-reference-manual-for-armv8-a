@@ -19,7 +19,7 @@
        * [D4.2.10 Pseudocode description of VMSAv8-64 address translation](chapter_d4/d42_10_pseudocode_description_of_vmsav8-64_address_translation.md)
        * [D4.2.11 Address translation instructions](chapter_d4/d42_11_address_translation_instructions.md)
    * [D4.3 VMSAv8-64 translation table format descriptors](chapter_d4/d43_vmsav8-64_translation_table_format_descriptors.md)
-       * D4.3.1 VMSAv8-64 translation table level 0 level 1 and level 2 descriptor formats
+       * [D4.3.1 VMSAv8-64 translation table level 0 level 1 and level 2 descriptor formats](chapter_d4/d43_1_vmsav8-64_translation_table_descriptor_formats.md)
    * [D4.4 Access controls and memory region attributes](chapter_d4/d44_access_controls_and_memory_region_attributes.md)
    * [D4.5 MMU faults](chapter_d4/d45_mmu_faults.md)
    * [D4.6 Translation Lookaside Buffers (TLBs)](chapter_d4/d46_translation_lookaside_buffers_tlbs.md)
