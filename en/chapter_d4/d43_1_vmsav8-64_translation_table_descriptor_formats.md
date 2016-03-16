@@ -41,6 +41,7 @@ Gives the base address and attributes of a block of memory, as follows:
 **4KB translation granule**  
 * For a level 1 Block descriptor, bits[47:30] are bits[47:30] of the output address. This output address specifies a 1GB block of memory.
 * For a level 2 descriptor, bits[47:21] are bits[47:21] of the output address.This output address specifies a 2MB block of memory.
+
 **16KB translation granule**  
 For a level 2 Block descriptor, bits[47:25] are bits[47:25] of the output address.This output address specifies a 32MB block of memory.
 **64KB translation granule**  
