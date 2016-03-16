@@ -52,23 +52,27 @@ Bits[63:52, 11:2] provide attributes for the target memory block, see Memory att
 
 **Table descriptor**  
 Gives the translation table address for the next-level lookup, as follows:
+
 4KB translation granule
 • Bits[47:12] are bits[47:12] of the address of the required next-level table, which is:
 — For a level 0 Table descriptor, the address of a level 1 table.
 — For a level 1Table descriptor, the address of a level 2 table.
 — For a level 2 Table descriptor, the address of a level 3 table.
 • Bits[11:0] of the table address are zero.
+
 16KB translation granule
 • Bits[47:14] are bits[47:14] of the address of the required next-level table, which is:
 — For a level 0 Table descriptor, the address of a level 1 table.
 — For a level 1 Table descriptor, the address of a level 2 table.
 — For a level 2 Table descriptor, the address of a level 3 table.
 • Bits[13:0] of the table address are zero.
+
 64KB translation granule
 • Bits[47:16] are bits[47:16] of the address of the required next-level table, which is:
 — For a level 1 Table descriptor, the address of a level 2 table.
 — For a level 2 Table descriptor, the address of a level 3 table.
 • Bits[15:0] of the table address are zero.
+
 For a stage 1 translation only, bits[63:59] provide attributes for the next-level lookup, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699.
 
 
