@@ -26,7 +26,8 @@ A block entry in a level 2 table describes the mapping of the associated 512MB i
 
 ### Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats
 
-
+Descriptor bit[0] identifies whether the descriptor is valid, and is 1 for a valid descriptor. If a lookup returns an invalid descriptor, the associated input address is unmapped, and any attempt to access it generates a Translation fault.  
+Descriptor bit[1] identifies the descriptor type, and is encoded as:
 
 
 
