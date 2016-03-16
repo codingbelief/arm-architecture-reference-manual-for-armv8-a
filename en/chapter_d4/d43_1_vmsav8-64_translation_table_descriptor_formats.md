@@ -23,3 +23,5 @@ A block entry in a level 2 table describes the mapping of the associated 512MB i
 [Figure D4-16 on page D4-1696](#) shows the ARMv8 level 0, level 1, and level 2 descriptor formats:
 
 ![](figure_d4_16.png)
+
+### Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats
