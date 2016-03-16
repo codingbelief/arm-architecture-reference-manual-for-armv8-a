@@ -19,3 +19,7 @@ A block entry in a level 2 table describes the mapping of the associated 32MB in
 Level 0 lookup is not supported.  
 A level 1 descriptor does not support block translation.  
 A block entry in a level 2 table describes the mapping of the associated 512MB input address range.
+
+[Figure D4-16 on page D4-1696](#) shows the ARMv8 level 0, level 1, and level 2 descriptor formats:
+
+![](figure_d4_16.png)
