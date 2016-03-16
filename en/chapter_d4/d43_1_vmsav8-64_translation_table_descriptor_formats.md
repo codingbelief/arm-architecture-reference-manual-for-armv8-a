@@ -34,7 +34,7 @@ Descriptor bit[1] identifies the descriptor type, and is encoded as:
 
 | 0:0 | 1:0 |
 | -- | -- |
-| **0, Block** | 1:2 |
+| **0, Block** | The descriptor gives the base address of a block of memory, and the attributes for that memory region. |
 | **1, Table** | 1:0 |
 
 
