@@ -19,7 +19,8 @@ These attributes are:
 **NSTable, bit[63]**  
 For memory accesses from Secure state, specifies the Security state for subsequent levels of lookup, see Hierarchical control of Secure or Non-secure memory accesses on page D4-1703.
 For memory accesses from Non-secure state, this bit is RES0 and is ignored by the PE. This field is RES1 in the AArch64 EL2 translation regime.
-APTable, bits[62:61]
+
+**APTable, bits[62:61]**  
 Access permissions limit for subsequent levels of lookup, see Hierarchical control of data access permissions on page D4-1706.
 APTable[0] is RES0:
 • •
