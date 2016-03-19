@@ -23,7 +23,9 @@ For Non-secure translation regimes, and for translation table descriptors fetche
 ### Hierarchical control of Secure or Non-secure memory accesses
 
 For VMSAv8-64 table descriptors for stage 1 translations, the descriptor includes an NSTable bit, that indicates whether the table identified in the descriptor is in Secure or Non-secure memory. For accesses from Secure state, the meaning of the NSTable bit is:
-NSTable == 0 The defined table address is in the Secure physical address space. In the descriptors in that translation table, NS bits and NSTable bits have their defined meanings.
+
+**NSTable == 0**  
+The defined table address is in the Secure physical address space. In the descriptors in that translation table, NS bits and NSTable bits have their defined meanings.
 NSTable==1 ThedefinedtableaddressisintheNon-securephysicaladdressspace.Becausethistableisfetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
 * The value of the NS bit in any block or page descriptor is ignored. The block or page address refers to Non-secure memory.
 * The value of the NSTable bit in any table descriptor is ignored, and the table address refers to Non-secure memory. When this table is accessed, the NS bit in any block or page descriptor is ignored, and all descriptors in the table refer to Non-secure memory.
