@@ -66,7 +66,9 @@ Valid only to the EL1&0 translation regime. This bit is RES0 in all other transl
 The Access flag, see The Access flag on page D4-1711.
 
 **SH, bits[9:8]**  
-Shareability field, see Memory region attributes on page D4-1712. AP[2:1], bits[7:6]
+Shareability field, see Memory region attributes on page D4-1712. 
+
+**AP[2:1], bits[7:6]**
 
 ￼￼￼￼￼**NS, bit[5]**
 Data Access Permissions bits, see Memory access control on page D4-1704. Note
