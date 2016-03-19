@@ -14,3 +14,4 @@ In a Table descriptor for a stage 1 translation, bits[63:59] of the descriptor d
 
 ![](figure_d4_18.png)
 
+These attributes are:
