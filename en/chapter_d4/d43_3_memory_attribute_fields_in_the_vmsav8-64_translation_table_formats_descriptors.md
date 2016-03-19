@@ -82,7 +82,7 @@ For memory accesses from Non-secure state, this bit is RES0 and is ignored by th
 **AttrIndx[2:0], bits[4:2]**  
 Stage 1 memory attributes index field, for the MAIR_ELx, see [Memory region type and attributes, for stage 1 translations on page D4-1712](#).
 
-
+The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see [IGNORED on page Glossary-5886](#). For more information about these fields see [Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715](#).
 
 
 
