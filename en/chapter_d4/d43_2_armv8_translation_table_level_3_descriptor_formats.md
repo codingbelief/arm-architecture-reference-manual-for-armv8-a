@@ -17,6 +17,7 @@ This encoding must not be used in level 3 translation tables.
 Gives the address and attributes of a 4KB, 16KB, or 64KB page of memory.
 
 At this level, the only valid format is the Page descriptor. The other fields in the Page descriptor are:  
+
 **Page descriptor**  
 Gives the output address of a page of memory, as follows:  
 **4KB translation granule**  
@@ -26,3 +27,34 @@ Bits[47:14] are bits[47:14] of the output address for a page of memory.
 **64KB translation granule**  
 Bits[47:16] are bits[47:16] of the output address for a page of memory.  
 Bits[63:52, 11:2] provide attributes for the target memory page, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
