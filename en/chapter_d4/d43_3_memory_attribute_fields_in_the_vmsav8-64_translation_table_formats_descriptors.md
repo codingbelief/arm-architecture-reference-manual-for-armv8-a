@@ -65,7 +65,16 @@ Valid only to the EL1&0 translation regime. This bit is RES0 in all other transl
 **AF, bit[10]**
 The Access flag, see The Access flag on page D4-1711.
 
-
+**SH, bits[9:8]**  
+Shareability field, see Memory region attributes on page D4-1712. AP[2:1], bits[7:6]
+￼￼￼￼￼NS, bit[5]
+Data Access Permissions bits, see Memory access control on page D4-1704. Note
+The ARMv8 translation table descriptor format defines AP[2:1] as the Access Permissions bits, and does not define an AP[0] bit.
+AP[1] is valid only to the EL1&0 translation regime, and is RES1 in all other translation regimes.
+Non-secure bit. For memory accesses from Secure state, specifies whether the output address is in the Secure or Non-secure address map, see Control of Secure or Non-secure memory access on page D4-1702.
+For memory accesses from Non-secure state, this bit is RES0 and is ignored by the PE. This field is RES1 in the AArch64 EL2 translation regime.
+AttrIndx[2:0], bits[4:2]
+Stage 1 memory attributes index field, for the MAIR_ELx, see Memory region type and attributes, for stage 1 translations on page D4-1712.
 
 
 
