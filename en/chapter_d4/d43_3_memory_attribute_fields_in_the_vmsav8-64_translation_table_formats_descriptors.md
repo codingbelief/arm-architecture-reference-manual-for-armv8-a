@@ -45,6 +45,8 @@ In Block and Page descriptors, the memory attributes are split into an upper blo
 
 ![](figure_d4_19.png)
 
+For a stage 1 descriptor, the attributes are:
+
 
 
 
