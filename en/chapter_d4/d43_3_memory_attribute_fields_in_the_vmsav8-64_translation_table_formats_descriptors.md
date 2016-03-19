@@ -48,15 +48,15 @@ In Block and Page descriptors, the memory attributes are split into an upper blo
 For a stage 1 descriptor, the attributes are:
 
 **UXN or XN, bit[54]**  
-The Execute-never bit. Determines whether the region is executable, see Access permissions for instruction execution on page D4-1707.
+The Execute-never bit. Determines whether the region is executable, see [Access permissions for instruction execution on page D4-1707](#).
 This bit is called UXN (Unprivileged execute never) in the EL1&0 translation regime, where it only determines whether execution at EL0 of instructions fetched from the region is permitted. In the other translation regimes the bit is called XN (Execute never).
 
 **PXN, bit[53]**
 The Privileged execute-never bit. Determines whether the region is executable at EL1, see Access permissions for instruction execution on page D4-1707.
 This bit is RES0 in the EL2 and EL3 translation regimes.
-Contiguous, bit[52]
-nG, bit[11]
-AF, bit[10]
+
+**Contiguous, bit[52]**
+
 A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see The Contiguous bit on page D4-1715.
 The not global bit. Determines whether the TLB entry applies to all ASID values, or only to the current ASID value, see Global and process-specific translation table entries on page D4-1730.
 Valid only to the EL1&0 translation regime. This bit is RES0 in all other translation regimes. The Access flag, see The Access flag on page D4-1711.
