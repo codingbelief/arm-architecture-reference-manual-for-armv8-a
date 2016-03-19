@@ -25,4 +25,4 @@ Bits[47:12] are bits[47:12] of the output address for a page of memory.
 Bits[47:14] are bits[47:14] of the output address for a page of memory.  
 **64KB translation granule**  
 Bits[47:16] are bits[47:16] of the output address for a page of memory.  
-Bits[63:52, 11:2] provide attributes for the target memory page, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699.
+Bits[63:52, 11:2] provide attributes for the target memory page, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
