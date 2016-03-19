@@ -94,14 +94,14 @@ In Block and Page descriptors, the memory attributes are split into an upper blo
 For a stage 2 descriptor, the attributes are:
 
 **XN, bit[54]**  
-The Execute-never bit. Determines whether the region is executable, see Access permissions for
-instruction execution on page D4-1707. 
+The Execute-never bit. Determines whether the region is executable, see [Access permissions for
+instruction execution on page D4-1707](#). 
 
 **Contiguous, bit[52]**  
-A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see The Contiguous bit on page D4-1715.
+A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see [The Contiguous bit on page D4-1715.](#)
 
 **AF, bit[10]**  
-The Access flag, see The Access flag on page D4-1711.
+The Access flag, see [The Access flag on page D4-1711](#).
 
 **SH, bits[9:8]**  
 Shareability field, see The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713. 
