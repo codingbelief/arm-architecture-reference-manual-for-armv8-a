@@ -25,3 +25,48 @@ Access permissions limit for subsequent levels of lookup, see [Hierarchical cont
 APTable[0] is RES0:
 * In the EL2 translation regime. 
 * In the EL3 translation regime.
+
+**UXNTable or XNTable, bit[60]**  
+XN limit for subsequent levels of lookup, see Hierarchical control of instruction fetching on page D4-1710.
+This bit is called UXNTable in the EL1&0 translation regime, where it only determines whether execution at EL0 of instructions fetched from the region identified at a lower level of lookup permitted. In the other translation regimes the bit is called XNTable.
+PXNTable, bit[59]
+PXN limit for subsequent levels of lookup, see Hierarchical control of instruction fetching on page D4-1710.
+This bit is reserved, SBZ:
+• In the EL2 translation regime.
+• In the EL3 translation regime.
+The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see IGNORED on page Glossary-5886. For more information about these fields see Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
