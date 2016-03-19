@@ -5,9 +5,11 @@ As this section describes, the NS bit in the translation table entries:
 * Is ignored by:
    - Accesses from Non-secure state.
    - Accesses from Secure state if the translation table entry was held in Non-secure memory.
+
 In the VMSAv8-64 translation table format:
 * The NS bit relates only to the memory block or page at the output address defined by the descriptor.
 * The descriptors also include an NSTable bit, that affects accesses at lower levels of lookup, see Hierarchical control of Secure or Non-secure memory accesses on page D4-1703.
+
 The NS and NSTable bits are valid only for memory accesses from Secure state described by translation table descriptors that are fetched from Secure memory, and:
 * In the translation table descriptors in a Non-secure translation table, the NS and NSTable bits are SBZ.
 * Memory accesses from Non-secure state, including all accesses from EL2, ignore the values of these bits.
