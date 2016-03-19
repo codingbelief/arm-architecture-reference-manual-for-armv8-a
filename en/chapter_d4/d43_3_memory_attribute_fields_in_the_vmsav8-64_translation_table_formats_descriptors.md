@@ -86,6 +86,8 @@ The definition of IGNORED means the architecture guarantees that the PE makes no
 
 ### Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors
 
+In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 2 translation:
+
 
 
 
