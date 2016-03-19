@@ -72,6 +72,7 @@ Shareability field, see Memory region attributes on page D4-1712.
 ￼Data Access Permissions bits, see Memory access control on page D4-1704. 
 > **NOTE:**
 The ARMv8 translation table descriptor format defines AP[2:1] as the Access Permissions bits, and does not define an AP[0] bit.
+
 AP[1] is valid only to the EL1&0 translation regime, and is RES1 in all other translation regimes.
 
 **NS, bit[5]**
