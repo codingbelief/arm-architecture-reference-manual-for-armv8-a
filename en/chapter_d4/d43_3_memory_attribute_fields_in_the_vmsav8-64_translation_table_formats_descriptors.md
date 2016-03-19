@@ -80,7 +80,7 @@ Non-secure bit. For memory accesses from Secure state, specifies whether the out
 For memory accesses from Non-secure state, this bit is RES0 and is ignored by the PE. This field is RES1 in the AArch64 EL2 translation regime.
 
 **AttrIndx[2:0], bits[4:2]**  
-Stage 1 memory attributes index field, for the MAIR_ELx, see Memory region type and attributes, for stage 1 translations on page D4-1712.
+Stage 1 memory attributes index field, for the MAIR_ELx, see [Memory region type and attributes, for stage 1 translations on page D4-1712](#).
 
 
 
