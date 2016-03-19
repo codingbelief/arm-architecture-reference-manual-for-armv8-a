@@ -32,8 +32,7 @@ Bits[63:52, 11:2] provide attributes for the target memory page, see [Memory att
 > **NOTE**:  
 > The position and contents of bits[63:52, 11:2] are identical to bits[63:52, 11:2] in the level 0, level 1, and level 2 block descriptors.
 
-
-
+For the Non-secure EL1&0 stage 1 translations, the output address in the descriptor is the IPA of the target page. Otherwise, it is the PA of the target page.
 
 
 
