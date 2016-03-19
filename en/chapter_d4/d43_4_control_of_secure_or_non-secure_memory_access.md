@@ -26,7 +26,8 @@ For VMSAv8-64 table descriptors for stage 1 translations, the descriptor include
 
 **NSTable == 0**  
 The defined table address is in the Secure physical address space. In the descriptors in that translation table, NS bits and NSTable bits have their defined meanings.
-NSTable==1 ThedefinedtableaddressisintheNon-securephysicaladdressspace.Becausethistableisfetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
+**NSTable==1**  
+ThedefinedtableaddressisintheNon-securephysicaladdressspace.Becausethistableisfetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
 * The value of the NS bit in any block or page descriptor is ignored. The block or page address refers to Non-secure memory.
 * The value of the NSTable bit in any table descriptor is ignored, and the table address refers to Non-secure memory. When this table is accessed, the NS bit in any block or page descriptor is ignored, and all descriptors in the table refer to Non-secure memory.
 In addition, an entry fetched in Secure state is treated as non-global if it is read from Non-secure memory. That is, these entries must be treated as if nG==1, regardless of the value of the nG bit. For more information about the nG bit, see Global and process-specific translation table entries on page D4-1730.
