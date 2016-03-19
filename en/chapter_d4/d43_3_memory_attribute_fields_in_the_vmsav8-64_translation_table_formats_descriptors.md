@@ -7,3 +7,5 @@ Table descriptors for stage 2 translations do not include any attribute field. F
 These descriptors define memory attributes for the target block or page of memory. Stage 1 and stage 2 translations have some differences in these attributes, see:  
 * Attribute fields in stage 1 VMSAv8-64 Block and Page descriptors on page D4-1700
 * Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors on page D4-1701.
+
+### Next-level attributes in stage 1 VMSAv8-64 Table descriptors
