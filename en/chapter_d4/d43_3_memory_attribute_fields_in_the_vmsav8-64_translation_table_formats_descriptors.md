@@ -112,9 +112,9 @@ Stage 2 data Access Permissions bits, see [The S2AP data access permissions, Non
 > In the original VMSAv7-32 Long-descriptor attribute definition, this field was called HAP[2:1], for consistency with the AP[2:1] field in the stage 1 descriptors and despite there being no HAP[0] bit. ARMv8 renames the field for greater clarity.
 
 **MemAttr, bits[5:2]**
-Stage 2 memory attributes, see The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713.
+Stage 2 memory attributes, see [The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713](#).
 
-
+The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see IGNORED on page Glossary-5886. For more information about these fields see [Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715](#).
 
 
 
