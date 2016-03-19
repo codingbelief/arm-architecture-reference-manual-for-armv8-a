@@ -56,7 +56,6 @@ The Privileged execute-never bit. Determines whether the region is executable at
 This bit is RES0 in the EL2 and EL3 translation regimes.
 
 **Contiguous, bit[52]**
-
 A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see The Contiguous bit on page D4-1715.
 
 **nG, bit[11]**
