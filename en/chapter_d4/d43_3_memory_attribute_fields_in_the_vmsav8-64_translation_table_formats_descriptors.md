@@ -43,6 +43,10 @@ The definition of IGNORED means the architecture guarantees that the PE makes no
 
 In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 1 translation:
 
+![](figure_d4_19.png)
+
+
+
 
 
 
