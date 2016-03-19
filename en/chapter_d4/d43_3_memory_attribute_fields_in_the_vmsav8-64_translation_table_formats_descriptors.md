@@ -84,7 +84,7 @@ Stage 1 memory attributes index field, for the MAIR_ELx, see [Memory region type
 
 The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see [IGNORED on page Glossary-5886](#). For more information about these fields see [Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715](#).
 
-
+### Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors
 
 
 
