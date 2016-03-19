@@ -14,3 +14,4 @@ Behaves identically to encodings with bit[0] set to 0.
 This encoding must not be used in level 3 translation tables.
 
 **1, Page**  
+Gives the address and attributes of a 4KB, 16KB, or 64KB page of memory.
