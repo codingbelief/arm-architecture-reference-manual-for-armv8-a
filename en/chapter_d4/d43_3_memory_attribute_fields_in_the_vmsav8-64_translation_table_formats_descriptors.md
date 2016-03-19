@@ -23,5 +23,5 @@ For memory accesses from Non-secure state, this bit is RES0 and is ignored by th
 **APTable, bits[62:61]**  
 Access permissions limit for subsequent levels of lookup, see Hierarchical control of data access permissions on page D4-1706.
 APTable[0] is RES0:
-• •
-In the EL2 translation regime. In the EL3 translation regime.
+* In the EL2 translation regime. 
+* In the EL3 translation regime.
