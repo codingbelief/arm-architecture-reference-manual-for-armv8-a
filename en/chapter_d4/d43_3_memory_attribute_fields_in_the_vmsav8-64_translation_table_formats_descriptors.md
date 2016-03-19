@@ -12,3 +12,5 @@ These descriptors define memory attributes for the target block or page of memor
 
 In a Table descriptor for a stage 1 translation, bits[63:59] of the descriptor define the attributes for the next-level translation table access, and bits[58:52] are IGNORED:
 
+![](figure_d4_18.png)
+
