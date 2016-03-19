@@ -115,20 +115,3 @@ Stage 2 data Access Permissions bits, see [The S2AP data access permissions, Non
 Stage 2 memory attributes, see [The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713](#).
 
 The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see IGNORED on page Glossary-5886. For more information about these fields see [Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715](#).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
