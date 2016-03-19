@@ -22,7 +22,7 @@
        * [D4.3.1 VMSAv8-64 translation table level 0 level 1 and level 2 descriptor formats](chapter_d4/d43_1_vmsav8-64_translation_table_descriptor_formats.md)
        * [D4.3.2 ARMv8 translation table level 3 descriptor formats](chapter_d4/d43_2_armv8_translation_table_level_3_descriptor_formats.md)
        * [D4.3.3 Memory attribute fields in the VMSAv8-64 translation table format descriptors](chapter_d4/d43_3_memory_attribute_fields_in_the_vmsav8-64_translation_table_formats_descriptors.md)
-       * D4.3.4 Control of Secure or Non-secure memory access
+       * [D4.3.4 Control of Secure or Non-secure memory access](chapter_d4/d43_4_control_of_secure_or_non-secure_memory_access.md)
    * [D4.4 Access controls and memory region attributes](chapter_d4/d44_access_controls_and_memory_region_attributes.md)
    * [D4.5 MMU faults](chapter_d4/d45_mmu_faults.md)
    * [D4.6 Translation Lookaside Buffers (TLBs)](chapter_d4/d46_translation_lookaside_buffers_tlbs.md)
