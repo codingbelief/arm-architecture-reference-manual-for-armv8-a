@@ -5,3 +5,4 @@ For the 16KB granule size, each entry in a level 3 table describes the mapping o
 For the 64KB granule size, each entry in a level 3 table describes the mapping of the associated 64KB input address range.  
 Figure D4-17 shows the ARMv8 level 3 descriptor formats.
 
+![](figure_d4_17.png)
