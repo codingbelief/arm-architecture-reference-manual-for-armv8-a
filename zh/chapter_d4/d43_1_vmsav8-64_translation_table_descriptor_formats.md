@@ -34,7 +34,7 @@ Level 0 和 level 1 descriptors 都不支持 block translation
 **64KB granule**  
 不支持 Level 0 lookup 操作。
 Level 1 descriptor 不支持 block translation
-
+在 Level 2 table 中，block entry 映射 512MB 的 input address range
 
 [Figure D4-16 on page D4-1696](#) shows the ARMv8 level 0, level 1, and level 2 descriptor formats:
 
