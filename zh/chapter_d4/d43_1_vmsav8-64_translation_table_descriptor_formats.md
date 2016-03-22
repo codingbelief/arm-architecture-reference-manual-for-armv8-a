@@ -27,7 +27,11 @@ Level 1 descriptor 不支持 block translation
 ### Descriptor encodings, ARMv8 level 0, level 1, and level 2 formats
 
 Descriptor bit[0] identifies whether the descriptor is valid, and is 1 for a valid descriptor. If a lookup returns an invalid descriptor, the associated input address is unmapped, and any attempt to access it generates a Translation fault.  
+Descriptor 的 bit[0] 指明该 descriptor 是否有效，该 bit 为 1 时，为有效的 descriptor。
+
 Descriptor bit[1] identifies the descriptor type, and is encoded as:
+
+
 
 ||||
 | -- | -- | -- |
