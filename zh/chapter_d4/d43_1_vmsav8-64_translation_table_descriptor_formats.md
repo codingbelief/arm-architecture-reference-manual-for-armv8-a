@@ -36,6 +36,7 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下表所示：
 | **1** | **Table** | Descriptor 包含了下一级 translation table 的基地址，在 stage 1 translation 中，还包含对应的 translation 的属性信息。|
 
 The other fields in the valid descriptors are:
+有效的 descriptor 中的其他比特位的含义如下：
 
 **Block descriptor**  
 Gives the base address and attributes of a block of memory, as follows:  
