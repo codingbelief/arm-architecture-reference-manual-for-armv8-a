@@ -4,6 +4,9 @@ In the VMSAv8-64 translation table format, the difference in the formats of the 
 * Whether a block entry is permitted.
 * If a block entry is permitted, the size of the memory region described by that entry.
 
+在 VMSAv8-64 的 level 0、level 1 和 level 2 的 translation table 的格式主要存在以下的几点差异：
+
+
 These differences depend on the translation granule, as follows:  
 **4KB granule**  
 A level 0 descriptor does not support block translation.  
