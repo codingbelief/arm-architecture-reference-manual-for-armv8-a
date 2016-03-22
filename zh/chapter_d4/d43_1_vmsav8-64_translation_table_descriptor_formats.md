@@ -45,7 +45,7 @@ Gives the base address and attributes of a block of memory, as follows:
 * For a level 1 Block descriptor, bits[47:30] are bits[47:30] of the output address. This output address specifies a 1GB block of memory.
 * For a level 2 descriptor, bits[47:21] are bits[47:21] of the output address.This output address specifies a 2MB block of memory.
 * 在 level 1 Block descriptor 中，bits[47:30] 为 output address 的 bits[47:30]。此 output address 指向一个 1GB 的 memory block。
-* 在 level 2 descriptor 中，bits[47:30] 为 output address 的 bits[47:30]。此 output address 指向一个 1GB 的 memory block。
+* 在 level 2 descriptor 中，bits[47:21] 为 output address 的 bits[47:21]。此 output address 指向一个 2MB 的 memory block。
 
 
 
