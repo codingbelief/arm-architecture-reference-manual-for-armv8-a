@@ -27,6 +27,9 @@ Block entry：
 * 在 level 1 table 中，映射 1GB 的 input address range
 * 在 level 2 table 中，映射 2MB 的 input address range
 
+**16KB granule** 
+Level 0 和 level 1 descriptors 都不支持 block translation
+
 [Figure D4-16 on page D4-1696](#) shows the ARMv8 level 0, level 1, and level 2 descriptor formats:
 
 ![](figure_d4_16.png)
