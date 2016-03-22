@@ -47,7 +47,7 @@ Gives the base address and attributes of a block of memory, as follows:
 
 **16KB translation granule**  
 For a level 2 Block descriptor, bits[47:25] are bits[47:25] of the output address.This output address specifies a 32MB block of memory.  
-在 level 2 Block descriptor 中，bits[47:25] 为 output address 的 bits[47:25]。此 output address 指向一个 2MB 的 memory block。
+在 level 2 Block descriptor 中，bits[47:25] 为 output address 的 bits[47:25]。此 output address 指向一个 32MB 的 memory block。
 
 **64KB translation granule**  
 For a level 2 Block descriptor, bits[47:29] are bits[47:29] of the output address.This output address specifies a 512MB block of memory.
