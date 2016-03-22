@@ -71,10 +71,6 @@ Bits[63:52, 11:2] 包含该 memory block 的属性信息，更多属性相关内
 * 基地址的 Bits[13:0] 为 0.
 
 **64KB translation granule**
-* Bits[47:16] are bits[47:16] of the address of the required next-level table, which is:
-   - For a level 1 Table descriptor, the address of a level 2 table.
-   - For a level 2 Table descriptor, the address of a level 3 table.
-* Bits[15:0] of the table address are zero.
 * bits[47:16] 为 output address 的 bits[47:16]，同时：
   - 在 level 1 Table descriptor 中, output address 为 level 2 table 的基地址
   - 在 level 2 Table descriptor 中, output address 为 level 3 table 的基地址
