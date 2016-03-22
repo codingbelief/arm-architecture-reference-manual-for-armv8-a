@@ -81,3 +81,5 @@ For a stage 1 translation only, bits[63:59] provide attributes for the next-leve
 在 stage 1 translation 中， bits[63:59] 包含 next-level lookup 的属性信息，更多信息可以参考 [Memory attribute fields in the VMSAv8-64 translation table format descriptors](#) 章节。
 
 If the translation table defines the Non-secure EL1&0 stage 1 translations, then the output address in the descriptor is the IPA of the target block or table. Otherwise, it is the PA of the target block or table.
+
+如果 translation table 属于 Non-secure EL1&0 stage 1 translation，那么 descriptor 中的 output address 为目标 block 或者 table 的 IPA，如果不属于，那么 output address 为目标 block 或者 table 的 PA。
