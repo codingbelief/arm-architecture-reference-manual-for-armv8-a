@@ -53,7 +53,7 @@ For a level 2 Block descriptor, bits[47:29] are bits[47:29] of the output addres
 Bits[63:52, 11:2] provide attributes for the target memory block, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699. The position and contents of these bits are identical in the level 2 block descriptor and in the level 3 page descriptor.  
 * 在 level 2 Block descriptor 中，bits[47:29] 为 output address 的 bits[47:29]。此 output address 指向一个 512MB 的 memory block。  
 
-
+Bits[63:52, 11:2] 
 
 **Table descriptor**  
 Gives the translation table address for the next-level lookup, as follows:
