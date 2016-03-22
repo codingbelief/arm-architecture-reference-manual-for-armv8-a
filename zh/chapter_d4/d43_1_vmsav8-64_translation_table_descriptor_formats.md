@@ -35,7 +35,6 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下表所示：
 | **0** | **Block** | Descriptor 包含了一个内存块的基地址和属性。 |
 | **1** | **Table** | Descriptor 包含了下一级 translation table 的基地址，在 stage 1 translation 中，还包含对应的 translation 的属性信息。|
 
-The other fields in the valid descriptors are:
 有效的 descriptor 中的其他比特位的含义如下：
 
 **Block descriptor**  
@@ -56,6 +55,7 @@ Bits[63:52, 11:2] 包含该 memory block 的属性信息，更多属性相关内
 
 **Table descriptor**  
 Gives the translation table address for the next-level lookup, as follows:
+包含下一级 translation table 的基地址，如下：
 
 **4KB translation granule**
 * Bits[47:12] are bits[47:12] of the address of the required next-level table, which is:
