@@ -54,6 +54,7 @@ Bits[63:52, 11:2] provide attributes for the target memory block, see Memory att
 * 在 level 2 Block descriptor 中，bits[47:29] 为 output address 的 bits[47:29]。此 output address 指向一个 512MB 的 memory block。  
 
 
+
 **Table descriptor**  
 Gives the translation table address for the next-level lookup, as follows:
 
