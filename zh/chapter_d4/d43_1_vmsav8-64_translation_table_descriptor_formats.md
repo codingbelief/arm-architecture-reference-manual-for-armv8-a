@@ -4,22 +4,6 @@
 * 是否存在 block entry。
 * block entry 所执行的内存块的大小。
 
-These differences depend on the translation granule, as follows:  
-**4KB granule**  
-A level 0 descriptor does not support block translation.  
-A block entry:
-* In a level 1 table describes the mapping of the associated 1GB input address range.
-* In a level 2 table describes the mapping of the associated 2MB input address range.  
-
-**16KB granule**  
-Level 0 and level 1 descriptors do not support block translation.  
-A block entry in a level 2 table describes the mapping of the associated 32MB input address range.  
-
-**64KB granule**  
-Level 0 lookup is not supported.  
-A level 1 descriptor does not support block translation.  
-A block entry in a level 2 table describes the mapping of the associated 512MB input address range.
-
 在不同的 translation granule 下，不同 level 的差异如下：  
 **4KB granule**  
 Level 0 descriptor 不支持 block translation。
