@@ -78,4 +78,6 @@ Bits[63:52, 11:2] 包含该 memory block 的属性信息，更多属性相关内
 
 For a stage 1 translation only, bits[63:59] provide attributes for the next-level lookup, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699.
 
+
+
 If the translation table defines the Non-secure EL1&0 stage 1 translations, then the output address in the descriptor is the IPA of the target block or table. Otherwise, it is the PA of the target block or table.
