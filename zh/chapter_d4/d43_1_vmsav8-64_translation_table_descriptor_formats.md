@@ -62,6 +62,8 @@ Bits[63:52, 11:2] 包含该 memory block 的属性信息，更多属性相关内
   - For a level 1Table descriptor, the address of a level 2 table.
   - For a level 2 Table descriptor, the address of a level 3 table.
 * Bits[11:0] of the table address are zero.
+* 
+
 
 **16KB translation granule**
 * Bits[47:14] are bits[47:14] of the address of the required next-level table, which is:
