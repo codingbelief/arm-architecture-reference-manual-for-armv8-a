@@ -32,8 +32,8 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下表所示：
 
 ||||
 | -- | -- | -- |
-| **0** | **Block** | 该 descriptor 包含了一个内存块的基地址和属性。 |
-| **1** | **Table** | 该 descriptor 包含了下一级 translation table 的基地址，在 stage 1 translation 中，还包含对应的 translation 的属性信息。|
+| **0** | **Block** | Descriptor 包含了一个内存块的基地址和属性。 |
+| **1** | **Table** | Descriptor 包含了下一级 translation table 的基地址，在 stage 1 translation 中，还包含对应的 translation 的属性信息。|
 
 The other fields in the valid descriptors are:
 
