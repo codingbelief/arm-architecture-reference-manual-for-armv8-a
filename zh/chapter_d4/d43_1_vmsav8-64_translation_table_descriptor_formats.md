@@ -75,12 +75,12 @@ Bits[63:52, 11:2] 包含该 memory block 的属性信息，更多属性相关内
    - For a level 1 Table descriptor, the address of a level 2 table.
    - For a level 2 Table descriptor, the address of a level 3 table.
 * Bits[15:0] of the table address are zero.
-* bits[47:14] 为 output address 的 bits[47:14]，同时：
+* bits[47:16] 为 output address 的 bits[47:16]，同时：
   - 在 level 0 Table descriptor 中, output address 为 level 1 table 的基地址。
   - 在 level 1 Table descriptor 中, output address 为 level 2 table 的基地址
   - 在 level 2 Table descriptor 中, output address 为 level 3 table 的基地址
 * 基地址的 Bits[13:0] 为 0.
-* 
+
 For a stage 1 translation only, bits[63:59] provide attributes for the next-level lookup, see Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699.
 
 If the translation table defines the Non-secure EL1&0 stage 1 translations, then the output address in the descriptor is the IPA of the target block or table. Otherwise, it is the PA of the target block or table.
