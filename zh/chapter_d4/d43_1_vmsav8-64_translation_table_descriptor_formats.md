@@ -20,7 +20,7 @@ Level 0 和 level 1 descriptors 都不支持 block translation
 Level 1 descriptor 不支持 block translation
 在 Level 2 table 中，block entry 映射 512MB 的 input address range
 
-[Figure D4-16 on page D4-1696](#) shows the ARMv8 level 0, level 1, and level 2 descriptor formats:
+[Figure D4-16](#) 描述了 ARMv8 level 0, level 1, and level 2 descriptor 格式:
 
 ![](figure_d4_16.png)
 
