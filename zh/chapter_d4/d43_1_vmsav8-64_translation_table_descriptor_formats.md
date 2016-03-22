@@ -32,7 +32,7 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下表所示：
 
 ||||
 | -- | -- | -- |
-| **0** | **Block** | The descriptor gives the base address of a block of memory, and the attributes for that memory region. |
+| **0** | **Block** | 此 descriptor 包含了一个内存块的基地址和属性。 |
 | **1** | **Table** | The descriptor gives the address of the next level of translation table, and for a stage 1 translation, some attributes for that translation. |
 
 The other fields in the valid descriptors are:
