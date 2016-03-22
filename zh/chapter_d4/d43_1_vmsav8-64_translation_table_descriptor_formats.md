@@ -39,6 +39,7 @@ The other fields in the valid descriptors are:
 
 **Block descriptor**  
 Gives the base address and attributes of a block of memory, as follows:  
+包含一个 memory block 的基地址和属性信息，如下：
 
 **4KB translation granule**  
 * For a level 1 Block descriptor, bits[47:30] are bits[47:30] of the output address. This output address specifies a 1GB block of memory.
