@@ -54,10 +54,9 @@ Gives the base address and attributes of a block of memory, as follows:
 Bits[63:52, 11:2] 包含该 memory block 的属性信息，更多属性相关内容可以参考 [Memory attribute fields in the VMSAv8-64 translation table format descriptors ](#)章节。Level 2 block descriptor 和 level 3 page descriptor 中的 Bits[63:52, 11:2] 含义是相同的。
 
 **Table descriptor**  
-Gives the translation table address for the next-level lookup, as follows:
 包含下一级 translation table 的基地址，如下：
 
-**4KB translation granule**
+**4KB translation granule**  
 * Bits[47:12] are bits[47:12] of the address of the required next-level table, which is:
   - For a level 0 Table descriptor, the address of a level 1 table.
   - For a level 1Table descriptor, the address of a level 2 table.
