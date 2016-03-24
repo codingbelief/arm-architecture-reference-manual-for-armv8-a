@@ -16,8 +16,6 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下所示：
 | **0** | **Reserved, invalid** | 与 bit[0] 为 0 时的效果一样，指示 Descriptor 为无效的。 |
 | **1** | **Page** | Descriptor 包含了 4KB、16KB 或者 64KB page 的地址和属性信息。|
 
-At this level, the only valid format is the Page descriptor. The other fields in the Page descriptor are:  
-
 在此 level 中，只存在 Page descriptor。Page descriptor 的其他位的含义如下：
 
 **Page descriptor**  
