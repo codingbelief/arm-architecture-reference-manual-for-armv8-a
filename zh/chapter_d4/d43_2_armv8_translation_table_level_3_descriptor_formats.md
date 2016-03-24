@@ -9,7 +9,6 @@ Figure D4-17 描述了 ARMv8 level 3 descriptor 的格式。
 
 Descriptor 的 bit[0] 指明该 descriptor 是否有效，该 bit 为 1 时，为有效的 descriptor。如果一次 lookup 操作返回一个无效的 descriptor，那么就意味着该 input address 没有进行映射，当访问该 input address 时，会产生 Translation fault。  
 
-Descriptor bit[1] identifies the descriptor type, and is encoded as:  
 Descriptor 的 bit[1] 指明该 descriptor 的类型，如下所示：
 
 **0, Reserved, invalid**  
