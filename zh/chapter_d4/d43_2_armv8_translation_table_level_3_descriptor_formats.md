@@ -20,8 +20,8 @@ Gives the address and attributes of a 4KB, 16KB, or 64KB page of memory.
 
 ||||
 | -- | -- | -- |
-| **0** | **Block** | Descriptor 包含了一个内存块的基地址和属性。 |
-| **1** | **Table** | Descriptor 包含了下一级 translation table 的基地址，在 stage 1 translation 中，还包含对应的 translation 的属性信息。|
+| **0** | **Reserved, invalid** | Descriptor 包含了一个内存块的基地址和属性。 |
+| **1** | **Page** | Descriptor 包含了下一级 translation table 的基地址，在 stage 1 translation 中，还包含对应的 translation 的属性信息。|
 
 At this level, the only valid format is the Page descriptor. The other fields in the Page descriptor are:  
 
