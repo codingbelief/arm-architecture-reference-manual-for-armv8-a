@@ -11,13 +11,6 @@ Descriptor 的 bit[0] 指明该 descriptor 是否有效，该 bit 为 1 时，�
 
 Descriptor 的 bit[1] 指明该 descriptor 的类型，如下所示：
 
-**0, Reserved, invalid**  
-Behaves identically to encodings with bit[0] set to 0.  
-This encoding must not be used in level 3 translation tables.
-
-**1, Page**  
-Gives the address and attributes of a 4KB, 16KB, or 64KB page of memory.
-
 ||||
 | -- | -- | -- |
 | **0** | **Reserved, invalid** | 与 bit[0] 为 0 时的效果一样，指示 Descriptor 为无效的。 |
