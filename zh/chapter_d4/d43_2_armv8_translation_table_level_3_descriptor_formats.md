@@ -29,6 +29,6 @@ Bits[47:16] 为 page 的地址的 bits[47:16]。
 Bits[63:52, 11:2] 包含 page 的属性信息，更多细节参考 [Memory attribute fields in the VMSAv8-64 translation table format descriptors](#) 章节.
 
 > **NOTE**:  
-> The position and contents of bits[63:52, 11:2] are identical to bits[63:52, 11:2] in the level 0, level 1, and level 2 block descriptors.
+> Page descriptor 的 bits[63:52, 11:2] 与 level 0、level 1 和 level 2 中的 block descriptor 中的 bits[63:52, 11:2] 的用途是相同的。
 
 如果 translation table 属于 Non-secure EL1&0 stage 1 translation，那么 descriptor 中的 output address 为 page 的 IPA，如果不属于，那么 output address 为 page 的 PA。
