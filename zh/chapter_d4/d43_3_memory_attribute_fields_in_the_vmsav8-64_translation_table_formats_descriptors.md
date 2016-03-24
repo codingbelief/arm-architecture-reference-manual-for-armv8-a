@@ -1,7 +1,5 @@
 ## D4.3.3 Memory attribute fields in the VMSAv8-64 translation table format descriptors
 
-[Memory region attributes on page D4-1712](#) describes the region attribute fields. The following subsections summarize the descriptor attributes as follows:  
-
 [Memory region attributes](#) 章节描述了 region 的属性信息。本小节后续内容将汇总 descriptor 的属性信息，包括：  
 
 **Table descriptor**  
