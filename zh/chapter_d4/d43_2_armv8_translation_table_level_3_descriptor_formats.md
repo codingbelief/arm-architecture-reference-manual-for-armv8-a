@@ -6,8 +6,8 @@ For the 64KB granule size, each entry in a level 3 table describes the mapping o
 Figure D4-17 shows the ARMv8 level 3 descriptor formats.
 
 使用 4KB granule 时，level 3 table 中的每一个 entry 都映射了 4KB 的 input address range。  
-使用 4KB granule 时，level 3 table 中的每一个 entry 都映射了 4KB 的 input address range。  
-使用 4KB granule 时，level 3 table 中的每一个 entry 都映射了 4KB 的 input address range。  
+使用 16KB granule 时，level 3 table 中的每一个 entry 都映射了 16KB 的 input address range。  
+使用 64KB granule 时，level 3 table 中的每一个 entry 都映射了 64KB 的 input address range。  
 
 ![](figure_d4_17.png)
 Descriptor bit[0] identifies whether the descriptor is valid, and is 1 for a valid descriptor. If a lookup returns an invalid descriptor, the associated input address is unmapped, and any attempt to access it generates a Translation fault.  
