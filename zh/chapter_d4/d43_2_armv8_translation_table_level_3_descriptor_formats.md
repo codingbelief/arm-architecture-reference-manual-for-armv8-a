@@ -19,7 +19,6 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下所示：
 在此 level 中，只存在 Page descriptor。Page descriptor 的其他位的含义如下：
 
 **Page descriptor**  
-Gives the output address of a page of memory, as follows:  
 该 descriptor 包含了一个 page 的地址，如下所示：
 **4KB translation granule**  
 Bits[47:12] are bits[47:12] of the output address for a page of memory.  
