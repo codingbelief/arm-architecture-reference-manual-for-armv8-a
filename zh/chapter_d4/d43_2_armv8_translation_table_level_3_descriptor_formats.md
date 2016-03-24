@@ -25,8 +25,6 @@ Gives the address and attributes of a 4KB, 16KB, or 64KB page of memory.
 
 At this level, the only valid format is the Page descriptor. The other fields in the Page descriptor are:  
 
-
-
 **Page descriptor**  
 Gives the output address of a page of memory, as follows:  
 **4KB translation granule**  
