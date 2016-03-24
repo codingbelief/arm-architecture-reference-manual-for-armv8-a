@@ -18,6 +18,8 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下所示：
 
 At this level, the only valid format is the Page descriptor. The other fields in the Page descriptor are:  
 
+在此 level 中，只存在 Page descriptor。Page descriptor 的其他位的含义如下：
+
 **Page descriptor**  
 Gives the output address of a page of memory, as follows:  
 **4KB translation granule**  
