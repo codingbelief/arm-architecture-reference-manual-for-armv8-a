@@ -26,7 +26,7 @@ Bits[47:12] 为 page 的地址的 bits[47:12]。
 Bits[47:14] 为 page 的地址的 bits[47:14]。  
 **64KB translation granule**  
 Bits[47:16] 为 page 的地址的 bits[47:16]。   
-Bits[63:52, 11:2] provide attributes for the target memory page, see [Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#).
+Bits[63:52, 11:2] 包含 page 的属性信息，更多细节参考 [Memory attribute fields in the VMSAv8-64 translation table format descriptors](#) 章节.
 
 
 > **NOTE**:  
