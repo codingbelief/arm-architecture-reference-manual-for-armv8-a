@@ -33,4 +33,4 @@ Bits[63:52, 11:2] 包含 page 的属性信息，更多细节参考 [Memory attri
 
 For the Non-secure EL1&0 stage 1 translations, the output address in the descriptor is the IPA of the target page. Otherwise, it is the PA of the target page.
 
-如果 translation table 属于 Non-secure EL1&0 stage 1 translation，那么 descriptor 中的 output address 为目标 block 或者 table 的 IPA，如果不属于，那么 output address 为目标 page 或者 table 的 PA。
+如果 translation table 属于 Non-secure EL1&0 stage 1 translation，那么 descriptor 中的 output address 为目标 block 或者 table 的 IPA，如果不属于，那么 output address 为目标 page 的 PA。
