@@ -22,7 +22,7 @@ Descriptor 的 bit[1] 指明该 descriptor 的类型，如下所示：
 该 descriptor 包含了一个 page 的地址，如下所示：
 **4KB translation granule**  
 Bits[47:12] are bits[47:12] of the output address for a page of memory.  
-Bits[47:12] 为 output address 的 bits[47:12]。此 output address 指向一个 32MB 的 memory block
+Bits[47:12] 为 output address 的 bits[47:12]。
 **16KB translation granule**  
 Bits[47:14] are bits[47:14] of the output address for a page of memory.  
 **64KB translation granule**  
