@@ -58,7 +58,6 @@ This bit is RES0 in the EL2 and EL3 translation regimes.
 在 EL2 和 EL3 translation regimes 中，该 bit 为 RES0。
 
 **Contiguous, bit[52]**  
-A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see The Contiguous bit on page D4-1715.
 该 bit 用于指示 translation table entry 是否属于 contiguous set or entries。contiguous set or entries cache 到 TLB 中时只占用一个 entry，更多信息参考 [The Contiguous bit](#) 章节。
 
 **nG, bit[11]**  
