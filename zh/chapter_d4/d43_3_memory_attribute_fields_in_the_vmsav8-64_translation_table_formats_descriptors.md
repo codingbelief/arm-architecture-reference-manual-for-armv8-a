@@ -39,6 +39,7 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 * 在 EL3 translation regime 中。
 
 The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see IGNORED on page Glossary-5886. For more information about these fields see Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715.
+被定义为 IGNORED 的比特位，在 PE 处理过程中，会被忽略，不参与地址转换过程。
 
 ### Attribute fields in stage 1 VMSAv8-64 Block and Page descriptors
 
