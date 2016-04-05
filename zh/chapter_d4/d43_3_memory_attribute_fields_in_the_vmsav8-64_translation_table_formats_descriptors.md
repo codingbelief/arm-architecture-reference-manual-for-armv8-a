@@ -39,7 +39,8 @@ This bit is reserved, SBZ:
 * In the EL3 translation regime.
 该属性定义了后续 lookup 操作的 PXN 属性，更多细节参考 [Hierarchical control of instruction fetching](#) 章节。
 该 bit 在以下场景中没有使用：
-
+* 在 EL2 translation regime 中。
+* 在 EL3 translation regime 中。
 
 The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see IGNORED on page Glossary-5886. For more information about these fields see Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715.
 
