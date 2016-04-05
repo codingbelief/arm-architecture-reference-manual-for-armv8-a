@@ -23,10 +23,6 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 对于来自 Non-secure state 下的内存访问， bit[63] 没有意义，此时该 bit 命名为 RES0，PE 在处理过程中会直接忽略此 bit。在 AArch64 EL2 translation regime 中，该 bit 命名为 RES1。
 
 **APTable, bits[62:61]**  
-Access permissions limit for subsequent levels of lookup, see [Hierarchical control of data access permissions on page D4-1706](#).  
-APTable[0] is RES0:
-* In the EL2 translation regime. 
-* In the EL3 translation regime.
 该属性为后续 lookup 操作的访问权限控制位 (Access permissions)，更多细节参考 [Hierarchical control of data access permissions](#) 章节。
 在以下两种场景中， APTable[0] 为 RES0：
 * 在 EL2 translation regime 中. 
