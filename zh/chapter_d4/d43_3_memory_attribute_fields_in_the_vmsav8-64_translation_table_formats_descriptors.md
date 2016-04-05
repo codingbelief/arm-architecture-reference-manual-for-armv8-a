@@ -27,7 +27,8 @@ Access permissions limit for subsequent levels of lookup, see [Hierarchical cont
 APTable[0] is RES0:
 * In the EL2 translation regime. 
 * In the EL3 translation regime.
-该属性为后续 lookup 操作的访问权限控制位 (Access permissions)，更多细节参考 [Hierarchical control of data access permissions](#) 章节.  
+该属性为后续 lookup 操作的访问权限控制位 (Access permissions)，更多细节参考 [Hierarchical control of data access permissions](#) 章节。
+在以下两种场景中， APTable[0] 为 RES0：
 
 **UXNTable or XNTable, bit[60]**  
 XN limit for subsequent levels of lookup, see [Hierarchical control of instruction fetching on page D4-1710](#).  
