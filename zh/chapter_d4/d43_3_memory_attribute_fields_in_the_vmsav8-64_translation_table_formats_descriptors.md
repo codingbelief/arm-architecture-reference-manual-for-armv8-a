@@ -4,7 +4,7 @@
 
 **Table descriptor**  
 Table descriptors for stage 2 translations do not include any attribute field. For a summary of the attribute fields in a stage 1 table descriptor, that define the attributes for the next lookup level, see Next-level attributes in stage 1 VMSAv8-64 Table descriptors.  
-在 stage 2 translation 中的 table descriptor 中没有包含属性信息。
+在 stage 2 translation 的 table descriptor 中没有包含属性信息。在 stage 1 translation 的 table descriptor 中包含 next lookup level 的属性信息，更多细节可以参考 [Next-level attributes in stage 1 VMSAv8-64 Table descriptors](#) 章节。
 
 **Block and page descriptors**  
 These descriptors define memory attributes for the target block or page of memory. Stage 1 and stage 2 translations have some differences in these attributes, see:  
