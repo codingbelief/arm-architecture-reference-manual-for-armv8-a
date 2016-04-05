@@ -9,7 +9,8 @@
 These descriptors define memory attributes for the target block or page of memory. Stage 1 and stage 2 translations have some differences in these attributes, see:  
 * Attribute fields in stage 1 VMSAv8-64 Block and Page descriptors on page D4-1700
 * Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors on page D4-1701.
-
+Block descriptor 和 Page descriptor 包含 target block 和 page 的内存属性信息。这些属性信息在 Stage 1 和 stage 2 略有差别：
+* 
 
 ### Next-level attributes in stage 1 VMSAv8-64 Table descriptors
 
