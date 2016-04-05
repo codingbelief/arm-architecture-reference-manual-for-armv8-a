@@ -59,7 +59,7 @@ This bit is RES0 in the EL2 and EL3 translation regimes.
 
 **Contiguous, bit[52]**  
 A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see The Contiguous bit on page D4-1715.
-该 bit 用于指示 translation table entry 是否属于 contiguous set or entries
+该 bit 用于指示 translation table entry 是否属于 contiguous set or entries。
 
 **nG, bit[11]**  
 The not global bit. Determines whether the TLB entry applies to all ASID values, or only to the current ASID value, see Global and process-specific translation table entries on page D4-1730.
