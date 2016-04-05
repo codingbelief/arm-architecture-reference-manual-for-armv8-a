@@ -10,6 +10,7 @@ These descriptors define memory attributes for the target block or page of memor
 * Attribute fields in stage 1 VMSAv8-64 Block and Page descriptors on page D4-1700
 * Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors on page D4-1701.
 
+
 ### Next-level attributes in stage 1 VMSAv8-64 Table descriptors
 
 In a Table descriptor for a stage 1 translation, bits[63:59] of the descriptor define the attributes for the next-level translation table access, and bits[58:52] are IGNORED:
