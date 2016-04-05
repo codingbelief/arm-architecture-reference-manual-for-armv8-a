@@ -31,6 +31,7 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 **UXNTable or XNTable, bit[60]**  
 XN limit for subsequent levels of lookup, see [Hierarchical control of instruction fetching on page D4-1710](#).  
 This bit is called UXNTable in the EL1&0 translation regime, where it only determines whether execution at EL0 of instructions fetched from the region identified at a lower level of lookup permitted. In the other translation regimes the bit is called XNTable.  
+该属性定义了后续 lookup 操作的 XN 属性，更多细节参考 [Hierarchical control of instruction fetching](#) 章节。
 
 
 **PXNTable, bit[59]**  
