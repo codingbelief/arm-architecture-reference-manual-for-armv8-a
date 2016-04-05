@@ -42,11 +42,10 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 
 ### Attribute fields in stage 1 VMSAv8-64 Block and Page descriptors
 
-In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 1 translation:
 Stage 1 translation 中的 Block 和 Page descriptor 的内存属性由 upper block 和 lower block 两部分组成，如下图所示：
 ![](figure_d4_19.png)
 
-For a stage 1 descriptor, the attributes are:
+在 Stage 1 descriptor, 各个属性的定义如下:
 
 **UXN or XN, bit[54]**  
 The Execute-never bit. Determines whether the region is executable, see [Access permissions for instruction execution on page D4-1707](#).
