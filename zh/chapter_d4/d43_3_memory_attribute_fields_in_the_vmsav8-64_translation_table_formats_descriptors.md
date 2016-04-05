@@ -14,6 +14,8 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 
 In a Table descriptor for a stage 1 translation, bits[63:59] of the descriptor define the attributes for the next-level translation table access, and bits[58:52] are IGNORED:
 
+在 stage 1 translation 的 Table descriptor 中，bits[63:59] 为 next-level translation table 的属性信息，bits[58:52] 没有使用。
+
 ![](figure_d4_18.png)
 
 These attributes are:
