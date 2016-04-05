@@ -21,7 +21,7 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 **NSTable, bit[63]**  
 For memory accesses from Secure state, specifies the Security state for subsequent levels of lookup, see [Hierarchical control of Secure or Non-secure memory accesses on page D4-1703](#).
 For memory accesses from Non-secure state, this bit is RES0 and is ignored by the PE. This field is RES1 in the AArch64 EL2 translation regime.
-对于
+对于来自 Secure state 下的内存访问，该属性用于指示后续的 lookup 操作是处于 Secure state 还是 non-secure state.
 
 
 **APTable, bits[62:61]**  
