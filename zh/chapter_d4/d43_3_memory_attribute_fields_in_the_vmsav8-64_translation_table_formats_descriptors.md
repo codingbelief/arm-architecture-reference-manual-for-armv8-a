@@ -51,6 +51,7 @@ Stage 1 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 The Execute-never bit. Determines whether the region is executable, see [Access permissions for instruction execution on page D4-1707](#).
 This bit is called UXN (Unprivileged execute never) in the EL1&0 translation regime, where it only determines whether execution at EL0 of instructions fetched from the region is permitted. In the other translation regimes the bit is called XN (Execute never).
 
+
 **PXN, bit[53]**  
 The Privileged execute-never bit. Determines whether the region is executable at EL1, see Access permissions for instruction execution on page D4-1707.
 This bit is RES0 in the EL2 and EL3 translation regimes.
