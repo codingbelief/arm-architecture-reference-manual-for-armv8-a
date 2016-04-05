@@ -16,7 +16,7 @@ Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存�
 
 ![](figure_d4_18.png)
 
-These attributes are:
+各个属性如下:
 
 **NSTable, bit[63]**  
 For memory accesses from Secure state, specifies the Security state for subsequent levels of lookup, see [Hierarchical control of Secure or Non-secure memory accesses on page D4-1703](#).
