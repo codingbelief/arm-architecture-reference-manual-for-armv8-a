@@ -55,7 +55,7 @@ Stage 1 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 The Privileged execute-never bit. Determines whether the region is executable at EL1, see Access permissions for instruction execution on page D4-1707.
 This bit is RES0 in the EL2 and EL3 translation regimes.
 该 bit 为 Privileged execute-never，决定了 descriptor 所指向的 region 在 EL1 中是否 executable，更多信息参考 [Access permissions for instruction execution](#) 章节。 
-
+在 EL2 和 EL3 translation regimes 中，该 bit 为 RES0
 
 **Contiguous, bit[52]**  
 A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see The Contiguous bit on page D4-1715.
