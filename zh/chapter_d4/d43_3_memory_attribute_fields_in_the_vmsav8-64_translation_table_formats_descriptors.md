@@ -114,4 +114,4 @@ Stage 2 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 Stage 2 memory attributes, see [The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713](#).
 该 bit 为 Stage 2 memory attributes，更多细节参考 [The memory region attributes for stage 2 translations, EL1&0 translation regim](#) 章节。
 
-The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see IGNORED on page Glossary-5886. For more information about these fields see [Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715](#).
+被定义为 IGNORED 的比特位，在 PE 处理过程中会被忽略，不参与地址转换过程，更多信息可以参考 Glossary 章节中的 [IGNORED](#) 。 [Other fields in the VMSAv8-64 translation table format descriptors](#) 章节则介绍了除上述属性外的其他比特位的详细信息。
