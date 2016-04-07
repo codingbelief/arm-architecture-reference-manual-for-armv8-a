@@ -89,13 +89,12 @@ For memory accesses from Non-secure state, this bit is RES0 and is ignored by th
 
 ### Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors
 
-In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 2 translation:
 Stage 2 translation 中的 Block 和 Page descriptor 的内存属性由 upper block 和 lower block 两部分组成，如下图所示：
 
 ![](figure_d4_20.png)
 
 
-For a stage 2 descriptor, the attributes are:
+在 Stage 1 descriptor, 各个属性的定义如下:
 
 **XN, bit[54]**  
 The Execute-never bit. Determines whether the region is executable, see [Access permissions for
