@@ -70,7 +70,6 @@ Shareability field, see Memory region attributes on page D4-1712.
 该 bit 为 Shareability field，更多细节参考 [Memory region attributes](#) 章节。
 
 **AP[2:1], bits[7:6]**  
-￼Data Access Permissions bits, see Memory access control on page D4-1704. 
 该 bit 为 Data Access Permissions，更多细节参考 [Memory access control](#) 章节。
 > **NOTE:**
 The ARMv8 translation table descriptor format defines AP[2:1] as the Access Permissions bits, and does not define an AP[0] bit.
