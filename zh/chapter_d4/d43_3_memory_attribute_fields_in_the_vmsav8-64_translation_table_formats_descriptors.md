@@ -105,8 +105,7 @@ Stage 2 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 该 bit 为 Access flag，更多细节参考 [Access flag](#) 章节。
 
 **SH, bits[9:8]**  
-Shareability field, see [The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713](#). 
-该 bit 为 Shareability field，更多细节参考 [Memory region attributes](#) 章节。
+该 bit 为 Shareability field，更多细节参考 [The memory region attributes for stage 2 translations, EL1&0 translation regime](#) 章节。
 
 **S2AP, bits[7:6]**  
 Stage 2 data Access Permissions bits, see [The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706](#).
