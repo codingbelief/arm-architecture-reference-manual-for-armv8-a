@@ -83,10 +83,11 @@ For memory accesses from Non-secure state, this bit is RES0 and is ignored by th
 对于在 Non-secure state 下发起的内存访问中，该 bit 为 RES0，PE 不对其做处理。在 AArch64 EL2 translation regime 中，该 bit 为 RES1。
 
 **AttrIndx[2:0], bits[4:2]**  
-Stage 1 memory attributes index field, for the MAIR_ELx, see [Memory region type and attributes, for stage 1 translations on page D4-1712](#).
 该 bit 为 Stage 1 memory attributes index，即 MAIR_ELx，更多细节参考 [Memory region type and attributes, for stage 1 translations](#) 章节。
 
 The definition of IGNORED means the architecture guarantees that the PE makes no use of the field, see [IGNORED on page Glossary-5886](#). For more information about these fields see [Other fields in the VMSAv8-64 translation table format descriptors on page D4-1715](#).
+
+
 
 ### Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors
 
