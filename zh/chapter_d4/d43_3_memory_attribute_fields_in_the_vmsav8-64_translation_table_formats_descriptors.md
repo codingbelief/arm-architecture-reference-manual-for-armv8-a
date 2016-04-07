@@ -109,6 +109,7 @@ Stage 2 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 
 **S2AP, bits[7:6]**  
 Stage 2 data Access Permissions bits, see [The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706](#).
+该 bits 为 Stage 2 data Access Permissions bits
 > **NOTE:**
 > In the original VMSAv7-32 Long-descriptor attribute definition, this field was called HAP[2:1], for consistency with the AP[2:1] field in the stage 1 descriptors and despite there being no HAP[0] bit. ARMv8 renames the field for greater clarity.
 
