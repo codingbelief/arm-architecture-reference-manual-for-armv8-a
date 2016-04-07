@@ -100,11 +100,10 @@ Stage 2 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 该 bit 为 Execute-never，决定了 descriptor 所指向的 region 是否 executable，更多信息参考 [Access permissions for instruction execution](#) 章节。 
 
 **Contiguous, bit[52]**  
-A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see [The Contiguous bit on page D4-1715.](#)
 该 bit 用于指示 translation table entry 是否属于 contiguous set or entries。contiguous set or entries cache 到 TLB 中时只占用一个 entry，更多信息参考 [The Contiguous bit](#) 章节。
 
 **AF, bit[10]**  
-The Access flag, see [The Access flag on page D4-1711](#).
+该 bit 为 Access flag，更多细节参考 [Access flag](#) 章节。
 
 **SH, bits[9:8]**  
 Shareability field, see [The memory region attributes for stage 2 translations, EL1&0 translation regime on page D4-1713](#). 
