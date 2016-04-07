@@ -75,7 +75,7 @@ Shareability field, see Memory region attributes on page D4-1712.
 在 ARMv8 中，translation table descriptor 格式定义了 AP[2:1] 作为 Access Permission，AP[0] 没有被使用。
 
 AP[1] is valid only to the EL1&0 translation regime, and is RES1 in all other translation regimes.
-AP[1] 只在 EL1&0 translation regime 有效，在其他 regimes 中，该 bit 为 RES1.
+AP[1] 只在 EL1&0 translation regime 有效，在其他 regimes 中，该 bit 为 RES1。
 
 **NS, bit[5]**  
 Non-secure bit. For memory accesses from Secure state, specifies whether the output address is in the Secure or Non-secure address map, see [Control of Secure or Non-secure memory access on page D4-1702](#).  
