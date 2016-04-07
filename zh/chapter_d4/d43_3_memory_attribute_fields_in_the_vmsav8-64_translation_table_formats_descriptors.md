@@ -97,8 +97,7 @@ Stage 2 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 在 Stage 1 descriptor, 各个属性的定义如下:
 
 **XN, bit[54]**  
-The Execute-never bit. Determines whether the region is executable, see [Access permissions for
-instruction execution on page D4-1707](#). 
+该 bit 为 Execute-never，决定了 descriptor 所指向的 region 是否 executable，更多信息参考 [Access permissions for instruction execution](#) 章节。 
 
 **Contiguous, bit[52]**  
 A hint bit indicating that the translation table entry is one of a contiguous set or entries, that might be cached in a single TLB entry, see [The Contiguous bit on page D4-1715.](#)
