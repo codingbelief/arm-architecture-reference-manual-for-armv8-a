@@ -87,7 +87,6 @@ For memory accesses from Non-secure state, this bit is RES0 and is ignored by th
 
 被定义为 IGNORED 的比特位，在 PE 处理过程中会被忽略，不参与地址转换过程，更多信息可以参考 Glossary 章节中的 [IGNORED](#) 。 [Other fields in the VMSAv8-64 translation table format descriptors](#) 章节则介绍了除上述属性外的其他比特位的详细信息。
 
-
 ### Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors
 
 In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 2 translation:
