@@ -62,6 +62,7 @@ Stage 1 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 The not global bit. Determines whether the TLB entry applies to all ASID values, or only to the current ASID value, see Global and process-specific translation table entries on page D4-1730.
 Valid only to the EL1&0 translation regime. This bit is RES0 in all other translation regimes.
 
+
 **AF, bit[10]**  
 The Access flag, see The Access flag on page D4-1711.
 
