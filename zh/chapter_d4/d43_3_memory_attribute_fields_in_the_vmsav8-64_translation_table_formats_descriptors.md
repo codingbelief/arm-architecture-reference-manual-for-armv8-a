@@ -63,11 +63,11 @@ Stage 1 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 该 bit 只在 EL1&0 translation regime 中有效，在其他 regimes 中为 RES0。
 
 **AF, bit[10]**  
-The Access flag, see The Access flag on page D4-1711.
 该 bit 为 Access flag，更多细节参考 [Access flag](#) 章节。
 
 **SH, bits[9:8]**  
 Shareability field, see Memory region attributes on page D4-1712. 
+该 bit 为 Shareability field，更多细节参考 [Memory region attributes](#) 章节。
 
 **AP[2:1], bits[7:6]**  
 ￼Data Access Permissions bits, see Memory access control on page D4-1704. 
