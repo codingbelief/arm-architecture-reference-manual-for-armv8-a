@@ -79,7 +79,7 @@ AP[1] 只在 EL1&0 translation regime 有效，在其他 regimes 中，该 bit �
 **NS, bit[5]**  
 Non-secure bit. For memory accesses from Secure state, specifies whether the output address is in the Secure or Non-secure address map, see [Control of Secure or Non-secure memory access on page D4-1702](#).  
 For memory accesses from Non-secure state, this bit is RES0 and is ignored by the PE. This field is RES1 in the AArch64 EL2 translation regime.
-
+该 bit 为 Non-secure，
 
 **AttrIndx[2:0], bits[4:2]**  
 Stage 1 memory attributes index field, for the MAIR_ELx, see [Memory region type and attributes, for stage 1 translations on page D4-1712](#).
