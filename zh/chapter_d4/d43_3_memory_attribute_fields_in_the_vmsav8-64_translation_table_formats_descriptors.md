@@ -59,13 +59,12 @@ Stage 1 translation 中的 Block 和 Page descriptor 的内存属性由 upper bl
 该 bit 用于指示 translation table entry 是否属于 contiguous set or entries。contiguous set or entries cache 到 TLB 中时只占用一个 entry，更多信息参考 [The Contiguous bit](#) 章节。
 
 **nG, bit[11]**  
-The not global bit. Determines whether the TLB entry applies to all ASID values, or only to the current ASID value, see Global and process-specific translation table entries on page D4-1730.
-Valid only to the EL1&0 translation regime. This bit is RES0 in all other translation regimes.
 该 bit 为 not global，当 entry 被加载到 TLB 时，该 bit 用于指示 TLB entry 是属于当前 ASID 还是属于所有的 ASID，更多细节可以参考 [Global and process-specific translation table entries](#) 章节。
 该 bit 只在 EL1&0 translation regime 中有效，在其他 regimes 中为 RES0。
 
 **AF, bit[10]**  
 The Access flag, see The Access flag on page D4-1711.
+该 bit 为 Access flag，更多细节参考 [Access flag](#) 章节。
 
 **SH, bits[9:8]**  
 Shareability field, see Memory region attributes on page D4-1712. 
