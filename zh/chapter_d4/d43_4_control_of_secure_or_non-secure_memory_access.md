@@ -30,7 +30,7 @@ Descriptor 所指向的 translation table 基地址属于 Secure physical addres
 
 **NSTable==1**  
 The defined table address is in the Non-secure physical address space. Because this table is fetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
-Descriptor 所指向的 translation table 基地址属于 Non-secure physical address space。由于该 translation table 存储在 Non-secure memory，因此该 table 中的所有 descriptors 的 NS 和 NSTable bits 都会被忽略。
+Descriptor 所指向的 translation table 基地址属于 Non-secure physical address space。由于该 translation table 存储在 Non-secure memory，因此该 table 中的所有 descriptors 的 NS 和 NSTable bits 都会被忽略。这也就意味着：
 
 * The value of the NS bit in any block or page descriptor is ignored. The block or page address refers to Non-secure memory.
 * The value of the NSTable bit in any table descriptor is ignored, and the table address refers to Non-secure memory. When this table is accessed, the NS bit in any block or page descriptor is ignored, and all descriptors in the table refer to Non-secure memory.
