@@ -36,3 +36,4 @@ Descriptor 所指向的 translation table 基地址属于 Non-secure physical ad
 此外，在 Secure state 下，从 Non-secure memory 中读取的 translation table entry 都会当做 non-global 处理，即不管该 entry 中的 nG bit 的值是多少，都当 nG 为 1 来处理。更多 nG bit 相关的信息，可以参考 [Global and process-specific translation table entries](#) 章节。
 
 The effect of NSTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore a change to NSTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
+
