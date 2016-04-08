@@ -25,6 +25,8 @@ In the Secure translation regimes, for translation table descriptors that are fe
 
 For VMSAv8-64 table descriptors for stage 1 translations, the descriptor includes an NSTable bit, that indicates whether the table identified in the descriptor is in Secure or Non-secure memory. For accesses from Secure state, the meaning of the NSTable bit is:
 
+
+
 **NSTable == 0**  
 The defined table address is in the Secure physical address space. In the descriptors in that translation table, NS bits and NSTable bits have their defined meanings.
 
