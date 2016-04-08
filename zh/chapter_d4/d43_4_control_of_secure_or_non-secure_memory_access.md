@@ -29,11 +29,8 @@ In the Secure translation regimes, for translation table descriptors that are fe
 Descriptor 所指向的 translation table 基地址属于 Secure physical address space，该 translation table 中的 descriptors 的 NS 和 NSTable bits 为有效 bit。
 
 **NSTable==1**  
-The defined table address is in the Non-secure physical address space. Because this table is fetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
 Descriptor 所指向的 translation table 基地址属于 Non-secure physical address space。由于该 translation table 存储在 Non-secure memory，因此该 table 中的所有 descriptors 的 NS 和 NSTable bits 都会被忽略。这也就意味着：
-* The value of the NS bit in any block or page descriptor is ignored. The block or page address refers to Non-secure memory
 * 该 table 中的所有 block or page descriptor 的 NS bit 都会被忽略。Block or page address 都属于 Non-secure memory。 
-* The value of the NSTable bit in any table descriptor is ignored, and the table address refers to Non-secure memory. When this table is accessed, the NS bit in any block or page descriptor is ignored, and all descriptors in the table refer to Non-secure memory.
 * 该 table 中的 table descriptor 的 NSTable 都会被忽略，table descriptor 所指向的 table address 属于 Non-secure memory。当 table descriptor 所指向的 table 被访问时，此 table 的 block or page descriptor 的 NS bit 也会被忽略，此 table 的所有 descriptors 所映射的地址都属于 Non-secure memory。
 
 In addition, an entry fetched in Secure state is treated as non-global if it is read from Non-secure memory. That is, these entries must be treated as if nG==1, regardless of the value of the nG bit. For more information about the nG bit, see Global and process-specific translation table entries on page D4-1730.
