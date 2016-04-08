@@ -15,6 +15,7 @@ The NS and NSTable bits are valid only for memory accesses from Secure state des
 * In the translation table descriptors in a Non-secure translation table, the NS and NSTable bits are SBZ.
 * 存储在 Non-secure translation table 中的 translation table descriptor 中，NS 和 NSTable bits 都为 SBZ。
 * Memory accesses from Non-secure state, including all accesses from EL2, ignore the values of these bits.
+* 在 Non-secure state 下的内存访问中，包括所有来自 EL2 的内存访问，NS 和 NSTable bits 都被忽略处理。
 
 In the Secure translation regimes, for translation table descriptors that are fetched from Secure memory, the NS bit in a descriptor indicates whether the descriptor refers to the Secure or the Non-secure address map, as follows:  
 **NS == 0** Access the Secure physical address space.  
