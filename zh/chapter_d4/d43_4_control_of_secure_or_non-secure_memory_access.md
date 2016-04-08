@@ -20,7 +20,7 @@ In the Secure translation regimes, for translation table descriptors that are fe
 **NS == 1** Access the Non-secure physical address space.  
 
 For Non-secure translation regimes, and for translation table descriptors fetched from Non-secure memory, the corresponding bit is RES0 and is ignored by the PE. The access is made to Non-secure memory, regardless of the value of the bit.
-
+对于 Non-secure translation regimes，以及存储在 Non-secure memory 中的 translation table descriptor 中。
 
 ### Hierarchical control of Secure or Non-secure memory accesses
 
