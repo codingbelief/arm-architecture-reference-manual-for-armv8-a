@@ -32,7 +32,7 @@ The defined table address is in the Secure physical address space. In the descri
 
 
 **NSTable==1**  
-ThedefinedtableaddressisintheNon-securephysicaladdressspace.Becausethistableisfetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
+The defined table addressis in the Non-secure physical address space.Because this table is fetched from the Non-secure address space, the NS and NSTable bits in the descriptors in this table must be ignored. This means that, for this table:
 * The value of the NS bit in any block or page descriptor is ignored. The block or page address refers to Non-secure memory.
 * The value of the NSTable bit in any table descriptor is ignored, and the table address refers to Non-secure memory. When this table is accessed, the NS bit in any block or page descriptor is ignored, and all descriptors in the table refer to Non-secure memory.
 
