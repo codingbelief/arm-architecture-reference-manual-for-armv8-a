@@ -34,6 +34,7 @@ Descriptor 所指向的 translation table 基地址属于 Non-secure physical ad
 * The value of the NS bit in any block or page descriptor is ignored. The block or page address refers to Non-secure memory
 * 该 table 中的所有 block or page descriptor 的 NS bit 都会被忽略。Block or page address 都属于 Non-secure memory。 
 * The value of the NSTable bit in any table descriptor is ignored, and the table address refers to Non-secure memory. When this table is accessed, the NS bit in any block or page descriptor is ignored, and all descriptors in the table refer to Non-secure memory.
+* 该 table 中的 table descriptor 的 NSTable 都会被忽略，table descriptor 所指向的 table address 属于 Non-secure memory。
 
 In addition, an entry fetched in Secure state is treated as non-global if it is read from Non-secure memory. That is, these entries must be treated as if nG==1, regardless of the value of the nG bit. For more information about the nG bit, see Global and process-specific translation table entries on page D4-1730.
 
