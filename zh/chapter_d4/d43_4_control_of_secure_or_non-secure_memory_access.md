@@ -10,7 +10,6 @@ Translation table entry 中的 NS bit 有以下的用途：
 * NS bit 只与 block or page table descriptor 中所定义的 block or page 的 output address 有关。
 * 在 table descriptor 中，则有 NSTable bit 来描述 lower levels lookup 的属性，更多细节参考 [Hierarchical control of Secure or Non-secure memory accesses](#) 章节。
 
-The NS and NSTable bits are valid only for memory accesses from Secure state described by translation table descriptors that are fetched from Secure memory, and:
 只有在 Secure state 下的内存访问，同时内存访问所使用的 translation table descriptor 存储于 Secure memory 中时，NS 和 NSTable bits 才是有效的，此外：  
 * 存储在 Non-secure translation table 中的 translation table descriptor 中，NS 和 NSTable bits 都为 SBZ。
 * 在 Non-secure state 下的内存访问中，包括所有来自 EL2 的内存访问，NS 和 NSTable bits 都被忽略处理。
