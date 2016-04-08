@@ -37,4 +37,4 @@ Descriptor 所指向的 translation table 基地址属于 Non-secure physical ad
 
 The effect of NSTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore a change to NSTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
 
-由于 NSTable 的状态会影响后续 translation table walk 中的 entries，包括已经被加载到 TLB 中 entries。因此，在修改 NSTable bit 时，需要做 coarse-grained invalidation of the TLB 操作
+由于 NSTable 的状态会影响后续 translation table walk 中的 entries，包括已经被加载到 TLB 中 entries。因此，在修改 NSTable bit 时，需要做 coarse-grained invalidation of the TLB 操作，来保证 NSTable 的修改能够正确的反应到后续的 memory transactions 中。
