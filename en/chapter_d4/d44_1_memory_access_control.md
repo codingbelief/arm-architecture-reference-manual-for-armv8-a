@@ -183,7 +183,7 @@ The UXNTable, XNTable, and PXNTable controls are provided only for stage 1 trans
 
 The effect of UXNTable, XNTable, or PXNTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore, a change to UXNTable, XNTable, or PXNTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
 
-
+**Preventing execution from writable locations**
 
 
 
