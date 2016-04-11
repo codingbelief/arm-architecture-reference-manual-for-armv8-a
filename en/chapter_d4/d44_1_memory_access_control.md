@@ -19,3 +19,6 @@ The access permission bits control access to the corresponding memory region. Th
 * In stage 2 translations, uses S2AP[1:0] to define the data access permissions, see The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
 * Uses the UXN, XN and PXN bits to define access controls for instruction fetches, see Access permissions for instruction execution on page D4-1707.
 
+An attempt to perform a memory access that the translation table access permission bits do not permit generates a Permission fault, for the corresponding stage of translation.
+> **NOTE: **  
+> 
