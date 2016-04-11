@@ -21,4 +21,33 @@ The access permission bits control access to the corresponding memory region. Th
 
 An attempt to perform a memory access that the translation table access permission bits do not permit generates a Permission fault, for the corresponding stage of translation.
 > **NOTE: **  
-> 
+> In an implementation that includes EL2, each stage of the translation of a memory access made from Non-secure EL1 or EL0 has its own, independent, permission check.
+
+### The data access permission controls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
