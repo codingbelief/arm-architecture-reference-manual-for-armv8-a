@@ -69,7 +69,8 @@ The S2AP access permissions make no distinction between Non-secure accesses from
 
 **Hierarchical control of data access permissions**  
 
-The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the data access permissions.
+The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the data access permissions.  
+
 > **NOTE: **  
 > Similar hierarchical controls apply to instruction fetching, see Hierarchical control of instruction fetching on page D4-1710.  
 
