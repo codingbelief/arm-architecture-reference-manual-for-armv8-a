@@ -72,13 +72,14 @@ The S2AP access permissions make no distinction between Non-secure accesses from
 The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the data access permissions.  
 
 > **NOTE: **  
-> Similar hierarchical controls apply to instruction fetching, see Hierarchical control of instruction fetching on page D4-1710.  
+> Similar hierarchical controls apply to instruction fetching, see [Hierarchical control of instruction fetching on page D4-1710](#).  
 
-The restrictions apply only to subsequent levels of lookup for the same stage of translation. The APTable[1:0] field restricts the access permissions, as Table D4-32 shows.
+The restrictions apply only to subsequent levels of lookup for the same stage of translation. The APTable[1:0] field restricts the access permissions, as Table D4-32 shows.  
+
 As stated in the table footnote, for the EL2 translation regime, APTable[0] is reserved, SBZ, and is ignored by the hardware.
 
-
-
+![](table_d4_32_1.png)
+![](table_d4_32_2.png)
 
 
 
