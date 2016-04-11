@@ -88,7 +88,7 @@ The VMSAv8-64 provides APTable[1:0] control only for the stage 1 translations. T
 
 The effect of APTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore, a change to APTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
 
-
+**Access permissions for instruction execution**
 
 
 
