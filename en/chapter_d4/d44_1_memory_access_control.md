@@ -123,6 +123,13 @@ The execute-never controls apply to speculative instruction fetching, meaning sp
 * The software that defines a translation table must mark any region of memory that is read-sensitive as execute-never, to avoid the possibility of a speculative fetch accessing the memory region. This means it must mark any memory region that corresponds to a read-sensitive peripheral as execute-never. Hardware does not prevent speculative accesses to a region of any Device memory type unless that region is also marked as execute-never for all Exception levels from which it can be accessed.
 * When no stage of address translation for the translation regime is enabled, memory regions cannot have UXN, XN, or PXN attributes assigned. [Behavior of instruction fetches when all associated stages of translation are disabled on page D4-1679](#) describes how disabling all stages of address translation affects instruction fetching.
 
+The following subsubsections describe the data access permission controls:
+
+• Instruction access and execution permissions for stage 1 translations.
+• Instruction execution permissions for stage 2 translations on page D4-1710.
+• Hierarchical control of instruction fetching on page D4-1710.
+• Preventing execution from writable locations on page D4-1711.
+• Restriction on Secure instruction fetch on page D4-1711.
 
 
 
