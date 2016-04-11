@@ -137,7 +137,8 @@ Table D4-33 and Table D4-34 on page D4-1709 include the AP[2:1] read and write p
 **W** Indicates Write permission granted.  
 Table D4-33 shows the access permissions for instruction execution for stage 1 of the EL1&0 translation regime.
 
-
+![](table_d4_33_1.png)
+![](table_d4_33_2.png)
 
 
 
