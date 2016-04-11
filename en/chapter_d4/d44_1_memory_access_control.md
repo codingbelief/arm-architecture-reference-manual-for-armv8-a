@@ -193,7 +193,8 @@ ARMv8 provides control bits that, when corresponding stage 1 address translation
    - All regions that are writable from EL1 at stage 1 of the address translation are treated as PXN
 * For the EL2 translation regime, when the value of SCTLR_EL2.WXN is 1, all regions that are writable at stage 1 of the address translation are treated as XN.
 * For the EL3 translation regime, when the value of SCTLR_EL3.WXN is 1, all regions that are writable at stage 1 of the address translation are treated as XN.
-Note
+
+> **NOTE: **  
 * The SCTLR_ELx.WXN controls are intended to be used in systems with very high security requirements.
 * Setting a WXN bit to 1 changes the interpretation of the translation table entry, overriding a zero value of a
 UXN, XN, or PXN field. It does not cause any change to the translation table entry.
