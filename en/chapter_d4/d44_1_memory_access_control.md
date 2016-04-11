@@ -202,6 +202,9 @@ For any given virtual machine, ARM expects WXN to remain static in normal operat
 
 **Restriction on Secure instruction fetch**  
 
+EL3 provides a Secure instruction fetch bit, SCR_EL3.SIF. When the value of this bit is 1, and execution is using the EL3 translation regime or the Secure EL1 translation regime, any attempt to execute an instruction fetched from Non-secure physical memory causes a Permission fault. TLB entries might reflect the value of this bit, and therefore any change to the value of this bit requires synchronization and TLB invalidation, as described in TLB maintenance requirements and the TLB maintenance instructions on page D4-1733.
+
+
 
 
 
