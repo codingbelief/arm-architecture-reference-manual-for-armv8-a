@@ -3,6 +3,7 @@
 
 The access control fields in the translation table descriptors determine whether the PE, in its current state, is permitted to perform the required access to the output address given in the translation table descriptor. If a translation stage does not permit the access then an MMU fault is generated for that translation stage, and no memory access is performed.  
 The following sections describe the memory access controls:
+
 * [About the access permissions](#).
 * [The data access permission controls on page D4-1705](#).
 * [Access permissions for instruction execution on page D4-1707](#).
@@ -27,6 +28,7 @@ An attempt to perform a memory access that the translation table access permissi
 ### The data access permission controls
 
 The following subsubsections describe the data access permission controls:
+
 * The AP[2:1] data access permissions, for stage 1 translations.
 * The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
 * Hierarchical control of data access permissions on page D4-1706.
@@ -38,12 +40,14 @@ For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1
 **AP[1]** Selects between Application level (EL0) and System level (EL1) control.  
 
 This provides four permission settings for data accesses:
+
 * Read-only at all levels.
 * Read/write at all levels.
 * Read-only at EL1, no access by software executing at EL0.
 * Read/write at EL1, no access by software executing at EL0.
 
 For translation regimes other than the EL1&0 translation regimes, AP[2] determines the stage 1 data access permissions, and AP[1] is:
+
 * SBO.
 * Ignored by hardware and is treated as if it is 1.
 
