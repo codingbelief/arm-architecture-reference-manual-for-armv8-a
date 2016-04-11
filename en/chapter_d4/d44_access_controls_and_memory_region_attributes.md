@@ -7,7 +7,7 @@ In addition to an output address, a translation table entry that refers to a pag
 
 > **NOTE:**  
 This section describes the access controls and memory region attributes for each of the translation regimes, and for both stages of translation in the Non-secure EL1&0 translation regime. In general, attribute assignment is simpler in the EL2 and EL3 translation regimes, and in these regimes behavior is consistent with fields in the translation tables being treated as follows:
-• APTable[0] is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
-• AP[1] is RES1 and is ignored by the PE, meaning it is treated as if it is 1.
-• The PXNTable bit is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
-• The PXN field is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
+* APTable[0] is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
+* AP[1] is RES1 and is ignored by the PE, meaning it is treated as if it is 1.
+* The PXNTable bit is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
+* The PXN field is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
