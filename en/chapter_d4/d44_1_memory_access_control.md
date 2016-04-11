@@ -54,7 +54,7 @@ For the Non-secure EL1&0 translation regime:
 * The stage 2 translation also defines data access permissions, see [The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706](#).
 * When both stages of translation are enabled, [Combining the stage 1 and stage 2 data access permissions on page D4-1717](#) describes how these permissions are combined.
 
-
+Table D4-30 shows the effect of the AP[2] data access permission bit for the EL2 and EL3 translation regimes.
 
 
 
