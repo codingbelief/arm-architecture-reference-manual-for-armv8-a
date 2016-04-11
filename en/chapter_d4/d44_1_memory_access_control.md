@@ -209,6 +209,7 @@ EL3 provides a Secure instruction fetch bit, SCR_EL3.SIF. When the value of this
 The Access flag indicates when a page or section of memory is accessed for the first time since the Access flag in the corresponding translation table descriptor was set to 0.
 The AF bit in the translation table descriptors is the Access flag.
 
+**Software management of the Access flag**  
 
 
 
