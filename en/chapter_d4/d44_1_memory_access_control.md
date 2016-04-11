@@ -187,6 +187,7 @@ The effect of UXNTable, XNTable, or PXNTable applies to later entries in the tra
 **Preventing execution from writable locations**
 
 ARMv8 provides control bits that, when corresponding stage 1 address translation is enabled, force writable memory to be treated as UXN, PXN, or XN, regardless of the value of the UXN, PXN, or XN bit:
+
 • For the EL1&0 translation regime, when the value of SCTLR_EL1.WXN is 1:
 — All regions that are writable from EL0 at stage 1 of the address translation are treated as UXN.
 — All regions that are writable from EL1 at stage 1 of the address translation are treated as PXN
