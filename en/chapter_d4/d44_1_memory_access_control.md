@@ -48,6 +48,10 @@ For translation regimes other than the EL1&0 translation regimes, AP[2] determin
 
 Table D4-29 shows the effect of the data access permission bits for stage 1 of the EL1&0 translation regime. In this table, an entry of None indicates that any access from that Exception level faults.
 
+![](table_d4_29.png)
+
+
+
 
 
 
