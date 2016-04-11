@@ -145,8 +145,7 @@ Table D4-34 shows the access permissions for instruction execution for the EL2 a
 ![](table_d4_34.png)
 
 > **NOTE: **  
-> The Access permissions for the AArch64 EL2 and EL3 translation regimes are consistent with the following fields in the translation table entries being treated as shown:
-• • • •
+> The Access permissions for the AArch64 EL2 and EL3 translation regimes are consistent with the following fields in the translation table entries being treated as shown:  
 AP[1] treated as RES1. APTable treated as RES0. PXN treated as RES0. PXNTable treated as RES0.
 
 
