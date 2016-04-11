@@ -105,7 +105,10 @@ Defined for stage 2 of the EL1&0 translation regime and for stage 1 of the EL2 a
 
 Each of theses bits is set to 1 to indicate that instructions cannot be executed from the target memory region. In addition:
 
-
+* For the EL1&0 translation regime, if the value of the AP[2:1] bits is 0b01, permitting write access from EL0, then the PXN bit is treated as if it has the value 1, regardless of its actual value.
+* For each translation regime, if the value of the corresponding SCTLR_ELx.WXN bit is 1 then any memory region that is writable is treated as XN, regardless of the value of the corresponding UXN, XN, or PXN bit. For more information see Preventing execution from writable locations on page D4-1711.
+* The SCR_EL3.SIF bit prevents execution in Secure state of any instruction fetched from Non-secure memory, see Restriction on Secure instruction fetch on page D4-1711.
+The execute-never controls apply to speculative instruction fetching, meaning speculative instruction fetch from a memory region that is execute-never at the current Exception level is prohibited.
 
 
 
