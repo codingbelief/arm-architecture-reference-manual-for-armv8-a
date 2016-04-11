@@ -188,14 +188,14 @@ The effect of UXNTable, XNTable, or PXNTable applies to later entries in the tra
 
 ARMv8 provides control bits that, when corresponding stage 1 address translation is enabled, force writable memory to be treated as UXN, PXN, or XN, regardless of the value of the UXN, PXN, or XN bit:
 
-• For the EL1&0 translation regime, when the value of SCTLR_EL1.WXN is 1:
-— All regions that are writable from EL0 at stage 1 of the address translation are treated as UXN.
-— All regions that are writable from EL1 at stage 1 of the address translation are treated as PXN
-• For the EL2 translation regime, when the value of SCTLR_EL2.WXN is 1, all regions that are writable at stage 1 of the address translation are treated as XN.
-• For the EL3 translation regime, when the value of SCTLR_EL3.WXN is 1, all regions that are writable at stage 1 of the address translation are treated as XN.
+* For the EL1&0 translation regime, when the value of SCTLR_EL1.WXN is 1:
+   -All regions that are writable from EL0 at stage 1 of the address translation are treated as UXN.
+   -All regions that are writable from EL1 at stage 1 of the address translation are treated as PXN
+* For the EL2 translation regime, when the value of SCTLR_EL2.WXN is 1, all regions that are writable at stage 1 of the address translation are treated as XN.
+* For the EL3 translation regime, when the value of SCTLR_EL3.WXN is 1, all regions that are writable at stage 1 of the address translation are treated as XN.
 Note
-• The SCTLR_ELx.WXN controls are intended to be used in systems with very high security requirements.
-• Setting a WXN bit to 1 changes the interpretation of the translation table entry, overriding a zero value of a
+* The SCTLR_ELx.WXN controls are intended to be used in systems with very high security requirements.
+* Setting a WXN bit to 1 changes the interpretation of the translation table entry, overriding a zero value of a
 UXN, XN, or PXN field. It does not cause any change to the translation table entry.
 For any given virtual machine, ARM expects WXN to remain static in normal operation. In particular, it is IMPLEMENTATION DEFINED whether TLB entries associated with a particular VMID reflect the effect of the values of these bits. This means that any change of these bits without a corresponding change of VMID might require synchronization and TLB invalidation, as described in TLB maintenance requirements and the TLB maintenance instructions on page D4-1733.
 
