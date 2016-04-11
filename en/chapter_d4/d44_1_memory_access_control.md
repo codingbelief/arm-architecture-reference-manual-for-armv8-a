@@ -51,9 +51,9 @@ Table D4-29 shows the effect of the data access permission bits for stage 1 of t
 ![](table_d4_29.png)
 
 For the Non-secure EL1&0 translation regime:
-The stage 2 translation also defines data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
-see The S2AP data access permissions,
-When both stages of translation are enabled, Combining the stage 1 and stage 2 data access permissions on page D4-1717 describes how these permissions are combined.
+* The stage 2 translation also defines data access permissions, see [The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706](#).
+
+When both stages of translation are enabled, [Combining the stage 1 and stage 2 data access permissions on page D4-1717](#) describes how these permissions are combined.
 
 
 
