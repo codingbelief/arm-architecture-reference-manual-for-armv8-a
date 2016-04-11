@@ -1,3 +1,4 @@
+
 ## D4.4.1 Memory access control
 
 The access control fields in the translation table descriptors determine whether the PE, in its current state, is permitted to perform the required access to the output address given in the translation table descriptor. If a translation stage does not permit the access then an MMU fault is generated for that translation stage, and no memory access is performed.  
@@ -66,7 +67,13 @@ In the Non-secure EL1&0 translation regime, when stage 2 address translation is 
 The S2AP access permissions make no distinction between Non-secure accesses from EL1 and Non-secure accesses from EL0. However, when both stages of address translation are enabled, these permissions are combined with the stage 1 access permissions defined by AP[2:1], see [Combining the stage 1 and stage 2 data access permissions on page D4-1717](#).  
 [Combining the stage 1 and stage 2 attributes, Non-secure EL1&0 translation regime on page D4-1717](#) gives more information about the use of the stage 1 and stage 2 access permissions in an implementation of virtualization.
 
-**Hierarchical control of data access permissions**
+**Hierarchical control of data access permissions**  
+
+The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the data access permissions.
+Note
+Similar hierarchical controls apply to instruction fetching, see Hierarchical control of instruction fetching on page D4-1710.
+The restrictions apply only to subsequent levels of lookup for the same stage of translation. The APTable[1:0] field restricts the access permissions, as Table D4-32 shows.
+As stated in the table footnote, for the EL2 translation regime, APTable[0] is reserved, SBZ, and is ignored by the hardware.
 
 
 
