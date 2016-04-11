@@ -133,8 +133,8 @@ The following subsubsections describe the data access permission controls:
 
 **Instruction access and execution permissions for stage 1 translations**  
 Table D4-33 and Table D4-34 on page D4-1709 include the AP[2:1] read and write permissions shown in Table D4-29 on page D4-1705 and Table D4-30 on page D4-1706. These permissions are shown as:  
-R Indicates Read permission granted.   
-W Indicates Write permission granted.  
+**R** Indicates Read permission granted.   
+**W** Indicates Write permission granted.  
 Table D4-33 shows the access permissions for instruction execution for stage 1 of the EL1&0 translation regime.
 
 
