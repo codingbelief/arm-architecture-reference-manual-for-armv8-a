@@ -91,10 +91,10 @@ The effect of APTable applies to later entries in the translation table walk, an
 ### Access permissions for instruction execution
 
 Execute-never (XN) controls determine whether instructions can be executed from a memory region. These controls are:
-**UXN, Unprivileged Execute never**
-Defined only for stage 1 of the EL1&0 translation regime.
-PXN, Privileged execute never
-Used only for stage 1 of the EL1&0 translation regime:
+**UXN, Unprivileged Execute never**  
+  Defined only for stage 1 of the EL1&0 translation regime.
+**PXN, Privileged execute never**  
+  Used only for stage 1 of the EL1&0 translation regime:
 • For the EL2 and EL3 translation regimes, the descriptors define a PXN bit that is reserved, SBZ, and is ignored by hardware.
 • For stage 2 of the Non-secure EL1&0 translation regime, the corresponding bit position is reserved, SBZ, and is ignored by hardware.
 XN, Execute never
