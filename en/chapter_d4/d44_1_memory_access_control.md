@@ -142,5 +142,45 @@ Table D4-33 shows the access permissions for instruction execution for stage 1 o
 
 Table D4-34 shows the access permissions for instruction execution for the EL2 and EL3 translation regimes.
 
+![](table_d4_34.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
