@@ -30,7 +30,20 @@ The following subsubsections describe the data access permission controls:
 * The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
 * Hierarchical control of data access permissions on page D4-1706.
 
-**The AP[2:1] data access permissions, for stage 1 translations**
+**The AP[2:1] data access permissions, for stage 1 translations**  
+For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1 data access permissions, and:
+AP[2] Selects between read-only and read/write access.
+AP[1] Selects between Application level (EL0) and System level (EL1) control.
+This provides four permission settings for data accesses:
+• Read-only at all levels.
+• Read/write at all levels.
+• Read-only at EL1, no access by software executing at EL0.
+• Read/write at EL1, no access by software executing at EL0.
+For translation regimes other than the EL1&0 translation regimes, AP[2] determines the stage 1 data access permissions, and AP[1] is:
+• SBO.
+• Ignored by hardware and is treated as if it is 1.
+Table D4-29 shows the effect of the data access permission bits for stage 1 of the EL1&0 translation regime. In this table, an entry of None indicates that any access from that Exception level faults.
+
 
 
 
