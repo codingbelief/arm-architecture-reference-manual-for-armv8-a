@@ -151,8 +151,8 @@ Table D4-34 shows the access permissions for instruction execution for the EL2 a
 * PXN treated as RES0. 
 * PXNTable treated as RES0.
 
-**Instruction execution permissions for stage 2 translations
-**
+**Instruction execution permissions for stage 2 translations**  
+
 
 
 
