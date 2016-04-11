@@ -14,5 +14,5 @@ The following sections describe the memory access controls:
 
 The access permission bits control access to the corresponding memory region. The VMSAv8-64 translation table format:
 * In stage 1 translations, uses AP[2:1] to define the data access permissions, see The AP[2:1] data access permissions, for stage 1 translations on page D4-1705.
-* > **NOTE:**  
-* The description of the access permission field as AP[2:1] is for consistency with the VMSAv8-32 Short-descriptor translation table format, see The VMSAv8-32 Short-descriptor translation table format on page G4-4015. The VMSAv8-64 translation table format does not define an AP[0] bit.
+ > **NOTE:**  
+ The description of the access permission field as AP[2:1] is for consistency with the VMSAv8-32 Short-descriptor translation table format, see The VMSAv8-32 Short-descriptor translation table format on page G4-4015. The VMSAv8-64 translation table format does not define an AP[0] bit.
