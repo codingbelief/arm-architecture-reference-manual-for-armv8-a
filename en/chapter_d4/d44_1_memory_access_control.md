@@ -155,7 +155,9 @@ Table D4-34 shows the access permissions for instruction execution for the EL2 a
 
 For the Non-secure EL1&0 stage 2 translation, the XN bit in the stage 2 translation table descriptors controls the execution permission, and this control is completely independent of the S2AP access permissions.
 
+![](table_d4_35.png)
 
+The stage 2 XN access permissions make no distinction between Non-secure accesses from EL1 and Non-secure accesses from EL0. However, when both stages of address translation are enabled, these permissions are combined with the stage 1 access permissions defined at stage 1 of the translation, see Combining the stage 1 and stage 2 instruction execution permissions on page D4-1718.
 
 
 
