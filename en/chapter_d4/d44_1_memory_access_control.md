@@ -25,6 +25,11 @@ An attempt to perform a memory access that the translation table access permissi
 
 ### The data access permission controls
 
+The following subsubsections describe the data access permission controls:
+• The AP[2:1] data access permissions, for stage 1 translations.
+• The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
+• Hierarchical control of data access permissions on page D4-1706.
+
 
 
 
