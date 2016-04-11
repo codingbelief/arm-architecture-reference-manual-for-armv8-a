@@ -58,6 +58,7 @@ Table D4-30 shows the effect of the AP[2] data access permission bit for the EL2
 
 ![](table_d4_30.png)
 
+**The S2AP data access permissions, Non-secure EL1&0 translation regime**  
 
 
 
