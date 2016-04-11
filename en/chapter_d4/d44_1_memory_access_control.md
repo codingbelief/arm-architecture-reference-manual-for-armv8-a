@@ -59,7 +59,7 @@ Table D4-30 shows the effect of the AP[2] data access permission bit for the EL2
 
 ![](table_d4_30.png)
 
-***The S2AP data access permissions, Non-secure EL1&0 translation regime***  
+**The S2AP data access permissions, Non-secure EL1&0 translation regime**  
 In the Non-secure EL1&0 translation regime, when stage 2 address translation is enabled, the S2AP field in the stage 2 translation table descriptors define the data access permissions as Table D4-31 shows. In this table, an entry of None indicates that any access generates a permission fault.
 
 ![](table_d4_31.png)
@@ -67,7 +67,7 @@ In the Non-secure EL1&0 translation regime, when stage 2 address translation is 
 The S2AP access permissions make no distinction between Non-secure accesses from EL1 and Non-secure accesses from EL0. However, when both stages of address translation are enabled, these permissions are combined with the stage 1 access permissions defined by AP[2:1], see [Combining the stage 1 and stage 2 data access permissions on page D4-1717](#).  
 [Combining the stage 1 and stage 2 attributes, Non-secure EL1&0 translation regime on page D4-1717](#) gives more information about the use of the stage 1 and stage 2 access permissions in an implementation of virtualization.
 
-***Hierarchical control of data access permissions***  
+**Hierarchical control of data access permissions**  
 
 The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the data access permissions.  
 
@@ -88,7 +88,9 @@ The VMSAv8-64 provides APTable[1:0] control only for the stage 1 translations. T
 
 The effect of APTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore, a change to APTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
 
-**Access permissions for instruction execution**  
+### Access permissions for instruction execution
+
+
 
 
 
