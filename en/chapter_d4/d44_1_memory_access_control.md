@@ -15,11 +15,12 @@ The following sections describe the memory access controls:
 > This section gives a general description of memory access permissions. In an implementation that includes EL2, software executing at EL1 in Non-secure state can see only the access permissions defined by the Non-secure EL1&0 stage 1 translations. However, software executing at EL2 can modify these permissions. This modification is invisible to the Non-secure software executing at EL1 or EL0.
 
 The access permission bits control access to the corresponding memory region. The VMSAv8-64 translation table format:
+
 * In stage 1 translations, uses AP[2:1] to define the data access permissions, see The AP[2:1] data access permissions, for stage 1 translations on page D4-1705.
  > **NOTE:**  
  > The description of the access permission field as AP[2:1] is for consistency with the VMSAv8-32 Short-descriptor translation table format, see The VMSAv8-32 Short-descriptor translation table format on page G4-4015. The VMSAv8-64 translation table format does not define an AP[0] bit.
- * In stage 2 translations, uses S2AP[1:0] to define the data access permissions, see The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
- * Uses the UXN, XN and PXN bits to define access controls for instruction fetches, see Access permissions for instruction execution on page D4-1707.
+* In stage 2 translations, uses S2AP[1:0] to define the data access permissions, see The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
+* Uses the UXN, XN and PXN bits to define access controls for instruction fetches, see Access permissions for instruction execution on page D4-1707.
 
 An attempt to perform a memory access that the translation table access permission bits do not permit generates a Permission fault, for the corresponding stage of translation.
 > **NOTE: **  
