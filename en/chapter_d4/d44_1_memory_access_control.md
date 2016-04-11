@@ -31,7 +31,7 @@ The following subsubsections describe the data access permission controls:
 * Hierarchical control of data access permissions on page D4-1706.
 
 **The AP[2:1] data access permissions, for stage 1 translations**  
-For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1 data access permissions, and:
+For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1 data access permissions, and:  
 AP[2] Selects between read-only and read/write access.
 AP[1] Selects between Application level (EL0) and System level (EL1) control.
 This provides four permission settings for data accesses:
