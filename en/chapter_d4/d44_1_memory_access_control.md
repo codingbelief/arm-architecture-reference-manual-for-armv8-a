@@ -200,6 +200,7 @@ ARMv8 provides control bits that, when corresponding stage 1 address translation
 
 For any given virtual machine, ARM expects WXN to remain static in normal operation. In particular, it is IMPLEMENTATION DEFINED whether TLB entries associated with a particular VMID reflect the effect of the values of these bits. This means that any change of these bits without a corresponding change of VMID might require synchronization and TLB invalidation, as described in TLB maintenance requirements and the TLB maintenance instructions on page D4-1733.
 
+**Restriction on Secure instruction fetch**  
 
 
 
