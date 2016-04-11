@@ -90,7 +90,7 @@ The effect of APTable applies to later entries in the translation table walk, an
 
 ### Access permissions for instruction execution
 
-Execute-never (XN) controls determine whether instructions can be executed from a memory region. These controls are:
+Execute-never (XN) controls determine whether instructions can be executed from a memory region. These controls are:  
 **UXN, Unprivileged Execute never**  
   Defined only for stage 1 of the EL1&0 translation regime.  
 **PXN, Privileged execute never**  
