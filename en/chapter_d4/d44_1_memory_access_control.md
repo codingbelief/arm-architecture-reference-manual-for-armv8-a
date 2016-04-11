@@ -56,6 +56,7 @@ For the Non-secure EL1&0 translation regime:
 
 Table D4-30 shows the effect of the AP[2] data access permission bit for the EL2 and EL3 translation regimes.
 
+![](table_d4_30.png)
 
 
 
