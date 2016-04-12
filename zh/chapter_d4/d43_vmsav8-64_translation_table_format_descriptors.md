@@ -3,8 +3,8 @@
 In general, a descriptor is one of:
 通常情况下，一个 descriptor 可能是以下的几种 entry：
 * 非法或者异常的 entry。
-* A table entry, that points to the next-level translation table.
-* A block entry, that defines the memory properties for the access.
+* Table entry, 指向 next-level translation table。
+* Block entry, 定义内存访问的 memory properties。
 * A reserved format.
 
 Bit[1] of the descriptor indicates the descriptor type, and bit[0] indicates whether the descriptor is valid.
