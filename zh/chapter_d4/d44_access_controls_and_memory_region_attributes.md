@@ -1,6 +1,6 @@
 ## D4.4 Access controls and memory region attributes
 
-Translation table entry 除了包含 output address，还包含 page 或者 memory region 的属性位。这些属性位可以划分为 address map control、access control 和 region attribute 三类。 [Control of Secure or Non-secure memory access](#) 章节描述了 address map control，后续的几个小节将对其他的属性位进行介绍：
+Translation table entry 除了包含 output address，还包含 page 或者 memory region 的属性位。这些属性位可以划分为 address map control、access control 和 region attribute 三类。 [Control of Secure or Non-secure memory access](#) 章节介绍了 address map control，后续的几个小节将对其他的属性位进行介绍：
 
 * [Memory access control](#).
 * [Memory region attributes](#).
