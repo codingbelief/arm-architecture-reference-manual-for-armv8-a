@@ -4,7 +4,7 @@ Translation table entry 中的 NS bit 有以下的用途：
 * 对于 Secure state 下的内存访问，如果所属的 translation table entry 存储在 secure memory 中，那么该 bit 决定了该内存访问所访问的内存是属于 Secure 还是 Non-secure memory。
 * 该 bit 在以下场景中会被忽略：
    - Non-secure state 下的内存访问.
-   - 在 Secure state 的内存访问中，如果所属的 translation table entry 存储在 Non-secure memory 中.
+   - 在 Secure state 下的内存访问中，如果所属的 translation table entry 存储在 Non-secure memory 中.
 
 在 VMSAv8-64 的 translation table 格式中：
 * NS bit 只与 block or page table descriptor 中所定义的 block or page 的 output address 有关。
