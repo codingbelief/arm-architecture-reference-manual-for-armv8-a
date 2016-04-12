@@ -9,7 +9,6 @@ In general, a descriptor is one of:
 
 Descriptor 的 bit[1] 用于指示 descriptor 的类型，bit[0] 用于指示 descriptor 是否有效。
 
-The following sections describe the ARMv8 translation table descriptor formats:
 下面的几个小节主要描述了 ARMv8 translation table descriptor 的格式：
 
 * [VMSAv8-64 translation table level 0, level 1, and level 2 descriptor formats](#).
