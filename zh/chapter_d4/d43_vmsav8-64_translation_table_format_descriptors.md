@@ -14,6 +14,4 @@ Descriptor 的 bit[1] 用于指示 descriptor 的类型，bit[0] 用于指示 de
 * [VMSAv8-64 translation table level 0, level 1, and level 2 descriptor formats](#).
 * [ARMv8 translation table level 3 descriptor formats](#).
 
-[Memory attribute fields in the VMSAv8-64 translation table format descriptors on page D4-1699](#) then gives more information about the descriptor attribute fields, and [Control of Secure or Non-secure memory access on page D4-1702](#) describe how the NS and NSTable together control whether a memory access from Secure state accesses the Secure memory map or the Non-secure memory map.
-
 [Memory attribute fields in the VMSAv8-64 translation table format descriptors](#) 章节中描述了 descriptor attribute fields 的更多细节，[Control of Secure or Non-secure memory access](#) 章节则 NS 和 NSTable 是怎样控制在 Secure state 下的对 Secure 和 Non-secure memory 的访问。
