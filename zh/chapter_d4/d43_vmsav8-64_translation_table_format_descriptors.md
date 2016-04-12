@@ -7,8 +7,7 @@ In general, a descriptor is one of:
 * Block entry, 定义内存访问的 memory properties。
 * Reserved format。
 
-Bit[1] of the descriptor indicates the descriptor type, and bit[0] indicates whether the descriptor is valid.
-descriptor 的 bit[1] 用于指示 descriptor 的类型
+descriptor 的 bit[1] 用于指示 descriptor 的类型，bit[0] 用于指示 descriptor 是否有效。
 
 The following sections describe the ARMv8 translation table descriptor formats:
 
