@@ -8,6 +8,7 @@ In general, a descriptor is one of:
 * Reserved format。
 
 Bit[1] of the descriptor indicates the descriptor type, and bit[0] indicates whether the descriptor is valid.
+descriptor 的 bit[1] 用于指示 descriptor 的类型
 
 The following sections describe the ARMv8 translation table descriptor formats:
 
