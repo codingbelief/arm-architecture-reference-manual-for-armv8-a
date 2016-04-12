@@ -14,3 +14,4 @@ This section describes the access controls and memory region attributes for each
 * The PXN field is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
 
 > **NOTE:**  
+本章节主要介绍各个 translation regimes 下的 access control 和 memory region attributes
