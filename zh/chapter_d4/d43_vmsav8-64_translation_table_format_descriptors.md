@@ -2,7 +2,7 @@
 
 In general, a descriptor is one of:
 通常情况下，一个 descriptor 可能是以下的几种 entry：
-* An invalid or fault entry.
+* 非法或者异常的 entry.
 * A table entry, that points to the next-level translation table.
 * A block entry, that defines the memory properties for the access.
 * A reserved format.
