@@ -1,6 +1,9 @@
 ## D4.4 Access controls and memory region attributes
 
 In addition to an output address, a translation table entry that refers to a page or region of memory includes fields that define properties of the target memory region. These fields can be classified as address map control, access control, and region attribute fields. [Control of Secure or Non-secure memory access on page D4-1702](#) describes the address map control, and the following sections describe the other fields:  
+
+Translation table entry 除了包含
+
 * [Memory access control](#).
 * [Memory region attributes on page D4-1712](#).
 * [Combining the stage 1 and stage 2 attributes, Non-secure EL1&0 translation regime on page D4-1717](#).
