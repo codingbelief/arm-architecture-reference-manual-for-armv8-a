@@ -8,9 +8,9 @@ The following sections describe the memory access controls:
 Translation table descriptors 中的 access control fields 决定了 PE 在当前 state 下，是否可以访问 translation table descriptor 中的 output address 所指向的内存。如果一个 translation stage 中，如果出现不允许访问时，就会产生一个 MMU fault，禁止该内存访问操作。
 
 * [About the access permissions](#).
-* [The data access permission controls on page D4-1705](#).
-* [Access permissions for instruction execution on page D4-1707](#).
-* [The Access flag on page D4-1711](#).
+* [The data access permission controls](#).
+* [Access permissions for instruction execution](#).
+* [The Access flag](#).
 
 ### About the access permissions
 
