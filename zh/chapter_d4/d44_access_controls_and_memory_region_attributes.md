@@ -15,7 +15,7 @@ This section describes the access controls and memory region attributes for each
 
 > **NOTE:**  
 本章节主要介绍各个 translation regimes 下的 access control 和 memory region attributes。一般情况下，属性的设定在 EL2 和 EL3 translation regimes 中会比较简单，在这些 translation regimes 中，还一下的一些约定：
-* APTable[0] is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
-* AP[1] is RES1 and is ignored by the PE, meaning it is treated as if it is 1.
+* APTable[0] 为 RES0，并且 PE 在处理过程中会忽略该 bit, 即当该 bit 为 0 处理。
+* AP[1] 为 RES1，并且 PE 在处理过程中会忽略该 bit, 即当该 bit 为 1 处理。
 * The PXNTable bit is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
 * The PXN field is RES0 and is ignored by the PE, meaning it is treated as if it is 0.
