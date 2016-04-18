@@ -2,9 +2,6 @@
 
 ## D4.4.1 Memory access control
 
-The access control fields in the translation table descriptors determine whether the PE, in its current state, is permitted to perform the required access to the output address given in the translation table descriptor. If a translation stage does not permit the access then an MMU fault is generated for that translation stage, and no memory access is performed.  
-The following sections describe the memory access controls:
-
 Translation table descriptors 中的 access control fields 决定了 PE 在当前 state 下，是否可以访问 translation table descriptor 中的 output address 所指向的内存。如果一个 translation stage 中，如果出现不允许访问时，就会产生一个 MMU fault，禁止该内存访问操作。
 
 * [About the access permissions](#).
