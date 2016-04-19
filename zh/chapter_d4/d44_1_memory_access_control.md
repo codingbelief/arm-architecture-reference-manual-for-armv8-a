@@ -26,7 +26,7 @@ An attempt to perform a memory access that the translation table access permissi
 
 尝试进行 translation table 中的 access permission bits 所禁止的内存访问将会在相应的 translation stage  产生 Permission fault。
 > **NOTE: **  
-> In an implementation that includes EL2, each stage of the translation of a memory access made from Non-secure EL1 or EL0 has its own, independent, permission check.
+> 在包含 EL2 的具体实现中， In an implementation that includes EL2, each stage of the translation of a memory access made from Non-secure EL1 or EL0 has its own, independent, permission check.
 
 ### The data access permission controls
 
