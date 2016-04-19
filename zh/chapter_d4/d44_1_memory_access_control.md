@@ -16,7 +16,7 @@ The access permission bits control access to the corresponding memory region. Th
 
 Access permission bits 控制对相应 memory region 的访问。在 VMSAv8-64 translation table format 中：
 
-* 在 stage 1 translations 中， AP[2:1] 定义了 data access permissions, 详细的定义参考 [The AP[2:1] data access permissions, for stage 1 translations](#) 小节。
+* 在 stage 1 translations 中， AP[2:1] 定义了 data access permissions，详细的定义参考 [The AP[2:1] data access permissions, for stage 1 translations](#) 小节。
 * In stage 2 translations, uses S2AP[1:0] to define the data access permissions, see The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706.
 * 在 stage 2 translations 中， S2AP[1:0] 定义了 data access permissions，详细的定义参考 [The S2AP data access permissions, Non-secure EL1&0 translation regime](#) 章节。
 * Uses the UXN, XN and PXN bits to define access controls for instruction fetches, see Access permissions for instruction execution on page D4-1707.
