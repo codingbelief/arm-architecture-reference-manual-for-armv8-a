@@ -20,13 +20,9 @@ Access permission bits 控制对相应 memory region 的访问。在 VMSAv8-64 t
 * 在 stage 2 translations 中， S2AP[1:0] 定义了 data access permissions，详细的定义参考 [The S2AP data access permissions, Non-secure EL1&0 translation regime](#) 小节。
 * UXN，XN 和 PXN bits 定义了 instruction fetches 过程中的 access permissions，详细的定义参考 [Access permissions for instruction execution](#) 小节。
 
-An attempt to perform a memory access that the translation table access permission bits do not permit generates a Permission fault, for the corresponding stage of translation.
-> **NOTE: **  
-> In an implementation that includes EL2, each stage of the translation of a memory access made from Non-secure EL1 or EL0 has its own, independent, permission check.
-
 尝试进行 translation table 中的 access permission bits 所禁止的内存访问将会在相应的 translation stage  产生 Permission fault。
 > **NOTE: **  
-> 在包含 EL2 的具体实现中，Non-secure EL1 or EL0 在各个 translation stage 中有其独立的 permission check。
+> 在包含 EL2 的具体实现中，Non-secure EL1 or EL0 的俩个不同的 translation stage 中有其独立的 permission check。
 
 ### The data access permission controls
 
