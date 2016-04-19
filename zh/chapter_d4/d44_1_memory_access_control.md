@@ -15,7 +15,7 @@ Translation table descriptors 中的 access control fields 决定了 PE 在当�
 > This section gives a general description of memory access permissions. In an implementation that includes EL2, software executing at EL1 in Non-secure state can see only the access permissions defined by the Non-secure EL1&0 stage 1 translations. However, software executing at EL2 can modify these permissions. This modification is invisible to the Non-secure software executing at EL1 or EL0.
 
 > **NOTE:**
-> 本小节主要描述 memory access permissions。在包含 EL2 具体实现中，运行在 EL1 Non-secure state 的软件只能感知到 Non-secure EL1&0 stage 1 translations 中定义的 access permissions。运行在 EL2 上软件则可以修改这些 permissions 
+> 本小节主要描述 memory access permissions。在包含 EL2 具体实现中，运行在 EL1 Non-secure state 的软件只能感知到 Non-secure EL1&0 stage 1 translations 中定义的 access permissions。运行在 EL2 上软件则可以修改这些 permissions，EL2 上对 permissions 的修改对于运行在 EL1/EL0 Non-secure state 的软件是透明的。
 
 The access permission bits control access to the corresponding memory region. The VMSAv8-64 translation table format:
 
