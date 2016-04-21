@@ -47,7 +47,7 @@ For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1
 * Read/write at EL1, no access by software executing at EL0.
 
 For translation regimes other than the EL1&0 translation regimes, AP[2] determines the stage 1 data access permissions, and AP[1] is:
-对于  EL1&0 translation regimes 以外的 translation regimes，AP[2] 决定了 stage 1 的 data access permissions，AP[1] 则：
+对于  EL1&0 translation regimes 以外的 translation regimes，AP[2] 决定了 stage 1 的 data access permissions，AP[1] 则为：
 * SBO.
 * Ignored by hardware and is treated as if it is 1.
 
