@@ -82,6 +82,8 @@ VMSAv8-64 translation table format 包含了在一个 level 中的 translation t
 
 The restrictions apply only to subsequent levels of lookup for the same stage of translation. The APTable[1:0] field restricts the access permissions, as Table D4-32 shows.  
 
+Translation table 中的约束只对在同一个 translation stage 中后续 levels 的 lookup 有效。Table D4-32 描述了 APTable[1:0] field 对 access permission 的约束。
+
 As stated in the table footnote, for the EL2 translation regime, APTable[0] is reserved, SBZ, and is ignored by the hardware.
 
 ![](table_d4_32_1.png)
