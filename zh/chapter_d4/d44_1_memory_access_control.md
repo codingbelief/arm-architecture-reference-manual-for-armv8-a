@@ -71,6 +71,8 @@ Table D4-31 描述了 Non-secure EL1&0 translation regime 中，使能 stage 2 a
 
 The S2AP access permissions make no distinction between Non-secure accesses from EL1 and Non-secure accesses from EL0. However, when both stages of address translation are enabled, these permissions are combined with the stage 1 access permissions defined by AP[2:1], see [Combining the stage 1 and stage 2 data access permissions on page D4-1717](#).  
 
+S2AP access permissions 设定在 Non-secure accesses from EL1 和 Non-secure accesses from EL0 场景中是一样的。 但是，如果两个 address translation stages 都使能的情况下，access permission 会由 stage 1 的 AP[2:1] 和 stage 2 的 S2AP 共同来决定，更多细节参考 [Combining the stage 1 and stage 2 data access permissions](#) 章节。
+
 [Combining the stage 1 and stage 2 attributes, Non-secure EL1&0 translation regime on page D4-1717](#) gives more information about the use of the stage 1 and stage 2 access permissions in an implementation of virtualization.
 
 **Hierarchical control of data access permissions**  
