@@ -64,7 +64,7 @@ Table D4-30 描述了 EL2 and EL3 translation regimes 中 AP[2] data access perm
 ![](table_d4_30.png)
 
 **The S2AP data access permissions, Non-secure EL1&0 translation regime**  
-In the Non-secure EL1&0 translation regime, when stage 2 address translation is enabled, the S2AP field in the stage 2 translation table descriptors define the data access permissions as Table D4-31 shows. In this table, an entry of None indicates that any access generates a permission fault.
+
 Table D4-31 描述了 Non-secure EL1&0 translation regime 中，使能 stage 2 address translation 后，stage 2 translation table descriptors 中的 S2AP bits 对 data access permission 的设定。在该表中，值为 None 时，意味着任何访问会触发 permission faults。
 
 ![](table_d4_31.png)
