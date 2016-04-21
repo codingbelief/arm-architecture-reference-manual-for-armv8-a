@@ -56,7 +56,7 @@ Table D4-29 描述了 EL1&0 translation regime stage 1 的 data access permissio
 ![](table_d4_29.png)
 
 对于 Non-secure EL1&0 translation regime:
-* The stage 2 translation also defines data access permissions, see [The S2AP data access permissions, Non-secure EL1&0 translation regime on page D4-1706](#).
+* Stage 2 translation 也定义了 data access permissions, 详细定义参考 [The S2AP data access permissions, Non-secure EL1&0 translation regime](#) 章节。
 * When both stages of translation are enabled, [Combining the stage 1 and stage 2 data access permissions on page D4-1717](#) describes how these permissions are combined.
 
 Table D4-30 shows the effect of the AP[2] data access permission bit for the EL2 and EL3 translation regimes.
