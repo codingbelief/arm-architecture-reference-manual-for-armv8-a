@@ -78,7 +78,8 @@ S2AP access permissions 设定在 Non-secure accesses from EL1 和 Non-secure ac
 VMSAv8-64 translation table format 包含了在一个 level 中的 translation table lookup 中对后续 levels 的 lookup 进行权限设定的机制。本小节将主要描述此种机制如何进行 data access permission 的控制。
 
 > **NOTE: **  
-> Similar hierarchical controls apply to instruction fetching, see [Hierarchical control of instruction fetching on page D4-1710](#).  
+> 此机制与 hierarchical controls apply to instruction fetching 相似，更多细节参考 [Hierarchical control of instruction fetching](#) 章节。
+
 
 The restrictions apply only to subsequent levels of lookup for the same stage of translation. The APTable[1:0] field restricts the access permissions, as Table D4-32 shows.  
 
