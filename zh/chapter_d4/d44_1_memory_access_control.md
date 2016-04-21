@@ -92,6 +92,8 @@ VMSAv8-64 中的 APTable[1:0] 只在 stage 1 translations 中有效，在 stage 
 
 The effect of APTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore, a change to APTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
 
+
+
 ### Access permissions for instruction execution
 
 Execute-never (XN) controls determine whether instructions can be executed from a memory region. These controls are:  
