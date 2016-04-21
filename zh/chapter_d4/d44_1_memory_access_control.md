@@ -36,8 +36,8 @@ Access permission bits 控制对相应 memory region 的访问。在 VMSAv8-64 t
 For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1 data access permissions, and:  
 在 VMSAv8-64 EL1&0 translation regime 中，AP[2:1] bits 控制 stage 1 的 data access permissions：
 
-**AP[2]** 配置内存访问是 read-only 还是 read/write。  
-**AP[1]** 配置内存是属于 Application level (EL0) 还是 System level (EL1).
+**AP[2]** Selects between read-only and read/write access.  
+**AP[1]** Selects between Application level (EL0) and System level (EL1) control.  
 
 上述两个 bits 提供了四种可能的 data access permission 设定：
 
@@ -47,7 +47,7 @@ For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1
 * Read/write at EL1, no access by software executing at EL0.
 
 For translation regimes other than the EL1&0 translation regimes, AP[2] determines the stage 1 data access permissions, and AP[1] is:
-
+对于  EL1&0 translation regimes 以外的 translation regimes，AP[2] 决定了 stage 1 的 data access permissions，AP[1] 则：
 * SBO.
 * Ignored by hardware and is treated as if it is 1.
 
