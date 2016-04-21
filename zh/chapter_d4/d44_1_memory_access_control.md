@@ -52,7 +52,7 @@ For the VMSAv8-64 EL1&0 translation regime, the AP[2:1] bits control the stage 1
 * Ignored by hardware and is treated as if it is 1.
 
 Table D4-29 shows the effect of the data access permission bits for stage 1 of the EL1&0 translation regime. In this table, an entry of None indicates that any access from that Exception level faults.
-
+Table D4-29 描述了 EL1&0 translation regime stage 1 的 data access permission bits 的配置。在该表中，值为 None 时，意味着任何访问会在对应的 Exception level 中触发 faults。
 
 ![](table_d4_29.png)
 
