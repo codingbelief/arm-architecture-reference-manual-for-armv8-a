@@ -80,7 +80,6 @@ VMSAv8-64 translation table format 包含了在一个 level 中的 translation t
 > **NOTE: **  
 > 此机制与 hierarchical controls apply to instruction fetching 相似，更多细节参考 [Hierarchical control of instruction fetching](#) 章节。
 
-
 The restrictions apply only to subsequent levels of lookup for the same stage of translation. The APTable[1:0] field restricts the access permissions, as Table D4-32 shows.  
 
 As stated in the table footnote, for the EL2 translation regime, APTable[0] is reserved, SBZ, and is ignored by the hardware.
