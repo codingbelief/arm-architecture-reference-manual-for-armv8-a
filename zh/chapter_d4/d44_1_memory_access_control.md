@@ -90,9 +90,7 @@ The APTable[1:0] settings are combined with the translation table access permiss
 
 VMSAv8-64 中的 APTable[1:0] 只在 stage 1 translations 中有效，在 stage 2 translation table descriptor 中，APTable[1:0] 对应的 bit 为 SBZ。
 
-The effect of APTable applies to later entries in the translation table walk, and so its effects can be held in one or more TLB entries. Therefore, a change to APTable requires coarse-grained invalidation of the TLB to ensure that the effect of the change is visible to subsequent memory transactions.
-
-
+APTable 会影响到后续 translation table walk 的 entries，这意味着会影响到 TLB 中一个或者多个 entries。因此，在修改 APTable 时，需要进行 coarse-grained invalidation of the TLB 操作，以保证后续的 memory transactions 能够获取到正确的配置。
 
 ### Access permissions for instruction execution
 
