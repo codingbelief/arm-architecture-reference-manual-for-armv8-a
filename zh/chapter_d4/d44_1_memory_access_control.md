@@ -94,6 +94,8 @@ APTable 会影响到后续 translation table walk 的 entries，这意味着会�
 
 Execute-never (XN) controls determine whether instructions can be executed from a memory region. These controls are:  
 
+Execute-never (XN) controls 用于决定一个 memory region 是否支持执行 instructions。主要的 controls 位如下：
+
 **UXN, Unprivileged Execute never**  
   Defined only for stage 1 of the EL1&0 translation regime.  
 
