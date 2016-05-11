@@ -113,6 +113,7 @@ Each of theses bits is set to 1 to indicate that instructions cannot be executed
 当这些 bits 被设为 1 时，意味着相应的 memory region 将无法执行 instructions。此外：
 
 * For the EL1&0 translation regime, if the value of the AP[2:1] bits is 0b01, permitting write access from EL0, then the PXN bit is treated as if it has the value 1, regardless of its actual value.
+* 在 EL1&0 translation regime 中，如果 AP[2:1] 被设定为 0b01，即允许来自 EL0 的写操作，那么 PXN bit 不管设定为什么值，都会当做设定为 1 来处理。（也就是说，允许些操作的 memory region 不允许 instructions 执行）
 * For each translation regime, if the value of the corresponding SCTLR_ELx.WXN bit is 1 then any memory region that is writable is treated as XN, regardless of the value of the corresponding UXN, XN, or PXN bit. For more information see [Preventing execution from writable locations on page D4-1711](#).
 * The SCR_EL3.SIF bit prevents execution in Secure state of any instruction fetched from Non-secure memory, see [Restriction on Secure instruction fetch on page D4-1711](#).
 
