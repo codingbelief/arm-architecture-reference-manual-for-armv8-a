@@ -109,8 +109,9 @@ Defined for stage 2 of the EL1&0 translation regime and for stage 1 of the EL2 a
 当这些 bits 被设为 1 时，意味着相应的 memory region 将无法执行 instructions。此外：
 
 * 在 EL1&0 translation regime 中，如果 AP[2:1] 被设定为 0b01，即允许来自 EL0 的写操作，那么 PXN bit 不管设定为什么值，都会当做设定为 1 来处理。（也就是说，允许些操作的 memory region 不允许 instructions 执行）
-* 在所有 translation regime 中，如果相应的 SCTLR_ELx.WXN bit 被设置为 1 ，那么所以 writable 的 memory region 都会被视为 XN，UXN, XN 和 PXN bit 的实际值将会被忽略。更多相关的细节可以参考 [Preventing execution from writable locations](#) 章节。
+* 在所有 translation regime 中，如果相应的 SCTLR_ELx.WXN bit 被设置为 1 ，那么所以 writable 的 memory region 都会被视为 XN，UXN、XN 和 PXN bit 的实际值将会被忽略。更多相关的细节可以参考 [Preventing execution from writable locations](#) 章节。
 * The SCR_EL3.SIF bit prevents execution in Secure state of any instruction fetched from Non-secure memory, see [Restriction on Secure instruction fetch on page D4-1711](#).
+* 
 
 The execute-never controls apply to speculative instruction fetching, meaning speculative instruction fetch from a memory region that is execute-never at the current Exception level is prohibited.
 
