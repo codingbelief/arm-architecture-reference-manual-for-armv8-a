@@ -164,7 +164,7 @@ Translation table 中的约束只对在同一个 translation stage 中后续 lev
 * UXNTable or XNTable restricts the XN control:
    - 如果 XNTable bit 为 1, 那么在后续 levels 的 lookup 中，会忽略 XN bit 的实际值，统一当做 XN bit 为 1 来处理。
    - 如果 UXNTable bit 为 1, 那么在后续 levels 的 lookup 中，会忽略 UXN bit 的实际值，统一当做 UXN bit 为 1 来处理。
-   - When the value of a UXNTable or XNTable bit is 0 the bit has no effect.
+   - 如果 UXNTable 和 XNTable bit 都为 0，那么 XN 和 UXN bit 不会收到影响.
 * For the EL1&0 translation regime, PXNTable restricts the PXN control:
    - When PXNTable is set to 1, the PXN bit is treated as 1 in all subsequent levels of lookup, regardless of the actual value of the bit.
    - When PXNTable is set to 0 it has no effect.
