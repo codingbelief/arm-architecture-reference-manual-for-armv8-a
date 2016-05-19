@@ -178,7 +178,7 @@ The effect of UXNTable, XNTable, or PXNTable applies to later entries in the tra
 
 UXNTable、XNTable 和 PXNTable controls 只在 stage 1 translations 中有效，在 stage 2 translation table descriptor 中，对应的 bits 都为 SBZ。
 
-APTable 会影响到后续 translation table walk 的 entries，这意味着会影响到 TLB 中一个或者多个 entries。因此，在修改 APTable 时，需要进行 coarse-grained invalidation of the TLB 操作，以保证后续的 memory transactions 能够获取到正确的配置。
+UXNTable、XNTable 和 PXNTable 会影响到后续 translation table walk 的 entries，这意味着会影响到 TLB 中一个或者多个 entries。因此，在修改 APTable 时，需要进行 coarse-grained invalidation of the TLB 操作，以保证后续的 memory transactions 能够获取到正确的配置。
 
 **Preventing execution from writable locations**
 
