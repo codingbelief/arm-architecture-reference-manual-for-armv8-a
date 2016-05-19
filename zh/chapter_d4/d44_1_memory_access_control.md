@@ -159,10 +159,6 @@ The stage 2 XN access permissions make no distinction between Non-secure accesse
 
 VMSAv8-64 translation table format 包含了在一个 level 中的 translation table lookup 中对后续 levels 的 lookup 进行权限设定的机制。本小节将主要描述此种机制如何进行 instruction fetching controls 的控制。
 
-
-> **NOTE: **  
-Similar hierarchical controls apply to data accesses, see [Hierarchical control of data access permissions on page D4-1706](#).
-
 The restrictions apply only to subsequent levels of lookup at the same stage of translation, and:
 
 * UXNTable or XNTable restricts the XN control:
