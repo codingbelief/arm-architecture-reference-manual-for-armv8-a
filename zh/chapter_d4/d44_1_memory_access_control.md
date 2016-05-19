@@ -106,8 +106,6 @@ Execute-never (XN) controls 用于决定一个 memory region 是否支持执行 
 **XN, Execute never**  
 Defined for stage 2 of the EL1&0 translation regime and for stage 1 of the EL2 and EL3 translation regimes.  
 
-Each of theses bits is set to 1 to indicate that instructions cannot be executed from the target memory region. In addition:
-
 当这些 bits 被设为 1 时，意味着相应的 memory region 将无法执行 instructions。此外：
 
 * For the EL1&0 translation regime, if the value of the AP[2:1] bits is 0b01, permitting write access from EL0, then the PXN bit is treated as if it has the value 1, regardless of its actual value.
