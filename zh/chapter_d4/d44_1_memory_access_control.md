@@ -116,7 +116,7 @@ Defined for stage 2 of the EL1&0 translation regime and for stage 1 of the EL2 a
 Execute-never controls 对于 speculative instruction fetching 同样适用的，也就是说，在当前 Exception level 下，从 execute-never 的 memory region 中 fetch 的 speculative instruction 是禁止执行的。
 
 > **NOTE: **  
->* 虽然 execute-never controls 适用于 speculative fetching， 但是从 execute-never memory 中 fetch speculative instruction 时， 并不会产生 Permission fault， 只有当 PE 尝试去执行该 instruction 时，才会触发 Permission fault。也就是说，如果 speculative introduction 从 execute-never 的 memory 中 fetch，但是并没有被执行时，不会产生 Permission fault。
+* 虽然 execute-never controls 适用于 speculative fetching， 但是从 execute-never memory 中 fetch speculative instruction 时， 并不会产生 Permission fault， 只有当 PE 尝试去执行该 instruction 时，才会触发 Permission fault。也就是说，如果 speculative introduction 从 execute-never 的 memory 中 fetch，但是并没有被执行时，不会产生 Permission fault。
 * Read-sensitive 的 memory region （例如，外设 read clear 的 status 寄存器） 必须设定为 execute-never，以避免 speculative fetch 对该 memory region 进行访问。对于 Device memory 类型的 memory region，除非将其设置为 execute-never，否则硬件不会阻止 speculative 对该 region 进行访问。
 * 如果 translation regime 中没有使能任何一个 address translation stage，那么就不能设定 memory regions 的 UXN、XN 和 PXN 属性。 [Behavior of instruction fetches when all associated stages of translation are disabled](#) 章节描述了禁止所有 address translation stage 对 instruction fetching 的影响。 
 
