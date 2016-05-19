@@ -162,7 +162,7 @@ VMSAv8-64 translation table format 包含了在一个 level 中的 translation t
 Translation table 中的约束只对在同一个 translation stage 中后续 levels 的 lookup 有效。同时：
 
 * UXNTable or XNTable restricts the XN control:
-   - When the value of the XNTable bit is 1, the XN bit is treated as 1 in all subsequent levels of lookup, regardless of its actual value.
+   - 如果 XNTable bit 为 1, 那么在后续 levels 的 lookup 中，会忽略 XN bit 的实际值，统一当做 XN bit 为 1 来处理。
    - When the value of the UXNTable bit is 1, the UXN bit is treated as 1 in all subsequent levels of lookup, regardless of its actual value.
    - When the value of a UXNTable or XNTable bit is 0 the bit has no effect.
 * For the EL1&0 translation regime, PXNTable restricts the PXN control:
