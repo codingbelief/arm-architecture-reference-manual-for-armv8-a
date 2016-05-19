@@ -160,6 +160,7 @@ The stage 2 XN access permissions make no distinction between Non-secure accesse
 VMSAv8-64 translation table format 包含了在一个 level 中的 translation table lookup 中对后续 levels 的 lookup 进行权限设定的机制。本小节将主要描述此种机制如何进行 instruction fetching controls 的控制。
 
 Translation table 中的约束只对在同一个 translation stage 中后续 levels 的 lookup 有效。同时：
+
 * UXNTable or XNTable restricts the XN control:
    - When the value of the XNTable bit is 1, the XN bit is treated as 1 in all subsequent levels of lookup, regardless of its actual value.
    - When the value of the UXNTable bit is 1, the UXN bit is treated as 1 in all subsequent levels of lookup, regardless of its actual value.
