@@ -113,8 +113,6 @@ Defined for stage 2 of the EL1&0 translation regime and for stage 1 of the EL2 a
 * The SCR_EL3.SIF bit prevents execution in Secure state of any instruction fetched from Non-secure memory, see [Restriction on Secure instruction fetch on page D4-1711](#).
 * SCR_EL3.SIF 用于限制在 Secure state 下，从 Non-secure memory 中取指令执行，更多细节参考 [Restriction on Secure instruction fetch](#) 章节.
 
-The execute-never controls apply to speculative instruction fetching, meaning speculative instruction fetch from a memory region that is execute-never at the current Exception level is prohibited.
-
 Execute-never controls 对于 speculative instruction fetching 同样适用的，也就是说，在当前 Exception level 下，从 execute-never 的 memory region 中 fetch speculative instruction 是禁止的。
 
 > **NOTE: **  
