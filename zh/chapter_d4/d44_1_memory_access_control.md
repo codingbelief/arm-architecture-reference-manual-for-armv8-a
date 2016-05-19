@@ -115,7 +115,7 @@ Defined for stage 2 of the EL1&0 translation regime and for stage 1 of the EL2 a
 
 The execute-never controls apply to speculative instruction fetching, meaning speculative instruction fetch from a memory region that is execute-never at the current Exception level is prohibited.
 
-execute-never controls 对于 speculative instruction fetching 同样使用，也就是说，在当前 Exception level 下，从 execute-never 的 memory region 中 fetch 的 speculative instruction 是禁止执行的。
+Execute-never controls 对于 speculative instruction fetching 同样适用的，也就是说，在当前 Exception level 下，从 execute-never 的 memory region 中 fetch speculative instruction 是禁止的。
 
 > **NOTE: **  
 * Although the execute-never controls apply to speculative fetching, on a speculative instruction fetch from an execute-never location, no Permission fault is generated unless the PE attempts to execute the instruction that would have been fetched from that location. This means that, if a speculative fetch from an execute-never location is attempted, but there is no attempt to execute the corresponding instruction, a Permission fault is not generated.
