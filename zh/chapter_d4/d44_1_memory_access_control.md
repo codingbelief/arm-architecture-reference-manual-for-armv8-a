@@ -160,7 +160,7 @@ The stage 2 XN access permissions make no distinction between Non-secure accesse
 The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the instruction fetching controls.
 
 > **NOTE: **  
-Similar hierarchical controls apply to data accesses, see Hierarchical control of data access permissions on page D4-1706.
+Similar hierarchical controls apply to data accesses, see [Hierarchical control of data access permissions on page D4-1706](#).
 
 The restrictions apply only to subsequent levels of lookup at the same stage of translation, and:
 
