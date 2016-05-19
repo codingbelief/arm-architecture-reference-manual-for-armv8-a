@@ -157,8 +157,6 @@ The stage 2 XN access permissions make no distinction between Non-secure accesse
 
 **Hierarchical control of instruction fetching**  
 
-The VMSAv8-64 translation table format includes mechanisms by which entries at one level of translation table lookup can set limits on the permitted entries at subsequent levels of lookup. This subsection describes how these controls apply to the instruction fetching controls.
-
 VMSAv8-64 translation table format 包含了在一个 level 中的 translation table lookup 中对后续 levels 的 lookup 进行权限设定的机制。本小节将主要描述此种机制如何进行 instruction fetching controls 的控制。
 
 
