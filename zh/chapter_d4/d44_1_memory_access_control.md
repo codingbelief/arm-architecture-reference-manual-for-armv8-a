@@ -120,7 +120,7 @@ Execute-never controls 对于 speculative instruction fetching 同样适用的�
 * Read-sensitive 的 memory region （例如，外设 read clear 的 status 寄存器） 必须设定为 execute-never，以避免 speculative fetch 对该 memory region 进行访问。对于 Device memory 类型的 memory region，除非将其设置为 execute-never，否则硬件不会阻止 speculative 对该 region 进行访问。
 * 如果 translation regime 中没有使能任何一个 address translation stage，那么就不能设定 memory regions 的 UXN、XN 和 PXN 属性。 [Behavior of instruction fetches when all associated stages of translation are disabled](#) 章节描述了禁止所有 address translation stage 对 instruction fetching 的影响。 
 
-后续的子章节描述了 data access permission controls:
+后续的子章节将描述 data access permission controls:
 * [Instruction access and execution permissions for stage 1 translations](#).
 * [Instruction execution permissions for stage 2 translations on page D4-1710](#).
 * [Hierarchical control of instruction fetching on page D4-1710](#).
