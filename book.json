@@ -14,6 +14,8 @@
             "hostname": "http://armv8-ref.codingbelief.com/"
         },
         "addcssjs": {
+            "js": ["js/custom.js"],
+            "css": ["css/custom.css"]
         }
     }
 }
