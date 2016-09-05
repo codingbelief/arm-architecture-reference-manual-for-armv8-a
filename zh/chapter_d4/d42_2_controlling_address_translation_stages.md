@@ -9,15 +9,15 @@
 * 在 system control register 中，都有一个 bit 来配置 translation table lookups 的大小端
 * 如果一个 address translation stage 支持两个 VA 区块，那么该 stage 会有以下的寄存器：
     - 一个 TCR
-    - 两个 TTBR，分别用于配置两个 VA 区块的 translation table base。  
+    - 两个 TTBR，分别用于配置两个 VA 区块的 translation table base。
     TTBR 保存着 address translation stage 中的第一个 lookup 的 translation table 的基地址。
 
 在 AArch64 运行态时，address translation stages 有以下的一些配置项：
 * Table D4-1 中描述了各个 address translation stage 的 endianness 和 MMU enable 的控制：
     ![](table_d4_1.png)
     (译者注： EE 为 endianess 选择位， M 为 MMU 使能位)
-    > **NOTE:**  
-    If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.  
+    > **NOTE:**
+    If the PA of the software that enables or disables a particular stage of address translation differs from its VA, speculative instruction fetching can cause complications. ARM strongly recommends that the PA and VA of any software that enables or disables a stage of address translation are identical if that stage of translation controls translations that apply to the software currently being executed.
     (TODO: 这段含义暂时没有理解，是说在 enable 或者 disable 的前，最好让 PA 和 VA 都保持一致么？)
 
 * Table D4-2 中汇总了各个 address translation stage 所对应的 TCR 和 TTBR。
@@ -56,8 +56,8 @@
 
 ID_AA64MMFR0_EL1.PARange 用于指示所支持的 physical address size:
 
-![](table_d4_4.png)
-![](table_d4_4_2.png) 
+![](table_d4_4_1.png)
+![](table_d4_4_2.png)
 
 PARange 其他任何值都作为保留使用。
 
@@ -68,7 +68,7 @@ PARange 其他任何值都作为保留使用。
 
 ![](table_d4_5.png)
 
-> **NOTE:**  
+> **NOTE:**
 * TCR_EL1 寄存器中的 output address size 配置位的名称为 IPS (Intermediate Physical Address Size)，其他 EL 的 TCR 寄存器中的名称为 PS (Physical Address Size)
 * {I}PS 包含 3 个 bits，与 Table D4-4 中 PARange 低 3 个 bits 相对应。
 
@@ -94,24 +94,24 @@ TTBR、translation table entries 和 output address 中的 address 超过 output
     ![](figure_d4_3.png)
 * 对于有 T0SZ 和 T1SZ 的 TCR，该 stage 中的 input address 必然是 VA，章节 [Selection between TTBR0 and TTBR1 on page D4-1670](#) 描述了其 VA address map。
 
-在 Non-secure  EL1&0 translation regime 中，在 2 个 stage 都使能时，如果在 stage 1 translation 没有触发 stage 1 address size fault，并且其 output address 大于 VTCR_EL2.T0SZ 所设定的 stage 2 input address size 时，就会触发 stage 2 translation fault。  
+在 Non-secure  EL1&0 translation regime 中，在 2 个 stage 都使能时，如果在 stage 1 translation 没有触发 stage 1 address size fault，并且其 output address 大于 VTCR_EL2.T0SZ 所设定的 stage 2 input address size 时，就会触发 stage 2 translation fault。
 软件可以将 input address size 设定为小于 48 bits，但是在具体实现中，AArch64 TTBRs 必须支持到 48 bits。
 章节 [Overview of the VMSAv8-64 address translation stages on page D4-1658](#) 更详细的描述了 input address size、TxSZ、initial lookup level 和 translation granule 直接的相互关系。
 
 
-**For all translation stages**  
+**For all translation stages**
 TxSZ 的最大值为 39，如果软件向 TxSZ 中写入超过 39 的值，那么根据不同的实现，可能会有以下两种结果：
 * 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 39 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 level 0 translation fault。
 
 
-**For a stage 1 translation**  
+**For a stage 1 translation**
 TxSZ 的最大值为 16，如果软件向 TxSZ 中写入超过 16 的值，那么根据不同的实现，可能会有以下两种结果：
 * 除了直接读取时会返回写入的值，其他处理过程中，都会以最大值 16 来处理。
 * 任何使用 TxSZ 的处理过程都会触发 stage 1 level 0 translation fault。
 
 
-**For a stage 2 translation**  
+**For a stage 2 translation**
 [Supported IPA size](#) 决定了 T0SZ 的最小值，同时也决定了往 T0SZ 写入一个小于最小值数据时的行为。(译者注：细节在下一个小节描述)
 
 
@@ -130,7 +130,7 @@ IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA si
     - 检查 VTCR_EL2.T0SZ 的值与 VTCR_EL2.SL0 的值是否相匹配时
 * 所有需要进行 stage 2 translation 的内存访问都会触发 stage 2 level 0 translation
 
-> **NOTE:**  
+> **NOTE:**
 向 VTCR_EL2.T0SZ 写入一个小于 Table D4-6 中描述的最小值，并不会扩大可访问的地址空间。因为当 stage 1 的 output address 大于下列值时，就会触发 address size fault：
 * The PA size, for a VMSAv8-64 stage 1 translation.
 * 40 bits, for a VMSAv8-32 stage 1 translation.
@@ -149,7 +149,7 @@ IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA si
 
 (TODO: 这里的原子操作指的是单个寄存器的原子性还是所有相关寄存器的更改的原子性)
 
-> **NOTE:**  
+> **NOTE:**
 在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
 
 上述的寄存器都是用于 Non-secure EL1&0 translation regime 的配置，然而这些寄存器在进行 virtual machine 切换时，是被运行在 EL2 上的软件进行更新的。这些寄存器被更新时，不是处在 EL1&0，也就不需要在 EL1&0 上做同步操作。
@@ -166,9 +166,9 @@ The architecture requires that:
 
 When entering an Exception level, on completion of a DSB instruction, no new memory accesses using any translation table entries from a translation regime of an Exception level lower than the Exception level that has been entered will be observed by any observers, to the extent that those accesses are required to be observed as determined by the shareability and cacheability of those translation table entries.
 
-> **NOTE:**  
+> **NOTE:**
 * This does not require that speculative memory accesses cannot be performed using those entries if it is impossible to tell that those memory accesses have been observed by the observers.
-* This requirement does not imply that, on taking an exception to a higher Exception level, any translation table walks started before the exception was taken will be completed by the time the higher Exception level is entered, and therefore memory accesses required for such a translation table walk might, in effect, be performed speculatively. However, the execution of a DSB on entry to the higher Exception level ensures that these accesses are complete.  
+* This requirement does not imply that, on taking an exception to a higher Exception level, any translation table walks started before the exception was taken will be completed by the time the higher Exception level is entered, and therefore memory accesses required for such a translation table walk might, in effect, be performed speculatively. However, the execution of a DSB on entry to the higher Exception level ensures that these accesses are complete.
 
 (TODO: 此段不理解)
 
