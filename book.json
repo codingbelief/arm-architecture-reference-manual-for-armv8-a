@@ -12,6 +12,9 @@
         },
         "sitemap": {
             "hostname": "http://armv8-ref.codingbelief.com/"
+        },
+        "addcssjs": {
         }
+
     }
 }
