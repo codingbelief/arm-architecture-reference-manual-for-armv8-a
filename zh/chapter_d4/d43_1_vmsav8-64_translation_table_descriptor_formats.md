@@ -5,6 +5,7 @@
 * block entry 所描述的内存块的大小。
 
 在不同的 translation granule 下，不同 level 的差异如下：  
+
 **4KB granule**  
 Level 0 descriptor 不支持 block translation。
 Block entry：
