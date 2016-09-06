@@ -12,7 +12,7 @@ These descriptors define memory attributes for the target block or page of memor
 
 In a Table descriptor for a stage 1 translation, bits[63:59] of the descriptor define the attributes for the next-level translation table access, and bits[58:52] are IGNORED:
 
-![](figure_d4_18.png)
+![](figure_d4_17.1.png)
 
 These attributes are:
 
@@ -43,7 +43,7 @@ The definition of IGNORED means the architecture guarantees that the PE makes no
 
 In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 1 translation:
 
-![](figure_d4_19.png)
+![](figure_d4_17.2.png)
 
 For a stage 1 descriptor, the attributes are:
 
@@ -88,7 +88,7 @@ The definition of IGNORED means the architecture guarantees that the PE makes no
 
 In Block and Page descriptors, the memory attributes are split into an upper block and a lower block, as shown for a stage 2 translation:
 
-![](figure_d4_20.png)
+![](figure_d4_17.3.png)
 
 
 For a stage 2 descriptor, the attributes are:
