@@ -6,25 +6,25 @@ This subsection gives the algorithms for finding the translation table entry tha
 * [Finding the translation table descriptor when using the 64KB translation granule on page D4-1677](#).
 Each subsection uses the following terms:
 
-**BaseAddress**
+**BaseAddress**  
 The base address for the level of lookup, as defined by:
 * For the initial lookup level, the appropriate TTBR.
 * Otherwise, the translation table address returned by the previous level of lookup.
 
-**PAMax**
+**PAMax**  
 The supported PA width, in bits.
 
-**IA**
+**IA**  
 The supplied IA for this stage of translation.
 
-**TnSZ**
+**TnSZ**  
 The translation table size for this stage of translation:
 For EL1&0 stage 1 -- TCR_EL1.T0SZ or TCR_EL1.T1SZ, as appropriate. 
 For EL1&0 stage 2 -- VTCR_EL2.T0SZ.
 For EL2 stage 1 -- TCR_EL2.T0SZ.
 For EL3 stage 1 -- TCR_EL3.T0SZ.
 
-**SL0**
+**SL0**  
 VTCR_EL2.SL0. Applies to the Non-secure EL1&0 stage 2 translation only.
 
 These subsections show only architecturally-valid programming of the TCR. See also [Possible translation table registers programming errors on page D4-1673](#).
