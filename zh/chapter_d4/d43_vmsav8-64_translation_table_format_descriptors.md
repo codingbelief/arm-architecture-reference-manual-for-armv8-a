@@ -1,6 +1,5 @@
 # D4.3 VMSAv8-64 translation table format descriptors
 
-In general, a descriptor is one of:
 通常情况下，一个 descriptor 可能是以下的几种 entry：
 * 非法或者异常的 entry。
 * Table entry, 指向 next-level translation table。
