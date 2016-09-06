@@ -2,7 +2,7 @@
 
 在 VMSAv8-64 的 level 0、level 1 和 level 2 的 translation table descriptor 的格式主要存在以下的差异：
 * 是否存在 block entry。
-* block entry 所执行的内存块的大小。
+* block entry 所描述的内存块的大小。
 
 在不同的 translation granule 下，不同 level 的差异如下：  
 **4KB granule**  
