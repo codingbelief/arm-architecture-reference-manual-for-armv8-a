@@ -61,7 +61,7 @@ PARange 其他任何值都作为保留使用。
 
 ![](table_d4_5.png)
 
-> **NOTE:**
+> **NOTE:**  
 * TCR_EL1 寄存器中的 output address size 配置位的名称为 IPS (Intermediate Physical Address Size)，其他 EL 的 TCR 寄存器中的名称为 PS (Physical Address Size)
 * {I}PS 包含 3 个 bits，与 Table D4-4 中 PARange 低 3 个 bits 相对应。
 
@@ -123,7 +123,7 @@ IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA si
     - 检查 VTCR_EL2.T0SZ 的值与 VTCR_EL2.SL0 的值是否相匹配时
 * 所有需要进行 stage 2 translation 的内存访问都会触发 stage 2 level 0 translation
 
-> **NOTE:**
+> **NOTE:**  
 向 VTCR_EL2.T0SZ 写入一个小于 Table D4-6 中描述的最小值，并不会扩大可访问的地址空间。因为当 stage 1 的 output address 大于下列值时，就会触发 address size fault：
 * The PA size, for a VMSAv8-64 stage 1 translation.
 * 40 bits, for a VMSAv8-32 stage 1 translation.
@@ -142,7 +142,7 @@ IPA size 的最大值会受到 implemented PA size 的约束。Implemented PA si
 
 (TODO: 这里的原子操作指的是单个寄存器的原子性还是所有相关寄存器的更改的原子性)
 
-> **NOTE:**
+> **NOTE:**  
 在 SCTLR_EL1 中有 stage 1 translation 相关的配置比特位，SCTLR_EL2 中也有 stage 2 translation 相关的配置比特位。这些比特位在进行在进行修改时，也必须保证是原子的。
 
 上述的寄存器都是用于 Non-secure EL1&0 translation regime 的配置，然而这些寄存器在进行 virtual machine 切换时，是被运行在 EL2 上的软件进行更新的。这些寄存器被更新时，不是处在 EL1&0，也就不需要在 EL1&0 上做同步操作。
