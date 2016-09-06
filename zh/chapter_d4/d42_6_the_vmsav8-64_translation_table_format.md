@@ -28,7 +28,7 @@ Translation table 中的 descriptor 的 bit[1] 用于指示该 descriptor 是否
 * 使用 4KB granule size 时，只有在 level 1 和 2 的 translation table 中支持 block descriptor。
 * 使用 16KB 和 64KB granule size 时，只有在 level 2 的 Translation table 支持  block descriptor。
 
-(进行地址转换时，遇到 block descriptor 就表示转换结束了，并且未解析的 IA 地址位作为 block 内的偏移，直接赋值给 OA。实际应用中可以为特定的需求分配一个 block 的内存，这个内存的地址转换相对于 page 会有更高的效率)
+(译者注：进行地址转换时，遇到 block descriptor 就表示转换结束了，并且未解析的 IA 地址位作为 block 内的偏移，直接赋值给 OA。实际应用中可以为特定的需求分配一个 block 的内存，这个内存的地址转换相对于 page 会有更高的效率)
 
 如果将不支持 block descriptor 的 translation table 中的 descriptor 的 bit[1] 设为 0，将会触发 Translation fault。
 
