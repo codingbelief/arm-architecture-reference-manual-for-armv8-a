@@ -2,10 +2,10 @@
 
 [Memory region attributes](#) 章节描述了 region 的属性信息。本小节后续内容将汇总 descriptor 的属性信息，包括：
 
-**Table descriptor**
+**Table descriptor**  
 在 stage 2 translation 的 table descriptor 中没有包含属性信息。在 stage 1 translation 的 table descriptor 中包含 next lookup level 的属性信息，更多细节可以参考 [Next-level attributes in stage 1 VMSAv8-64 Table descriptors](#) 章节。
 
-**Block and page descriptors**
+**Block and page descriptors**  
 Block descriptor 和 Page descriptor 中包含 target block 和 page 的内存属性信息。这些属性信息在 Stage 1 和 stage 2 略有差别，具体细节参考以下章节：
 * [Attribute fields in stage 1 VMSAv8-64 Block and Page descriptors](#)
 * [Attribute fields in stage 2 VMSAv8-64 Block and Page descriptors](#)
