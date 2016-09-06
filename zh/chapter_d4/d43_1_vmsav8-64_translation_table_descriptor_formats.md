@@ -11,7 +11,7 @@ Block entry：
 * 在 level 1 table 中，映射 1GB 的 input address range
 * 在 level 2 table 中，映射 2MB 的 input address range
 
-**16KB granule** 
+**16KB granule**  
 Level 0 和 level 1 descriptors 都不支持 block translation
 在 Level 2 table 中，block entry 映射 32MB 的 input address range
 
