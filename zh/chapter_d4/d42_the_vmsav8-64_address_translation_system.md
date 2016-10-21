@@ -2,10 +2,11 @@
 
 [`英文版`](../../zh/chapter_d4/d42_the_vmsav8-64_address_translation_system.html)
 
-This section describes the VMSAv8-64 address translation system, that maps VAs to PAs. Related to this:
- * [VMSAv8-64 translation table format descriptors on page D4-1695](#) describes the translation table entries.
- * [Access controls and memory region attributes on page D4-1704](#) describes the attributes that are held in the translation table entries, including how different attributes can interact.
- * [Translation Lookaside Buffers (TLBs) on page D4-1729](#) describes the caching of translation table lookups in TLBs, and the architected instructions for maintaining TLBs.
+此章节主要描述将 VAs 映射到 PAs 的 VMSAv8-64 地址转换系统，包括以下内容：
+
+ * [VMSAv8-64 translation table format descriptors](#) 介绍了 translation table entries
+ * [Access controls and memory region attributes](#) 介绍了 translation table entries 中的 attributes
+ * [Translation Lookaside Buffers (TLBs)](#) 介绍了 TLB 在 translation table lookup 过程中 describes the caching of translation table lookups in TLBs, and the architected instructions for maintaining TLBs.
  * [AArch64 Address translation examples on page J7-5480](#) gives detailed descriptions of typical examples of translating a VA to a final PA, and obtaining the memory attributes of that PA.
 
 In this section, the following subsections describe the VMSAv8-64 address translation system:
