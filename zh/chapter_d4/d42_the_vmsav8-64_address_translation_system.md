@@ -7,7 +7,7 @@
  * [VMSAv8-64 translation table format descriptors](#) 介绍了 translation table entries
  * [Access controls and memory region attributes](#) 介绍了 translation table entries 中的 attributes
  * [Translation Lookaside Buffers (TLBs)](#) 介绍了 TLB 在 translation table lookup 过程中的 caching 用途以及操作 TLB 相关的指令
- * [AArch64 Address translation examples](#) 则通过详细的例子描述了了 VA 到 PA 的转换以及 PA 的 memory attributes 的处理
+ * [AArch64 Address translation examples](#) 则通过详细的例子描述了了 VA 到 PA 的转换以及 PA 的 memory attributes 的相关处理
 
 In this section, the following subsections describe the VMSAv8-64 address translation system:
  * [About the VMSAv8-64 address translation system](#).
