@@ -1,10 +1,6 @@
 {
-    "plugins": ["duoshuo","-splitter","ga","baidu","sitemap","addcssjs"],
+    "plugins": ["-splitter","ga","baidu","sitemap","addcssjs"],
     "pluginsConfig": {
-        "duoshuo": {
-            "shortName": "codingbelief",
-            "theme": "default"
-        },
         "ga": {
             "token": "UA-73815411-1"
         },
