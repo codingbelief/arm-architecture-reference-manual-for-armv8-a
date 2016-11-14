@@ -1,8 +1,9 @@
 {
-    "plugins": ["disqus","-splitter","ga","baidu","sitemap","addcssjs"],
+    "plugins": ["duoshuo","-splitter","ga","baidu","sitemap","addcssjs"],
     "pluginsConfig": {
-        "disqus": {
-            "shortName": "codingbelief-gitbook"
+        "duoshuo": {
+            "shortName": "codingbelief",
+            "theme": "default"
         },
         "ga": {
             "token": "UA-73815411-1"
