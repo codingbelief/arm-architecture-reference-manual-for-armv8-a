@@ -1,5 +1,5 @@
 {
-    "plugins": ["-splitter","ga","baidu","sitemap","addcssjs"],
+    "plugins": ["splitter","ga","baidu","sitemap","addcssjs"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-73815411-1"
