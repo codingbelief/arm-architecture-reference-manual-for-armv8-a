@@ -19,6 +19,8 @@ stage 1 和 stage 2 的地址转换的第一次 lookup 所在的 level 有所差
 
 在 stage 1 地址转换中，第一次 lookup 所在的 level 由 TCR.TxSZ 寄存器位所设定的输入地址范围唯一决定。在使用 4KB granule 时，具体的关系如 Table D4-11 所示：
 
+（译者注：TnSZ is the size offset of the memory region addressed by TTBR. The region size is 2^(64-TnSZ) bytes.）
+
 ![](table_d4_11.png)
 
 上面的配置关系对于 stage 2 的地址转换同样适用。
