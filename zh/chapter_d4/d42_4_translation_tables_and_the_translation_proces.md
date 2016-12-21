@@ -73,13 +73,9 @@ TTBR 中还决定了一个 stage 的地址转换中的所有 translation table l
 一个 translation table walk 中的所有 lookup 所返回的描述符中的 NSTable 位指示了当次 lookup 所返回的基地址是属于 Secure 还是 Non-secure 地址。
 另外，如果 lookup 所返回的描述符是从 Non-secure memory 中读取到的，那就意味着下一次 lookup 操作也将会访问 Non-secure memory。
 
-
-
 #### Control of translation table walks
 
-For the first stage of the EL1&0 translation regime, the TCR_EL1.{EPD0, EPD1} bits determine whether the translation tables for that regime are valid. EPD0 indicates whether the table that TTBR0_EL1 points to is valid, and EPD1 indicates whether the table that TTBR1_EL1 points to is valid. The effect of these bits is:
-
-对于 EL1&0 translation regime 的第一个 stage，TCR_EL1.{EPD0, EPD1} 寄存器位决定了该 regime 中的 translation table 是否有效。EPD0 指示了 TTBR0_EL1 所指向的 translation table 是否有效，而EPD1 则指示了 TTBR0_EL1 所指向的 translation table 是否有效。
+对于 EL1&0 translation regime 的第一个 stage，TCR_EL1.{EPD0, EPD1} 寄存器位决定了该 regime 中的 translation table 是否有效。EPD0 指示了 TTBR0_EL1 所指向的 translation table 是否有效，而EPD1 则指示了 TTBR0_EL1 所指向的 translation table 是否有效。EPDn 比特位的效果如下表格所示：
 
 
 | | |
